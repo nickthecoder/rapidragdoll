@@ -39,6 +39,9 @@ class Doll : AbstractRole() {
                 jointDef.bodyB = newActor.body
 
                 jointDef.localAnchorA = pixelsToWorld(newRole.offset)
+                jointDef.lowerAngle = newRole.fromAngle.radians.toFloat()
+                jointDef.upperAngle = newRole.toAngle.radians.toFloat()
+                jointDef.enableLimit = true
 
                 val joint = Game.instance.scene.world?.createJoint(jointDef)
             }

@@ -252,8 +252,16 @@
           ],
           "attributes": [
             {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
               "name": "offset",
               "value": "0.0x18.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
             }
           ],
           "body": {
@@ -297,8 +305,16 @@
           ],
           "attributes": [
             {
+              "name": "fromAngle",
+              "value": "-360.0"
+            },
+            {
               "name": "offset",
               "value": "-12.0x10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "360.0"
             }
           ],
           "body": {
@@ -345,8 +361,16 @@
           ],
           "attributes": [
             {
+              "name": "fromAngle",
+              "value": "-360.0"
+            },
+            {
               "name": "offset",
               "value": "12.0x10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "360.0"
             }
           ],
           "body": {
@@ -447,8 +471,16 @@
           ],
           "attributes": [
             {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
               "name": "offset",
               "value": "0.0x-15.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
             }
           ],
           "body": {
@@ -511,8 +543,16 @@
           ],
           "attributes": [
             {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
               "name": "offset",
               "value": "-10.0x-30.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
             }
           ],
           "body": {
@@ -559,8 +599,16 @@
           ],
           "attributes": [
             {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
               "name": "offset",
               "value": "10.0x-30.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
             }
           ],
           "body": {
