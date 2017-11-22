@@ -1,0 +1,675 @@
+{
+  "info": {
+    "title": "Rapid Rag Doll",
+    "width": 1024,
+    "height": 600,
+    "resizable": true,
+    "initialScene": "level01",
+    "testScene": "test",
+    "producer": "uk.co.nickthecoder.tickle.NoProducer",
+    "physics": {
+      "gravity_x": 0,
+      "gravity_y": -100,
+      "velocityIterations": 8,
+      "positionIterations": 3,
+      "scale": 100,
+      "filterGroups": "uk.co.nickthecoder.tickle.physics.NoFilterGroups",
+      "filterBits": "uk.co.nickthecoder.rapidragdoll.RagFilterBits"
+    }
+  },
+  "preferences": {
+    "outputFormat": "PRETTY",
+    "packages": [
+      "uk.co.nickthecoder.tickle",
+      "uk.co.nickthecoder.rapidragdoll"
+    ],
+    "treeThumbnailSize": 24,
+    "costumePickerThumbnailSize": 40
+  },
+  "layouts": [
+    {
+      "name": "default",
+      "stages": [
+        {
+          "name": "main",
+          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
+          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
+        }
+      ],
+      "views": [
+        {
+          "name": "main",
+          "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
+          "stage": "main",
+          "zOrder": 50,
+          "hAlignment": "LEFT",
+          "leftRightMargin": 0,
+          "vAlignment": "TOP",
+          "topBottomMargin": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "annie",
+      "file": "images/annie.png"
+    },
+    {
+      "name": "scenery",
+      "file": "images/scenery.png"
+    }
+  ],
+  "poses": [
+    {
+      "name": "annie-head",
+      "texture": "annie",
+      "left": 23,
+      "bottom": 72,
+      "right": 99,
+      "top": 3,
+      "offsetX": 35,
+      "offsetY": 7,
+      "direction": 0
+    },
+    {
+      "name": "annie-arm-left",
+      "texture": "annie",
+      "left": 15,
+      "bottom": 121,
+      "right": 43,
+      "top": 73,
+      "offsetX": 24,
+      "offsetY": 40,
+      "direction": 0
+    },
+    {
+      "name": "annie-arm-right",
+      "texture": "annie",
+      "left": 77,
+      "bottom": 121,
+      "right": 106,
+      "top": 75,
+      "offsetX": 6,
+      "offsetY": 38,
+      "direction": 0
+    },
+    {
+      "name": "annie-torso",
+      "texture": "annie",
+      "left": 44,
+      "bottom": 109,
+      "right": 78,
+      "top": 73,
+      "offsetX": 17,
+      "offsetY": 17,
+      "direction": 0
+    },
+    {
+      "name": "annie-abdomen",
+      "texture": "annie",
+      "left": 15,
+      "bottom": 167,
+      "right": 106,
+      "top": 118,
+      "offsetX": 46,
+      "offsetY": 40,
+      "direction": 0
+    },
+    {
+      "name": "annie-leg-left",
+      "texture": "annie",
+      "left": 33,
+      "bottom": 236,
+      "right": 52,
+      "top": 169,
+      "offsetX": 13,
+      "offsetY": 58,
+      "direction": 0
+    },
+    {
+      "name": "annie-leg-right",
+      "texture": "annie",
+      "left": 62,
+      "bottom": 235,
+      "right": 82,
+      "top": 169,
+      "offsetX": 5,
+      "offsetY": 59,
+      "direction": 0
+    },
+    {
+      "name": "floor1",
+      "texture": "scenery",
+      "left": 27,
+      "bottom": 118,
+      "right": 363,
+      "top": 57,
+      "offsetX": 168,
+      "offsetY": 30,
+      "direction": 0
+    },
+    {
+      "name": "wall1",
+      "texture": "scenery",
+      "left": 30,
+      "bottom": 467,
+      "right": 100,
+      "top": 165,
+      "offsetX": 35,
+      "offsetY": 151,
+      "direction": 0
+    }
+  ],
+  "costumeGroups": [
+    {
+      "name": "dolls",
+      "costumes": [
+        {
+          "name": "annie",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "annie-head"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "annie-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "annie-arm-right"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "annie-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "annie-abdomen"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "annie-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "annie-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "initialVelocity",
+              "value": "0.0x0.0"
+            }
+          ]
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "annie",
+      "costumes": [
+        {
+          "name": "annie-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "0.0x18.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 14,
+                "circle": {
+                  "x": 2,
+                  "y": 24,
+                  "radius": 30
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "annie-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "-12.0x10.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 14,
+                "box": {
+                  "x": -11.5,
+                  "y": -16,
+                  "width": 9,
+                  "height": 36,
+                  "angle": -23,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "annie-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "12.0x10.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 14,
+                "box": {
+                  "x": 9.5,
+                  "y": -14,
+                  "width": 10,
+                  "height": 36,
+                  "angle": 24,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "annie-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -14,
+                      "y": -14
+                    },
+                    {
+                      "x": 14,
+                      "y": -13
+                    },
+                    {
+                      "x": 13,
+                      "y": 14
+                    },
+                    {
+                      "x": -11,
+                      "y": 14
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "annie-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "0.0x-15.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 13,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -26,
+                      "y": 7
+                    },
+                    {
+                      "x": -38,
+                      "y": -13
+                    },
+                    {
+                      "x": -1,
+                      "y": -36
+                    },
+                    {
+                      "x": 38,
+                      "y": -27
+                    },
+                    {
+                      "x": 22,
+                      "y": 4
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "annie-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "-10.0x-30.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 14,
+                "box": {
+                  "x": -1.5,
+                  "y": -26,
+                  "width": 12,
+                  "height": 60,
+                  "angle": -5,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "annie-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "annie-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "10.0x-30.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 14,
+                "box": {
+                  "x": 4.5,
+                  "y": -26.5,
+                  "width": 9,
+                  "height": 56,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": false
+    }
+  ],
+  "costumes": [
+    {
+      "name": "floor1",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "floor1"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0,
+            "density": 1,
+            "restitution": 1,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 1,
+              "y": -0.5,
+              "width": 334,
+              "height": 60,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "wall1",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "wall1"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0,
+            "density": 1,
+            "restitution": 1,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 0.5,
+              "y": -0.5,
+              "width": 66,
+              "height": 303,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
