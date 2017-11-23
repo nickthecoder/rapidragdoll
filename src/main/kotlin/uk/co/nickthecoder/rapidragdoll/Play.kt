@@ -9,7 +9,7 @@ import uk.co.nickthecoder.tickle.stage.StageView
 import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Play : AbstractDirector(), MouseHandler {
+open class Play : AbstractDirector(), MouseHandler {
 
     @Attribute
     var maxDolls = 20
@@ -115,7 +115,7 @@ class Play : AbstractDirector(), MouseHandler {
                     nextScene()
                 } else {
                     aim?.let {
-                        launcher?.launch(it)
+                        launcher?.launch(it.actor.position)
                     }
                 }
             }

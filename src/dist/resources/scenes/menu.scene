@@ -1,5 +1,15 @@
 {
   "director": "uk.co.nickthecoder.rapidragdoll.Menu",
+  "directorAttributes": [
+    {
+      "name": "maxDolls",
+      "value": "20"
+    },
+    {
+      "name": "nextScene",
+      "value": ""
+    }
+  ],
   "background": "#000000",
   "showMouse": true,
   "layout": "default",
@@ -29,157 +39,155 @@
     {
       "name": "main",
       "actors": [
-        
+        {
+          "costume": "autoLaucher",
+          "x": -77,
+          "y": 382,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "",
+          "attributes": [
+            {
+              "name": "period",
+              "value": "1"
+            },
+            {
+              "name": "point",
+              "value": "95.0x470.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "400"
+            }
+          ]
+        },
+        {
+          "costume": "autoLaucher",
+          "x": 125,
+          "y": -62,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "",
+          "attributes": [
+            {
+              "name": "period",
+              "value": "5.2"
+            },
+            {
+              "name": "point",
+              "value": "153.0x42.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "300"
+            }
+          ]
+        },
+        {
+          "costume": "autoLaucher",
+          "x": 788,
+          "y": -63,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "",
+          "attributes": [
+            {
+              "name": "period",
+              "value": "3.4"
+            },
+            {
+              "name": "point",
+              "value": "659.0x90.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "400"
+            }
+          ]
+        }
       ]
     },
     {
       "name": "glass",
       "actors": [
         {
-          "costume": "floor1",
-          "x": 167,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 496,
-          "y": 31,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 825,
-          "y": 31,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 1002,
-          "y": 31,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "annie",
-          "x": 205,
-          "y": 762,
+          "costume": "autoLauncher",
+          "x": -79,
+          "y": 443,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": ""
+          "text": "",
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "point",
+              "value": "50.0x503.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
         },
         {
-          "costume": "annie",
-          "x": 407,
-          "y": 823,
+          "costume": "small",
+          "x": 578,
+          "y": 435,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": ""
+          "text": "by Nick Robinson"
         },
         {
-          "costume": "annie",
-          "x": 639,
-          "y": 854,
+          "costume": "small",
+          "x": 756,
+          "y": 7,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": ""
+          "text": "Created using Tickle"
         },
         {
-          "costume": "annie",
-          "x": 250,
-          "y": 1103,
+          "costume": "large",
+          "x": 527,
+          "y": 498,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": ""
-        },
-        {
-          "costume": "annie",
-          "x": 481,
-          "y": 1062,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
-        },
-        {
-          "costume": "annie",
-          "x": 746,
-          "y": 1223,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
-        },
-        {
-          "costume": "annie",
-          "x": 890,
-          "y": 801,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
-        },
-        {
-          "costume": "annie",
-          "x": 827,
-          "y": 1067,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
-        },
-        {
-          "costume": "annie",
-          "x": 943,
-          "y": 1171,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
-        },
-        {
-          "costume": "annie",
-          "x": 519,
-          "y": 1376,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
-        },
-        {
-          "costume": "annie",
-          "x": 309,
-          "y": 1335,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
+          "text": "Rapid Rag Doll"
         }
       ]
     }

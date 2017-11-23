@@ -195,15 +195,6 @@
           "scale": 1
         },
         {
-          "costume": "chair1",
-          "x": 262,
-          "y": -210,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
           "costume": "wall1",
           "x": 32,
           "y": -137,

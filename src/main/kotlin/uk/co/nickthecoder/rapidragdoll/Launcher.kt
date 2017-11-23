@@ -1,6 +1,10 @@
 package uk.co.nickthecoder.rapidragdoll
 
+import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.AttributeType
+import uk.co.nickthecoder.tickle.action.Action
+import uk.co.nickthecoder.tickle.action.Delay
 import uk.co.nickthecoder.tickle.events.Input
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.util.Attribute
@@ -20,13 +24,38 @@ import uk.co.nickthecoder.tickle.util.Attribute
  */
 private var dollZOrder = 1.0
 
-class Launcher : AbstractRole() {
+abstract class AbstractLauncher : AbstractRole() {
 
     @Attribute
     var speed: Double = 600.0
 
     @Attribute
     var dollName: String = "annie"
+
+    fun launch(point: Vector2d) {
+
+        val costume = Resources.instance.costumes.find(dollName)
+        costume ?: return
+
+        val dollA = actor.createChild(costume)
+        dollA.zOrder = dollZOrder
+        dollZOrder++
+        if (dollZOrder > 99) {
+            dollZOrder = 1.0
+        }
+
+        val doll = dollA.role
+
+        if (doll is Doll) {
+            doll.initialVelocity.set(point).sub(actor.position).normalize(speed)
+            Play.instance.launched(doll)
+        }
+        actor.stage?.add(dollA)
+    }
+
+}
+
+class Launcher : AbstractLauncher() {
 
     /**
      * The number of this launcher. Set by Play director when the scene begins.
@@ -37,7 +66,6 @@ class Launcher : AbstractRole() {
      * The key to select this Launcher (Will be key 1..n)
      */
     var select: Input? = null
-
 
     override fun activated() {
         select = Resources.instance.inputs.find("select${number}")
@@ -59,25 +87,25 @@ class Launcher : AbstractRole() {
         actor.event("deselect${number}")
     }
 
-    fun launch(aim: Aim) {
+}
 
-        val costume = Resources.instance.costumes.find(dollName)
-        costume ?: return
+class AutoLauncher : AbstractLauncher() {
 
-        val dollA = actor.createChild(costume)
-        dollA.zOrder = dollZOrder
-        dollZOrder++
-        if (dollZOrder > 99) {
-            dollZOrder = 1.0
-        }
+    @Attribute
+    var period = 2.0
 
-        val doll = dollA.role
+    @Attribute(attributeType = AttributeType.ABSOLUTE_POSITION)
+    val point = Vector2d()
 
-        if (doll is Doll) {
-            doll.initialVelocity.set(aim.actor.position).sub(actor.position).normalize(speed)
-            Play.instance.launched(doll)
-        }
-        actor.stage?.add(dollA)
+    lateinit var action: Action
+
+    override fun activated() {
+        action = Delay(period).then { launch(point) }.forever()
+        action.begin()
+    }
+
+    override fun tick() {
+        action.act()
     }
 
 }

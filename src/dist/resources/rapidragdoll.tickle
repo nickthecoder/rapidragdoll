@@ -85,6 +85,24 @@
       "file": "images/scenery.png"
     }
   ],
+  "fonts": [
+    {
+      "name": "small",
+      "fontName": "Anaktoria",
+      "style": "PLAIN",
+      "size": 32,
+      "xPadding": 10,
+      "yPadding": 4
+    },
+    {
+      "name": "large",
+      "fontName": "Anaktoria",
+      "style": "PLAIN",
+      "size": 60,
+      "xPadding": 16,
+      "yPadding": 16
+    }
+  ],
   "poses": [
     {
       "name": "annie-head",
@@ -287,10 +305,10 @@
     {
       "name": "aim",
       "texture": "scenery",
-      "left": 28,
-      "bottom": 77,
-      "right": 94,
-      "top": 11,
+      "left": 458,
+      "bottom": 267,
+      "right": 524,
+      "top": 201,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -337,6 +355,28 @@
       "top": 7,
       "offsetX": 45,
       "offsetY": 75,
+      "direction": 0
+    },
+    {
+      "name": "autoLaucher",
+      "texture": "scenery",
+      "left": 30,
+      "bottom": 70,
+      "right": 96,
+      "top": 4,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "title",
+      "texture": "scenery",
+      "left": 112,
+      "bottom": 368,
+      "right": 421,
+      "top": 298,
+      "offsetX": 16,
+      "offsetY": 34,
       "direction": 0
     }
   ],
@@ -1082,22 +1122,6 @@
       }
     },
     {
-      "name": "sceneComplete",
-      "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
-      "canRotate": false,
-      "zOrder": 100,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "sceneComplete"
-          ]
-        }
-      ]
-    },
-    {
       "name": "chair2",
       "role": "",
       "canRotate": true,
@@ -1282,6 +1306,122 @@
           }
         ]
       }
+    },
+    {
+      "name": "autoLaucher",
+      "role": "uk.co.nickthecoder.rapidragdoll.AutoLauncher",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "editor",
+          "poses": [
+            "autoLaucher"
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": "period",
+          "value": "2"
+        },
+        {
+          "name": "point",
+          "value": "0.0x0.0"
+        },
+        {
+          "name": "dollName",
+          "value": "annie"
+        },
+        {
+          "name": "speed",
+          "value": "600"
+        }
+      ]
+    },
+    {
+      "name": "title",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "title"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "small",
+      "role": "",
+      "canRotate": true,
+      "zOrder": 100,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "textStyles": [
+            {
+              "font": "small",
+              "halign": "LEFT",
+              "valign": "BOTTOM",
+              "color": "#7714b5ff",
+              "outlineColor": "#ffffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "large",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "textStyles": [
+            {
+              "font": "large",
+              "halign": "CENTER",
+              "valign": "BOTTOM",
+              "color": "#7714b5ff",
+              "outlineColor": "#ffffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sceneComplete",
+      "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "textStyles": [
+            {
+              "font": "large",
+              "halign": "CENTER",
+              "valign": "BOTTOM",
+              "color": "#7714b5ff",
+              "outlineColor": "#ffffffff"
+            }
+          ]
+        }
+      ]
     }
   ],
   "inputs": [

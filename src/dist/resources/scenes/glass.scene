@@ -48,11 +48,11 @@
           "costume": "sceneComplete",
           "x": 528,
           "y": 645,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scale": 1,
+          "text": "Scene Complete!"
         }
       ]
     }
