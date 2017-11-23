@@ -141,10 +141,10 @@
     {
       "name": "floor1",
       "texture": "scenery",
-      "left": 27,
-      "bottom": 118,
-      "right": 363,
-      "top": 57,
+      "left": 105,
+      "bottom": 227,
+      "right": 441,
+      "top": 166,
       "offsetX": 168,
       "offsetY": 30,
       "direction": 0
@@ -158,6 +158,116 @@
       "top": 165,
       "offsetX": 35,
       "offsetY": 151,
+      "direction": 0
+    },
+    {
+      "name": "launcher",
+      "texture": "scenery",
+      "left": 31,
+      "bottom": 150,
+      "right": 97,
+      "top": 84,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-deselected-1",
+      "texture": "scenery",
+      "left": 110,
+      "bottom": 150,
+      "right": 176,
+      "top": 84,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-deselected-2",
+      "texture": "scenery",
+      "left": 190,
+      "bottom": 150,
+      "right": 256,
+      "top": 84,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-deselected-3",
+      "texture": "scenery",
+      "left": 270,
+      "bottom": 150,
+      "right": 336,
+      "top": 84,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-deselected-4",
+      "texture": "scenery",
+      "left": 350,
+      "bottom": 150,
+      "right": 416,
+      "top": 84,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-selected-1",
+      "texture": "scenery",
+      "left": 109,
+      "bottom": 70,
+      "right": 174,
+      "top": 4,
+      "offsetX": 32,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-selected-2",
+      "texture": "scenery",
+      "left": 187,
+      "bottom": 70,
+      "right": 253,
+      "top": 4,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-selected-3",
+      "texture": "scenery",
+      "left": 265,
+      "bottom": 70,
+      "right": 331,
+      "top": 4,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "launcher-selected-4",
+      "texture": "scenery",
+      "left": 343,
+      "bottom": 70,
+      "right": 409,
+      "top": 4,
+      "offsetX": 33,
+      "offsetY": 33,
+      "direction": 0
+    },
+    {
+      "name": "aim",
+      "texture": "scenery",
+      "left": 28,
+      "bottom": 77,
+      "right": 94,
+      "top": 11,
+      "offsetX": 33,
+      "offsetY": 33,
       "direction": 0
     }
   ],
@@ -174,7 +284,7 @@
           "showInSceneEditor": true,
           "events": [
             {
-              "name": "default",
+              "name": "editor",
               "poses": [
                 "annie-head"
               ]
@@ -220,12 +330,6 @@
               "costumes": [
                 "annie-leg-right"
               ]
-            }
-          ],
-          "attributes": [
-            {
-              "name": "initialVelocity",
-              "value": "0.0x0.0"
             }
           ]
         }
@@ -280,9 +384,9 @@
                 "category": 2,
                 "mask": 14,
                 "circle": {
-                  "x": 2,
-                  "y": 24,
-                  "radius": 30
+                  "x": 3,
+                  "y": 32,
+                  "radius": 25
                 }
               }
             ]
@@ -314,7 +418,7 @@
             },
             {
               "name": "toAngle",
-              "value": "360.0"
+              "value": "29.999999999999996"
             }
           ],
           "body": {
@@ -327,7 +431,7 @@
               {
                 "friction": 0,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.3,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -362,7 +466,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-360.0"
+              "value": "-29.999999999999996"
             },
             {
               "name": "offset",
@@ -383,7 +487,7 @@
               {
                 "friction": 0,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.3,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -559,13 +663,13 @@
             "bodyType": "DYNAMIC",
             "linearDamping": 0,
             "angularDamping": 0,
-            "bullet": false,
+            "bullet": true,
             "fixedRotation": false,
             "fixtures": [
               {
                 "friction": 0,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.3,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -615,13 +719,13 @@
             "bodyType": "DYNAMIC",
             "linearDamping": 0,
             "angularDamping": 0,
-            "bullet": false,
+            "bullet": true,
             "fixedRotation": false,
             "fixtures": [
               {
                 "friction": 0,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.3,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -718,6 +822,124 @@
           }
         ]
       }
+    },
+    {
+      "name": "launcher",
+      "role": "uk.co.nickthecoder.rapidragdoll.Launcher",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "launcher"
+          ]
+        },
+        {
+          "name": "select1",
+          "poses": [
+            "launcher-selected-1"
+          ]
+        },
+        {
+          "name": "select2",
+          "poses": [
+            "launcher-selected-2"
+          ]
+        },
+        {
+          "name": "select3",
+          "poses": [
+            "launcher-selected-3"
+          ]
+        },
+        {
+          "name": "select4",
+          "poses": [
+            "launcher-selected-4"
+          ]
+        },
+        {
+          "name": "deselect1",
+          "poses": [
+            "launcher-deselected-1"
+          ]
+        },
+        {
+          "name": "deselect2",
+          "poses": [
+            "launcher-deselected-2"
+          ]
+        },
+        {
+          "name": "deselect3",
+          "poses": [
+            "launcher-selected-3"
+          ]
+        },
+        {
+          "name": "deselect4",
+          "poses": [
+            "launcher-deselected-4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "aim",
+      "role": "uk.co.nickthecoder.rapidragdoll.Aim",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "aim"
+          ]
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "name": "select2",
+      "keys": [
+        {
+          "key": "2",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "select1",
+      "keys": [
+        {
+          "key": "1",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "select3",
+      "keys": [
+        {
+          "key": "3",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "select4",
+      "keys": [
+        {
+          "key": "4",
+          "state": "PRESSED"
+        }
+      ]
     }
   ]
 }

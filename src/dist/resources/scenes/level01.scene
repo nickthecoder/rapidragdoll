@@ -1,5 +1,11 @@
 {
-  "director": "uk.co.nickthecoder.tickle.NoDirector",
+  "director": "uk.co.nickthecoder.rapidragdoll.Play",
+  "directorAttributes": [
+    {
+      "name": "dollName",
+      "value": "annie"
+    }
+  ],
   "background": "#000000",
   "showMouse": true,
   "layout": "default",
