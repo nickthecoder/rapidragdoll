@@ -2,8 +2,8 @@
   "director": "uk.co.nickthecoder.rapidragdoll.Play",
   "directorAttributes": [
     {
-      "name": "dollName",
-      "value": "annie"
+      "name": "maxDolls",
+      "value": "20"
     }
   ],
   "background": "#000000",
@@ -29,11 +29,17 @@
     ]
   },
   "include": [
-    
+    "glass"
   ],
   "stages": [
     {
       "name": "main",
+      "actors": [
+        
+      ]
+    },
+    {
+      "name": "glass",
       "actors": [
         
       ]

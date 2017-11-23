@@ -1,0 +1,60 @@
+{
+  "director": "uk.co.nickthecoder.tickle.NoDirector",
+  "background": "#000000",
+  "showMouse": true,
+  "layout": "default",
+  "grid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "guides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      
+    ],
+    "y": [
+      
+    ]
+  },
+  "include": [
+    
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "aim",
+          "x": 487,
+          "y": 446,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        {
+          "costume": "sceneComplete",
+          "x": 528,
+          "y": 645,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import uk.co.nickthecoder.tickle.events.ButtonState
 import uk.co.nickthecoder.tickle.events.MouseEvent
 import uk.co.nickthecoder.tickle.events.MouseHandler
 import uk.co.nickthecoder.tickle.stage.StageView
+import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.util.Attribute
 
 class Play : AbstractDirector(), MouseHandler {
@@ -24,6 +25,18 @@ class Play : AbstractDirector(), MouseHandler {
                 if (v !== it) {
                     it.deselect()
                 }
+            }
+        }
+
+    /**
+     * The number of remaining objectives till the scene is complete
+     */
+    var objectives = 0
+        set(v) {
+            println("Objectives remaining = $v")
+            field = v
+            if (v == 0) {
+                completedScene()
             }
         }
 
@@ -47,12 +60,16 @@ class Play : AbstractDirector(), MouseHandler {
 
     lateinit var mainView: StageView
 
+    lateinit var glassView: StageView
+
     init {
         instance = this
     }
 
     override fun begin() {
+
         mainView = Game.instance.scene.findView("main") as StageView
+        glassView = Game.instance.scene.findView("glass") as StageView
 
         var launcherCount = 0
         Game.instance.scene.findStage("main")?.actors?.forEach { actor ->
@@ -109,6 +126,15 @@ class Play : AbstractDirector(), MouseHandler {
             val remove = dolls.removeAt(0)
             remove.actor.die()
         }
+    }
+
+    fun completedScene() {
+        println("Scene complete")
+        glassView.stage.findRole<SceneComplete>()?.complete = true
+    }
+
+    fun nextScene() {
+        println("Next scene")
     }
 
     companion object {

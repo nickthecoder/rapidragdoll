@@ -29,7 +29,7 @@
     ]
   },
   "include": [
-    
+    "glass"
   ],
   "stages": [
     {
@@ -82,8 +82,8 @@
         },
         {
           "costume": "wall1",
-          "x": 987,
-          "y": 150,
+          "x": 1605,
+          "y": 162,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -91,8 +91,8 @@
         },
         {
           "costume": "wall1",
-          "x": 984,
-          "y": 430,
+          "x": 1608,
+          "y": 450,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -108,42 +108,112 @@
           "scale": 1
         },
         {
-          "costume": "annie",
-          "x": 0,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": ""
-        },
-        {
           "costume": "launcher",
           "x": 156,
           "y": 562,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scale": 1,
+          "attributes": [
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
         },
         {
-          "costume": "aim",
-          "x": 413,
-          "y": 431,
+          "costume": "launcher",
+          "x": 1531,
+          "y": 572,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "attributes": [
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
+        },
+        {
+          "costume": "floor1",
+          "x": 694,
+          "y": 258,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
         },
         {
-          "costume": "launcher",
-          "x": 895,
-          "y": 563,
+          "costume": "pin",
+          "x": 545,
+          "y": 297,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 376,
+          "y": 72,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "floor1",
+          "x": 1144,
+          "y": 30,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "floor1",
+          "x": 1474,
+          "y": 31,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall1",
+          "x": 638,
+          "y": 438,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall1",
+          "x": 982,
+          "y": 380,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

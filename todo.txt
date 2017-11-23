@@ -6,8 +6,40 @@ Bugs
 Next
 ----
 
+Add targets
+	10 pin bowling pins - Knock them over (> +/- 90 degrees)
+	Scene is complete when all pins are knocked down.
+
+Add simple movable objects
+	Chair, table, lamp stands
+
+Limit the Laucher to a fixed number of dolls
+	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
+	Default is MAXINT
+
+Add a recharge time to a Launcher?
+	Aim changes to an hour-glass when recharging.
+
+Collectables
+	Add "ammo" to the current Launcher
+	Increase/Descrease speed of the current Launcher
+	Increase/Descrease max dolls
+
+Create intro screen
+	Into each doll
+	Button for each set of scenes
+		Fire Frenzy
+		Sit Sedate
+
+Level sets scene
+	Show a box for each scene, with the completion time.
+	Can only press a scene button if the previous has been finished (or is the first).
+	(Use Preferences)
+
 Later
 -----
+
+Create more sedate scenes, where the aim is to place
 
 Much Later
 ----------
