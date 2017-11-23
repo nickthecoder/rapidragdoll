@@ -169,17 +169,6 @@
           "text": "by Nick Robinson"
         },
         {
-          "costume": "small",
-          "x": 756,
-          "y": 7,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": "Created using Tickle"
-        },
-        {
           "costume": "large",
           "x": 527,
           "y": 498,
@@ -188,6 +177,51 @@
           "direction": 0,
           "scale": 1,
           "text": "Rapid Rag Doll"
+        },
+        {
+          "costume": "sceneButton",
+          "x": 530,
+          "y": 280,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Level 1",
+          "attributes": [
+            {
+              "name": "scene",
+              "value": "level01"
+            }
+          ]
+        },
+        {
+          "costume": "quitButton",
+          "x": 80,
+          "y": 13,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Quit"
+        },
+        {
+          "costume": "urlButton",
+          "x": 1014,
+          "y": 8,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Created using Tickle",
+          "attributes": [
+            {
+              "name": "url",
+              "value": "http://nickthecoder.co.uk/wiki/view/software/Tickle"
+            }
+          ]
         }
       ]
     }
