@@ -1,5 +1,5 @@
 {
-  "director": "uk.co.nickthecoder.tickle.NoDirector",
+  "director": "uk.co.nickthecoder.rapidragdoll.Menu",
   "background": "#000000",
   "showMouse": true,
   "layout": "default",

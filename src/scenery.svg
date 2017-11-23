@@ -280,8 +280,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="99.733432"
-     inkscape:cy="871.78562"
+     inkscape:cx="330.73343"
+     inkscape:cy="874.78562"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -575,10 +575,11 @@
        inkscape:transform-center-y="-8.1391712"
        transform="translate(7.0710678,8.0812204)" />
     <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/pin.png"
+       xlink:href="pin.png"
        y="3.2662663"
        x="436.99506"
        id="image4668"
-       xlink:href="file:///home/nick/projects/rapidragdoll/src/pin.png"
        height="162.73955"
        width="61.411152" />
     <g
@@ -609,17 +610,6 @@
            y="278.58533"
            style="fill:url(#linearGradient3872);fill-opacity:1;stroke:url(#linearGradient3874);stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">Level Complete!</tspan></text>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
-       x="526"
-       y="179.36218"
-       id="text3852"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3854"
-         x="526"
-         y="179.36218">1</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3856"
@@ -630,5 +620,21 @@
            height="401"
            x="400"
            y="-73.637817" /></flowRegion><flowPara
-         id="flowPara3862"></flowPara></flowRoot>  </g>
+         id="flowPara3862" /></flowRoot>    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/chair.png"
+       xlink:href="chair.png"
+       y="-0.13781738"
+       x="507"
+       id="image3884"
+       height="201.23438"
+       width="106" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#image3884"
+       id="use3887"
+       transform="matrix(-1,0,0,1,1230,0)"
+       width="744.09448"
+       height="1052.3622" />
+  </g>
 </svg>

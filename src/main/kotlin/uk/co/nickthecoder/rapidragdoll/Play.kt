@@ -3,9 +3,8 @@ package uk.co.nickthecoder.rapidragdoll
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractDirector
 import uk.co.nickthecoder.tickle.Game
-import uk.co.nickthecoder.tickle.events.ButtonState
-import uk.co.nickthecoder.tickle.events.MouseEvent
-import uk.co.nickthecoder.tickle.events.MouseHandler
+import uk.co.nickthecoder.tickle.events.*
+import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.StageView
 import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.util.Attribute
@@ -38,7 +37,6 @@ class Play : AbstractDirector(), MouseHandler {
      */
     var objectives = 0
         set(v) {
-            println("Objectives remaining = $v")
             field = v
             if (v == 0) {
                 glassView.stage.findRole<SceneComplete>()?.complete = true
@@ -63,6 +61,8 @@ class Play : AbstractDirector(), MouseHandler {
      */
     val dolls = mutableListOf<Doll>()
 
+    var escape: Input? = null
+
     lateinit var mainView: StageView
 
     lateinit var glassView: StageView
@@ -75,6 +75,7 @@ class Play : AbstractDirector(), MouseHandler {
 
         mainView = Game.instance.scene.findView("main") as StageView
         glassView = Game.instance.scene.findView("glass") as StageView
+        escape = Resources.instance.inputs.find("escape")
 
         var launcherCount = 0
         Game.instance.scene.findStage("main")?.actors?.forEach { actor ->
@@ -92,8 +93,19 @@ class Play : AbstractDirector(), MouseHandler {
         }
     }
 
+    override fun onKey(event: KeyEvent) {
+        if (escape?.matches(event) == true) {
+            if (sceneComplete) {
+                nextScene()
+            } else {
+                Game.instance.startScene("menu")
+            }
+        }
+    }
+
     /**
-     * When the left mouse button is pressed, the ask the current Launcher to create a Doll.
+     * When the left mouse button is pressed, ask the current Launcher to create a Doll
+     * (unless the scene is complete, in which case, go to the next scene).
      * When the middle or right button is pressed and dragged, pan the scene.
      */
     override fun onMouseButton(event: MouseEvent) {
@@ -132,8 +144,7 @@ class Play : AbstractDirector(), MouseHandler {
     fun launched(doll: Doll) {
         dolls.add(doll)
         if (dolls.size > maxDolls) {
-            val remove = dolls.removeAt(0)
-            remove.actor.die()
+            dolls.removeAt(0).ending = true
         }
     }
 

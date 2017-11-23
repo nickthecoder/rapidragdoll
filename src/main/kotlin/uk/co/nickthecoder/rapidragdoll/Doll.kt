@@ -2,15 +2,20 @@ package uk.co.nickthecoder.rapidragdoll
 
 import org.jbox2d.dynamics.joints.RevoluteJointDef
 import org.joml.Vector2d
-import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.Game
+import uk.co.nickthecoder.tickle.action.Action
+import uk.co.nickthecoder.tickle.action.Kill
+import uk.co.nickthecoder.tickle.action.ParallelAction
+import uk.co.nickthecoder.tickle.action.Until
+import uk.co.nickthecoder.tickle.action.animation.Fade
 import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import java.util.*
 
 private val random = Random()
 
-class Doll : AbstractRole() {
+class Doll : ActionRole() {
 
     val initialVelocity = Vector2d()
 
@@ -18,7 +23,9 @@ class Doll : AbstractRole() {
 
     val parts = mutableListOf<Actor>()
 
-    override fun activated() {
+    var ending = false
+
+    override fun createAction(): Action {
 
         val torso = createPart("torso", 0.0)
         val abdomen = createPart("abdomen", 0.1, torso)
@@ -31,9 +38,17 @@ class Doll : AbstractRole() {
 
         // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
         // depending on which body part is thrown.
-        val part = parts[random.nextInt(parts.size)]
-        val partBody = part.body!!
-        partBody.linearVelocity = pixelsToWorld(initialVelocity.mul(totalMass / partBody.mass))
+        val throwBy = parts[random.nextInt(parts.size)].body!!
+        throwBy.linearVelocity = pixelsToWorld(initialVelocity.mul(totalMass / throwBy.mass))
+
+        val fades = ParallelAction()
+        parts.forEach { part ->
+            fades.add(Fade(part.color, 0.5, 0f))
+        }
+
+        return Until { ending }
+                .then(fades)
+                .then(Kill(actor))
     }
 
     fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
@@ -65,8 +80,6 @@ class Doll : AbstractRole() {
         return newActor
     }
 
-    override fun tick() {
-    }
 
     override fun end() {
         super.end()

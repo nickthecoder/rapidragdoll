@@ -58,33 +58,6 @@
           "scale": 1
         },
         {
-          "costume": "floor1",
-          "x": 180,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 501,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 818,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
           "costume": "wall1",
           "x": 1605,
           "y": 162,
@@ -168,9 +141,9 @@
           "scale": 1
         },
         {
-          "costume": "pin",
-          "x": 376,
-          "y": 72,
+          "costume": "floor1",
+          "x": 1151,
+          "y": -317,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -178,17 +151,8 @@
         },
         {
           "costume": "floor1",
-          "x": 1144,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 1474,
-          "y": 31,
+          "x": 1477,
+          "y": -314,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -210,6 +174,116 @@
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "chair1",
+          "x": 635,
+          "y": -205,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 381,
+          "y": -275,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "chair1",
+          "x": 262,
+          "y": -210,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall1",
+          "x": 32,
+          "y": -137,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "floor1",
+          "x": 165,
+          "y": -317,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "floor1",
+          "x": 491,
+          "y": -319,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "floor1",
+          "x": 820,
+          "y": -318,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall1",
+          "x": 1605,
+          "y": -137,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "launcher",
+          "x": 545,
+          "y": 118,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "attributes": [
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "200"
+            }
+          ]
+        },
+        {
+          "costume": "chair2",
+          "x": 780,
+          "y": -210,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "chair2",
+          "x": 1471,
+          "y": -195,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 333.99999999999994,
           "scale": 1
         }
       ]
