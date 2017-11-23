@@ -124,7 +124,7 @@
       "right": 52,
       "top": 169,
       "offsetX": 13,
-      "offsetY": 58,
+      "offsetY": 68,
       "direction": 0
     },
     {
@@ -135,7 +135,7 @@
       "right": 82,
       "top": 169,
       "offsetX": 5,
-      "offsetY": 59,
+      "offsetY": 67,
       "direction": 0
     },
     {
@@ -652,7 +652,7 @@
             },
             {
               "name": "offset",
-              "value": "-10.0x-30.0"
+              "value": "-10.0x-16.0"
             },
             {
               "name": "toAngle",
@@ -673,12 +673,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 14,
+                "mask": 12,
                 "box": {
-                  "x": -1.5,
-                  "y": -26,
-                  "width": 12,
-                  "height": 60,
+                  "x": -1,
+                  "y": -15,
+                  "width": 13,
+                  "height": 82,
                   "angle": -5,
                   "roundedEnds": false
                 }
@@ -708,7 +708,7 @@
             },
             {
               "name": "offset",
-              "value": "10.0x-30.0"
+              "value": "10.0x-16.0"
             },
             {
               "name": "toAngle",
@@ -729,12 +729,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 14,
+                "mask": 12,
                 "box": {
-                  "x": 4.5,
-                  "y": -26.5,
-                  "width": 9,
-                  "height": 56,
+                  "x": 5,
+                  "y": -21,
+                  "width": 10,
+                  "height": 67,
                   "angle": 0,
                   "roundedEnds": false
                 }

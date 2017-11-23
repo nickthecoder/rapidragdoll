@@ -1,16 +1,22 @@
 package uk.co.nickthecoder.rapidragdoll
 
+import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractDirector
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.events.ButtonState
 import uk.co.nickthecoder.tickle.events.MouseEvent
+import uk.co.nickthecoder.tickle.events.MouseHandler
+import uk.co.nickthecoder.tickle.stage.StageView
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Play : AbstractDirector() {
+class Play : AbstractDirector(), MouseHandler {
 
     @Attribute
     var maxDolls = 20
 
+    /**
+     * The currently selected launcher.
+     */
     var launcher: Launcher? = null
         set(v) {
             field = v
@@ -21,17 +27,33 @@ class Play : AbstractDirector() {
             }
         }
 
-    var aim: Aim? = null
-
+    /**
+     * A list of all launchers in the scene. Populated when the scene begins by looking for all Actors with Roles
+     * of type Launcher.
+     */
     val launchers = mutableListOf<Launcher>()
 
+    /**
+     * The Aim role, which follow the mouse. This is use to aim the Dolls.
+     * Set when the scene begins.
+     */
+    var aim: Aim? = null
+
+    /**
+     * A list of all Dolls in the scene. When the maximum number of dolls is exceeded, the earliest doll is killed
+     * and removed from the list. A new Doll is added to the list when a Launcher creates a Doll.
+     */
     val dolls = mutableListOf<Doll>()
+
+    lateinit var mainView: StageView
 
     init {
         instance = this
     }
 
     override fun begin() {
+        mainView = Game.instance.scene.findView("main") as StageView
+
         var launcherCount = 0
         Game.instance.scene.findStage("main")?.actors?.forEach { actor ->
             val role = actor.role
@@ -48,17 +70,41 @@ class Play : AbstractDirector() {
         }
     }
 
+    /**
+     * When the left mouse button is pressed, the ask the current Launcher to create a Doll.
+     * When the middle or right button is pressed and dragged, pan the scene.
+     */
     override fun onMouseButton(event: MouseEvent) {
-        if (event.state == ButtonState.PRESSED) {
-            aim?.let {
-                launcher?.launch(it)
+        if (event.button == 0) {
+            if (event.state == ButtonState.PRESSED) {
+                aim?.let {
+                    launcher?.launch(it)
+                }
+            }
+        } else {
+            if (event.state == ButtonState.PRESSED) {
+                panStart.set(mainView.screenToView(event.screenPosition))
+                event.capture()
+            } else if (event.state == ButtonState.RELEASED) {
+                event.release() // End dragging
             }
         }
     }
 
+    var panStart = Vector2d()
+
+    override fun onMouseMove(event: MouseEvent) {
+        mainView.screenToView(event.screenPosition, event.viewPosition)
+        mainView.centerX += panStart.x - event.viewPosition.x
+        mainView.centerY += panStart.y - event.viewPosition.y
+        mainView.screenToView(event.screenPosition, panStart)
+    }
+
+    /**
+     * Called from Launcher whenever a Doll is created.
+     */
     fun launched(doll: Doll) {
         dolls.add(doll)
-        println("Dolls ${dolls.size} vs $maxDolls")
         if (dolls.size > maxDolls) {
             val remove = dolls.removeAt(0)
             remove.actor.die()
@@ -66,6 +112,9 @@ class Play : AbstractDirector() {
     }
 
     companion object {
+        /**
+         * Allows easy access to this Director, set when a Play object is created.
+         */
         lateinit var instance: Play
     }
 

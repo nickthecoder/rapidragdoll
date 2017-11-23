@@ -20,14 +20,14 @@ class Doll : AbstractRole() {
 
     override fun activated() {
 
-        val torso = createPart("torso", 0)
-        val abdomen = createPart("abdomen", 1, torso)
+        val torso = createPart("torso", 0.0)
+        val abdomen = createPart("abdomen", 0.1, torso)
 
-        createPart("head", 1, torso)
-        createPart("arm-left", -1, torso)
-        createPart("arm-right", -1, torso)
-        createPart("leg-left", -1, abdomen)
-        createPart("leg-right", -1, abdomen)
+        createPart("head", 0.1, torso)
+        createPart("arm-left", -0.1, torso)
+        createPart("arm-right", -0.1, torso)
+        createPart("leg-left", -0.1, abdomen)
+        createPart("leg-right", -0.1, abdomen)
 
         // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
         // depending on which body part is thrown.
@@ -36,7 +36,7 @@ class Doll : AbstractRole() {
         partBody.linearVelocity = pixelsToWorld(initialVelocity.mul(totalMass / partBody.mass))
     }
 
-    fun createPart(part: String, zOrder: Int, joinTo: Actor? = null): Actor {
+    fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
         val newActor = actor.createChildOnStage(part)
         val newRole = newActor.role
         if (newRole is DollPart) {
