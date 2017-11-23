@@ -1,15 +1,5 @@
 {
-  "director": "uk.co.nickthecoder.rapidragdoll.Play",
-  "directorAttributes": [
-    {
-      "name": "maxDolls",
-      "value": "20"
-    },
-    {
-      "name": "nextScene",
-      "value": "menu"
-    }
-  ],
+  "director": "uk.co.nickthecoder.tickle.NoDirector",
   "background": "#000000",
   "showMouse": true,
   "layout": "default",
@@ -33,33 +23,21 @@
     ]
   },
   "include": [
-    "glass"
+    
   ],
   "stages": [
     {
       "name": "main",
       "actors": [
-        {
-          "costume": "wall1",
-          "x": 33,
-          "y": 150,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall1",
-          "x": 34,
-          "y": 391,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
+        
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
         {
           "costume": "floor1",
-          "x": 180,
+          "x": 167,
           "y": 30,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -68,126 +46,7 @@
         },
         {
           "costume": "floor1",
-          "x": 501,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 818,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall1",
-          "x": 1605,
-          "y": 162,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall1",
-          "x": 1608,
-          "y": 450,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 152,
-          "y": 373,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": -21,
-          "scale": 1
-        },
-        {
-          "costume": "launcher",
-          "x": 156,
-          "y": 562,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "attributes": [
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            }
-          ]
-        },
-        {
-          "costume": "launcher",
-          "x": 1531,
-          "y": 572,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "attributes": [
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            }
-          ]
-        },
-        {
-          "costume": "floor1",
-          "x": 694,
-          "y": 258,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "pin",
-          "x": 545,
-          "y": 297,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "pin",
-          "x": 376,
-          "y": 72,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 1144,
-          "y": 30,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "floor1",
-          "x": 1474,
+          "x": 496,
           "y": 31,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -195,29 +54,133 @@
           "scale": 1
         },
         {
-          "costume": "wall1",
-          "x": 638,
-          "y": 438,
+          "costume": "floor1",
+          "x": 825,
+          "y": 31,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
         },
         {
-          "costume": "wall1",
-          "x": 982,
-          "y": 380,
+          "costume": "floor1",
+          "x": 1002,
+          "y": 31,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
+        },
+        {
+          "costume": "annie",
+          "x": 205,
+          "y": 762,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 407,
+          "y": 823,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 639,
+          "y": 854,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 250,
+          "y": 1103,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 481,
+          "y": 1062,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 746,
+          "y": 1223,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 890,
+          "y": 801,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 827,
+          "y": 1067,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 943,
+          "y": 1171,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 519,
+          "y": 1376,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "annie",
+          "x": 309,
+          "y": 1335,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
         }
-      ]
-    },
-    {
-      "name": "glass",
-      "actors": [
-        
       ]
     }
   ]

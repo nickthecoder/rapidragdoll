@@ -14,6 +14,6 @@ class SceneComplete : ActionRole() {
     override fun createAction(): Action {
         return Until { complete }
                 .then(MoveBy(actor.position, Vector2d(0.0, -300.0), 2.0, Eases.bounce3))
-                .then { Play.instance.nextScene() }
+                .then { Play.instance.sceneComplete = true }
     }
 }

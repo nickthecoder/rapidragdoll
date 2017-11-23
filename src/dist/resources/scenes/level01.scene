@@ -4,6 +4,10 @@
     {
       "name": "maxDolls",
       "value": "20"
+    },
+    {
+      "name": "nextScene",
+      "value": "menu"
     }
   ],
   "background": "#000000",

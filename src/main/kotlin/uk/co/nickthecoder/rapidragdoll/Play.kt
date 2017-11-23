@@ -15,6 +15,11 @@ class Play : AbstractDirector(), MouseHandler {
     @Attribute
     var maxDolls = 20
 
+    @Attribute
+    var nextScene: String = ""
+
+    var sceneComplete = false
+
     /**
      * The currently selected launcher.
      */
@@ -36,7 +41,7 @@ class Play : AbstractDirector(), MouseHandler {
             println("Objectives remaining = $v")
             field = v
             if (v == 0) {
-                completedScene()
+                glassView.stage.findRole<SceneComplete>()?.complete = true
             }
         }
 
@@ -94,8 +99,12 @@ class Play : AbstractDirector(), MouseHandler {
     override fun onMouseButton(event: MouseEvent) {
         if (event.button == 0) {
             if (event.state == ButtonState.PRESSED) {
-                aim?.let {
-                    launcher?.launch(it)
+                if (sceneComplete) {
+                    nextScene()
+                } else {
+                    aim?.let {
+                        launcher?.launch(it)
+                    }
                 }
             }
         } else {
@@ -128,13 +137,8 @@ class Play : AbstractDirector(), MouseHandler {
         }
     }
 
-    fun completedScene() {
-        println("Scene complete")
-        glassView.stage.findRole<SceneComplete>()?.complete = true
-    }
-
     fun nextScene() {
-        println("Next scene")
+        Game.instance.startScene(nextScene)
     }
 
     companion object {
