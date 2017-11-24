@@ -5,7 +5,7 @@
     "height": 600,
     "resizable": true,
     "initialScene": "menu",
-    "testScene": "test",
+    "testScene": "tutorial/tutorial-5",
     "producer": "uk.co.nickthecoder.tickle.NoProducer",
     "physics": {
       "gravity_x": 0,
@@ -59,6 +59,43 @@
         }
       ],
       "views": [
+        {
+          "name": "glass",
+          "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
+          "stage": "glass",
+          "zOrder": 100,
+          "hAlignment": "LEFT",
+          "leftRightMargin": 0,
+          "vAlignment": "TOP",
+          "topBottomMargin": 0
+        }
+      ]
+    },
+    {
+      "name": "menu",
+      "stages": [
+        {
+          "name": "main",
+          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
+          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
+        },
+        {
+          "name": "glass",
+          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
+          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
+        }
+      ],
+      "views": [
+        {
+          "name": "main",
+          "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
+          "stage": "main",
+          "zOrder": 50,
+          "hAlignment": "LEFT",
+          "leftRightMargin": 0,
+          "vAlignment": "TOP",
+          "topBottomMargin": 0
+        },
         {
           "name": "glass",
           "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
@@ -418,6 +455,28 @@
       "top": 251,
       "offsetX": 0,
       "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "wall-166",
+      "texture": "scenery",
+      "left": 10,
+      "bottom": 499,
+      "right": 61,
+      "top": 333,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "rock",
+      "texture": "scenery",
+      "left": 68,
+      "bottom": 559,
+      "right": 289,
+      "top": 338,
+      "offsetX": 110,
+      "offsetY": 111,
       "direction": 0
     }
   ],
@@ -1027,6 +1086,68 @@
               "value": ""
             }
           ]
+        },
+        {
+          "name": "button",
+          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#4d804dff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            },
+            {
+              "name": "down",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#990000ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "scene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "clickToContinue",
+          "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "small",
+          "events": [
+            
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ],
       "showInSceneEditor": true
@@ -1140,8 +1261,8 @@
       ],
       "body": {
         "bodyType": "DYNAMIC",
-        "linearDamping": 0,
-        "angularDamping": 0,
+        "linearDamping": 0.7,
+        "angularDamping": 0.7,
         "bullet": false,
         "fixedRotation": false,
         "fixtures": [
@@ -1409,40 +1530,6 @@
       }
     },
     {
-      "name": "autoLaucher",
-      "role": "uk.co.nickthecoder.rapidragdoll.AutoLauncher",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "editor",
-          "poses": [
-            "autoLaucher"
-          ]
-        }
-      ],
-      "attributes": [
-        {
-          "name": "period",
-          "value": "2"
-        },
-        {
-          "name": "point",
-          "value": "0.0x0.0"
-        },
-        {
-          "name": "dollName",
-          "value": "annie"
-        },
-        {
-          "name": "speed",
-          "value": "600"
-        }
-      ]
-    },
-    {
       "name": "large",
       "role": "",
       "canRotate": false,
@@ -1461,46 +1548,6 @@
               "outlineColor": "#ffffffff"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "button",
-      "role": "uk.co.nickthecoder.tickle.util.SceneButton",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": false,
-      "events": [
-        {
-          "name": "default",
-          "textStyles": [
-            {
-              "font": "large",
-              "halign": "CENTER",
-              "valign": "BOTTOM",
-              "color": "#4d804dff",
-              "outlineColor": "#ffffffff"
-            }
-          ]
-        },
-        {
-          "name": "down",
-          "textStyles": [
-            {
-              "font": "large",
-              "halign": "CENTER",
-              "valign": "BOTTOM",
-              "color": "#990000ff",
-              "outlineColor": "#ffffffff"
-            }
-          ]
-        }
-      ],
-      "attributes": [
-        {
-          "name": "scene",
-          "value": ""
         }
       ]
     },
@@ -1731,6 +1778,117 @@
           }
         ]
       }
+    },
+    {
+      "name": "autoLauncher",
+      "role": "uk.co.nickthecoder.rapidragdoll.AutoLauncher",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "editor",
+          "poses": [
+            "autoLaucher"
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": "period",
+          "value": "2"
+        },
+        {
+          "name": "point",
+          "value": "0.0x0.0"
+        },
+        {
+          "name": "dollName",
+          "value": "annie"
+        },
+        {
+          "name": "speed",
+          "value": "600"
+        }
+      ]
+    },
+    {
+      "name": "wall-166",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "wall-166"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.6,
+            "density": 1,
+            "restitution": 0.7,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 25,
+              "y": 83,
+              "width": 51,
+              "height": 166,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "rock",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "rock"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "DYNAMIC",
+        "linearDamping": 0.8,
+        "angularDamping": 0.5,
+        "bullet": false,
+        "fixedRotation": false,
+        "fixtures": [
+          {
+            "friction": 0.9,
+            "density": 10,
+            "restitution": 0.6,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "circle": {
+              "x": 0,
+              "y": 0,
+              "radius": 108
+            }
+          }
+        ]
+      }
     }
   ],
   "inputs": [
@@ -1775,6 +1933,15 @@
       "keys": [
         {
           "key": "Esc",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "restart",
+      "keys": [
+        {
+          "key": "F5",
           "state": "PRESSED"
         }
       ]

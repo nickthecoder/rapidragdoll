@@ -12,7 +12,7 @@
   ],
   "background": "#000000",
   "showMouse": true,
-  "layout": "default",
+  "layout": "menu",
   "grid": {
     "enabled": false,
     "xSpacing": 50,
@@ -40,35 +40,7 @@
       "name": "main",
       "actors": [
         {
-          "costume": "autoLaucher",
-          "x": -77,
-          "y": 382,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": "",
-          "attributes": [
-            {
-              "name": "period",
-              "value": "1"
-            },
-            {
-              "name": "point",
-              "value": "95.0x470.0"
-            },
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "400"
-            }
-          ]
-        },
-        {
-          "costume": "autoLaucher",
+          "costume": "autoLauncher",
           "x": 125,
           "y": -62,
           "xAlignment": "LEFT",
@@ -96,7 +68,7 @@
           ]
         },
         {
-          "costume": "autoLaucher",
+          "costume": "autoLauncher",
           "x": 788,
           "y": -63,
           "xAlignment": "LEFT",
@@ -122,17 +94,11 @@
               "value": "400"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "glass",
-      "actors": [
+        },
         {
           "costume": "autoLauncher",
-          "x": -79,
-          "y": 443,
-          "zOrder": 0,
+          "x": -77,
+          "y": 382,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -141,11 +107,11 @@
           "attributes": [
             {
               "name": "period",
-              "value": "2"
+              "value": "1"
             },
             {
               "name": "point",
-              "value": "50.0x503.0"
+              "value": "95.0x470.0"
             },
             {
               "name": "dollName",
@@ -153,31 +119,15 @@
             },
             {
               "name": "speed",
-              "value": "600"
+              "value": "400"
             }
           ]
-        },
-        {
-          "costume": "small",
-          "x": 578,
-          "y": 435,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": "by Nick Robinson"
-        },
-        {
-          "costume": "large",
-          "x": 527,
-          "y": 498,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": "Rapid Rag Doll"
-        },
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
         {
           "costume": "sceneButton",
           "x": 530,
@@ -187,11 +137,11 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Level 1",
+          "text": "Tutorial",
           "attributes": [
             {
               "name": "scene",
-              "value": "level01"
+              "value": "tutorial/tutorial-1"
             }
           ]
         },
@@ -222,6 +172,27 @@
               "value": "http://nickthecoder.co.uk/wiki/view/software/Tickle"
             }
           ]
+        },
+        {
+          "costume": "large",
+          "x": 536,
+          "y": 493,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Rapid Rag Doll"
+        },
+        {
+          "costume": "small",
+          "x": 549,
+          "y": 442,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "by Nick Robinson"
         }
       ]
     }

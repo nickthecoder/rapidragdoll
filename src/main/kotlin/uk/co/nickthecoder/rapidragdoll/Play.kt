@@ -3,10 +3,13 @@ package uk.co.nickthecoder.rapidragdoll
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractDirector
 import uk.co.nickthecoder.tickle.Game
+import uk.co.nickthecoder.tickle.action.Action
+import uk.co.nickthecoder.tickle.action.animation.Eases
+import uk.co.nickthecoder.tickle.action.movement.PanTo
 import uk.co.nickthecoder.tickle.events.*
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.StageView
-import uk.co.nickthecoder.tickle.stage.findRole
+import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
 open class Play : AbstractDirector(), MouseHandler {
@@ -19,6 +22,12 @@ open class Play : AbstractDirector(), MouseHandler {
 
     var sceneComplete = false
 
+    var panAction: Action? = null
+        set(v) {
+            field = v
+            v?.begin()
+        }
+
     /**
      * The currently selected launcher.
      */
@@ -30,6 +39,9 @@ open class Play : AbstractDirector(), MouseHandler {
                     it.deselect()
                 }
             }
+            if (v != null) {
+                panAction = PanTo(mainView, v.panTo, 0.2, Eases.easeOut).then { panAction = null }
+            }
         }
 
     /**
@@ -39,7 +51,8 @@ open class Play : AbstractDirector(), MouseHandler {
         set(v) {
             field = v
             if (v == 0) {
-                glassView.stage.findRole<SceneComplete>()?.complete = true
+                22
+                glassView.stage.findRoles<SceneComplete>().forEach { it.complete = true }
             }
         }
 
@@ -63,6 +76,8 @@ open class Play : AbstractDirector(), MouseHandler {
 
     var escape: Input? = null
 
+    var restart: Input? = null
+
     lateinit var mainView: StageView
 
     lateinit var glassView: StageView
@@ -76,6 +91,7 @@ open class Play : AbstractDirector(), MouseHandler {
         mainView = Game.instance.scene.findView("main") as StageView
         glassView = Game.instance.scene.findView("glass") as StageView
         escape = Resources.instance.inputs.find("escape")
+        restart = Resources.instance.inputs.find("restart")
 
         var launcherCount = 0
         mainView.stage.actors.forEach { actor ->
@@ -93,6 +109,11 @@ open class Play : AbstractDirector(), MouseHandler {
         }
     }
 
+    override fun tick() {
+        super.tick()
+        panAction?.act()
+    }
+
     override fun onKey(event: KeyEvent) {
         if (escape?.matches(event) == true) {
             if (sceneComplete) {
@@ -100,6 +121,9 @@ open class Play : AbstractDirector(), MouseHandler {
             } else {
                 Game.instance.startScene("menu")
             }
+        }
+        if (restart?.matches(event) == true) {
+            Game.instance.startScene(Game.instance.sceneName)
         }
     }
 

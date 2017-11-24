@@ -1,0 +1,170 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Play",
+  "directorAttributes": [
+    {
+      "name": "maxDolls",
+      "value": "5"
+    },
+    {
+      "name": "nextScene",
+      "value": "tutorial/tutorial-4"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "grid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "guides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      
+    ],
+    "y": [
+      
+    ]
+  },
+  "include": [
+    "glass",
+    "aim"
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "launcher",
+          "x": 143,
+          "y": 251,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "537.0x306.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
+        },
+        {
+          "costume": "wall0",
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 0,
+          "y": 284,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood0",
+          "x": -16,
+          "y": 570,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood0",
+          "x": 630,
+          "y": 570,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 419,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 836,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 732,
+          "y": 70,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "small",
+          "x": 256,
+          "y": 511,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Bounce off of the ceiling"
+        },
+        {
+          "costume": "wall0",
+          "x": 364,
+          "y": 52,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        }
+      ]
+    }
+  ]
+}

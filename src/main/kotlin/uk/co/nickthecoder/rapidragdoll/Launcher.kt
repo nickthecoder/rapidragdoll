@@ -57,6 +57,9 @@ abstract class AbstractLauncher : AbstractRole() {
 
 class Launcher : AbstractLauncher() {
 
+    @Attribute(attributeType = AttributeType.ABSOLUTE_POSITION)
+    val panTo = Vector2d()
+
     /**
      * The number of this launcher. Set by Play director when the scene begins.
      */

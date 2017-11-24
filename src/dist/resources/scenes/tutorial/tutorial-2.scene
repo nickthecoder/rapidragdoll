@@ -3,11 +3,11 @@
   "directorAttributes": [
     {
       "name": "maxDolls",
-      "value": "20"
+      "value": "5"
     },
     {
       "name": "nextScene",
-      "value": "menu"
+      "value": "tutorial/tutorial-3"
     }
   ],
   "background": "#000000",
@@ -42,13 +42,18 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 156,
-          "y": 562,
+          "x": 99,
+          "y": 512,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
           "attributes": [
+            {
+              "name": "panTo",
+              "value": "537.0x306.0"
+            },
             {
               "name": "dollName",
               "value": "annie"
@@ -56,22 +61,142 @@
             {
               "name": "speed",
               "value": "600"
-            },
-            {
-              "name": "panTo",
-              "value": "537.0x529.0"
             }
           ]
         },
         {
+          "costume": "wall0",
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 0,
+          "y": 284,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood0",
+          "x": -16,
+          "y": 570,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood0",
+          "x": 630,
+          "y": 570,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 419,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 836,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 970,
+          "y": 73,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "small",
+          "x": 218,
+          "y": 504,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "The first skittle is easy!"
+        },
+        {
+          "costume": "wall0",
+          "x": 600,
+          "y": 49,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 334,
+          "y": 70,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 600,
+          "y": 287,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
           "costume": "launcher",
-          "x": 1457,
-          "y": 690,
+          "x": 704,
+          "y": 348,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
           "attributes": [
+            {
+              "name": "panTo",
+              "value": "849.0x301.0"
+            },
             {
               "name": "dollName",
               "value": "annie"
@@ -79,86 +204,35 @@
             {
               "name": "speed",
               "value": "600"
-            },
-            {
-              "name": "panTo",
-              "value": "1137.0x526.0"
             }
           ]
         },
         {
-          "costume": "pin",
-          "x": 653,
-          "y": 264,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "chair1",
-          "x": 635,
-          "y": -191,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "pin",
-          "x": 383,
-          "y": -264,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "launcher",
-          "x": 545,
-          "y": 118,
+          "costume": "small",
+          "x": 141,
+          "y": 455,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "attributes": [
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "200"
-            },
-            {
-              "name": "panTo",
-              "value": "535.0x12.0"
-            }
-          ]
+          "text": "Press \"2\" to select the other launcher"
         },
         {
-          "costume": "chair2",
-          "x": 780,
-          "y": -197,
+          "costume": "small",
+          "x": 1071,
+          "y": 465,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scale": 1,
+          "text": "Press \"1\" to return\nto the first launcher"
         },
         {
-          "costume": "chair2",
-          "x": 1566,
-          "y": -197,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 333.99999999999994,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": -51,
-          "y": 812,
+          "costume": "grass0",
+          "x": 1230,
+          "y": 0,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -166,9 +240,19 @@
           "scale": 1
         },
         {
-          "costume": "wood0",
-          "x": 590,
-          "y": 812,
+          "costume": "wall0",
+          "x": 1425,
+          "y": 47,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1425,
+          "y": 286,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -177,158 +261,9 @@
         },
         {
           "costume": "wood0",
-          "x": 1098,
-          "y": 812,
+          "x": 1238,
+          "y": 570,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": 529,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": 243.19999999999993,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": -42,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": -330,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": -44,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 240,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 526,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 2,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 414,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 835,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 1251,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 387,
-          "y": 244,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 884.5504000000003,
-          "y": 245.34719999999993,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood-thin-600",
-          "x": 361,
-          "y": 209,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,

@@ -3,11 +3,11 @@
   "directorAttributes": [
     {
       "name": "maxDolls",
-      "value": "20"
+      "value": "3"
     },
     {
       "name": "nextScene",
-      "value": "menu"
+      "value": "tutorial/tutorial-6"
     }
   ],
   "background": "#000000",
@@ -42,63 +42,163 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 156,
-          "y": 562,
+          "x": 51,
+          "y": 376,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
           "attributes": [
             {
+              "name": "panTo",
+              "value": "438.0x315.0"
+            },
+            {
               "name": "dollName",
               "value": "annie"
             },
             {
               "name": "speed",
-              "value": "600"
-            },
-            {
-              "name": "panTo",
-              "value": "537.0x529.0"
+              "value": "500"
             }
           ]
         },
         {
-          "costume": "launcher",
-          "x": 1457,
-          "y": 690,
+          "costume": "wall0",
+          "x": -97,
+          "y": 13,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
-          "attributes": [
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            },
-            {
-              "name": "panTo",
-              "value": "1137.0x526.0"
-            }
-          ]
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": -98,
+          "y": 297,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood0",
+          "x": -112,
+          "y": 577,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood0",
+          "x": 541,
+          "y": 577,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 87,
+          "y": 10,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 482,
+          "y": 13,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 355,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": 899,
+          "y": -24,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
         },
         {
           "costume": "pin",
-          "x": 653,
-          "y": 264,
+          "x": 903,
+          "y": 41,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
         },
         {
-          "costume": "chair1",
-          "x": 635,
-          "y": -191,
+          "costume": "small",
+          "x": 160,
+          "y": 527,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "That's a heavy rock."
+        },
+        {
+          "costume": "wall0",
+          "x": 1125,
+          "y": 47,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1125,
+          "y": 286,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "small",
+          "x": 66,
+          "y": 480,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "You'll need to throw lots of dolls !!!"
+        },
+        {
+          "costume": "rock",
+          "x": 423,
+          "y": 169,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood0",
+          "x": 471,
+          "y": 289,
+          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -106,233 +206,51 @@
         },
         {
           "costume": "pin",
-          "x": 383,
-          "y": -264,
+          "x": 690,
+          "y": 381,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
         },
         {
-          "costume": "launcher",
-          "x": 545,
-          "y": 118,
+          "costume": "pin",
+          "x": 786,
+          "y": 382,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 883,
+          "y": 379,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "grass0",
+          "x": -98,
+          "y": 11,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "small",
+          "x": -28,
+          "y": 432,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "attributes": [
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "200"
-            },
-            {
-              "name": "panTo",
-              "value": "535.0x12.0"
-            }
-          ]
-        },
-        {
-          "costume": "chair2",
-          "x": 780,
-          "y": -197,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "chair2",
-          "x": 1566,
-          "y": -197,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 333.99999999999994,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": -51,
-          "y": 812,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 590,
-          "y": 812,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 1098,
-          "y": 812,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": 529,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": 243.19999999999993,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": -42,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1669,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": -330,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": -44,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 240,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 526,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 2,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 414,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 835,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 1251,
-          "y": -328,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 387,
-          "y": 244,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 884.5504000000003,
-          "y": 245.34719999999993,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood-thin-600",
-          "x": 361,
-          "y": 209,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "text": "Not too fast though, they may vanish before hitting."
         }
       ]
     }

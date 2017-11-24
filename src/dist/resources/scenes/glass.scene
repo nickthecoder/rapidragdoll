@@ -32,12 +32,42 @@
         {
           "costume": "sceneComplete",
           "x": 528,
-          "y": 645,
+          "y": 610,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Scene Complete!"
+          "text": "Well Done !",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "costume": "clickToContinue",
+          "x": 719,
+          "y": -52,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Click to continue",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-274.0x329.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ]
     }
