@@ -95,6 +95,10 @@
     {
       "name": "scenery",
       "file": "images/scenery.png"
+    },
+    {
+      "name": "foxie",
+      "file": "images/foxie.png"
     }
   ],
   "fonts": [
@@ -456,6 +460,83 @@
       "offsetX": 110,
       "offsetY": 111,
       "direction": 0
+    },
+    {
+      "name": "foxie-arm-left",
+      "texture": "foxie",
+      "left": 7,
+      "bottom": 76,
+      "right": 45,
+      "top": 10,
+      "offsetX": 34,
+      "offsetY": 60,
+      "direction": 0
+    },
+    {
+      "name": "foxie-arm-right",
+      "texture": "foxie",
+      "left": 103,
+      "bottom": 61,
+      "right": 163,
+      "top": 11,
+      "offsetX": 4,
+      "offsetY": 43,
+      "direction": 0
+    },
+    {
+      "name": "foxie-head",
+      "texture": "foxie",
+      "left": 47,
+      "bottom": 44,
+      "right": 100,
+      "top": 5,
+      "offsetX": 25,
+      "offsetY": 7,
+      "direction": 0
+    },
+    {
+      "name": "foxie-torso",
+      "texture": "foxie",
+      "left": 50,
+      "bottom": 106,
+      "right": 100,
+      "top": 44,
+      "offsetX": 25,
+      "offsetY": 57,
+      "direction": 0
+    },
+    {
+      "name": "foxie-abdomen",
+      "texture": "foxie",
+      "left": 50,
+      "bottom": 150,
+      "right": 110,
+      "top": 106,
+      "offsetX": 24,
+      "offsetY": 34,
+      "direction": 0
+    },
+    {
+      "name": "foxie-leg-left",
+      "texture": "foxie",
+      "left": 0,
+      "bottom": 190,
+      "right": 45,
+      "top": 75,
+      "offsetX": 31,
+      "offsetY": 97,
+      "direction": 0
+    },
+    {
+      "name": "foxie-leg-right",
+      "texture": "foxie",
+      "left": 115,
+      "bottom": 190,
+      "right": 159,
+      "top": 76,
+      "offsetX": 14,
+      "offsetY": 96,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -516,6 +597,64 @@
               "name": "leg-right",
               "costumes": [
                 "annie-leg-right"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "foxie",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "foxie-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "foxie-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "foxie-torso"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "foxie-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "foxie-arm-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "foxie-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "foxie-leg-right"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "foxie-abdomen"
               ]
             }
           ]
@@ -1165,6 +1304,400 @@
               "value": "30"
             }
           ]
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "foxie",
+      "costumes": [
+        {
+          "name": "foxie-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "foxie-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "circle": {
+                  "x": -1,
+                  "y": 11,
+                  "radius": 17
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "foxie-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "foxie-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "20.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "180.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": 7,
+                  "y": -12,
+                  "width": 8,
+                  "height": 39,
+                  "angle": 21,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": 33,
+                  "y": -34,
+                  "width": 42,
+                  "height": 8,
+                  "angle": -20,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "foxie-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "foxie-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-180.0"
+            },
+            {
+              "name": "offset",
+              "value": "-24.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": -8,
+                  "y": -29.5,
+                  "width": 9,
+                  "height": 69,
+                  "angle": -23,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "foxie-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "foxie-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "box": {
+                  "x": 2,
+                  "y": -23,
+                  "width": 32,
+                  "height": 40,
+                  "angle": 10.999999999999998,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "foxie-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "foxie-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "-6.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": -15.5,
+                  "y": -46.5,
+                  "width": 16,
+                  "height": 104,
+                  "angle": -14.999999999999998,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "foxie-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "foxie-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "12.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": 17.5,
+                  "y": -50.5,
+                  "width": 17,
+                  "height": 105,
+                  "angle": 18,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "foxie-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "foxie-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "10.0x-50.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 13,
+                "box": {
+                  "x": 4,
+                  "y": -16.5,
+                  "width": 48,
+                  "height": 25,
+                  "angle": 12,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
         }
       ],
       "showInSceneEditor": true

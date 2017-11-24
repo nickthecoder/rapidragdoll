@@ -2,9 +2,18 @@
 Bugs
 ----
 
+Chair looks horrible
+
+Stray pixels on Annie
+Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt when bent.
+Arms arm't correctly constrained?
 
 Next
 ----
+
+Scenery
+	Wallpaper
+	Fence post
 
 Add simple movable objects
 	table, lamp stands
@@ -29,14 +38,14 @@ Finish menu scene
 		Sit Sedate
 
 Level sets scene
-	Show a box for each scene, with the completion time.
+	Show a box/circle for each scene, with the completion time.
 	Can only press a scene button if the previous has been finished (or is the first).
 	(Use Preferences)
 
 Later
 -----
 
-Create more sedate scenes, where the aim is to place
+Create more sedate scenes, where the aim is to place dolls on chairs???
 
 Much Later
 ----------

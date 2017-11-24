@@ -51,7 +51,7 @@
           "attributes": [
             {
               "name": "dollName",
-              "value": "annie"
+              "value": "foxie"
             },
             {
               "name": "speed",
@@ -88,8 +88,8 @@
         },
         {
           "costume": "pin",
-          "x": 653,
-          "y": 264,
+          "x": 828,
+          "y": 265,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -333,7 +333,23 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
+        },
+        {
+          "costume": "foxie",
+          "x": 564,
+          "y": 550,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]
