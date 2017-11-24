@@ -5,7 +5,7 @@
     "height": 600,
     "resizable": true,
     "initialScene": "menu",
-    "testScene": "menu",
+    "testScene": "test",
     "producer": "uk.co.nickthecoder.tickle.NoProducer",
     "physics": {
       "gravity_x": 0,
@@ -34,21 +34,6 @@
           "name": "main",
           "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
           "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
-        },
-        {
-          "name": "glass",
-          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
-          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint",
-          "constraintAttributes": [
-            {
-              "name": "xSpacing",
-              "value": "40"
-            },
-            {
-              "name": "ySpacing",
-              "value": "40"
-            }
-          ]
         }
       ],
       "views": [
@@ -61,7 +46,19 @@
           "leftRightMargin": 0,
           "vAlignment": "TOP",
           "topBottomMargin": 0
-        },
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "stages": [
+        {
+          "name": "glass",
+          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
+          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
+        }
+      ],
+      "views": [
         {
           "name": "glass",
           "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
@@ -182,28 +179,6 @@
       "direction": 0
     },
     {
-      "name": "floor1",
-      "texture": "scenery",
-      "left": 105,
-      "bottom": 227,
-      "right": 441,
-      "top": 166,
-      "offsetX": 168,
-      "offsetY": 30,
-      "direction": 0
-    },
-    {
-      "name": "wall1",
-      "texture": "scenery",
-      "left": 30,
-      "bottom": 467,
-      "right": 100,
-      "top": 165,
-      "offsetX": 35,
-      "offsetY": 151,
-      "direction": 0
-    },
-    {
       "name": "launcher",
       "texture": "scenery",
       "left": 31,
@@ -305,10 +280,10 @@
     {
       "name": "aim",
       "texture": "scenery",
-      "left": 458,
-      "bottom": 267,
-      "right": 524,
-      "top": 201,
+      "left": 435,
+      "bottom": 246,
+      "right": 501,
+      "top": 180,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -377,6 +352,72 @@
       "top": 298,
       "offsetX": 16,
       "offsetY": 34,
+      "direction": 0
+    },
+    {
+      "name": "grass0",
+      "texture": "scenery",
+      "left": 10,
+      "bottom": 247,
+      "right": 433,
+      "top": 158,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "wall0",
+      "texture": "scenery",
+      "left": 10,
+      "bottom": 622,
+      "right": 61,
+      "top": 333,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "wood0",
+      "texture": "scenery",
+      "left": 8,
+      "bottom": 332,
+      "right": 663,
+      "top": 251,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "wood-thin-650",
+      "texture": "scenery",
+      "left": 8,
+      "bottom": 291,
+      "right": 608,
+      "top": 251,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "wood-thin-200",
+      "texture": "scenery",
+      "left": 8,
+      "bottom": 291,
+      "right": 208,
+      "top": 251,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "wood-thin-400",
+      "texture": "scenery",
+      "left": 8,
+      "bottom": 291,
+      "right": 408,
+      "top": 251,
+      "offsetX": 0,
+      "offsetY": 0,
       "direction": 0
     }
   ],
@@ -532,8 +573,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -588,8 +629,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -770,8 +811,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": true,
             "fixedRotation": false,
             "fixtures": [
@@ -826,8 +867,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": true,
             "fixedRotation": false,
             "fixtures": [
@@ -993,82 +1034,6 @@
   ],
   "costumes": [
     {
-      "name": "floor1",
-      "role": "",
-      "canRotate": true,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "floor1"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.6,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 1,
-              "y": -0.5,
-              "width": 334,
-              "height": 60,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "wall1",
-      "role": "",
-      "canRotate": true,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wall1"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.6,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 0.5,
-              "y": -0.5,
-              "width": 66,
-              "height": 303,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
       "name": "launcher",
       "role": "uk.co.nickthecoder.rapidragdoll.Launcher",
       "canRotate": false,
@@ -1121,7 +1086,7 @@
         {
           "name": "deselect3",
           "poses": [
-            "launcher-selected-3"
+            "launcher-deselected-3"
           ]
         },
         {
@@ -1538,6 +1503,234 @@
           "value": ""
         }
       ]
+    },
+    {
+      "name": "grass0",
+      "role": "",
+      "canRotate": true,
+      "zOrder": 300,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "grass0"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.8,
+            "density": 1,
+            "restitution": 0.4,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 210,
+              "y": 24,
+              "width": 422,
+              "height": 48,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "wall0",
+      "role": "",
+      "canRotate": true,
+      "zOrder": 320,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "wall0"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.6,
+            "density": 1,
+            "restitution": 0.7,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 25.5,
+              "y": 145,
+              "width": 51,
+              "height": 287,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "wood0",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 340,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "wood0"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.7,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 327,
+              "y": 40.5,
+              "width": 654,
+              "height": 81,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "wood-thin-600",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "wood-thin-650"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.7,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 300,
+              "y": 20,
+              "width": 600,
+              "height": 40,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "wood-thin-200",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "wood-thin-200"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.7,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 100,
+              "y": 20,
+              "width": 200,
+              "height": 40,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "wood-thin-400",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "wood-thin-400"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.7,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 200,
+              "y": 20,
+              "width": 400,
+              "height": 40,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
     }
   ],
   "inputs": [

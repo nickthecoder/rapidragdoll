@@ -7,7 +7,7 @@ Next
 ----
 
 Add simple movable objects
-	Chair, table, lamp stands
+	table, lamp stands
 
 Limit the Laucher to a fixed number of dolls
 	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
@@ -21,10 +21,11 @@ Collectables
 	Increase/Descrease speed of the current Launcher
 	Increase/Descrease max dolls
 
-Create intro screen
-	Into each doll
+Finish menu scene
 	Button for each set of scenes
 		Fire Frenzy
+		Limited Launchers
+		Puzzle Picnic
 		Sit Sedate
 
 Level sets scene

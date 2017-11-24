@@ -78,7 +78,7 @@ open class Play : AbstractDirector(), MouseHandler {
         escape = Resources.instance.inputs.find("escape")
 
         var launcherCount = 0
-        Game.instance.scene.findStage("main")?.actors?.forEach { actor ->
+        mainView.stage.actors.forEach { actor ->
             val role = actor.role
             if (role is Launcher) {
                 launcherCount++

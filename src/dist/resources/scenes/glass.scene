@@ -2,7 +2,7 @@
   "director": "uk.co.nickthecoder.tickle.NoDirector",
   "background": "#000000",
   "showMouse": true,
-  "layout": "default",
+  "layout": "glass",
   "grid": {
     "enabled": false,
     "xSpacing": 50,
@@ -26,21 +26,6 @@
     
   ],
   "stages": [
-    {
-      "name": "main",
-      "actors": [
-        {
-          "costume": "aim",
-          "x": 487,
-          "y": 446,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        }
-      ]
-    },
     {
       "name": "glass",
       "actors": [
