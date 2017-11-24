@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/tutorial-6"
+      "value": "tutorial/tutorial-7"
     }
   ],
   "background": "#000000",
@@ -144,7 +144,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 160,
           "y": 527,
           "zOrder": 0,
@@ -152,7 +152,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "That's a heavy rock."
+          "text": "That's a heavy rock.",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "360.0x225.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "wall0",
@@ -175,7 +185,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 66,
           "y": 480,
           "zOrder": 0,
@@ -183,7 +193,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "You'll need to throw lots of dolls !!!"
+          "text": "You'll need to throw lots of dolls !!!",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "224.0x213.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "rock",
@@ -242,7 +262,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": -28,
           "y": 432,
           "zOrder": 0,
@@ -250,8 +270,24 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Not too fast though, they may vanish before hitting."
+          "text": "Not too fast though, they may vanish before hitting.",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-120.0x284.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

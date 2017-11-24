@@ -144,7 +144,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 128,
           "y": 514,
           "zOrder": 0,
@@ -152,7 +152,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "If you get stuck, press \"F5\" to restart."
+          "text": "If you get stuck, press \"F5\" to restart.",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-40.0x248.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "wall0",
@@ -175,7 +185,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 166,
           "y": 457,
           "zOrder": 0,
@@ -183,7 +193,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Do you remember the previous lessons ?"
+          "text": "Do you remember the previous lessons ?",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "221.0x293.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "wall-166",
@@ -219,7 +239,7 @@
           ]
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 251,
           "y": 406,
           "zOrder": 0,
@@ -227,8 +247,24 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Hint : Approach the problem from a different direction :-)"
+          "text": "Hint : Approach the problem from a different direction :-)",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "388.0x263.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

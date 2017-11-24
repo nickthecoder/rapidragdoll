@@ -68,6 +68,26 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "costume": "timeIsUp",
+          "x": -170,
+          "y": 324,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Time's up",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "670.0x-8.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ]
     }

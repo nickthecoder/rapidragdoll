@@ -144,7 +144,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 218,
           "y": 504,
           "zOrder": 0,
@@ -152,7 +152,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "The first skittle is easy!"
+          "text": "The first skittle is easy!",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "215.0x175.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "wall0",
@@ -208,7 +218,7 @@
           ]
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 141,
           "y": 455,
           "zOrder": 0,
@@ -216,10 +226,20 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Press \"2\" to select the other launcher"
+          "text": "Press \"2\" to select the other launcher",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-853.0x-17.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 1071,
           "y": 465,
           "zOrder": 0,
@@ -227,7 +247,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Press \"1\" to return\nto the first launcher"
+          "text": "Press \"1\" to return\nto the first launcher",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "640.0x53.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "grass0",
@@ -269,6 +299,12 @@
           "direction": 0,
           "scale": 1
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

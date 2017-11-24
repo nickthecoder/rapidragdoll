@@ -12,7 +12,7 @@
   ],
   "background": "#000000",
   "showMouse": true,
-  "layout": "menu",
+  "layout": "default",
   "grid": {
     "enabled": false,
     "xSpacing": 50,

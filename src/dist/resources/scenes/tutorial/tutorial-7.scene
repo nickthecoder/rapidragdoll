@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/tutorial-4"
+      "value": "menu"
     }
   ],
   "background": "#000000",
@@ -42,8 +42,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 143,
-          "y": 251,
+          "x": 592,
+          "y": 352,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -52,7 +52,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "537.0x306.0"
+              "value": "485.0x305.0"
             },
             {
               "name": "dollName",
@@ -60,7 +60,7 @@
             },
             {
               "name": "speed",
-              "value": "600"
+              "value": "350"
             }
           ]
         },
@@ -136,8 +136,8 @@
         },
         {
           "costume": "pin",
-          "x": 732,
-          "y": 70,
+          "x": 276,
+          "y": 79,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -145,18 +145,18 @@
         },
         {
           "costume": "information",
-          "x": 256,
-          "y": 511,
+          "x": 302,
+          "y": 447,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Bounce off of the ceiling",
+          "text": "You only have 10 seconds to finish the level !",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "88.0x164.0"
+              "value": "-99.0x272.0"
             },
             {
               "name": "seconds",
@@ -166,20 +166,121 @@
         },
         {
           "costume": "wall0",
-          "x": 364,
-          "y": 52,
+          "x": 1207,
+          "y": 44,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1206,
+          "y": 285,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall-166",
+          "x": 558,
+          "y": 47,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 931,
+          "y": 381,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood-thin-200",
+          "x": 50,
+          "y": 340,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 224,
+          "y": 393,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 1015,
+          "y": 72,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood-thin-400",
+          "x": 858,
+          "y": 330,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "information",
+          "x": 419,
+          "y": 507,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "This is the last tutorial !",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "214.0x216.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "countdown",
+          "x": 15,
+          "y": 602,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "0:00",
+          "attributes": [
+            {
+              "name": "seconds",
+              "value": "10"
+            }
+          ]
+        }
       ]
     }
   ]

@@ -164,7 +164,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 256,
           "y": 511,
           "zOrder": 0,
@@ -172,10 +172,20 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Knock over the skittle"
+          "text": "Knock over the skittle",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-132.0x237.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 351,
           "y": 471,
           "zOrder": 0,
@@ -183,10 +193,20 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Aim with the mouse"
+          "text": "Aim with the mouse",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "11.0x245.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 434,
           "y": 431,
           "zOrder": 0,
@@ -194,8 +214,24 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Click to throw a rag doll"
+          "text": "Click to throw a rag doll",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "153.0x234.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

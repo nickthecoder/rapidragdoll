@@ -9,19 +9,39 @@ import uk.co.nickthecoder.tickle.action.movement.PanTo
 import uk.co.nickthecoder.tickle.events.*
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.StageView
+import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
 open class Play : AbstractDirector(), MouseHandler {
 
+    /**
+     * Maximum number of dolls - The oldest dolls are killed when this number is exceeded.
+     */
     @Attribute
     var maxDolls = 20
 
+    /**
+     * The next scene when this one has been successfully completed.
+     * If the scene is the last in the set, then the next scene will be the menu.
+     */
     @Attribute
     var nextScene: String = ""
 
+    /**
+     * Set to true by SceneComplete role when it's animation is finished.
+     * That animation is started from within [objectivesComplete].
+     */
     var sceneComplete = false
 
+    /**
+     * Set to true when the time is up, or you have failed in other ways.
+     */
+    var lost = false
+
+    /**
+     * Pans the main view when a launcher is selected.
+     */
     var panAction: Action? = null
         set(v) {
             field = v
@@ -50,9 +70,8 @@ open class Play : AbstractDirector(), MouseHandler {
     var objectives = 0
         set(v) {
             field = v
-            if (v == 0) {
-                22
-                glassView.stage.findRoles<SceneComplete>().forEach { it.complete = true }
+            if (!lost && v == 0) {
+                objectivesComplete()
             }
         }
 
@@ -74,8 +93,14 @@ open class Play : AbstractDirector(), MouseHandler {
      */
     val dolls = mutableListOf<Doll>()
 
+    /**
+     * The escape key returns to the menu.
+     */
     var escape: Input? = null
 
+    /**
+     * The F5 key restarts the scene.
+     */
     var restart: Input? = null
 
     lateinit var mainView: StageView
@@ -114,6 +139,8 @@ open class Play : AbstractDirector(), MouseHandler {
         panAction?.act()
     }
 
+    var started = false
+
     override fun onKey(event: KeyEvent) {
         if (escape?.matches(event) == true) {
             if (sceneComplete) {
@@ -139,6 +166,11 @@ open class Play : AbstractDirector(), MouseHandler {
                     nextScene()
                 } else {
                     aim?.let {
+                        if (!started) {
+                            glassView.stage.findRole<Countdown>()?.go()
+                            mainView.stage.findRoles<Information>().forEach { it.go() }
+                            started = true
+                        }
                         launcher?.launch(it.actor.position)
                     }
                 }
@@ -169,6 +201,23 @@ open class Play : AbstractDirector(), MouseHandler {
         dolls.add(doll)
         if (dolls.size > maxDolls) {
             dolls.removeAt(0).ending = true
+        }
+    }
+
+    fun objectivesComplete() {
+        glassView.stage.findRoles<SceneComplete>().forEach { it.go() }
+        glassView.stage.findRoles<Countdown>().forEach { it.stop() }
+    }
+
+    /**
+     * Called from Countdown, when the countdown reaches zero.
+     */
+    fun timeIsUp() {
+        if (!sceneComplete) {
+            lost = true
+            glassView.stage.findRoles<TimeIsUp>().forEach {
+                it.go()
+            }
         }
     }
 

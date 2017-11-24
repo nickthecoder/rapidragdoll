@@ -5,7 +5,7 @@
     "height": 600,
     "resizable": true,
     "initialScene": "menu",
-    "testScene": "tutorial/tutorial-5",
+    "testScene": "test",
     "producer": "uk.co.nickthecoder.tickle.NoProducer",
     "physics": {
       "gravity_x": 0,
@@ -34,6 +34,11 @@
           "name": "main",
           "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
           "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
+        },
+        {
+          "name": "glass",
+          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
+          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
         }
       ],
       "views": [
@@ -42,6 +47,16 @@
           "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
           "stage": "main",
           "zOrder": 50,
+          "hAlignment": "LEFT",
+          "leftRightMargin": 0,
+          "vAlignment": "TOP",
+          "topBottomMargin": 0
+        },
+        {
+          "name": "glass",
+          "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
+          "stage": "glass",
+          "zOrder": 100,
           "hAlignment": "LEFT",
           "leftRightMargin": 0,
           "vAlignment": "TOP",
@@ -59,43 +74,6 @@
         }
       ],
       "views": [
-        {
-          "name": "glass",
-          "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
-          "stage": "glass",
-          "zOrder": 100,
-          "hAlignment": "LEFT",
-          "leftRightMargin": 0,
-          "vAlignment": "TOP",
-          "topBottomMargin": 0
-        }
-      ]
-    },
-    {
-      "name": "menu",
-      "stages": [
-        {
-          "name": "main",
-          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
-          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
-        },
-        {
-          "name": "glass",
-          "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
-          "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
-        }
-      ],
-      "views": [
-        {
-          "name": "main",
-          "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
-          "stage": "main",
-          "zOrder": 50,
-          "hAlignment": "LEFT",
-          "leftRightMargin": 0,
-          "vAlignment": "TOP",
-          "topBottomMargin": 0
-        },
         {
           "name": "glass",
           "view": "uk.co.nickthecoder.tickle.stage.ZOrderStageView",
@@ -1007,6 +985,16 @@
                 }
               ]
             }
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
           ]
         },
         {
@@ -1146,6 +1134,35 @@
             {
               "name": "seconds",
               "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "countdown",
+          "role": "uk.co.nickthecoder.rapidragdoll.Countdown",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "large",
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "LEFT",
+                  "valign": "TOP",
+                  "color": "#7715b5ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "seconds",
+              "value": "30"
             }
           ]
         }
@@ -1889,6 +1906,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "timeIsUp",
+      "role": "uk.co.nickthecoder.rapidragdoll.TimeIsUp",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "inheritsEventsFrom": "large",
+      "events": [
+        
+      ],
+      "attributes": [
+        {
+          "name": "moveBy",
+          "value": "0.0x-300.0"
+        },
+        {
+          "name": "seconds",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "name": "information",
+      "role": "uk.co.nickthecoder.rapidragdoll.Information",
+      "canRotate": true,
+      "zOrder": 100,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "inheritsEventsFrom": "small",
+      "events": [
+        
+      ],
+      "attributes": [
+        {
+          "name": "moveBy",
+          "value": "0.0x-300.0"
+        },
+        {
+          "name": "seconds",
+          "value": "2"
+        }
+      ]
     }
   ],
   "inputs": [

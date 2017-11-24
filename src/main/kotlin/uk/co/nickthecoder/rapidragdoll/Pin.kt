@@ -8,7 +8,7 @@ import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.animation.Fade
 
 /**
- * When the pin is knocked over, then once of the scene's objectives have been met.
+ * When the pin is knocked over, then one of the scene's objectives have been met.
  */
 class Pin : ActionRole() {
 

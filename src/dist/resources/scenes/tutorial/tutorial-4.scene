@@ -144,7 +144,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 208,
           "y": 508,
           "zOrder": 0,
@@ -152,7 +152,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Where's the skittle?"
+          "text": "Where's the skittle?",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-610.0x16.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "wall0",
@@ -175,7 +185,7 @@
           "scale": 1
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 279,
           "y": 456,
           "zOrder": 0,
@@ -183,10 +193,20 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Hold down the right mouse button,"
+          "text": "Hold down the right mouse button,",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "154.0x238.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 361,
           "y": 401,
           "zOrder": 0,
@@ -194,10 +214,20 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "and drag to scroll to the right ->"
+          "text": "and drag to scroll to the right ->",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "482.0x291.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
-          "costume": "small",
+          "costume": "information",
           "x": 1064,
           "y": 225,
           "zOrder": 0,
@@ -205,7 +235,17 @@
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Here it is !"
+          "text": "Here it is !",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         },
         {
           "costume": "wall-166",
@@ -236,6 +276,12 @@
           "direction": 0,
           "scale": 1
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]
