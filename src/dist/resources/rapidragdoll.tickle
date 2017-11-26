@@ -667,6 +667,28 @@
       "offsetX": 12,
       "offsetY": 30,
       "direction": 0
+    },
+    {
+      "name": "levelStatus",
+      "texture": "ui",
+      "left": 17,
+      "bottom": 277,
+      "right": 59,
+      "top": 235,
+      "offsetX": 21,
+      "offsetY": 21,
+      "direction": 0
+    },
+    {
+      "name": "levelRoute-1",
+      "texture": "ui",
+      "left": 59,
+      "bottom": 273,
+      "right": 189,
+      "top": 252,
+      "offsetX": 65,
+      "offsetY": 10,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -1258,240 +1280,6 @@
         }
       ],
       "showInSceneEditor": false
-    },
-    {
-      "name": "misc",
-      "costumes": [
-        {
-          "name": "quitButton",
-          "role": "uk.co.nickthecoder.tickle.util.QuitButton",
-          "canRotate": false,
-          "zOrder": 100,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "inheritsEventsFrom": "button",
-          "events": [
-            
-          ]
-        },
-        {
-          "name": "sceneButton",
-          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
-          "canRotate": false,
-          "zOrder": 100,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "inheritsEventsFrom": "button",
-          "events": [
-            
-          ],
-          "attributes": [
-            {
-              "name": "scene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "name": "sceneComplete",
-          "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
-          "canRotate": false,
-          "zOrder": 0,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "events": [
-            {
-              "name": "default",
-              "textStyles": [
-                {
-                  "font": "large",
-                  "halign": "CENTER",
-                  "valign": "BOTTOM",
-                  "color": "#7714b5ff",
-                  "outlineColor": "#ffffffff"
-                }
-              ]
-            }
-          ],
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "0.0x-300.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "name": "small",
-          "role": "",
-          "canRotate": true,
-          "zOrder": 100,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "events": [
-            {
-              "name": "default",
-              "textStyles": [
-                {
-                  "font": "small",
-                  "halign": "LEFT",
-                  "valign": "BOTTOM",
-                  "color": "#7714b5ff",
-                  "outlineColor": "#ffffffff"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "title",
-          "role": "",
-          "canRotate": false,
-          "zOrder": 0,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "events": [
-            {
-              "name": "default"
-            }
-          ]
-        },
-        {
-          "name": "urlButton",
-          "role": "uk.co.nickthecoder.tickle.util.URLButton",
-          "canRotate": false,
-          "zOrder": 100,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "events": [
-            {
-              "name": "default",
-              "textStyles": [
-                {
-                  "font": "small",
-                  "halign": "RIGHT",
-                  "valign": "BOTTOM",
-                  "color": "#330033ff",
-                  "outlineColor": "#ffffffff"
-                }
-              ]
-            },
-            {
-              "name": "down",
-              "textStyles": [
-                {
-                  "font": "small",
-                  "halign": "RIGHT",
-                  "valign": "BOTTOM",
-                  "color": "#990000ff",
-                  "outlineColor": "#ffffffff"
-                }
-              ]
-            }
-          ],
-          "attributes": [
-            {
-              "name": "url",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "name": "button",
-          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
-          "canRotate": false,
-          "zOrder": 0,
-          "initialEvent": "default",
-          "showInSceneEditor": false,
-          "events": [
-            {
-              "name": "default",
-              "textStyles": [
-                {
-                  "font": "large",
-                  "halign": "CENTER",
-                  "valign": "BOTTOM",
-                  "color": "#4d804dff",
-                  "outlineColor": "#ffffffff"
-                }
-              ]
-            },
-            {
-              "name": "down",
-              "textStyles": [
-                {
-                  "font": "large",
-                  "halign": "CENTER",
-                  "valign": "BOTTOM",
-                  "color": "#990000ff",
-                  "outlineColor": "#ffffffff"
-                }
-              ]
-            }
-          ],
-          "attributes": [
-            {
-              "name": "scene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "name": "clickToContinue",
-          "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
-          "canRotate": false,
-          "zOrder": 0,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "inheritsEventsFrom": "small",
-          "events": [
-            
-          ],
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "0.0x-300.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "name": "countdown",
-          "role": "uk.co.nickthecoder.rapidragdoll.Countdown",
-          "canRotate": false,
-          "zOrder": 100,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "inheritsEventsFrom": "large",
-          "events": [
-            {
-              "name": "default",
-              "textStyles": [
-                {
-                  "font": "large",
-                  "halign": "LEFT",
-                  "valign": "TOP",
-                  "color": "#7715b5ff",
-                  "outlineColor": "#ffffffff"
-                }
-              ]
-            }
-          ],
-          "attributes": [
-            {
-              "name": "seconds",
-              "value": "30"
-            }
-          ]
-        }
-      ],
-      "showInSceneEditor": true
     },
     {
       "name": "foxie",
@@ -2291,1141 +2079,1553 @@
         }
       ],
       "showInSceneEditor": true
+    },
+    {
+      "name": "ui",
+      "costumes": [
+        {
+          "name": "quitButton",
+          "role": "uk.co.nickthecoder.tickle.util.QuitButton",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "button",
+          "events": [
+            
+          ]
+        },
+        {
+          "name": "sceneButton",
+          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "button",
+          "events": [
+            
+          ],
+          "attributes": [
+            {
+              "name": "scene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "sceneComplete",
+          "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#7714b5ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "small",
+          "role": "",
+          "canRotate": true,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "small",
+                  "halign": "LEFT",
+                  "valign": "BOTTOM",
+                  "color": "#7714b5ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "title",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default"
+            }
+          ]
+        },
+        {
+          "name": "urlButton",
+          "role": "uk.co.nickthecoder.tickle.util.URLButton",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "small",
+                  "halign": "RIGHT",
+                  "valign": "BOTTOM",
+                  "color": "#330033ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            },
+            {
+              "name": "down",
+              "textStyles": [
+                {
+                  "font": "small",
+                  "halign": "RIGHT",
+                  "valign": "BOTTOM",
+                  "color": "#990000ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "url",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "button",
+          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#4d804dff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            },
+            {
+              "name": "down",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#990000ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "scene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "clickToContinue",
+          "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "small",
+          "events": [
+            
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "countdown",
+          "role": "uk.co.nickthecoder.rapidragdoll.Countdown",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "large",
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "LEFT",
+                  "valign": "TOP",
+                  "color": "#7715b5ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "seconds",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "name": "join90",
+          "role": "",
+          "canRotate": true,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "levelRoute-1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "levelStatus",
+          "role": "uk.co.nickthecoder.rapidragdoll.LevelStatus",
+          "canRotate": false,
+          "zOrder": 50,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "levelStatus"
+              ]
+            },
+            {
+              "name": "text",
+              "costumes": [
+                "levelButton"
+              ]
+            },
+            {
+              "name": "time",
+              "costumes": [
+                "levelTime"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "requiredScene",
+              "value": ""
+            },
+            {
+              "name": "sceneName",
+              "value": ""
+            },
+            {
+              "name": "showTime",
+              "value": "false"
+            },
+            {
+              "name": "text",
+              "value": ""
+            },
+            {
+              "name": "textPosition",
+              "value": "0.0x30.0"
+            },
+            {
+              "name": "timePosition",
+              "value": "0.0x-30.0"
+            },
+            {
+              "name": "unlocked",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "name": "levelName",
+          "role": "uk.co.nickthecoder.rapidragdoll.LevelButton",
+          "canRotate": false,
+          "zOrder": 60,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "small",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#330033ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "levelTime",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 60,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "small",
+                  "halign": "CENTER",
+                  "valign": "TOP",
+                  "color": "#330033ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "join1",
+          "role": "uk.co.nickthecoder.rapidragdoll.LevelRoute",
+          "canRotate": true,
+          "zOrder": 40,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "levelRoute-1"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "requiredScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "large",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "large",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#7714b5ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "information",
+          "role": "uk.co.nickthecoder.rapidragdoll.Information",
+          "canRotate": true,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "small",
+          "events": [
+            
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "timeIsUp",
+          "role": "uk.co.nickthecoder.rapidragdoll.TimeIsUp",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "large",
+          "events": [
+            
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "scenery",
+      "costumes": [
+        {
+          "name": "chair2",
+          "role": "",
+          "canRotate": true,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "chair2"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": -2.5,
+                  "y": 3.5,
+                  "width": 72,
+                  "height": 20,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": -35,
+                  "y": -35.5,
+                  "width": 10,
+                  "height": 79,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": 39,
+                  "y": -33.5,
+                  "width": 9,
+                  "height": 79,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": 44.5,
+                  "y": 61.5,
+                  "width": 10,
+                  "height": 99,
+                  "angle": -10.999999999999998,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "chair1",
+          "role": "",
+          "canRotate": true,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "chair1"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.6,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": 1,
+                  "y": -0.5,
+                  "width": 77,
+                  "height": 21,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": -38.5,
+                  "y": -37,
+                  "width": 10,
+                  "height": 76,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": 33,
+                  "y": -41,
+                  "width": 9,
+                  "height": 68,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "box": {
+                  "x": -45,
+                  "y": 57,
+                  "width": 9,
+                  "height": 106,
+                  "angle": 9,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fencePost",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fencePost"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": -0.5,
+                  "y": 134,
+                  "width": 27,
+                  "height": 268,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 6,
+                      "y": 269
+                    },
+                    {
+                      "x": 12,
+                      "y": 288
+                    },
+                    {
+                      "x": 0,
+                      "y": 320
+                    },
+                    {
+                      "x": -11,
+                      "y": 290
+                    },
+                    {
+                      "x": -4,
+                      "y": 268
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fencePost-150",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fencePost-150"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 0,
+                  "y": 50,
+                  "width": 28,
+                  "height": 100,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 6,
+                      "y": 101
+                    },
+                    {
+                      "x": 13,
+                      "y": 124
+                    },
+                    {
+                      "x": 0,
+                      "y": 150
+                    },
+                    {
+                      "x": -11,
+                      "y": 123
+                    },
+                    {
+                      "x": -2,
+                      "y": 100
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fencePost-200",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fencePost-200"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": -0.5,
+                  "y": 74.5,
+                  "width": 27,
+                  "height": 149,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 6,
+                      "y": 151
+                    },
+                    {
+                      "x": 11,
+                      "y": 175
+                    },
+                    {
+                      "x": 0,
+                      "y": 201
+                    },
+                    {
+                      "x": -11,
+                      "y": 175
+                    },
+                    {
+                      "x": -4,
+                      "y": 150
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "grass0",
+          "role": "",
+          "canRotate": true,
+          "zOrder": 300,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "grass0"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.8,
+                "density": 1,
+                "restitution": 0.4,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 210,
+                  "y": 24,
+                  "width": 422,
+                  "height": 48,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "pin",
+          "role": "uk.co.nickthecoder.rapidragdoll.Pin",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "pin"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.7,
+            "angularDamping": 0.7,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.9,
+                "density": 1,
+                "restitution": 0.1,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 16,
+                      "y": -6
+                    },
+                    {
+                      "x": 30,
+                      "y": 47
+                    },
+                    {
+                      "x": 6,
+                      "y": 105
+                    },
+                    {
+                      "x": -9,
+                      "y": 105
+                    },
+                    {
+                      "x": -29,
+                      "y": 49
+                    },
+                    {
+                      "x": -17,
+                      "y": -6
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.9,
+                "density": 1,
+                "restitution": 0.1,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 9,
+                      "y": 105
+                    },
+                    {
+                      "x": 12,
+                      "y": 134
+                    },
+                    {
+                      "x": 6,
+                      "y": 148
+                    },
+                    {
+                      "x": -8,
+                      "y": 148
+                    },
+                    {
+                      "x": -15,
+                      "y": 133
+                    },
+                    {
+                      "x": -10,
+                      "y": 105
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "rock",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "rock"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.8,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.9,
+                "density": 10,
+                "restitution": 0.6,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "circle": {
+                  "x": 0,
+                  "y": 0,
+                  "radius": 108
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "umbrella",
+          "role": "uk.co.nickthecoder.rapidragdoll.Umbrella",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "umbrella"
+              ]
+            },
+            {
+              "name": "default",
+              "poses": [
+                "umbrella-base"
+              ]
+            },
+            {
+              "name": "topHalf",
+              "costumes": [
+                "umbrella-top"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "angle",
+              "value": "0.0"
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": -1.5,
+                  "y": 11.5,
+                  "width": 44,
+                  "height": 22,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "umbrella-top",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "umbrella-top"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 5,
+            "angularDamping": 5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 1,
+                      "y": 27
+                    },
+                    {
+                      "x": 105,
+                      "y": 38
+                    },
+                    {
+                      "x": 101,
+                      "y": 54
+                    },
+                    {
+                      "x": 51,
+                      "y": 85
+                    },
+                    {
+                      "x": 1,
+                      "y": 96
+                    },
+                    {
+                      "x": -56,
+                      "y": 86
+                    },
+                    {
+                      "x": -101,
+                      "y": 51
+                    },
+                    {
+                      "x": -101,
+                      "y": 38
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0,
+                "density": 5,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 0,
+                "mask": 0,
+                "circle": {
+                  "x": 1,
+                  "y": -26,
+                  "radius": 32
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "wall-166",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "wall-166"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.6,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 25,
+                  "y": 83,
+                  "width": 51,
+                  "height": 166,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "wall0",
+          "role": "",
+          "canRotate": true,
+          "zOrder": 320,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "wall0"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.6,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 25.5,
+                  "y": 145,
+                  "width": 51,
+                  "height": 287,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "wood-thin-200",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "wood-thin-200"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 100,
+                  "y": 20,
+                  "width": 200,
+                  "height": 40,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "wood-thin-400",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "wood-thin-400"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 200,
+                  "y": 20,
+                  "width": 400,
+                  "height": 40,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "wood-thin-600",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "wood-thin-650"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 300,
+                  "y": 20,
+                  "width": 600,
+                  "height": 40,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "wood0",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 340,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "wood0"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 327,
+                  "y": 40.5,
+                  "width": 654,
+                  "height": 81,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "misc",
+      "costumes": [
+        {
+          "name": "autoLauncher",
+          "role": "uk.co.nickthecoder.rapidragdoll.AutoLauncher",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "autoLaucher"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "point",
+              "value": "0.0x0.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
+        },
+        {
+          "name": "aim",
+          "role": "uk.co.nickthecoder.rapidragdoll.Aim",
+          "canRotate": false,
+          "zOrder": 1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "aim"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "launcher",
+          "role": "uk.co.nickthecoder.rapidragdoll.Launcher",
+          "canRotate": false,
+          "zOrder": 200,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "launcher"
+              ]
+            },
+            {
+              "name": "select1",
+              "poses": [
+                "launcher-selected-1"
+              ]
+            },
+            {
+              "name": "select2",
+              "poses": [
+                "launcher-selected-2"
+              ]
+            },
+            {
+              "name": "select3",
+              "poses": [
+                "launcher-selected-3"
+              ]
+            },
+            {
+              "name": "select4",
+              "poses": [
+                "launcher-selected-4"
+              ]
+            },
+            {
+              "name": "deselect1",
+              "poses": [
+                "launcher-deselected-1"
+              ]
+            },
+            {
+              "name": "deselect2",
+              "poses": [
+                "launcher-deselected-2"
+              ]
+            },
+            {
+              "name": "deselect3",
+              "poses": [
+                "launcher-deselected-3"
+              ]
+            },
+            {
+              "name": "deselect4",
+              "poses": [
+                "launcher-deselected-4"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "0.0x0.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
+        }
+      ],
+      "showInSceneEditor": true
     }
   ],
   "costumes": [
     {
-      "name": "launcher",
-      "role": "uk.co.nickthecoder.rapidragdoll.Launcher",
+      "name": "levelButton",
+      "role": "uk.co.nickthecoder.rapidragdoll.LevelButton",
       "canRotate": false,
-      "zOrder": 200,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "launcher"
-          ]
-        },
-        {
-          "name": "select1",
-          "poses": [
-            "launcher-selected-1"
-          ]
-        },
-        {
-          "name": "select2",
-          "poses": [
-            "launcher-selected-2"
-          ]
-        },
-        {
-          "name": "select3",
-          "poses": [
-            "launcher-selected-3"
-          ]
-        },
-        {
-          "name": "select4",
-          "poses": [
-            "launcher-selected-4"
-          ]
-        },
-        {
-          "name": "deselect1",
-          "poses": [
-            "launcher-deselected-1"
-          ]
-        },
-        {
-          "name": "deselect2",
-          "poses": [
-            "launcher-deselected-2"
-          ]
-        },
-        {
-          "name": "deselect3",
-          "poses": [
-            "launcher-deselected-3"
-          ]
-        },
-        {
-          "name": "deselect4",
-          "poses": [
-            "launcher-deselected-4"
-          ]
-        }
-      ],
-      "attributes": [
-        {
-          "name": "dollName",
-          "value": "annie"
-        },
-        {
-          "name": "speed",
-          "value": "600"
-        }
-      ]
-    },
-    {
-      "name": "aim",
-      "role": "uk.co.nickthecoder.rapidragdoll.Aim",
-      "canRotate": false,
-      "zOrder": 1000,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "aim"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "pin",
-      "role": "uk.co.nickthecoder.rapidragdoll.Pin",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "pin"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "DYNAMIC",
-        "linearDamping": 0.7,
-        "angularDamping": 0.7,
-        "bullet": false,
-        "fixedRotation": false,
-        "fixtures": [
-          {
-            "friction": 0.9,
-            "density": 1,
-            "restitution": 0.1,
-            "isSensor": false,
-            "group": 0,
-            "category": 4,
-            "mask": 15,
-            "polygon": {
-              "points": [
-                {
-                  "x": 16,
-                  "y": -6
-                },
-                {
-                  "x": 30,
-                  "y": 47
-                },
-                {
-                  "x": 6,
-                  "y": 105
-                },
-                {
-                  "x": -9,
-                  "y": 105
-                },
-                {
-                  "x": -29,
-                  "y": 49
-                },
-                {
-                  "x": -17,
-                  "y": -6
-                }
-              ]
-            }
-          },
-          {
-            "friction": 0.9,
-            "density": 1,
-            "restitution": 0.1,
-            "isSensor": false,
-            "group": 0,
-            "category": 4,
-            "mask": 15,
-            "polygon": {
-              "points": [
-                {
-                  "x": 9,
-                  "y": 105
-                },
-                {
-                  "x": 12,
-                  "y": 134
-                },
-                {
-                  "x": 6,
-                  "y": 148
-                },
-                {
-                  "x": -8,
-                  "y": 148
-                },
-                {
-                  "x": -15,
-                  "y": 133
-                },
-                {
-                  "x": -10,
-                  "y": 105
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "chair2",
-      "role": "",
-      "canRotate": true,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "chair2"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "DYNAMIC",
-        "linearDamping": 0,
-        "angularDamping": 0,
-        "bullet": false,
-        "fixedRotation": false,
-        "fixtures": [
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": -2.5,
-              "y": 3.5,
-              "width": 72,
-              "height": 20,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": -35,
-              "y": -35.5,
-              "width": 10,
-              "height": 79,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": 39,
-              "y": -33.5,
-              "width": 9,
-              "height": 79,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": 44.5,
-              "y": 61.5,
-              "width": 10,
-              "height": 99,
-              "angle": -10.999999999999998,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "chair1",
-      "role": "",
-      "canRotate": true,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "chair1"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "DYNAMIC",
-        "linearDamping": 0,
-        "angularDamping": 0,
-        "bullet": false,
-        "fixedRotation": false,
-        "fixtures": [
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.6,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": 1,
-              "y": -0.5,
-              "width": 77,
-              "height": 21,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": -38.5,
-              "y": -37,
-              "width": 10,
-              "height": 76,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": 33,
-              "y": -41,
-              "width": 9,
-              "height": 68,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.7,
-            "density": 2,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 13,
-            "box": {
-              "x": -45,
-              "y": 57,
-              "width": 9,
-              "height": 106,
-              "angle": 9,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "large",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "textStyles": [
-            {
-              "font": "large",
-              "halign": "CENTER",
-              "valign": "BOTTOM",
-              "color": "#7714b5ff",
-              "outlineColor": "#ffffffff"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "grass0",
-      "role": "",
-      "canRotate": true,
-      "zOrder": 300,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "grass0"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.8,
-            "density": 1,
-            "restitution": 0.4,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 210,
-              "y": 24,
-              "width": 422,
-              "height": 48,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "wall0",
-      "role": "",
-      "canRotate": true,
-      "zOrder": 320,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wall0"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.6,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 25.5,
-              "y": 145,
-              "width": 51,
-              "height": 287,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "wood0",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 340,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wood0"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 327,
-              "y": 40.5,
-              "width": 654,
-              "height": 81,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "wood-thin-600",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wood-thin-650"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 300,
-              "y": 20,
-              "width": 600,
-              "height": 40,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "wood-thin-200",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wood-thin-200"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 100,
-              "y": 20,
-              "width": 200,
-              "height": 40,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "wood-thin-400",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wood-thin-400"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 200,
-              "y": 20,
-              "width": 400,
-              "height": 40,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "autoLauncher",
-      "role": "uk.co.nickthecoder.rapidragdoll.AutoLauncher",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "editor",
-          "poses": [
-            "autoLaucher"
-          ]
-        }
-      ],
-      "attributes": [
-        {
-          "name": "period",
-          "value": "2"
-        },
-        {
-          "name": "point",
-          "value": "0.0x0.0"
-        },
-        {
-          "name": "dollName",
-          "value": "annie"
-        },
-        {
-          "name": "speed",
-          "value": "600"
-        }
-      ]
-    },
-    {
-      "name": "wall-166",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wall-166"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.6,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 25,
-              "y": 83,
-              "width": 51,
-              "height": 166,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "rock",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "rock"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "DYNAMIC",
-        "linearDamping": 0.8,
-        "angularDamping": 0.5,
-        "bullet": false,
-        "fixedRotation": false,
-        "fixtures": [
-          {
-            "friction": 0.9,
-            "density": 10,
-            "restitution": 0.6,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "circle": {
-              "x": 0,
-              "y": 0,
-              "radius": 108
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "timeIsUp",
-      "role": "uk.co.nickthecoder.rapidragdoll.TimeIsUp",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "inheritsEventsFrom": "large",
-      "events": [
-        
-      ],
-      "attributes": [
-        {
-          "name": "moveBy",
-          "value": "0.0x-300.0"
-        },
-        {
-          "name": "seconds",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "name": "information",
-      "role": "uk.co.nickthecoder.rapidragdoll.Information",
-      "canRotate": true,
-      "zOrder": 100,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "inheritsEventsFrom": "small",
-      "events": [
-        
-      ],
-      "attributes": [
-        {
-          "name": "moveBy",
-          "value": "0.0x-300.0"
-        },
-        {
-          "name": "seconds",
-          "value": "2"
-        }
-      ]
-    },
-    {
-      "name": "fencePost-150",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "fencePost-150"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 0,
-              "y": 50,
-              "width": 28,
-              "height": 100,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "polygon": {
-              "points": [
-                {
-                  "x": 6,
-                  "y": 101
-                },
-                {
-                  "x": 13,
-                  "y": 124
-                },
-                {
-                  "x": 0,
-                  "y": 150
-                },
-                {
-                  "x": -11,
-                  "y": 123
-                },
-                {
-                  "x": -2,
-                  "y": 100
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "fencePost-200",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "fencePost-200"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": -0.5,
-              "y": 74.5,
-              "width": 27,
-              "height": 149,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "polygon": {
-              "points": [
-                {
-                  "x": 6,
-                  "y": 151
-                },
-                {
-                  "x": 11,
-                  "y": 175
-                },
-                {
-                  "x": 0,
-                  "y": 201
-                },
-                {
-                  "x": -11,
-                  "y": 175
-                },
-                {
-                  "x": -4,
-                  "y": 150
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "fencePost",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "fencePost"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": -0.5,
-              "y": 134,
-              "width": 27,
-              "height": 268,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          },
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "polygon": {
-              "points": [
-                {
-                  "x": 6,
-                  "y": 269
-                },
-                {
-                  "x": 12,
-                  "y": 288
-                },
-                {
-                  "x": 0,
-                  "y": 320
-                },
-                {
-                  "x": -11,
-                  "y": 290
-                },
-                {
-                  "x": -4,
-                  "y": 268
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "umbrella",
-      "role": "uk.co.nickthecoder.rapidragdoll.Umbrella",
-      "canRotate": false,
-      "zOrder": 0,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "editor",
-          "poses": [
-            "umbrella"
-          ]
-        },
-        {
-          "name": "default",
-          "poses": [
-            "umbrella-base"
-          ]
-        },
-        {
-          "name": "topHalf",
-          "costumes": [
-            "umbrella-top"
-          ]
-        }
-      ],
-      "attributes": [
-        {
-          "name": "angle",
-          "value": "0.0"
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": -1.5,
-              "y": 11.5,
-              "width": 44,
-              "height": 22,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "umbrella-top",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 0,
+      "zOrder": 60,
       "initialEvent": "default",
       "showInSceneEditor": false,
       "events": [
         {
           "name": "default",
-          "poses": [
-            "umbrella-top"
+          "textStyles": [
+            {
+              "font": "small",
+              "halign": "CENTER",
+              "valign": "BOTTOM",
+              "color": "#330033ff",
+              "outlineColor": "#ffffffff"
+            }
           ]
         }
-      ],
-      "body": {
-        "bodyType": "DYNAMIC",
-        "linearDamping": 5,
-        "angularDamping": 5,
-        "bullet": false,
-        "fixedRotation": false,
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "polygon": {
-              "points": [
-                {
-                  "x": 1,
-                  "y": 27
-                },
-                {
-                  "x": 105,
-                  "y": 38
-                },
-                {
-                  "x": 101,
-                  "y": 54
-                },
-                {
-                  "x": 51,
-                  "y": 85
-                },
-                {
-                  "x": 1,
-                  "y": 96
-                },
-                {
-                  "x": -56,
-                  "y": 86
-                },
-                {
-                  "x": -101,
-                  "y": 51
-                },
-                {
-                  "x": -101,
-                  "y": 38
-                }
-              ]
-            }
-          },
-          {
-            "friction": 0,
-            "density": 5,
-            "restitution": 1,
-            "isSensor": false,
-            "group": 0,
-            "category": 0,
-            "mask": 0,
-            "circle": {
-              "x": 1,
-              "y": -26,
-              "radius": 32
-            }
-          }
-        ]
-      }
+      ]
     }
   ],
   "inputs": [

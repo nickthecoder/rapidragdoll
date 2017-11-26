@@ -115,6 +115,8 @@ open class Play : AbstractDirector(), MouseHandler {
 
     lateinit var glassView: StageView
 
+    var startTime = 0.0
+
     init {
         instance = this
     }
@@ -140,6 +142,7 @@ open class Play : AbstractDirector(), MouseHandler {
                 aim = role
             }
         }
+        startTime = Game.instance.seconds
     }
 
     override fun tick() {
@@ -151,11 +154,7 @@ open class Play : AbstractDirector(), MouseHandler {
 
     override fun onKey(event: KeyEvent) {
         if (escape?.matches(event) == true) {
-            if (sceneComplete) {
-                nextScene()
-            } else {
-                Game.instance.startScene("menu")
-            }
+            Game.instance.startScene(menuName)
         }
         if (restart?.matches(event) == true) {
             Game.instance.startScene(Game.instance.sceneName)
@@ -215,6 +214,10 @@ open class Play : AbstractDirector(), MouseHandler {
     fun objectivesComplete() {
         glassView.stage.findRoles<SceneComplete>().forEach { it.go() }
         glassView.stage.findRoles<Countdown>().forEach { it.stop() }
+
+        val preferences = scenePreferences(Game.instance.sceneName)
+        preferences.set("completed", true)
+        preferences.set("time", Game.instance.seconds - startTime)
     }
 
     /**

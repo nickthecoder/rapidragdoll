@@ -13,10 +13,11 @@ Next
 
 Scenery
 	Wallpaper
-	Fence post
 
 Add simple movable objects
 	table, lamp stands
+
+New objective : A ring a bell hanging from the ceiling.
 
 Limit the Laucher to a fixed number of dolls
 	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
@@ -45,7 +46,8 @@ Level sets scene
 Later
 -----
 
-Create more sedate scenes, where the aim is to place dolls on chairs???
 
 Much Later
 ----------
+
+Create more sedate scenes, where the aim is to place dolls on chairs???

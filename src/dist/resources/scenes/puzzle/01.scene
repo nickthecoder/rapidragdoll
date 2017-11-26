@@ -7,11 +7,11 @@
     },
     {
       "name": "menuName",
-      "value": "menu"
+      "value": "puzzle/menu"
     },
     {
       "name": "nextScene",
-      "value": "menu"
+      "value": "puzzle/02"
     }
   ],
   "background": "#000000",
@@ -64,7 +64,7 @@
             },
             {
               "name": "speed",
-              "value": "600"
+              "value": "400"
             }
           ]
         },
