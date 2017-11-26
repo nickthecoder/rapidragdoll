@@ -15,8 +15,8 @@
    id="svg2989"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="scenery.svg"
-   inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/scenery.png"
+   sodipodi:docname="ui.svg"
+   inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/ui.png"
    inkscape:export-xdpi="89.969025"
    inkscape:export-ydpi="89.969025">
   <defs
@@ -320,82 +320,6 @@
        y1="265.19421"
        x2="500.72943"
        y2="265.19421" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4346"
-       id="radialGradient3083"
-       gradientUnits="userSpaceOnUse"
-       cx="430"
-       cy="92.362183"
-       fx="430"
-       fy="92.362183"
-       r="32" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3890"
-       id="linearGradient3085"
-       gradientUnits="userSpaceOnUse"
-       x1="427.7995"
-       y1="68.623596"
-       x2="427.14975"
-       y2="114.08047" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4346"
-       id="radialGradient3089"
-       gradientUnits="userSpaceOnUse"
-       cx="430"
-       cy="92.362183"
-       fx="430"
-       fy="92.362183"
-       r="32" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3890"
-       id="linearGradient3091"
-       gradientUnits="userSpaceOnUse"
-       x1="427.7995"
-       y1="68.623596"
-       x2="427.14975"
-       y2="114.08047" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4346"
-       id="radialGradient3095"
-       gradientUnits="userSpaceOnUse"
-       cx="430"
-       cy="92.362183"
-       fx="430"
-       fy="92.362183"
-       r="32" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3890"
-       id="linearGradient3097"
-       gradientUnits="userSpaceOnUse"
-       x1="427.7995"
-       y1="68.623596"
-       x2="427.14975"
-       y2="114.08047" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4346"
-       id="radialGradient3101"
-       gradientUnits="userSpaceOnUse"
-       cx="430"
-       cy="92.362183"
-       fx="430"
-       fy="92.362183"
-       r="32" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3890"
-       id="linearGradient3103"
-       gradientUnits="userSpaceOnUse"
-       x1="427.7995"
-       y1="68.623596"
-       x2="427.14975"
-       y2="114.08047" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -405,8 +329,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="438.03408"
-     inkscape:cy="834.38656"
+     inkscape:cx="440.03408"
+     inkscape:cy="979.38656"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -444,14 +368,229 @@
        y="18.156387"
        inkscape:export-xdpi="89.969025"
        inkscape:export-ydpi="89.969025" />
-    <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/pin.png"
-       xlink:href="pin.png"
-       width="61.411152"
-       height="162.73955"
-       id="image4668"
-       x="436.99506"
-       y="3.2662663" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#radialGradient3121);fill-opacity:1;stroke:url(#linearGradient3123);stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2986"
+       sodipodi:cx="430"
+       sodipodi:cy="92.362183"
+       sodipodi:rx="30"
+       sodipodi:ry="30"
+       d="m 460,92.362183 a 30,30 0 1 1 -60,0 30,30 0 1 1 60,0 z"
+       transform="translate(-366.71958,-54.62787)" />
+    <g
+       id="g3764"
+       transform="translate(-288.59436,-54.627866)">
+      <use
+         transform="translate(366.71958,54.62787)"
+         height="1052.3622"
+         width="744.09448"
+         id="use3762"
+         xlink:href="#path2986"
+         y="0"
+         x="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3756"
+         y="105.98219"
+         x="417.92001"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3896);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+         xml:space="preserve"><tspan
+           y="105.98219"
+           x="417.92001"
+           id="tspan3758"
+           sodipodi:role="line"
+           style="fill-opacity:1;fill:url(#linearGradient3896)">1</tspan></text>
+    </g>
+    <g
+       transform="translate(-210.46914,-54.627866)"
+       id="g3769">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#path2986"
+         id="use3775"
+         width="744.09448"
+         height="1052.3622"
+         transform="translate(366.71958,54.62787)" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3914);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+         x="418.39999"
+         y="106.02219"
+         id="text3771"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3773"
+           x="418.39999"
+           y="106.02219"
+           style="fill-opacity:1;fill:url(#linearGradient3914)">2</tspan></text>
+    </g>
+    <g
+       id="g3777"
+       transform="translate(-132.34391,-54.627866)">
+      <use
+         transform="translate(366.71958,54.62787)"
+         height="1052.3622"
+         width="744.09448"
+         id="use3779"
+         xlink:href="#path2986"
+         y="0"
+         x="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3781"
+         y="106.02219"
+         x="418.70001"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3922);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+         xml:space="preserve"><tspan
+           y="106.02219"
+           x="418.70001"
+           id="tspan3783"
+           sodipodi:role="line"
+           style="fill-opacity:1;fill:url(#linearGradient3922)">3</tspan></text>
+    </g>
+    <g
+       transform="translate(-54.218698,-54.627866)"
+       id="g3785">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#path2986"
+         id="use3787"
+         width="744.09448"
+         height="1052.3622"
+         transform="translate(366.71958,54.62787)" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient3930);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+         x="418.17999"
+         y="106.02219"
+         id="text3789"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3791"
+           x="418.17999"
+           y="106.02219"
+           style="fill-opacity:1;fill:url(#linearGradient3930)">4</tspan></text>
+    </g>
+    <path
+       transform="translate(-366.71958,25.372134)"
+       d="m 460,92.362183 a 30,30 0 1 1 -60,0 30,30 0 1 1 60,0 z"
+       sodipodi:ry="30"
+       sodipodi:rx="30"
+       sodipodi:cy="92.362183"
+       sodipodi:cx="430"
+       id="path3820"
+       style="fill:url(#radialGradient4616);fill-opacity:1;stroke:url(#linearGradient4598);stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc" />
+    <g
+       id="g3852">
+      <g
+         id="g3847">
+        <use
+           x="0"
+           y="0"
+           xlink:href="#path3820"
+           id="use3824"
+           transform="translate(80,0)"
+           width="744.09448"
+           height="1052.3622" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3756-3"
+           y="131.35431"
+           x="131.20042"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient4624);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+           xml:space="preserve"><tspan
+             y="131.35431"
+             x="131.20042"
+             id="tspan3758-6"
+             sodipodi:role="line"
+             style="fill-opacity:1;fill:url(#linearGradient4624)">1</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3858"
+       transform="translate(80,0)">
+      <g
+         id="g3860">
+        <use
+           height="1052.3622"
+           width="744.09448"
+           transform="translate(80,0)"
+           id="use3862"
+           xlink:href="#path3820"
+           y="0"
+           x="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient4632);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+           x="131.68042"
+           y="131.35431"
+           id="text3864"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3866"
+             x="131.68042"
+             y="131.35431"
+             style="fill-opacity:1;fill:url(#linearGradient4632)">2</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="translate(160,0)"
+       id="g3868">
+      <g
+         id="g3870">
+        <use
+           x="0"
+           y="0"
+           xlink:href="#path3820"
+           id="use3872"
+           transform="translate(80,0)"
+           width="744.09448"
+           height="1052.3622" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3874"
+           y="131.15431"
+           x="131.98042"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient4640);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+           xml:space="preserve"><tspan
+             y="131.15431"
+             x="131.98042"
+             id="tspan3876"
+             sodipodi:role="line"
+             style="fill-opacity:1;fill:url(#linearGradient4640)">3</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3878"
+       transform="translate(240,0)">
+      <g
+         id="g3880">
+        <use
+           height="1052.3622"
+           width="744.09448"
+           transform="translate(80,0)"
+           id="use3882"
+           xlink:href="#path3820"
+           y="0"
+           x="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient4648);fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter Bold"
+           x="131.46042"
+           y="130.65431"
+           id="text3884"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3886"
+             x="131.46042"
+             y="130.65431"
+             style="fill-opacity:1;fill:url(#linearGradient4648)">4</tspan></text>
+      </g>
+    </g>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3856"
@@ -462,67 +601,23 @@
            height="401"
            x="400"
            y="-73.637817" /></flowRegion><flowPara
-         id="flowPara3862" /></flowRoot>    <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/chair.png"
-       xlink:href="chair.png"
-       width="106"
-       height="201.23438"
-       id="image3884"
-       x="507"
-       y="-0.13781738" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#image3884"
-       id="use3887"
-       transform="matrix(-1,0,0,1,1230,0)"
-       width="744.09448"
-       height="1052.3622" />
-    <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/grass.png"
-       xlink:href="grass.png"
-       width="421.2963"
-       height="91"
-       id="image3917"
-       x="10"
-       y="156.36218" />
-    <image
-       y="335.36218"
-       x="11.5"
-       id="image3947"
-       xlink:href="file:///home/nick/projects/rapidragdoll/src/graphics/wall.png"
-       height="286"
-       width="49" />
-    <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/wood.png"
-       xlink:href="wood.png"
-       width="653.30322"
-       height="79.67112"
-       id="image3086"
-       x="9.0424356"
-       y="251.63351" />
-    <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/rock.png"
-       xlink:href="rock.png"
-       width="228"
-       height="228"
-       id="image3097"
-       x="10"
-       y="813.36218" />
-    <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fencePost.png"
-       xlink:href="fencePost.png"
-       y="334.34042"
-       x="63"
-       id="image3098"
-       height="320.04349"
-       width="34" />
-    <image
-       y="795.36218"
-       x="241.5"
-       id="image3109"
-       xlink:href="file:///home/nick/projects/rapidragdoll/src/graphics/umbrella.png"
-       height="250"
-       width="219" />
+         id="flowPara3862" /></flowRoot>    <path
+       sodipodi:type="star"
+       style="fill:url(#radialGradient3090);fill-opacity:1;stroke:#f3eaea;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3888-3"
+       sodipodi:sides="4"
+       sodipodi:cx="54.548237"
+       sodipodi:cy="35.138569"
+       sodipodi:r1="34.478622"
+       sodipodi:r2="9.3632307"
+       sodipodi:arg1="0.55549374"
+       sodipodi:arg2="1.8938796"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 83.842659,53.321314 51.575488,44.017356 36.365492,64.432991 45.66945,32.16582 25.253814,16.955824 57.520986,26.259782 72.730982,5.8441465 63.427023,38.111318 z"
+       inkscape:transform-center-x="0.54975394"
+       inkscape:transform-center-y="-8.1391712"
+       transform="translate(8.45176,154.22361)" />
   </g>
 </svg>

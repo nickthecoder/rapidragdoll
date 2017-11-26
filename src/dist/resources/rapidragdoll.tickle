@@ -104,6 +104,10 @@
     {
       "name": "bony",
       "file": "images/bony.png"
+    },
+    {
+      "name": "ui",
+      "file": "images/ui.png"
     }
   ],
   "fonts": [
@@ -204,7 +208,7 @@
     },
     {
       "name": "launcher",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 31,
       "bottom": 150,
       "right": 97,
@@ -215,7 +219,7 @@
     },
     {
       "name": "launcher-deselected-1",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 110,
       "bottom": 150,
       "right": 176,
@@ -226,7 +230,7 @@
     },
     {
       "name": "launcher-deselected-2",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 190,
       "bottom": 150,
       "right": 256,
@@ -237,7 +241,7 @@
     },
     {
       "name": "launcher-deselected-3",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 270,
       "bottom": 150,
       "right": 336,
@@ -248,7 +252,7 @@
     },
     {
       "name": "launcher-deselected-4",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 350,
       "bottom": 150,
       "right": 416,
@@ -259,7 +263,7 @@
     },
     {
       "name": "launcher-selected-1",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 109,
       "bottom": 70,
       "right": 174,
@@ -270,7 +274,7 @@
     },
     {
       "name": "launcher-selected-2",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 187,
       "bottom": 70,
       "right": 253,
@@ -281,7 +285,7 @@
     },
     {
       "name": "launcher-selected-3",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 265,
       "bottom": 70,
       "right": 331,
@@ -292,7 +296,7 @@
     },
     {
       "name": "launcher-selected-4",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 343,
       "bottom": 70,
       "right": 409,
@@ -303,11 +307,11 @@
     },
     {
       "name": "aim",
-      "texture": "scenery",
-      "left": 435,
-      "bottom": 246,
-      "right": 501,
-      "top": 180,
+      "texture": "ui",
+      "left": 31,
+      "bottom": 222,
+      "right": 97,
+      "top": 156,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -321,17 +325,6 @@
       "top": 4,
       "offsetX": 32,
       "offsetY": 9,
-      "direction": 0
-    },
-    {
-      "name": "sceneComplete",
-      "texture": "scenery",
-      "left": 113,
-      "bottom": 299,
-      "right": 421,
-      "top": 230,
-      "offsetX": 159,
-      "offsetY": 33,
       "direction": 0
     },
     {
@@ -358,24 +351,13 @@
     },
     {
       "name": "autoLaucher",
-      "texture": "scenery",
+      "texture": "ui",
       "left": 30,
       "bottom": 70,
       "right": 96,
       "top": 4,
       "offsetX": 33,
       "offsetY": 33,
-      "direction": 0
-    },
-    {
-      "name": "title",
-      "texture": "scenery",
-      "left": 112,
-      "bottom": 368,
-      "right": 421,
-      "top": 298,
-      "offsetX": 16,
-      "offsetY": 34,
       "direction": 0
     },
     {
@@ -1373,10 +1355,7 @@
           "showInSceneEditor": true,
           "events": [
             {
-              "name": "default",
-              "poses": [
-                "title"
-              ]
+              "name": "default"
             }
           ]
         },
