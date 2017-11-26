@@ -69,7 +69,7 @@ class Doll : ActionRole() {
                 jointDef.upperAngle = newRole.toAngle.radians.toFloat()
                 jointDef.enableLimit = true
 
-                val joint = Game.instance.scene.world?.createJoint(jointDef)
+                Game.instance.scene.world?.createJoint(jointDef)
             }
         }
         newActor.zOrder = actor.zOrder + zOrder

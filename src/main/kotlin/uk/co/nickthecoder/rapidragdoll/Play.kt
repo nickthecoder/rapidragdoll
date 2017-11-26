@@ -29,6 +29,14 @@ open class Play : AbstractDirector(), MouseHandler {
     var nextScene: String = ""
 
     /**
+     * The scene when the escape key is pressed to end the game.
+     * The default is to show the main menu, but other scenes may show a difference menu.
+     * For example, the turorial scene will return to the tutorial menu.
+     */
+    @Attribute
+    var menuName = "menu"
+
+    /**
      * Set to true by SceneComplete role when it's animation is finished.
      * That animation is started from within [objectivesComplete].
      */

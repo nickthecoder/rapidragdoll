@@ -8,6 +8,10 @@
     {
       "name": "nextScene",
       "value": "menu"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
     }
   ],
   "background": "#000000",
@@ -42,8 +46,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 156,
-          "y": 562,
+          "x": 391,
+          "y": 753,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -51,7 +55,7 @@
           "attributes": [
             {
               "name": "dollName",
-              "value": "foxie"
+              "value": "bony"
             },
             {
               "name": "speed",
@@ -307,16 +311,6 @@
         },
         {
           "costume": "wall0",
-          "x": 387,
-          "y": 244,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
           "x": 884.5504000000003,
           "y": 245.34719999999993,
           "zOrder": 0,
@@ -335,9 +329,24 @@
           "scale": 1
         },
         {
-          "costume": "foxie",
-          "x": 564,
-          "y": 550,
+          "costume": "umbrella",
+          "x": 409,
+          "y": 248,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "attributes": [
+            {
+              "name": "angle",
+              "value": "29.999999999999996"
+            }
+          ]
+        },
+        {
+          "costume": "bony",
+          "x": 632,
+          "y": 533,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,

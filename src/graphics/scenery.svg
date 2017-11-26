@@ -329,8 +329,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="378.03408"
-     inkscape:cy="771.38656"
+     inkscape:cx="438.03408"
+     inkscape:cy="154.38656"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -594,11 +594,11 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/pin.png"
        xlink:href="pin.png"
-       width="61.411152"
-       height="162.73955"
-       id="image4668"
+       y="3.2662663"
        x="436.99506"
-       y="3.2662663" />
+       id="image4668"
+       height="162.73955"
+       width="61.411152" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot3856"
@@ -612,11 +612,11 @@
          id="flowPara3862" /></flowRoot>    <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/chair.png"
        xlink:href="chair.png"
-       width="106"
-       height="201.23438"
-       id="image3884"
+       y="-0.13781738"
        x="507"
-       y="-0.13781738" />
+       id="image3884"
+       height="201.23438"
+       width="106" />
     <use
        x="0"
        y="0"
@@ -646,11 +646,11 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/grass.png"
        xlink:href="grass.png"
-       width="421.2963"
-       height="91"
-       id="image3917"
+       y="156.36218"
        x="10"
-       y="156.36218" />
+       id="image3917"
+       height="91"
+       width="421.2963" />
     <image
        y="335.36218"
        x="11.5"
@@ -661,18 +661,33 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/wood.png"
        xlink:href="wood.png"
-       width="653.30322"
-       height="79.67112"
-       id="image3086"
+       y="251.63351"
        x="9.0424356"
-       y="251.63351" />
+       id="image3086"
+       height="79.67112"
+       width="653.30322" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/rock.png"
        xlink:href="rock.png"
-       width="228"
-       height="228"
+       y="813.36218"
+       x="10"
        id="image3097"
-       x="65"
-       y="334.36218" />
+       height="228"
+       width="228" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fencePost.png"
+       xlink:href="fencePost.png"
+       width="34"
+       height="320.04349"
+       id="image3098"
+       x="63"
+       y="334.34042" />
+    <image
+       y="795.36218"
+       x="241.5"
+       id="image3109"
+       xlink:href="file:///home/nick/projects/rapidragdoll/src/graphics/umbrella.png"
+       height="250"
+       width="219" />
   </g>
 </svg>

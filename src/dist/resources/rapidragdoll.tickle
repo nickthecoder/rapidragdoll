@@ -1,6 +1,7 @@
 {
   "info": {
     "title": "Rapid Rag Doll",
+    "id": "rapidragdoll",
     "width": 1024,
     "height": 600,
     "resizable": true,
@@ -99,6 +100,10 @@
     {
       "name": "foxie",
       "file": "images/foxie.png"
+    },
+    {
+      "name": "bony",
+      "file": "images/bony.png"
     }
   ],
   "fonts": [
@@ -453,10 +458,10 @@
     {
       "name": "rock",
       "texture": "scenery",
-      "left": 68,
-      "bottom": 559,
-      "right": 289,
-      "top": 338,
+      "left": 14,
+      "bottom": 1038,
+      "right": 235,
+      "top": 817,
       "offsetX": 110,
       "offsetY": 111,
       "direction": 0
@@ -536,6 +541,149 @@
       "top": 76,
       "offsetX": 14,
       "offsetY": 96,
+      "direction": 0
+    },
+    {
+      "name": "fencePost",
+      "texture": "scenery",
+      "left": 66,
+      "bottom": 655,
+      "right": 93,
+      "top": 337,
+      "offsetX": 13,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "fencePost-200",
+      "texture": "scenery",
+      "left": 66,
+      "bottom": 537,
+      "right": 93,
+      "top": 337,
+      "offsetX": 13,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "fencePost-150",
+      "texture": "scenery",
+      "left": 66,
+      "bottom": 487,
+      "right": 93,
+      "top": 337,
+      "offsetX": 13,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "umbrella",
+      "texture": "scenery",
+      "left": 245,
+      "bottom": 1042,
+      "right": 457,
+      "top": 800,
+      "offsetX": 105,
+      "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "umbrella-base",
+      "texture": "scenery",
+      "left": 245,
+      "bottom": 1042,
+      "right": 457,
+      "top": 895,
+      "offsetX": 105,
+      "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "umbrella-top",
+      "texture": "scenery",
+      "left": 245,
+      "bottom": 901,
+      "right": 457,
+      "top": 800,
+      "offsetX": 105,
+      "offsetY": 0,
+      "direction": 0
+    },
+    {
+      "name": "bony-leg-right",
+      "texture": "bony",
+      "left": 81,
+      "bottom": 90,
+      "right": 96,
+      "top": 6,
+      "offsetX": 9,
+      "offsetY": 78,
+      "direction": 0
+    },
+    {
+      "name": "bony-leg-left",
+      "texture": "bony",
+      "left": 0,
+      "bottom": 93,
+      "right": 15,
+      "top": 8,
+      "offsetX": 8,
+      "offsetY": 81,
+      "direction": 0
+    },
+    {
+      "name": "bony-torso",
+      "texture": "bony",
+      "left": 31,
+      "bottom": 62,
+      "right": 64,
+      "top": 25,
+      "offsetX": 17,
+      "offsetY": 35,
+      "direction": 0
+    },
+    {
+      "name": "bony-head",
+      "texture": "bony",
+      "left": 39,
+      "bottom": 25,
+      "right": 56,
+      "top": 1,
+      "offsetX": 10,
+      "offsetY": 3,
+      "direction": 0
+    },
+    {
+      "name": "bony-arm-left",
+      "texture": "bony",
+      "left": 16,
+      "bottom": 77,
+      "right": 32,
+      "top": 8,
+      "offsetX": 10,
+      "offsetY": 65,
+      "direction": 0
+    },
+    {
+      "name": "bony-arm-right",
+      "texture": "bony",
+      "left": 66,
+      "bottom": 74,
+      "right": 79,
+      "top": 8,
+      "offsetX": 3,
+      "offsetY": 63,
+      "direction": 0
+    },
+    {
+      "name": "bony-abdomen",
+      "texture": "bony",
+      "left": 37,
+      "bottom": 95,
+      "right": 60,
+      "top": 62,
+      "offsetX": 12,
+      "offsetY": 30,
       "direction": 0
     }
   ],
@@ -655,6 +803,64 @@
               "name": "abdomen",
               "costumes": [
                 "foxie-abdomen"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bony",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "bony-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "bony-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "bony-torso"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "bony-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "bony-arm-right"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "bony-abdomen"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "bony-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "bony-leg-right"
               ]
             }
           ]
@@ -1701,6 +1907,411 @@
         }
       ],
       "showInSceneEditor": true
+    },
+    {
+      "name": "bony",
+      "costumes": [
+        {
+          "name": "bony-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bony-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "-10.0x-20.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": 1.5,
+                  "y": -36.5,
+                  "width": 6,
+                  "height": 80,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bony-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bony-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 11,
+                      "y": -31
+                    },
+                    {
+                      "x": 14,
+                      "y": -6
+                    },
+                    {
+                      "x": -1,
+                      "y": 2
+                    },
+                    {
+                      "x": -16,
+                      "y": -6
+                    },
+                    {
+                      "x": -13,
+                      "y": -30
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bony-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bony-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-45.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "45.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "circle": {
+                  "x": -2,
+                  "y": 10,
+                  "radius": 10
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bony-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bony-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-180.0"
+            },
+            {
+              "name": "offset",
+              "value": "-12.0x-4.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "10.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": -1,
+                  "y": -28,
+                  "width": 8,
+                  "height": 62,
+                  "angle": -6,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bony-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bony-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-10.0"
+            },
+            {
+              "name": "offset",
+              "value": "12.0x-4.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "180.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": 4.5,
+                  "y": -26.5,
+                  "width": 8,
+                  "height": 61,
+                  "angle": 3,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bony-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bony-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "10.0x-20.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "box": {
+                  "x": -2.5,
+                  "y": -35,
+                  "width": 8,
+                  "height": 80,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bony-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bony-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-30.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 6,
+                      "y": -31
+                    },
+                    {
+                      "x": 12,
+                      "y": -12
+                    },
+                    {
+                      "x": -11,
+                      "y": -12
+                    },
+                    {
+                      "x": -5,
+                      "y": -32
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": true
     }
   ],
   "costumes": [
@@ -2483,6 +3094,359 @@
           "value": "2"
         }
       ]
+    },
+    {
+      "name": "fencePost-150",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "fencePost-150"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": 0,
+              "y": 50,
+              "width": 28,
+              "height": 100,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          },
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "polygon": {
+              "points": [
+                {
+                  "x": 6,
+                  "y": 101
+                },
+                {
+                  "x": 13,
+                  "y": 124
+                },
+                {
+                  "x": 0,
+                  "y": 150
+                },
+                {
+                  "x": -11,
+                  "y": 123
+                },
+                {
+                  "x": -2,
+                  "y": 100
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fencePost-200",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "fencePost-200"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": -0.5,
+              "y": 74.5,
+              "width": 27,
+              "height": 149,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          },
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "polygon": {
+              "points": [
+                {
+                  "x": 6,
+                  "y": 151
+                },
+                {
+                  "x": 11,
+                  "y": 175
+                },
+                {
+                  "x": 0,
+                  "y": 201
+                },
+                {
+                  "x": -11,
+                  "y": 175
+                },
+                {
+                  "x": -4,
+                  "y": 150
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fencePost",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "fencePost"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": -0.5,
+              "y": 134,
+              "width": 27,
+              "height": 268,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          },
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "polygon": {
+              "points": [
+                {
+                  "x": 6,
+                  "y": 269
+                },
+                {
+                  "x": 12,
+                  "y": 288
+                },
+                {
+                  "x": 0,
+                  "y": 320
+                },
+                {
+                  "x": -11,
+                  "y": 290
+                },
+                {
+                  "x": -4,
+                  "y": 268
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "umbrella",
+      "role": "uk.co.nickthecoder.rapidragdoll.Umbrella",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": true,
+      "events": [
+        {
+          "name": "editor",
+          "poses": [
+            "umbrella"
+          ]
+        },
+        {
+          "name": "default",
+          "poses": [
+            "umbrella-base"
+          ]
+        },
+        {
+          "name": "topHalf",
+          "costumes": [
+            "umbrella-top"
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": "angle",
+          "value": "0.0"
+        }
+      ],
+      "body": {
+        "bodyType": "STATIC",
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "box": {
+              "x": -1.5,
+              "y": 11.5,
+              "width": 44,
+              "height": 22,
+              "angle": 0,
+              "roundedEnds": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "umbrella-top",
+      "role": "",
+      "canRotate": false,
+      "zOrder": 0,
+      "initialEvent": "default",
+      "showInSceneEditor": false,
+      "events": [
+        {
+          "name": "default",
+          "poses": [
+            "umbrella-top"
+          ]
+        }
+      ],
+      "body": {
+        "bodyType": "DYNAMIC",
+        "linearDamping": 5,
+        "angularDamping": 5,
+        "bullet": false,
+        "fixedRotation": false,
+        "fixtures": [
+          {
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "isSensor": false,
+            "group": 0,
+            "category": 8,
+            "mask": 15,
+            "polygon": {
+              "points": [
+                {
+                  "x": 1,
+                  "y": 27
+                },
+                {
+                  "x": 105,
+                  "y": 38
+                },
+                {
+                  "x": 101,
+                  "y": 54
+                },
+                {
+                  "x": 51,
+                  "y": 85
+                },
+                {
+                  "x": 1,
+                  "y": 96
+                },
+                {
+                  "x": -56,
+                  "y": 86
+                },
+                {
+                  "x": -101,
+                  "y": 51
+                },
+                {
+                  "x": -101,
+                  "y": 38
+                }
+              ]
+            }
+          },
+          {
+            "friction": 0,
+            "density": 5,
+            "restitution": 1,
+            "isSensor": false,
+            "group": 0,
+            "category": 0,
+            "mask": 0,
+            "circle": {
+              "x": 1,
+              "y": -26,
+              "radius": 32
+            }
+          }
+        ]
+      }
     }
   ],
   "inputs": [

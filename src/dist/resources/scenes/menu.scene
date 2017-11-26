@@ -8,6 +8,10 @@
     {
       "name": "nextScene",
       "value": ""
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
     }
   ],
   "background": "#000000",
@@ -193,6 +197,23 @@
           "direction": 0,
           "scale": 1,
           "text": "by Nick Robinson"
+        },
+        {
+          "costume": "sceneButton",
+          "x": 527,
+          "y": 201,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Puzzle Picnic",
+          "attributes": [
+            {
+              "name": "scene",
+              "value": "puzzle/01"
+            }
+          ]
         }
       ]
     }

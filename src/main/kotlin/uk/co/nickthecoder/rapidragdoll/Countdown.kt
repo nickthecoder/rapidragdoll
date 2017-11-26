@@ -28,6 +28,6 @@ class Countdown : ActionRole() {
     }
 
     fun updateText() {
-        actor.textAppearance?.text = "${seconds / 60}:${String.format("%02d", (seconds % 60))}"
+        actor.textAppearance?.text = timeString(seconds)
     }
 }
