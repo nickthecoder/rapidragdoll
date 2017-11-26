@@ -35,7 +35,7 @@ class LevelStatus : AbstractRole() {
     override fun activated() {
         super.activated()
 
-        if (!unlocked && !Game.instance.preferences.node("scenes").node(requiredScene).getBoolean("completed", false)) {
+        if (!unlocked && requiredScene.isNotBlank() && !Game.instance.preferences.node("scenes").node(requiredScene).getBoolean("completed", false)) {
             actor.hide()
             return
         }

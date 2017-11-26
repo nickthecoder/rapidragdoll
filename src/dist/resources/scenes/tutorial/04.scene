@@ -7,7 +7,11 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/tutorial-6"
+      "value": "tutorial/05"
+    },
+    {
+      "name": "menuName",
+      "value": "tutorial/menu"
     }
   ],
   "background": "#000000",
@@ -43,7 +47,7 @@
         {
           "costume": "launcher",
           "x": 130,
-          "y": 407,
+          "y": 499,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -52,7 +56,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "537.0x306.0"
+              "value": "405.0x302.0"
             },
             {
               "name": "dollName",
@@ -60,7 +64,7 @@
             },
             {
               "name": "speed",
-              "value": "250"
+              "value": "600"
             }
           ]
         },
@@ -126,8 +130,8 @@
         },
         {
           "costume": "grass0",
-          "x": 836,
-          "y": 0,
+          "x": 837,
+          "y": -1,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -136,8 +140,8 @@
         },
         {
           "costume": "pin",
-          "x": 531,
-          "y": 68,
+          "x": 1136,
+          "y": 67,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -145,18 +149,18 @@
         },
         {
           "costume": "information",
-          "x": 128,
-          "y": 514,
+          "x": 208,
+          "y": 508,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "If you get stuck, press \"F5\" to restart.",
+          "text": "Where's the skittle?",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-40.0x248.0"
+              "value": "-610.0x16.0"
             },
             {
               "name": "seconds",
@@ -166,8 +170,8 @@
         },
         {
           "costume": "wall0",
-          "x": 1125,
-          "y": 47,
+          "x": 1486,
+          "y": 46,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -176,8 +180,8 @@
         },
         {
           "costume": "wall0",
-          "x": 1125,
-          "y": 286,
+          "x": 1486,
+          "y": 284,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -186,18 +190,60 @@
         },
         {
           "costume": "information",
-          "x": 166,
-          "y": 457,
+          "x": 279,
+          "y": 456,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Do you remember the previous lessons ?",
+          "text": "Hold down the right mouse button,",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "221.0x293.0"
+              "value": "154.0x238.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "costume": "information",
+          "x": 361,
+          "y": 401,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "and drag to scroll to the right ->",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "482.0x291.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "costume": "information",
+          "x": 1064,
+          "y": 225,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Here it is !",
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
             },
             {
               "name": "seconds",
@@ -207,57 +253,32 @@
         },
         {
           "costume": "wall-166",
-          "x": 564,
-          "y": 19,
+          "x": 848,
+          "y": 48,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1
         },
         {
-          "costume": "launcher",
-          "x": 1061,
-          "y": 519,
+          "costume": "grass0",
+          "x": 1252,
+          "y": -1,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
-          "attributes": [
-            {
-              "name": "panTo",
-              "value": "668.0x306.0"
-            },
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            }
-          ]
+          "scale": 1
         },
         {
-          "costume": "information",
-          "x": 251,
-          "y": 406,
+          "costume": "wood0",
+          "x": 1092,
+          "y": 570,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
-          "text": "Hint : Approach the problem from a different direction :-)",
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "388.0x263.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
+          "scale": 1
         }
       ]
     },

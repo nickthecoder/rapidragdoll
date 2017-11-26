@@ -10,7 +10,7 @@ class LevelRoute : Button() {
     var requiredScene = ""
 
     override fun activated() {
-        if (!Game.instance.preferences.node("scenes").node(requiredScene).getBoolean("completed", false)) {
+        if (requiredScene.isNotBlank() && !Game.instance.preferences.node("scenes").node(requiredScene).getBoolean("completed", false)) {
             actor.hide()
         }
     }

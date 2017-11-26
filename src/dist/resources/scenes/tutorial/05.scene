@@ -7,7 +7,11 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/tutorial-2"
+      "value": "tutorial/06"
+    },
+    {
+      "name": "menuName",
+      "value": "tutorial/menu"
     }
   ],
   "background": "#000000",
@@ -42,8 +46,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 111,
-          "y": 462,
+          "x": 130,
+          "y": 407,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -60,7 +64,7 @@
             },
             {
               "name": "speed",
-              "value": "600"
+              "value": "250"
             }
           ]
         },
@@ -135,29 +139,9 @@
           "scale": 1
         },
         {
-          "costume": "wall0",
-          "x": 1208,
-          "y": -1,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1208,
-          "y": 283,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
           "costume": "pin",
-          "x": 603,
-          "y": 82,
+          "x": 531,
+          "y": 68,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -165,18 +149,18 @@
         },
         {
           "costume": "information",
-          "x": 256,
-          "y": 511,
+          "x": 128,
+          "y": 514,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Knock over the skittle",
+          "text": "If you get stuck, press \"F5\" to restart.",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-132.0x237.0"
+              "value": "-40.0x248.0"
             },
             {
               "name": "seconds",
@@ -185,19 +169,39 @@
           ]
         },
         {
+          "costume": "wall0",
+          "x": 1125,
+          "y": 47,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1125,
+          "y": 286,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
           "costume": "information",
-          "x": 351,
-          "y": 471,
+          "x": 166,
+          "y": 457,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Aim with the mouse",
+          "text": "Do you remember the previous lessons ?",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "11.0x245.0"
+              "value": "221.0x293.0"
             },
             {
               "name": "seconds",
@@ -206,19 +210,52 @@
           ]
         },
         {
-          "costume": "information",
-          "x": 434,
-          "y": 431,
+          "costume": "wall-166",
+          "x": 564,
+          "y": 19,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "launcher",
+          "x": 1061,
+          "y": 519,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Click to throw a rag doll",
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "668.0x306.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
+        },
+        {
+          "costume": "information",
+          "x": 251,
+          "y": 406,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Hint : Approach the problem from a different direction :-)",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "153.0x234.0"
+              "value": "388.0x263.0"
             },
             {
               "name": "seconds",

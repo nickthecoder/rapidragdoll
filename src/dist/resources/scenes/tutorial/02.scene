@@ -7,7 +7,11 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/tutorial-5"
+      "value": "tutorial/03"
+    },
+    {
+      "name": "menuName",
+      "value": "tutorial/menu"
     }
   ],
   "background": "#000000",
@@ -42,8 +46,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 130,
-          "y": 499,
+          "x": 99,
+          "y": 512,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -52,7 +56,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "405.0x302.0"
+              "value": "537.0x306.0"
             },
             {
               "name": "dollName",
@@ -126,8 +130,8 @@
         },
         {
           "costume": "grass0",
-          "x": 837,
-          "y": -1,
+          "x": 836,
+          "y": 0,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -136,8 +140,8 @@
         },
         {
           "costume": "pin",
-          "x": 1136,
-          "y": 67,
+          "x": 970,
+          "y": 73,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -145,18 +149,18 @@
         },
         {
           "costume": "information",
-          "x": 208,
-          "y": 508,
+          "x": 218,
+          "y": 504,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Where's the skittle?",
+          "text": "The first skittle is easy!",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-610.0x16.0"
+              "value": "215.0x175.0"
             },
             {
               "name": "seconds",
@@ -166,9 +170,18 @@
         },
         {
           "costume": "wall0",
-          "x": 1486,
-          "y": 46,
+          "x": 600,
+          "y": 49,
           "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "pin",
+          "x": 334,
+          "y": 70,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -176,8 +189,8 @@
         },
         {
           "costume": "wall0",
-          "x": 1486,
-          "y": 284,
+          "x": 600,
+          "y": 287,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -185,19 +198,43 @@
           "scale": 1
         },
         {
-          "costume": "information",
-          "x": 279,
-          "y": 456,
+          "costume": "launcher",
+          "x": 704,
+          "y": 348,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Hold down the right mouse button,",
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "849.0x301.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
+        },
+        {
+          "costume": "information",
+          "x": 141,
+          "y": 455,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": "Press \"2\" to select the other launcher",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "154.0x238.0"
+              "value": "-853.0x-17.0"
             },
             {
               "name": "seconds",
@@ -207,59 +244,49 @@
         },
         {
           "costume": "information",
-          "x": 361,
-          "y": 401,
+          "x": 1071,
+          "y": 465,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "and drag to scroll to the right ->",
+          "text": "Press \"1\" to return\nto the first launcher",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "482.0x291.0"
+              "value": "640.0x53.0"
             },
             {
               "name": "seconds",
               "value": "2"
             }
           ]
-        },
-        {
-          "costume": "information",
-          "x": 1064,
-          "y": 225,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": "Here it is !",
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "0.0x-300.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "costume": "wall-166",
-          "x": 848,
-          "y": 48,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
         },
         {
           "costume": "grass0",
-          "x": 1252,
-          "y": -1,
+          "x": 1230,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1425,
+          "y": 47,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1425,
+          "y": 286,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -268,7 +295,7 @@
         },
         {
           "costume": "wood0",
-          "x": 1092,
+          "x": 1238,
           "y": 570,
           "zOrder": 0,
           "xAlignment": "LEFT",

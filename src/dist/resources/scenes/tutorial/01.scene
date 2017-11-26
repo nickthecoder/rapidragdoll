@@ -3,11 +3,15 @@
   "directorAttributes": [
     {
       "name": "maxDolls",
-      "value": "3"
+      "value": "5"
     },
     {
       "name": "nextScene",
-      "value": "tutorial/tutorial-7"
+      "value": "tutorial/02"
+    },
+    {
+      "name": "menuName",
+      "value": "tutorial/menu"
     }
   ],
   "background": "#000000",
@@ -42,8 +46,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 51,
-          "y": 376,
+          "x": 111,
+          "y": 462,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -52,7 +56,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "438.0x315.0"
+              "value": "537.0x306.0"
             },
             {
               "name": "dollName",
@@ -60,14 +64,14 @@
             },
             {
               "name": "speed",
-              "value": "500"
+              "value": "600"
             }
           ]
         },
         {
           "costume": "wall0",
-          "x": -97,
-          "y": 13,
+          "x": 0,
+          "y": 0,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -76,8 +80,8 @@
         },
         {
           "costume": "wall0",
-          "x": -98,
-          "y": 297,
+          "x": 0,
+          "y": 284,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -86,8 +90,8 @@
         },
         {
           "costume": "wood0",
-          "x": -112,
-          "y": 577,
+          "x": -16,
+          "y": 570,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -96,8 +100,8 @@
         },
         {
           "costume": "wood0",
-          "x": 541,
-          "y": 577,
+          "x": 630,
+          "y": 570,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -106,8 +110,8 @@
         },
         {
           "costume": "grass0",
-          "x": 87,
-          "y": 10,
+          "x": 0,
+          "y": 0,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -116,18 +120,38 @@
         },
         {
           "costume": "grass0",
-          "x": 482,
-          "y": 13,
+          "x": 419,
+          "y": 0,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
-          "direction": 355,
+          "direction": 0,
           "scale": 1
         },
         {
           "costume": "grass0",
-          "x": 899,
-          "y": -24,
+          "x": 836,
+          "y": 0,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1208,
+          "y": -1,
+          "zOrder": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wall0",
+          "x": 1208,
+          "y": 283,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
@@ -136,8 +160,8 @@
         },
         {
           "costume": "pin",
-          "x": 903,
-          "y": 41,
+          "x": 603,
+          "y": 82,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -145,18 +169,18 @@
         },
         {
           "costume": "information",
-          "x": 160,
-          "y": 527,
+          "x": 256,
+          "y": 511,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "That's a heavy rock.",
+          "text": "Knock over the skittle",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "360.0x225.0"
+              "value": "-132.0x237.0"
             },
             {
               "name": "seconds",
@@ -165,39 +189,19 @@
           ]
         },
         {
-          "costume": "wall0",
-          "x": 1125,
-          "y": 47,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1125,
-          "y": 286,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
           "costume": "information",
-          "x": 66,
-          "y": 480,
+          "x": 351,
+          "y": 471,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "You'll need to throw lots of dolls !!!",
+          "text": "Aim with the mouse",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "224.0x213.0"
+              "value": "11.0x245.0"
             },
             {
               "name": "seconds",
@@ -206,75 +210,19 @@
           ]
         },
         {
-          "costume": "rock",
-          "x": 423,
-          "y": 169,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 471,
-          "y": 289,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "pin",
-          "x": 690,
-          "y": 381,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "pin",
-          "x": 786,
-          "y": 382,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "pin",
-          "x": 883,
-          "y": 379,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": -98,
-          "y": 11,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
           "costume": "information",
-          "x": -28,
-          "y": 432,
+          "x": 434,
+          "y": 431,
           "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
           "scale": 1,
-          "text": "Not too fast though, they may vanish before hitting.",
+          "text": "Click to throw a rag doll",
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-120.0x284.0"
+              "value": "153.0x234.0"
             },
             {
               "name": "seconds",

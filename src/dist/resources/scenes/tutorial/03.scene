@@ -7,7 +7,11 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/tutorial-4"
+      "value": "tutorial/04"
+    },
+    {
+      "name": "menuName",
+      "value": "tutorial/menu"
     }
   ],
   "background": "#000000",

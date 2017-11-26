@@ -8,6 +8,10 @@
     {
       "name": "nextScene",
       "value": "menu"
+    },
+    {
+      "name": "menuName",
+      "value": "tutorial/menu"
     }
   ],
   "background": "#000000",
