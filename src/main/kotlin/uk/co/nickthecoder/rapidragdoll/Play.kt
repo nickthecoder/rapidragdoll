@@ -36,6 +36,14 @@ open class Play : AbstractDirector(), MouseHandler {
     @Attribute
     var menuName = "menu"
 
+    // Extent of the game area - Used to constrain panning
+    @Attribute
+    val bottomLeft = Vector2d(0.0, 0.0)
+
+    // Extent of the game area - Used to constrain panning
+    @Attribute
+    val topRight = Vector2d(Resources.instance.gameInfo.width.toDouble(), Resources.instance.gameInfo.height.toDouble())
+
     /**
      * Set to true by SceneComplete role when it's animation is finished.
      * That animation is started from within [objectivesComplete].
@@ -117,11 +125,21 @@ open class Play : AbstractDirector(), MouseHandler {
 
     var startTime = 0.0
 
+    var left: Input? = null
+    var right: Input? = null
+    var up: Input? = null
+    var down: Input? = null
+
     init {
         instance = this
     }
 
     override fun begin() {
+
+        left = Resources.instance.inputs.find("left")
+        right = Resources.instance.inputs.find("right")
+        up = Resources.instance.inputs.find("up")
+        down = Resources.instance.inputs.find("down")
 
         mainView = Game.instance.scene.findView("main") as StageView
         glassView = Game.instance.scene.findView("glass") as StageView
@@ -148,6 +166,27 @@ open class Play : AbstractDirector(), MouseHandler {
     override fun tick() {
         super.tick()
         panAction?.act()
+
+        if (up?.isPressed() == true) {
+            mainView.centerY += 5
+            constrainView()
+        }
+        if (down?.isPressed() == true) {
+            mainView.centerY -= 5
+            constrainView()
+        }
+        if (left?.isPressed() == true) {
+            mainView.centerX -= 5
+            constrainView()
+        }
+        if (right?.isPressed() == true) {
+            mainView.centerX += 5
+            constrainView()
+        }
+    }
+
+    override fun postTick() {
+        constrainView()
     }
 
     var started = false
@@ -160,6 +199,8 @@ open class Play : AbstractDirector(), MouseHandler {
             Game.instance.startScene(Game.instance.sceneName)
         }
     }
+    
+    var panStart = Vector2d()
 
     /**
      * When the left mouse button is pressed, ask the current Launcher to create a Doll
@@ -192,13 +233,34 @@ open class Play : AbstractDirector(), MouseHandler {
         }
     }
 
-    var panStart = Vector2d()
-
     override fun onMouseMove(event: MouseEvent) {
+
         mainView.screenToView(event.screenPosition, event.viewPosition)
         mainView.centerX += panStart.x - event.viewPosition.x
         mainView.centerY += panStart.y - event.viewPosition.y
         mainView.screenToView(event.screenPosition, panStart)
+        constrainView()
+    }
+
+    fun constrainView() {
+
+        var x = mainView.centerX - Game.instance.window.width / 2
+        var y = mainView.centerY - Game.instance.window.height / 2
+        if (x < bottomLeft.x) {
+            mainView.centerX += bottomLeft.x - x
+        }
+        if (y < bottomLeft.y) {
+            mainView.centerY += bottomLeft.y - y
+        }
+        x = mainView.centerX + Game.instance.window.width / 2
+        y = mainView.centerY + Game.instance.window.height / 2
+        if (x > topRight.x) {
+            mainView.centerX -= x - topRight.x
+        }
+        if (y > topRight.y) {
+            mainView.centerY -= y - topRight.y
+        }
+
     }
 
     /**

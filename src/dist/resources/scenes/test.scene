@@ -12,6 +12,14 @@
     {
       "name": "menuName",
       "value": "menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x-328.0"
+    },
+    {
+      "name": "topRight",
+      "value": "1720.0x870.0"
     }
   ],
   "background": "#000000",

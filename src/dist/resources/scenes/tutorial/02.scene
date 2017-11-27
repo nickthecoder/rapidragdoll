@@ -12,6 +12,14 @@
     {
       "name": "menuName",
       "value": "tutorial/menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "topRight",
+      "value": "1470.0x600.0"
     }
   ],
   "background": "#000000",
@@ -56,7 +64,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "537.0x306.0"
+              "value": "495.0x309.0"
             },
             {
               "name": "dollName",
@@ -209,7 +217,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "849.0x301.0"
+              "value": "995.0x301.0"
             },
             {
               "name": "dollName",

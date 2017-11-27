@@ -12,6 +12,14 @@
     {
       "name": "menuName",
       "value": "tutorial/menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "-80.0x20.0"
+    },
+    {
+      "name": "topRight",
+      "value": "1170.0x620.0"
     }
   ],
   "background": "#000000",

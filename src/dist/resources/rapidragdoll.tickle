@@ -3682,6 +3682,42 @@
           "state": "PRESSED"
         }
       ]
+    },
+    {
+      "name": "left",
+      "keys": [
+        {
+          "key": "Left",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "right",
+      "keys": [
+        {
+          "key": "Right",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "up",
+      "keys": [
+        {
+          "key": "Up",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "down",
+      "keys": [
+        {
+          "key": "Down",
+          "state": "PRESSED"
+        }
+      ]
     }
   ]
 }
