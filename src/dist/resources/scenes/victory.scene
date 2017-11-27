@@ -1,0 +1,130 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Victory",
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "grid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "guides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      
+    ],
+    "y": [
+      
+    ]
+  },
+  "include": [
+    
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "annie",
+          "x": 250,
+          "y": 295,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "chair2",
+          "x": 505,
+          "y": 114,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood-thin-600",
+          "x": -2,
+          "y": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "wood-thin-600",
+          "x": 596,
+          "y": 0,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "hand",
+          "x": 297,
+          "y": 297,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        },
+        {
+          "costume": "foxie",
+          "x": 67,
+          "y": 345,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "bony",
+          "x": 711,
+          "y": 293,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "text": ""
+        },
+        {
+          "costume": "umbrella",
+          "x": 710,
+          "y": 45,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1,
+          "attributes": [
+            {
+              "name": "angle",
+              "value": "0.0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        {
+          "costume": "chair1",
+          "x": 71,
+          "y": 119,
+          "xAlignment": "LEFT",
+          "yAlignment": "BOTTOM",
+          "direction": 0,
+          "scale": 1
+        }
+      ]
+    }
+  ]
+}
