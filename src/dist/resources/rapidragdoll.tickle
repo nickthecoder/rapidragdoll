@@ -6,7 +6,7 @@
     "height": 600,
     "resizable": true,
     "initialScene": "menu",
-    "testScene": "test",
+    "testScene": "victory",
     "producer": "uk.co.nickthecoder.tickle.NoProducer",
     "physics": {
       "gravity_x": 0,
@@ -126,6 +126,14 @@
       "size": 60,
       "xPadding": 16,
       "yPadding": 16
+    },
+    {
+      "name": "tiny",
+      "fontName": "Anaktoria",
+      "style": "PLAIN",
+      "size": 22,
+      "xPadding": 3,
+      "yPadding": 3
     }
   ],
   "poses": [
@@ -688,6 +696,28 @@
       "top": 252,
       "offsetX": 65,
       "offsetY": 10,
+      "direction": 0
+    },
+    {
+      "name": "hand-open",
+      "texture": "ui",
+      "left": 2,
+      "bottom": 332,
+      "right": 88,
+      "top": 275,
+      "offsetX": 11,
+      "offsetY": 9,
+      "direction": 0
+    },
+    {
+      "name": "hand-closed",
+      "texture": "ui",
+      "left": 91,
+      "bottom": 327,
+      "right": 177,
+      "top": 276,
+      "offsetX": 13,
+      "offsetY": 4,
       "direction": 0
     }
   ],
@@ -1673,7 +1703,7 @@
           }
         }
       ],
-      "showInSceneEditor": true
+      "showInSceneEditor": false
     },
     {
       "name": "bony",
@@ -2078,7 +2108,7 @@
           }
         }
       ],
-      "showInSceneEditor": true
+      "showInSceneEditor": false
     },
     {
       "name": "ui",
@@ -2117,7 +2147,7 @@
           "name": "sceneComplete",
           "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 100,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -2171,13 +2201,11 @@
           "name": "title",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 50,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
-            {
-              "name": "default"
-            }
+            
           ]
         },
         {
@@ -2224,7 +2252,7 @@
           "name": "button",
           "role": "uk.co.nickthecoder.tickle.util.SceneButton",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 1000,
           "initialEvent": "default",
           "showInSceneEditor": false,
           "events": [
@@ -2264,7 +2292,7 @@
           "name": "clickToContinue",
           "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 1000,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "inheritsEventsFrom": "small",
@@ -2286,7 +2314,7 @@
           "name": "countdown",
           "role": "uk.co.nickthecoder.rapidragdoll.Countdown",
           "canRotate": false,
-          "zOrder": 100,
+          "zOrder": 1000,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "inheritsEventsFrom": "large",
@@ -2404,6 +2432,18 @@
                   "outlineColor": "#ffffffff"
                 }
               ]
+            },
+            {
+              "name": "down",
+              "textStyles": [
+                {
+                  "font": "small",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#990000ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
             }
           ]
         },
@@ -2419,11 +2459,10 @@
               "name": "default",
               "textStyles": [
                 {
-                  "font": "small",
+                  "font": "tiny",
                   "halign": "CENTER",
                   "valign": "TOP",
-                  "color": "#330033ff",
-                  "outlineColor": "#ffffffff"
+                  "color": "#ffffffff"
                 }
               ]
             }
@@ -2477,7 +2516,7 @@
           "name": "information",
           "role": "uk.co.nickthecoder.rapidragdoll.Information",
           "canRotate": true,
-          "zOrder": 100,
+          "zOrder": 1000,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "inheritsEventsFrom": "small",
@@ -2499,7 +2538,7 @@
           "name": "timeIsUp",
           "role": "uk.co.nickthecoder.rapidragdoll.TimeIsUp",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 100,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "inheritsEventsFrom": "large",
@@ -2516,6 +2555,47 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "name": "hand",
+          "role": "uk.co.nickthecoder.rapidragdoll.Hand",
+          "canRotate": false,
+          "zOrder": 1100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "hand-open"
+              ]
+            },
+            {
+              "name": "pinch",
+              "poses": [
+                "hand-closed"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 100,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 0,
+                "mask": 0,
+                "circle": {
+                  "x": -1,
+                  "y": 0,
+                  "radius": 24
+                }
+              }
+            ]
+          }
         }
       ],
       "showInSceneEditor": true
@@ -2525,9 +2605,9 @@
       "costumes": [
         {
           "name": "chair2",
-          "role": "",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
           "canRotate": true,
-          "zOrder": 0,
+          "zOrder": 200,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -2618,9 +2698,9 @@
         },
         {
           "name": "chair1",
-          "role": "",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
           "canRotate": true,
-          "zOrder": 0,
+          "zOrder": 200,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -2713,7 +2793,7 @@
           "name": "fencePost",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 250,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -2784,7 +2864,7 @@
           "name": "fencePost-150",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 250,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -2855,7 +2935,7 @@
           "name": "fencePost-200",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 250,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -2926,7 +3006,7 @@
           "name": "grass0",
           "role": "",
           "canRotate": true,
-          "zOrder": 300,
+          "zOrder": 400,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -2964,7 +3044,7 @@
           "name": "pin",
           "role": "uk.co.nickthecoder.rapidragdoll.Pin",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 300,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3061,9 +3141,9 @@
         },
         {
           "name": "rock",
-          "role": "",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 350,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3102,7 +3182,7 @@
           "name": "umbrella",
           "role": "uk.co.nickthecoder.rapidragdoll.Umbrella",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 320,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3156,9 +3236,9 @@
         },
         {
           "name": "umbrella-top",
-          "role": "",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 321,
           "initialEvent": "default",
           "showInSceneEditor": false,
           "events": [
@@ -3242,7 +3322,7 @@
           "name": "wall-166",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 200,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3280,7 +3360,7 @@
           "name": "wall0",
           "role": "",
           "canRotate": true,
-          "zOrder": 320,
+          "zOrder": 200,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3318,7 +3398,7 @@
           "name": "wood-thin-200",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 150,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3356,7 +3436,7 @@
           "name": "wood-thin-400",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 150,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3394,7 +3474,7 @@
           "name": "wood-thin-600",
           "role": "",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 150,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3432,7 +3512,7 @@
           "name": "wood0",
           "role": "",
           "canRotate": false,
-          "zOrder": 340,
+          "zOrder": 150,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [

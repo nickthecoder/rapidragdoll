@@ -199,7 +199,7 @@ open class Play : AbstractDirector(), MouseHandler {
             Game.instance.startScene(Game.instance.sceneName)
         }
     }
-    
+
     var panStart = Vector2d()
 
     /**

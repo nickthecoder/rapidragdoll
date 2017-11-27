@@ -19,7 +19,7 @@ class Doll : ActionRole() {
 
     val initialVelocity = Vector2d()
 
-    var totalMass = 0.0
+    var totalMass = 0f
 
     val parts = mutableListOf<Actor>()
 
@@ -39,7 +39,7 @@ class Doll : ActionRole() {
         // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
         // depending on which body part is thrown.
         val throwBy = parts[random.nextInt(parts.size)].body!!
-        throwBy.linearVelocity = pixelsToWorld(initialVelocity.mul(totalMass / throwBy.mass))
+        throwBy.linearVelocity = pixelsToWorld(initialVelocity.mul(totalMass.toDouble() / throwBy.mass))
 
         val fades = ParallelAction()
         parts.forEach { part ->
@@ -55,6 +55,7 @@ class Doll : ActionRole() {
         val newActor = actor.createChildOnStage(part)
         val newRole = newActor.role
         if (newRole is DollPart) {
+            newRole.doll = this
             newActor.position.add(newRole.offset)
             newActor.updateBody()
 

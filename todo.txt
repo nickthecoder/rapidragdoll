@@ -32,11 +32,9 @@ Collectables
 	Increase/Descrease max dolls
 
 Finish menu scene
-	Button for each set of scenes
 		Fire Frenzy
 		Limited Launchers
 		Puzzle Picnic
-		Sit Sedate
 
 Level sets scene
 	Show a box/circle for each scene, with the completion time.
@@ -46,6 +44,13 @@ Level sets scene
 Later
 -----
 
+Create a Success Scene
+	Starts fairly blank, and as you win scenes, you get more items appearing.
+	Both Scenery and dolls.
+	Use the mouse to pick up items, and move them.
+	A "Save" button saves the scene using Preferences. Just x,y,angle for each piece.
+	A US style mail box with the flag up shows there are new rewards
+		Click to throw the reward out! + Delay to prevent overlaps.
 
 Much Later
 ----------

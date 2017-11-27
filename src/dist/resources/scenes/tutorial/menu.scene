@@ -12,6 +12,14 @@
     {
       "name": "nextScene",
       "value": "menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "topRight",
+      "value": "1024.0x600.0"
     }
   ],
   "background": "#000000",
@@ -53,7 +61,6 @@
           "costume": "levelStatus",
           "x": 122,
           "y": 359,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -93,7 +100,6 @@
           "costume": "levelStatus",
           "x": 259,
           "y": 318,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -133,7 +139,6 @@
           "costume": "sceneButton",
           "x": 503,
           "y": 17,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -165,7 +170,6 @@
           "costume": "levelStatus",
           "x": 341,
           "y": 203,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -250,7 +254,6 @@
           "costume": "levelStatus",
           "x": 462,
           "y": 280,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -305,7 +308,6 @@
           "costume": "levelStatus",
           "x": 607,
           "y": 283,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -345,7 +347,6 @@
           "costume": "levelStatus",
           "x": 794,
           "y": 427,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -400,7 +401,6 @@
           "costume": "levelStatus",
           "x": 805,
           "y": 286,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -455,7 +455,6 @@
           "costume": "levelStatus",
           "x": 709,
           "y": 185,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,

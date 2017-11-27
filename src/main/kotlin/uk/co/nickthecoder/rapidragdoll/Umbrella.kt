@@ -3,20 +3,23 @@ package uk.co.nickthecoder.rapidragdoll
 import org.jbox2d.dynamics.joints.RevoluteJointDef
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Umbrella : AbstractRole() {
+class Umbrella : AbstractRole(), Draggable {
 
     @Attribute
     val angle = Angle()
 
     val joinPoint = Vector2d(0.0, 141.0)
 
+    lateinit var topHalf: Actor
+
     override fun activated() {
-        val topHalf = actor.createChildOnStage("topHalf")
+        topHalf = actor.createChildOnStage("topHalf")
         topHalf.position.y += joinPoint.y
         topHalf.updateBody()
 
@@ -39,4 +42,7 @@ class Umbrella : AbstractRole() {
 
     override fun tick() {
     }
+
+    override fun mass(): Float = actor.body!!.mass + topHalf.body!!.mass
+
 }

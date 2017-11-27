@@ -12,6 +12,14 @@
     {
       "name": "menuName",
       "value": "menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "topRight",
+      "value": "1024.0x600.0"
     }
   ],
   "background": "#000000",
@@ -136,7 +144,6 @@
           "costume": "sceneButton",
           "x": 530,
           "y": 280,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -153,7 +160,6 @@
           "costume": "quitButton",
           "x": 80,
           "y": 13,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -164,7 +170,6 @@
           "costume": "urlButton",
           "x": 1014,
           "y": 8,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -191,7 +196,6 @@
           "costume": "small",
           "x": 549,
           "y": 442,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -202,7 +206,6 @@
           "costume": "sceneButton",
           "x": 527,
           "y": 201,
-          "zOrder": 0,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,

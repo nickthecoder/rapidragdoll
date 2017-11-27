@@ -5,7 +5,7 @@ import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.CostumeAttribute
 
-class DollPart : AbstractRole() {
+class DollPart : AbstractRole(), Draggable {
 
     @CostumeAttribute(order = 1)
     val offset = Vector2d()
@@ -16,7 +16,10 @@ class DollPart : AbstractRole() {
     @CostumeAttribute(order = 3)
     val toAngle = Angle.degrees(180.0)
 
+    lateinit var doll: Doll
+
     override fun tick() {
     }
 
+    override fun mass() = doll.totalMass
 }
