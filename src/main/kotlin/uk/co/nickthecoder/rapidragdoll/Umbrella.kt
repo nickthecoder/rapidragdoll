@@ -21,7 +21,6 @@ class Umbrella : AbstractRole(), Draggable {
     override fun activated() {
         topHalf = actor.createChildOnStage("topHalf")
         topHalf.position.y += joinPoint.y
-        topHalf.updateBody()
 
         actor.body?.let { joinTo ->
 
@@ -37,7 +36,6 @@ class Umbrella : AbstractRole(), Draggable {
             Game.instance.scene.world?.createJoint(jointDef)
         }
         topHalf.direction.radians += angle.radians
-        topHalf.updateBody()
     }
 
     override fun tick() {

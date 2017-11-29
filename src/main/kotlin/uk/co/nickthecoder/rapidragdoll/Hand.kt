@@ -17,7 +17,6 @@ class Hand : AbstractRole() {
 
     override fun tick() {
         view?.mousePosition(actor.position)
-        actor.updateBody()
     }
 
 }

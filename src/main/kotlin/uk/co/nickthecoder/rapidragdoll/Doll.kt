@@ -57,7 +57,6 @@ class Doll : ActionRole() {
         if (newRole is DollPart) {
             newRole.doll = this
             newActor.position.add(newRole.offset)
-            newActor.updateBody()
 
             if (joinTo != null) {
 

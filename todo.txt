@@ -8,6 +8,8 @@ Stray pixels on Annie
 Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt when bent.
 Arms arm't correctly constrained?
 
+Stray pixels on skittle
+
 Next
 ----
 
@@ -51,6 +53,7 @@ Create a Success Scene
 	A "Save" button saves the scene using Preferences. Just x,y,angle for each piece.
 	A US style mail box with the flag up shows there are new rewards
 		Click to throw the reward out! + Delay to prevent overlaps.
+	
 
 Much Later
 ----------

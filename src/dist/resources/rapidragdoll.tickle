@@ -377,7 +377,13 @@
       "top": 158,
       "offsetX": 0,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 421,
+          "y": 0
+        }
+      ]
     },
     {
       "name": "wall0",
@@ -388,7 +394,17 @@
       "top": 333,
       "offsetX": 0,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 51,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 284
+        }
+      ]
     },
     {
       "name": "wood0",
@@ -399,7 +415,17 @@
       "top": 251,
       "offsetX": 0,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 653,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 81
+        }
+      ]
     },
     {
       "name": "wood-thin-650",
@@ -410,7 +436,17 @@
       "top": 251,
       "offsetX": 0,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 600,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 40
+        }
+      ]
     },
     {
       "name": "wood-thin-200",
@@ -421,7 +457,17 @@
       "top": 251,
       "offsetX": 0,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 198,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 40
+        }
+      ]
     },
     {
       "name": "wood-thin-400",
@@ -432,7 +478,17 @@
       "top": 251,
       "offsetX": 0,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 400,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 40
+        }
+      ]
     },
     {
       "name": "wall-166",
@@ -443,7 +499,17 @@
       "top": 333,
       "offsetX": 0,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 51,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 165
+        }
+      ]
     },
     {
       "name": "rock",
@@ -542,7 +608,13 @@
       "top": 337,
       "offsetX": 13,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 27,
+          "y": 0
+        }
+      ]
     },
     {
       "name": "fencePost-200",
@@ -553,7 +625,13 @@
       "top": 337,
       "offsetX": 13,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 27,
+          "y": 0
+        }
+      ]
     },
     {
       "name": "fencePost-150",
@@ -564,7 +642,13 @@
       "top": 337,
       "offsetX": 13,
       "offsetY": 0,
-      "direction": 0
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 27,
+          "y": 0
+        }
+      ]
     },
     {
       "name": "umbrella",

@@ -25,7 +25,7 @@
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -34,7 +34,7 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
@@ -43,6 +43,11 @@
     "y": [
       
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
   },
   "include": [
     "glass",
@@ -168,8 +173,8 @@
         },
         {
           "costume": "wood0",
-          "x": -51,
-          "y": 812,
+          "x": 0,
+          "y": 806,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -177,8 +182,8 @@
         },
         {
           "costume": "wood0",
-          "x": 590,
-          "y": 812,
+          "x": 653,
+          "y": 806,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -186,8 +191,8 @@
         },
         {
           "costume": "wood0",
-          "x": 1098,
-          "y": 812,
+          "x": 1306,
+          "y": 806,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -195,8 +200,8 @@
         },
         {
           "costume": "wall0",
-          "x": 1669,
-          "y": 529,
+          "x": 1684,
+          "y": 522,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -204,8 +209,8 @@
         },
         {
           "costume": "wall0",
-          "x": 1669,
-          "y": 243.19999999999993,
+          "x": 1684,
+          "y": 238,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -213,8 +218,8 @@
         },
         {
           "costume": "wall0",
-          "x": 1669,
-          "y": -42,
+          "x": 1684,
+          "y": -46,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -222,8 +227,8 @@
         },
         {
           "costume": "wall0",
-          "x": 1669,
-          "y": -328,
+          "x": 1684,
+          "y": -330,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -241,7 +246,7 @@
         {
           "costume": "wall0",
           "x": 0,
-          "y": -44,
+          "y": -46,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -250,7 +255,7 @@
         {
           "costume": "wall0",
           "x": 0,
-          "y": 240,
+          "y": 238,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -259,7 +264,7 @@
         {
           "costume": "wall0",
           "x": 0,
-          "y": 526,
+          "y": 522,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -267,8 +272,8 @@
         },
         {
           "costume": "grass0",
-          "x": 2,
-          "y": -328,
+          "x": 0,
+          "y": -330,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -276,8 +281,8 @@
         },
         {
           "costume": "grass0",
-          "x": 414,
-          "y": -328,
+          "x": 421,
+          "y": -330,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -285,8 +290,8 @@
         },
         {
           "costume": "grass0",
-          "x": 835,
-          "y": -328,
+          "x": 842,
+          "y": -330,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -294,8 +299,8 @@
         },
         {
           "costume": "grass0",
-          "x": 1251,
-          "y": -328,
+          "x": 1263,
+          "y": -330,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
@@ -303,8 +308,8 @@
         },
         {
           "costume": "wall0",
-          "x": 884.5504000000003,
-          "y": 245.34719999999993,
+          "x": 886.5504000000003,
+          "y": 247.34719999999993,
           "xAlignment": "LEFT",
           "yAlignment": "BOTTOM",
           "direction": 0,
