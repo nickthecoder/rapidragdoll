@@ -13,8 +13,13 @@ Stray pixels on skittle
 Next
 ----
 
+Allow dolls to be picked up on the menu???
+
 Scenery
 	Wallpaper
+
+Items which must NOT be knocked over :
+	Vase
 
 Add simple movable objects
 	table, lamp stands
@@ -29,19 +34,15 @@ Add a recharge time to a Launcher?
 	Aim changes to an hour-glass when recharging.
 
 Collectables
-	Add "ammo" to the current Launcher
-	Increase/Descrease speed of the current Launcher
+	Add "ammo" to the current/all Launchers
+	Increase/Descrease speed of the current/all Launchers
 	Increase/Descrease max dolls
 
 Finish menu scene
 		Fire Frenzy
 		Limited Launchers
 		Puzzle Picnic
-
-Level sets scene
-	Show a box/circle for each scene, with the completion time.
-	Can only press a scene button if the previous has been finished (or is the first).
-	(Use Preferences)
+		Chucking Challenge
 
 Later
 -----

@@ -1,5 +1,6 @@
 package uk.co.nickthecoder.rapidragdoll
 
+import org.jbox2d.dynamics.joints.RevoluteJoint
 import org.jbox2d.dynamics.joints.RevoluteJointDef
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.ActionRole
@@ -27,6 +28,7 @@ class Doll : ActionRole() {
 
     override fun createAction(): Action {
 
+        println("Creating doll parts")
         val torso = createPart("torso", 0.0)
         val abdomen = createPart("abdomen", 0.1, torso)
 
@@ -68,8 +70,8 @@ class Doll : ActionRole() {
                 jointDef.lowerAngle = newRole.fromAngle.radians.toFloat()
                 jointDef.upperAngle = newRole.toAngle.radians.toFloat()
                 jointDef.enableLimit = true
-
-                Game.instance.scene.world?.createJoint(jointDef)
+                jointDef.collideConnected = false
+                Game.instance.scene.world?.createJoint(jointDef) as RevoluteJoint
             }
         }
         newActor.zOrder = actor.zOrder + zOrder

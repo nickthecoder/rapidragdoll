@@ -41,9 +41,7 @@ class Victory : AbstractDirector(), MouseHandler {
     }
 
     override fun onMouseMove(event: MouseEvent) {
-        dragging?.let {
-            dragObject(event, it)
-        }
+        dragObject(event)
     }
 
     fun dropObject() {
@@ -79,7 +77,7 @@ class Victory : AbstractDirector(), MouseHandler {
         }
     }
 
-    fun dragObject(event: MouseEvent, obj: Draggable) {
+    fun dragObject(event: MouseEvent) {
         mainView.screenToView(event.screenPosition, event.viewPosition)
         mouseJoint?.target?.set(pixelsToWorld(event.viewPosition))
     }

@@ -6,7 +6,7 @@
     "height": 600,
     "resizable": true,
     "initialScene": "menu",
-    "testScene": "victory",
+    "testScene": "test",
     "producer": "uk.co.nickthecoder.tickle.NoProducer",
     "physics": {
       "gravity_x": 0,
@@ -108,6 +108,14 @@
     {
       "name": "ui",
       "file": "images/ui.png"
+    },
+    {
+      "name": "fiona",
+      "file": "images/fiona.png"
+    },
+    {
+      "name": "mike",
+      "file": "images/mike.png"
     }
   ],
   "fonts": [
@@ -803,6 +811,160 @@
       "offsetX": 13,
       "offsetY": 4,
       "direction": 0
+    },
+    {
+      "name": "fiona-head",
+      "texture": "fiona",
+      "left": 44,
+      "bottom": 32,
+      "right": 69,
+      "top": 2,
+      "offsetX": 15,
+      "offsetY": 1,
+      "direction": 0
+    },
+    {
+      "name": "fiona-arm-right",
+      "texture": "fiona",
+      "left": 83,
+      "bottom": 76,
+      "right": 118,
+      "top": 5,
+      "offsetX": 6,
+      "offsetY": 67,
+      "direction": 0
+    },
+    {
+      "name": "fiona-arm-left",
+      "texture": "fiona",
+      "left": 3,
+      "bottom": 71,
+      "right": 36,
+      "top": 13,
+      "offsetX": 27,
+      "offsetY": 52,
+      "direction": 0
+    },
+    {
+      "name": "fiona-torso",
+      "texture": "fiona",
+      "left": 39,
+      "bottom": 83,
+      "right": 81,
+      "top": 34,
+      "offsetX": 19,
+      "offsetY": 44,
+      "direction": 0
+    },
+    {
+      "name": "fiona-abdomen",
+      "texture": "fiona",
+      "left": 40,
+      "bottom": 149,
+      "right": 78,
+      "top": 93,
+      "offsetX": 19,
+      "offsetY": 45,
+      "direction": 0
+    },
+    {
+      "name": "fiona-leg-left",
+      "texture": "fiona",
+      "left": 12,
+      "bottom": 166,
+      "right": 29,
+      "top": 87,
+      "offsetX": 8,
+      "offsetY": 81,
+      "direction": 0
+    },
+    {
+      "name": "fiona-leg-right",
+      "texture": "fiona",
+      "left": 94,
+      "bottom": 165,
+      "right": 111,
+      "top": 86,
+      "offsetX": 8,
+      "offsetY": 81,
+      "direction": 0
+    },
+    {
+      "name": "mike-head",
+      "texture": "mike",
+      "left": 51,
+      "bottom": 42,
+      "right": 69,
+      "top": 17,
+      "offsetX": 10,
+      "offsetY": 6,
+      "direction": 0
+    },
+    {
+      "name": "mike-arm-right",
+      "texture": "mike",
+      "left": 88,
+      "bottom": 75,
+      "right": 112,
+      "top": 16,
+      "offsetX": 4,
+      "offsetY": 54,
+      "direction": 0
+    },
+    {
+      "name": "mike-arm-left",
+      "texture": "mike",
+      "left": 6,
+      "bottom": 76,
+      "right": 32,
+      "top": 16,
+      "offsetX": 21,
+      "offsetY": 52,
+      "direction": 0
+    },
+    {
+      "name": "mike-torso",
+      "texture": "mike",
+      "left": 42,
+      "bottom": 106,
+      "right": 82,
+      "top": 47,
+      "offsetX": 21,
+      "offsetY": 44,
+      "direction": 0
+    },
+    {
+      "name": "mike-leg-left",
+      "texture": "mike",
+      "left": 15,
+      "bottom": 170,
+      "right": 34,
+      "top": 90,
+      "offsetX": 10,
+      "offsetY": 73,
+      "direction": 0
+    },
+    {
+      "name": "mike-leg-right",
+      "texture": "mike",
+      "left": 91,
+      "bottom": 165,
+      "right": 115,
+      "top": 90,
+      "offsetX": 9,
+      "offsetY": 65,
+      "direction": 0
+    },
+    {
+      "name": "mike-abdomen",
+      "texture": "mike",
+      "left": 47,
+      "bottom": 155,
+      "right": 82,
+      "top": 120,
+      "offsetX": 19,
+      "offsetY": 20,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -979,6 +1141,122 @@
               "name": "leg-right",
               "costumes": [
                 "bony-leg-right"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fiona",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "fiona-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "fiona-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "fiona-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "fiona-abdomen"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "fiona-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "fiona-arm-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "fiona-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "fiona-leg-right"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mike",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "mike-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "mike-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "mike-torso"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "mike-arm-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "mike-leg-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "mike-leg-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "mike-arm-right"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "mike-abdomen"
               ]
             }
           ]
@@ -2666,16 +2944,16 @@
             "fixtures": [
               {
                 "friction": 0,
-                "density": 100,
+                "density": 1,
                 "restitution": 1,
                 "isSensor": false,
                 "group": 0,
                 "category": 0,
                 "mask": 0,
                 "circle": {
-                  "x": -1,
+                  "x": 0,
                   "y": 0,
-                  "radius": 24
+                  "radius": 20
                 }
               }
             ]
@@ -3763,6 +4041,1016 @@
               "value": "600"
             }
           ]
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "fiona",
+      "costumes": [
+        {
+          "name": "fiona-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fiona-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x2.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "circle": {
+                  "x": -2,
+                  "y": 14,
+                  "radius": 11
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fiona-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fiona-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-170.0"
+            },
+            {
+              "name": "offset",
+              "value": "-13.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "0.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 5,
+                      "y": -2
+                    },
+                    {
+                      "x": -5,
+                      "y": 7
+                    },
+                    {
+                      "x": -4,
+                      "y": -19
+                    },
+                    {
+                      "x": 1,
+                      "y": -23
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 1,
+                      "y": -22
+                    },
+                    {
+                      "x": -5,
+                      "y": -19
+                    },
+                    {
+                      "x": -23,
+                      "y": -46
+                    },
+                    {
+                      "x": -16,
+                      "y": -48
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fiona-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fiona-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "0.0"
+            },
+            {
+              "name": "offset",
+              "value": "16.0x-8.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "170.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 9,
+                      "y": -4
+                    },
+                    {
+                      "x": -1,
+                      "y": 4
+                    },
+                    {
+                      "x": -2,
+                      "y": -25
+                    },
+                    {
+                      "x": 7,
+                      "y": -22
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 6,
+                      "y": -21
+                    },
+                    {
+                      "x": -3,
+                      "y": -26
+                    },
+                    {
+                      "x": 15,
+                      "y": -63
+                    },
+                    {
+                      "x": 21,
+                      "y": -59
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fiona-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fiona-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -16,
+                      "y": -2
+                    },
+                    {
+                      "x": -8,
+                      "y": -35
+                    },
+                    {
+                      "x": 14,
+                      "y": -34
+                    },
+                    {
+                      "x": 20,
+                      "y": -3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fiona-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fiona-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-44.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 14,
+                      "y": 4
+                    },
+                    {
+                      "x": -13,
+                      "y": 4
+                    },
+                    {
+                      "x": -15,
+                      "y": -22
+                    },
+                    {
+                      "x": 19,
+                      "y": -20
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fiona-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fiona-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-20.0"
+            },
+            {
+              "name": "offset",
+              "value": "-10.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 8,
+                      "y": -5
+                    },
+                    {
+                      "x": -6,
+                      "y": -5
+                    },
+                    {
+                      "x": -3,
+                      "y": -74
+                    },
+                    {
+                      "x": 4,
+                      "y": -75
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "fiona-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "fiona-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "10.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 6,
+                      "y": -6
+                    },
+                    {
+                      "x": -6,
+                      "y": -8
+                    },
+                    {
+                      "x": -2,
+                      "y": -72
+                    },
+                    {
+                      "x": 5,
+                      "y": -75
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": false
+    },
+    {
+      "name": "mike",
+      "costumes": [
+        {
+          "name": "mike-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "mike-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "15.0x0.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 10,
+                      "y": -27
+                    },
+                    {
+                      "x": 17,
+                      "y": -23
+                    },
+                    {
+                      "x": 3,
+                      "y": -1
+                    },
+                    {
+                      "x": -1,
+                      "y": -9
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 12,
+                      "y": -29
+                    },
+                    {
+                      "x": 13,
+                      "y": -53
+                    },
+                    {
+                      "x": 19,
+                      "y": -54
+                    },
+                    {
+                      "x": 19,
+                      "y": -26
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mike-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "mike-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x30.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "circle": {
+                  "x": 0,
+                  "y": 8,
+                  "radius": 9
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mike-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "mike-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "-15.0x0.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -18,
+                      "y": -21
+                    },
+                    {
+                      "x": -1,
+                      "y": 8
+                    },
+                    {
+                      "x": 1,
+                      "y": -8
+                    },
+                    {
+                      "x": -10,
+                      "y": -21
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -19,
+                      "y": -25
+                    },
+                    {
+                      "x": -16,
+                      "y": -50
+                    },
+                    {
+                      "x": -9,
+                      "y": -49
+                    },
+                    {
+                      "x": -12,
+                      "y": -25
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mike-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "mike-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 19,
+                      "y": 0
+                    },
+                    {
+                      "x": -1,
+                      "y": 8
+                    },
+                    {
+                      "x": -21,
+                      "y": 0
+                    },
+                    {
+                      "x": -14,
+                      "y": -38
+                    },
+                    {
+                      "x": 15,
+                      "y": -40
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mike-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "mike-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "-15.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -9,
+                      "y": -2
+                    },
+                    {
+                      "x": -5,
+                      "y": -69
+                    },
+                    {
+                      "x": 2,
+                      "y": -66
+                    },
+                    {
+                      "x": 8,
+                      "y": -1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mike-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "mike-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "15.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -5,
+                      "y": -7
+                    },
+                    {
+                      "x": 0,
+                      "y": -52
+                    },
+                    {
+                      "x": 9,
+                      "y": -59
+                    },
+                    {
+                      "x": 6,
+                      "y": -4
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mike-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "mike-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-20.0"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-30.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 14,
+                      "y": 2
+                    },
+                    {
+                      "x": -15,
+                      "y": 3
+                    },
+                    {
+                      "x": -17,
+                      "y": -12
+                    },
+                    {
+                      "x": 15,
+                      "y": -13
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       ],
       "showInSceneEditor": true
