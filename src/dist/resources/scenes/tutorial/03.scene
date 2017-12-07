@@ -25,7 +25,7 @@
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -34,15 +34,25 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
-      
+      0
     ],
     "y": [
-      
+      0
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     "glass",
@@ -56,10 +66,9 @@
           "costume": "launcher",
           "x": 143,
           "y": 251,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -79,83 +88,44 @@
           "costume": "wall0",
           "x": 0,
           "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 284,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 545,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "wood0",
-          "x": -16,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": -2,
+          "y": 544,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 630,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 0,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 419,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 836,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1027,
+          "sizeY": 74,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "pin",
           "x": 732,
           "y": 70,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
-          "x": 256,
-          "y": 511,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "x": 255,
+          "y": 478,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Bounce off of the ceiling",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -169,12 +139,27 @@
         },
         {
           "costume": "wall0",
-          "x": 364,
-          "y": 52,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 370,
+          "y": 0,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 309,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": 0,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1025,
+          "sizeY": 89,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

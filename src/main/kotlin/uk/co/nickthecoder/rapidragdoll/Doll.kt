@@ -28,7 +28,6 @@ class Doll : ActionRole() {
 
     override fun createAction(): Action {
 
-        println("Creating doll parts")
         val torso = createPart("torso", 0.0)
         val abdomen = createPart("abdomen", 0.1, torso)
 

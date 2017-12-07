@@ -25,7 +25,7 @@
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -34,7 +34,7 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
@@ -43,6 +43,16 @@
     "y": [
       
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     "glass",
@@ -56,10 +66,9 @@
           "costume": "launcher",
           "x": 592,
           "y": 352,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -79,83 +88,44 @@
           "costume": "wall0",
           "x": 0,
           "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 284,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 48,
+          "sizeY": 580,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "wood0",
-          "x": -16,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 630,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
           "x": 0,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "y": 569,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 419,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 836,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1260,
+          "sizeY": 69,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "pin",
           "x": 276,
           "y": 79,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
           "x": 302,
           "y": 447,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "You only have 20 seconds to finish the level !",
           "direction": 0,
-          "scale": 1,
-          "text": "You only have 10 seconds to finish the level !",
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -170,84 +140,49 @@
         {
           "costume": "wall0",
           "x": 1207,
-          "y": 44,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "y": 0,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1206,
-          "y": 285,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall-166",
-          "x": 558,
-          "y": 47,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 48,
+          "sizeY": 572,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "pin",
           "x": 931,
           "y": 381,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood-thin-200",
-          "x": 50,
-          "y": 340,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 224,
           "y": 393,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 1015,
           "y": 72,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood-thin-400",
-          "x": 858,
-          "y": 330,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
           "x": 419,
           "y": 507,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "This is the last tutorial !",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -258,6 +193,54 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "costume": "grass",
+          "x": 0,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1269,
+          "sizeY": 75,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood0",
+          "x": 45,
+          "y": 340,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 215,
+          "sizeY": 41,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood0",
+          "x": 874,
+          "y": 319,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 338,
+          "sizeY": 52,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall0",
+          "x": 593,
+          "y": -3,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 46,
+          "sizeY": 209,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },
@@ -268,15 +251,16 @@
           "costume": "countdown",
           "x": 15,
           "y": 602,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "0:00",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "seconds",
-              "value": "10"
+              "value": "20"
             }
           ]
         }

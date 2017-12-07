@@ -49,6 +49,11 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
   "include": [
     "glass",
     "aim"
@@ -62,10 +67,9 @@
           "x": -135,
           "y": 376,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -85,48 +89,25 @@
           "costume": "pin",
           "x": -246,
           "y": 69,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "fencePost",
           "x": -404,
-          "y": 59,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "y": 52,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": -421,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 0,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "umbrella",
           "x": 206,
           "y": 61,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "angle",
@@ -138,84 +119,51 @@
           "costume": "pin",
           "x": 342,
           "y": 65,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 420,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 573,
           "y": 69,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 836,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "fencePost",
           "x": 1246,
-          "y": 53,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "y": 46,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 903,
           "y": 75,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": -836,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 1247,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "grass",
+          "x": -416,
+          "y": -1,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1674,
+          "sizeY": 86,
+          "alignmentX": 0,
+          "alignmentY": 0
+        }
       ]
     }
   ]

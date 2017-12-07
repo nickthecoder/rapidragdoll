@@ -25,24 +25,34 @@
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
-    "xSpacing": 250,
+    "xSpacing": 50,
     "ySpacing": 50,
     "xOffset": 0,
     "yOffset": 0,
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
-    "closeness": 10,
+    "closeness": 5,
     "x": [
-      0
+      
     ],
     "y": [
-      0
+      
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     "glass",
@@ -57,10 +67,9 @@
           "x": -135,
           "y": 376,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -80,48 +89,25 @@
           "costume": "pin",
           "x": -246,
           "y": 69,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "fencePost",
           "x": -404,
-          "y": 59,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "y": 51,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": -421,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 0,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "umbrella",
           "x": 206,
           "y": 61,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "angle",
@@ -133,77 +119,45 @@
           "costume": "pin",
           "x": 342,
           "y": 65,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 420,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 573,
           "y": 69,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 836,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "fencePost",
           "x": 1246,
           "y": 53,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 903,
           "y": 75,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
-          "costume": "grass0",
-          "x": -826,
+          "costume": "grass",
+          "x": -471,
           "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 1251,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1794,
+          "sizeY": 88,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

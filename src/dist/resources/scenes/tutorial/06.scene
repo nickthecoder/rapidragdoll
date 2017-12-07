@@ -38,16 +38,22 @@
     "enabled": true,
     "closeness": 5,
     "x": [
-      
+      0
     ],
     "y": [
-      
+      0,
+      800
     ]
   },
   "snapToOthers": {
     "enabled": true,
     "xCloseness": 10,
     "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     "glass",
@@ -61,10 +67,9 @@
           "costume": "launcher",
           "x": 51,
           "y": 376,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -82,85 +87,73 @@
         },
         {
           "costume": "wall0",
-          "x": -97,
-          "y": 13,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": -98,
-          "y": 297,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
           "x": -112,
-          "y": 577,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "y": 0,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 48,
+          "sizeY": 583,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "wood0",
-          "x": 541,
-          "y": 577,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": -114,
+          "y": 579,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1290,
+          "sizeY": 50,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "grass0",
           "x": 87,
           "y": 10,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "zOrder": 0,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "grass0",
           "x": 482,
           "y": 13,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "zOrder": 0,
           "direction": 355,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "grass0",
           "x": 899,
           "y": -24,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "zOrder": 0,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 903,
           "y": 41,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
           "x": 160,
           "y": 527,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "That's a heavy rock.",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -174,31 +167,26 @@
         },
         {
           "costume": "wall0",
-          "x": 1125,
-          "y": 47,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 1124,
+          "y": -25,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1125,
-          "y": 286,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 54,
+          "sizeY": 626,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "information",
           "x": 66,
           "y": 480,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "You'll need to throw lots of dolls !!!",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -212,67 +200,67 @@
         },
         {
           "costume": "rock",
-          "x": 423,
+          "x": 413,
           "y": 169,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "wood0",
-          "x": 471,
-          "y": 289,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 484,
+          "y": 329,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 645,
+          "sizeY": 43,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 690,
-          "y": 381,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 634,
+          "y": 387,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 786,
           "y": 382,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "pin",
           "x": 883,
           "y": 379,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "grass0",
           "x": -98,
           "y": 11,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "zOrder": 0,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
           "x": -28,
           "y": 432,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Not too fast though, they may vanish before hitting.",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -283,6 +271,42 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "costume": "grass",
+          "x": -110,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 541,
+          "sizeY": 85,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": 409,
+          "y": 0,
+          "direction": 356.7754773934801,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 427.5767318945833,
+          "sizeY": 81.96425039215362,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": 815,
+          "y": -26,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 365,
+          "sizeY": 81,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

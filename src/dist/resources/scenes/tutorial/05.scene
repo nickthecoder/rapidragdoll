@@ -25,7 +25,7 @@
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -34,15 +34,25 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
-      
+      0
     ],
     "y": [
-      
+      0
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     "glass",
@@ -56,10 +66,9 @@
           "costume": "launcher",
           "x": 130,
           "y": 407,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -77,85 +86,34 @@
         },
         {
           "costume": "wall0",
-          "x": 0,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 22.75,
+          "y": 305.75,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 284,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": -16,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 630,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 0,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 419,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 836,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50.5,
+          "sizeY": 612.5,
+          "alignmentX": 0.5,
+          "alignmentY": 0.5
         },
         {
           "costume": "pin",
           "x": 531,
           "y": 68,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
           "x": 128,
           "y": 514,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "If you get stuck, press \"F5\" to restart.",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -169,31 +127,26 @@
         },
         {
           "costume": "wall0",
-          "x": 1125,
-          "y": 47,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 1025,
+          "y": 0,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1125,
-          "y": 286,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 51,
+          "sizeY": 616,
+          "alignmentX": 1,
+          "alignmentY": 0
         },
         {
           "costume": "information",
           "x": 166,
           "y": 457,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Do you remember the previous lessons ?",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -209,43 +162,20 @@
           "costume": "wall-166",
           "x": 564,
           "y": 19,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "launcher",
-          "x": 1061,
-          "y": 519,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "attributes": [
-            {
-              "name": "panTo",
-              "value": "668.0x306.0"
-            },
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            }
-          ]
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
           "x": 251,
           "y": 406,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Hint : Approach the problem from a different direction :-)",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -254,6 +184,40 @@
             {
               "name": "seconds",
               "value": "2"
+            }
+          ]
+        },
+        {
+          "costume": "grass",
+          "x": 0,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1026,
+          "sizeY": 77,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "launcher",
+          "x": 897,
+          "y": 488,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "0.0x0.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
             }
           ]
         }

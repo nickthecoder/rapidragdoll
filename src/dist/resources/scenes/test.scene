@@ -63,35 +63,29 @@
       "name": "main",
       "actors": [
         {
-          "costume": "launcher",
-          "x": 391,
-          "y": 753,
+          "costume": "grass",
+          "x": -3,
+          "y": -2,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "attributes": [
-            {
-              "name": "dollName",
-              "value": "mike"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            },
-            {
-              "name": "panTo",
-              "value": "537.0x529.0"
-            }
-          ]
+          "sizeX": 1029,
+          "sizeY": 81,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "launcher",
-          "x": 1457,
-          "y": 690,
+          "x": 451,
+          "y": 295,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
+            {
+              "name": "panTo",
+              "value": "358.0x310.0"
+            },
             {
               "name": "dollName",
               "value": "annie"
@@ -99,232 +93,8 @@
             {
               "name": "speed",
               "value": "600"
-            },
-            {
-              "name": "panTo",
-              "value": "1137.0x526.0"
             }
           ]
-        },
-        {
-          "costume": "pin",
-          "x": 828,
-          "y": 265,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "chair1",
-          "x": 635,
-          "y": -191,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 383,
-          "y": -264,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "launcher",
-          "x": 545,
-          "y": 118,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "200"
-            },
-            {
-              "name": "panTo",
-              "value": "535.0x12.0"
-            }
-          ]
-        },
-        {
-          "costume": "chair2",
-          "x": 780,
-          "y": -197,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "chair2",
-          "x": 1566,
-          "y": -197,
-          "direction": 333.99999999999994,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 0,
-          "y": 806,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 653,
-          "y": 806,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 1306,
-          "y": 806,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1684,
-          "y": 522,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1684,
-          "y": 238,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1684,
-          "y": -46,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1684,
-          "y": -330,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": -330,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": -46,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 238,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 522,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 0,
-          "y": -330,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 421,
-          "y": -330,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 842,
-          "y": -330,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 1263,
-          "y": -330,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 886.5504000000003,
-          "y": 247.34719999999993,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wood-thin-600",
-          "x": 361,
-          "y": 209,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "umbrella",
-          "x": 409,
-          "y": 248,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "angle",
-              "value": "29.999999999999996"
-            }
-          ]
-        },
-        {
-          "costume": "mike",
-          "x": 584,
-          "y": 521,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
         }
       ]
     },

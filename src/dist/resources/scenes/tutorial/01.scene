@@ -19,13 +19,13 @@
     },
     {
       "name": "topRight",
-      "value": "1024.0x600.0"
+      "value": "1024.0x800.0"
     }
   ],
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -34,15 +34,27 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
-      
+      0,
+      1024
     ],
     "y": [
-      
+      0,
+      800
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     "glass",
@@ -54,12 +66,11 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 111,
-          "y": 462,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 165,
+          "y": 467,
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -79,101 +90,32 @@
           "costume": "wall0",
           "x": 0,
           "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 0,
-          "y": 284,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": -16,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood0",
-          "x": 630,
-          "y": 570,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 0,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 419,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass0",
-          "x": 836,
-          "y": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1208,
-          "y": -1,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall0",
-          "x": 1208,
-          "y": 283,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47,
+          "sizeY": 642,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 603,
-          "y": 82,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 604,
+          "y": 74,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "information",
           "x": 256,
           "y": 511,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Knock over the pin to win !",
           "direction": 0,
-          "scale": 1,
-          "text": "Knock over the skittle",
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -187,13 +129,14 @@
         },
         {
           "costume": "information",
-          "x": 351,
+          "x": 332,
           "y": 471,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Aim at the pin with the mouse",
           "direction": 0,
-          "scale": 1,
-          "text": "Aim with the mouse",
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -208,12 +151,13 @@
         {
           "costume": "information",
           "x": 434,
-          "y": 431,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "y": 424,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Click to throw a rag doll",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
@@ -224,6 +168,30 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "costume": "grass",
+          "x": -7,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1036,
+          "sizeY": 84,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall0",
+          "x": 974,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 601,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },
