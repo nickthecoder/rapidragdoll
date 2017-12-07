@@ -85,7 +85,7 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 0,
           "y": 0,
           "direction": 0,
@@ -97,7 +97,7 @@
           "alignmentY": 0
         },
         {
-          "costume": "wood0",
+          "costume": "wood",
           "x": 0,
           "y": 569,
           "direction": 0,
@@ -138,7 +138,7 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 1207,
           "y": 0,
           "direction": 0,
@@ -207,7 +207,7 @@
           "alignmentY": 0
         },
         {
-          "costume": "wood0",
+          "costume": "wood",
           "x": 45,
           "y": 340,
           "direction": 0,
@@ -219,7 +219,7 @@
           "alignmentY": 0
         },
         {
-          "costume": "wood0",
+          "costume": "wood",
           "x": 874,
           "y": 319,
           "direction": 0,
@@ -231,7 +231,7 @@
           "alignmentY": 0
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 593,
           "y": -3,
           "direction": 0,

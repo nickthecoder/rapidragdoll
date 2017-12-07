@@ -86,7 +86,7 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": -112,
           "y": 0,
           "direction": 0,
@@ -98,7 +98,7 @@
           "alignmentY": 0
         },
         {
-          "costume": "wood0",
+          "costume": "wood",
           "x": -114,
           "y": 579,
           "direction": 0,
@@ -110,7 +110,7 @@
           "alignmentY": 0
         },
         {
-          "costume": "grass0",
+          "costume": "grass",
           "x": 87,
           "y": 10,
           "zOrder": 0,
@@ -128,7 +128,7 @@
           "scaleY": 1
         },
         {
-          "costume": "grass0",
+          "costume": "grass",
           "x": 899,
           "y": -24,
           "zOrder": 0,
@@ -166,7 +166,7 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 1124,
           "y": -25,
           "direction": 0,
@@ -207,7 +207,7 @@
           "scaleY": 1
         },
         {
-          "costume": "wood0",
+          "costume": "wood",
           "x": 484,
           "y": 329,
           "direction": 0,
@@ -220,8 +220,8 @@
         },
         {
           "costume": "pin",
-          "x": 634,
-          "y": 387,
+          "x": 582,
+          "y": 384,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -243,7 +243,7 @@
           "scaleY": 1
         },
         {
-          "costume": "grass0",
+          "costume": "grass",
           "x": -98,
           "y": 11,
           "zOrder": 0,

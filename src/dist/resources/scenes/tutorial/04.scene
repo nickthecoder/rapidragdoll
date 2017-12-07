@@ -85,7 +85,7 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 21.75,
           "y": 276.25,
           "direction": 0,
@@ -97,7 +97,7 @@
           "alignmentY": 0.5
         },
         {
-          "costume": "wood0",
+          "costume": "wood",
           "x": 0,
           "y": 550,
           "direction": 0,
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 735,
           "y": 0,
           "direction": 0,
@@ -225,7 +225,7 @@
           "alignmentY": 0
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 1514,
           "y": -3,
           "direction": 0,

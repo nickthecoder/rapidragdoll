@@ -85,7 +85,7 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 22.75,
           "y": 305.75,
           "direction": 0,
@@ -126,14 +126,14 @@
           ]
         },
         {
-          "costume": "wall0",
+          "costume": "wall",
           "x": 1025,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 51,
-          "sizeY": 616,
+          "sizeX": 49,
+          "sizeY": 610,
           "alignmentX": 1,
           "alignmentY": 0
         },
@@ -157,14 +157,6 @@
               "value": "2"
             }
           ]
-        },
-        {
-          "costume": "wall-166",
-          "x": 564,
-          "y": 19,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
         },
         {
           "costume": "information",
@@ -220,6 +212,18 @@
               "value": "600"
             }
           ]
+        },
+        {
+          "costume": "wall",
+          "x": 568,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 188,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },
