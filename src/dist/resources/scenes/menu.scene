@@ -19,13 +19,13 @@
     },
     {
       "name": "topRight",
-      "value": "1024.0x600.0"
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
   "showMouse": true,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -34,7 +34,7 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
@@ -43,6 +43,16 @@
     "y": [
       
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     
@@ -55,11 +65,9 @@
           "costume": "autoLauncher",
           "x": 125,
           "y": -62,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
-          "text": "",
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "period",
@@ -67,7 +75,85 @@
             },
             {
               "name": "point",
-              "value": "153.0x42.0"
+              "value": "202.8160000000001x120.06400000000008"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "400"
+            }
+          ]
+        },
+        {
+          "costume": "autoLauncher",
+          "x": 1143,
+          "y": -61,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "period",
+              "value": "3.4"
+            },
+            {
+              "name": "point",
+              "value": "921.664x270.40000000000003"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "500"
+            }
+          ]
+        },
+        {
+          "costume": "autoLauncher",
+          "x": -77,
+          "y": 382,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "period",
+              "value": "1"
+            },
+            {
+              "name": "point",
+              "value": "95.68000000000006x503.67999999999995"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "500"
+            }
+          ]
+        },
+        {
+          "costume": "autoLauncher",
+          "x": 1336.384,
+          "y": 201.28000000000006,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "point",
+              "value": "830.0799999999999x450.11199999999997"
             },
             {
               "name": "dollName",
@@ -80,22 +166,16 @@
           ]
         },
         {
-          "costume": "autoLauncher",
-          "x": 788,
-          "y": -63,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "costume": "launcher",
+          "x": 467.19999999999976,
+          "y": -59.64800000000017,
           "direction": 0,
-          "scale": 1,
-          "text": "",
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "period",
-              "value": "3.4"
-            },
-            {
-              "name": "point",
-              "value": "659.0x90.0"
+              "name": "panTo",
+              "value": "646.9119999999997x415.5519999999998"
             },
             {
               "name": "dollName",
@@ -103,35 +183,24 @@
             },
             {
               "name": "speed",
-              "value": "400"
+              "value": "600"
             }
           ]
         },
         {
-          "costume": "autoLauncher",
-          "x": -77,
-          "y": 382,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "costume": "sceneButton",
+          "x": 655.5519999999997,
+          "y": 223.7439999999998,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Christmas Capers",
           "direction": 0,
-          "scale": 1,
-          "text": "",
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "period",
-              "value": "1"
-            },
-            {
-              "name": "point",
-              "value": "95.0x470.0"
-            },
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "400"
+              "name": "scene",
+              "value": "xmas/menu"
             }
           ]
         }
@@ -142,13 +211,14 @@
       "actors": [
         {
           "costume": "sceneButton",
-          "x": 530,
-          "y": 280,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "x": 657,
+          "y": 386,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Tutorial",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "scene",
@@ -160,21 +230,23 @@
           "costume": "quitButton",
           "x": 80,
           "y": 13,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Quit",
           "direction": 0,
-          "scale": 1,
-          "text": "Quit"
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "urlButton",
-          "x": 1014,
-          "y": 8,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "x": 1258,
+          "y": 15,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Created using Tickle",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "url",
@@ -184,33 +256,36 @@
         },
         {
           "costume": "large",
-          "x": 536,
-          "y": 493,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 666,
+          "y": 626,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Rapid Rag Doll",
           "direction": 0,
-          "scale": 1,
-          "text": "Rapid Rag Doll"
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "small",
-          "x": 549,
-          "y": 442,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 685,
+          "y": 555,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "by Nick Robinson",
           "direction": 0,
-          "scale": 1,
-          "text": "by Nick Robinson"
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "sceneButton",
-          "x": 527,
-          "y": 201,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "x": 660,
+          "y": 307,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Puzzle Picnic",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "scene",

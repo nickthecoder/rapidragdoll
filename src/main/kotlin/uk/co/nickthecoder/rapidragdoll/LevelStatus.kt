@@ -1,19 +1,16 @@
 package uk.co.nickthecoder.rapidragdoll
 
 import org.joml.Vector2d
-import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.AttributeType
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.AutoFlushPreferences
+import uk.co.nickthecoder.tickle.util.SceneButton
 
-class LevelStatus : AbstractRole() {
+class LevelStatus : SceneButton() {
 
     @Attribute
     var text = ""
-
-    @Attribute
-    var sceneName = ""
 
     @Attribute
     var requiredScene = ""
@@ -43,13 +40,14 @@ class LevelStatus : AbstractRole() {
         val buttonA = actor.createChildOnStage("text")
         buttonA.textAppearance?.text = text
         buttonA.position.add(textPosition)
+        buttonA.zOrder = actor.zOrder + 1
 
-        preferences = Game.instance.preferences.node("scenes").node(sceneName)
+        preferences = Game.instance.preferences.node("scenes").node(scene)
         unlocked = unlocked || preferences?.getBoolean("unlocked", false) ?: false
 
         val role = buttonA.role
         if (role is LevelButton) {
-            role.sceneName = sceneName
+            role.sceneName = scene
         }
 
         if (showTime) {
@@ -64,6 +62,4 @@ class LevelStatus : AbstractRole() {
 
     }
 
-    override fun tick() {
-    }
 }

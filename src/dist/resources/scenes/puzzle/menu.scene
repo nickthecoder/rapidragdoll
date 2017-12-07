@@ -25,7 +25,7 @@
   "background": "#000000",
   "showMouse": true,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -34,7 +34,7 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
@@ -43,6 +43,16 @@
     "y": [
       
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     
@@ -62,13 +72,12 @@
           "x": 122,
           "y": 359,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/01"
             },
             {
@@ -102,13 +111,12 @@
           "x": 198,
           "y": 479,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/02"
             },
             {
@@ -139,24 +147,26 @@
         },
         {
           "costume": "large",
-          "x": 507,
-          "y": 271,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 1084,
+          "y": 698,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Puzzle Picnic",
           "direction": 0,
-          "scale": 1,
-          "text": "Puzzle Picnic"
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "sceneButton",
-          "x": 503,
-          "y": 190,
+          "x": 1183,
+          "y": 35,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Back",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "scene",
@@ -168,10 +178,9 @@
           "costume": "join1",
           "x": 156,
           "y": 423,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 57.00000000000001,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -184,13 +193,12 @@
           "x": 331,
           "y": 513,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/03"
             },
             {
@@ -223,10 +231,9 @@
           "costume": "join1",
           "x": 263,
           "y": 502,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 14.999999999999998,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -238,10 +245,9 @@
           "costume": "join1",
           "x": 643,
           "y": 534,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 354.0000000000001,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -254,13 +260,12 @@
           "x": 711,
           "y": 520,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/a02"
             },
             {
@@ -293,10 +298,9 @@
           "costume": "join1",
           "x": 655,
           "y": 381,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 347,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -309,13 +313,12 @@
           "x": 816,
           "y": 429,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/a03"
             },
             {
@@ -348,10 +351,9 @@
           "costume": "join1",
           "x": 399,
           "y": 492,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 336,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -364,13 +366,12 @@
           "x": 460,
           "y": 456,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/04"
             },
             {
@@ -403,10 +404,9 @@
           "costume": "join1",
           "x": 520,
           "y": 419,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 153,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -419,13 +419,12 @@
           "x": 585,
           "y": 392,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/05"
             },
             {
@@ -458,10 +457,9 @@
           "costume": "join1",
           "x": 511,
           "y": 499,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 35,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -474,13 +472,12 @@
           "x": 572,
           "y": 533,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/a01"
             },
             {
@@ -514,13 +511,12 @@
           "x": 722,
           "y": 360,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/06"
             },
             {
@@ -553,10 +549,9 @@
           "costume": "join1",
           "x": 768,
           "y": 479,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 317.99999999999994,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -568,10 +563,9 @@
           "costume": "join1",
           "x": 772,
           "y": 308,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 308.00000000000006,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -584,13 +578,12 @@
           "x": 810,
           "y": 252,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/07"
             },
             {
@@ -623,10 +616,9 @@
           "costume": "join1",
           "x": 801,
           "y": 178,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 257,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -639,13 +631,12 @@
           "x": 778,
           "y": 110,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/08"
             },
             {
@@ -678,10 +669,9 @@
           "costume": "join1",
           "x": 712,
           "y": 82,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 198.00000000000003,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -694,13 +684,12 @@
           "x": 642,
           "y": 64,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/09"
             },
             {
@@ -733,10 +722,9 @@
           "costume": "join1",
           "x": 572,
           "y": 83,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 160,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -749,13 +737,12 @@
           "x": 507,
           "y": 114,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/10"
             },
             {
@@ -788,10 +775,9 @@
           "costume": "join1",
           "x": 438,
           "y": 135,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 349,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -804,13 +790,12 @@
           "x": 367,
           "y": 142,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/11"
             },
             {
@@ -843,10 +828,9 @@
           "costume": "join1",
           "x": 303,
           "y": 174,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 150.00000000000003,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -859,13 +843,12 @@
           "x": 243,
           "y": 214,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/end"
             },
             {
@@ -898,10 +881,9 @@
           "costume": "join1",
           "x": 300,
           "y": 114,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 26.000000000000004,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -914,13 +896,12 @@
           "x": 238,
           "y": 77,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/bonus"
             },
             {
@@ -953,10 +934,9 @@
           "costume": "join1",
           "x": 850,
           "y": 94,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 344.00000000000006,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "requiredScene",
@@ -969,13 +949,12 @@
           "x": 917,
           "y": 68,
           "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
-              "name": "sceneName",
+              "name": "scene",
               "value": "puzzle/b01"
             },
             {

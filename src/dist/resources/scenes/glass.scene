@@ -3,7 +3,7 @@
   "background": "#000000",
   "showMouse": true,
   "layout": "glass",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -12,7 +12,7 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
@@ -21,6 +21,16 @@
     "y": [
       
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     
@@ -31,17 +41,18 @@
       "actors": [
         {
           "costume": "sceneComplete",
-          "x": 528,
-          "y": 610,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "x": 428,
+          "y": 852,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Well Done !",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "0.0x-300.0"
+              "value": "232.0x-385.0"
             },
             {
               "name": "seconds",
@@ -53,15 +64,16 @@
           "costume": "clickToContinue",
           "x": 719,
           "y": -52,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Click to continue",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-274.0x329.0"
+              "value": "-22.0x460.0"
             },
             {
               "name": "seconds",
@@ -71,17 +83,18 @@
         },
         {
           "costume": "timeIsUp",
-          "x": -170,
-          "y": 324,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
+          "x": -167,
+          "y": 636,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
           "text": "Time's up",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "670.0x-8.0"
+              "value": "897.0x-93.0"
             },
             {
               "name": "seconds",

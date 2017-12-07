@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1024.0x600.0"
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
@@ -64,8 +64,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 143,
-          "y": 251,
+          "x": 149,
+          "y": 405,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -91,35 +91,35 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 50,
-          "sizeY": 545,
+          "sizeX": 49.024000000000115,
+          "sizeY": 790.5279999999999,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "wood",
-          "x": -2,
-          "y": 544,
+          "x": 0,
+          "y": 766,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1027,
-          "sizeY": 74,
+          "sizeX": 1282.8159999999998,
+          "sizeY": 60.81599999999992,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 732,
-          "y": 70,
+          "x": 804,
+          "y": 72,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "information",
-          "x": 255,
-          "y": 478,
+          "x": 275,
+          "y": 593,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Bounce off of the ceiling",
@@ -129,7 +129,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "88.0x164.0"
+              "value": "477.0x328.0"
             },
             {
               "name": "seconds",
@@ -139,13 +139,13 @@
         },
         {
           "costume": "wall",
-          "x": 370,
+          "x": 398,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 50,
-          "sizeY": 309,
+          "sizeX": 50.19200000000001,
+          "sizeY": 545.1519999999999,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -156,8 +156,8 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1025,
-          "sizeY": 89,
+          "sizeX": 1286.272,
+          "sizeY": 83.77600000000007,
           "alignmentX": 0,
           "alignmentY": 0
         }

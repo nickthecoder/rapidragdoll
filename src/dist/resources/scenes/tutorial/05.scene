@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1170.0x600.0"
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
@@ -64,15 +64,15 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 130,
-          "y": 407,
+          "x": 165,
+          "y": 647,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "537.0x306.0"
+              "value": "684.0x481.0"
             },
             {
               "name": "dollName",
@@ -87,12 +87,12 @@
         {
           "costume": "wall",
           "x": 22.75,
-          "y": 305.75,
+          "y": 402.25,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "sizeX": 50.5,
-          "sizeY": 612.5,
+          "sizeY": 805.5,
           "alignmentX": 0.5,
           "alignmentY": 0.5
         },
@@ -127,13 +127,13 @@
         },
         {
           "costume": "wall",
-          "x": 1025,
+          "x": 1283,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 49,
-          "sizeY": 610,
+          "sizeX": 48,
+          "sizeY": 805,
           "alignmentX": 1,
           "alignmentY": 0
         },
@@ -186,8 +186,8 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1026,
-          "sizeY": 77,
+          "sizeX": 1286,
+          "sizeY": 73,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -201,7 +201,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "0.0x0.0"
+              "value": "688.552x483.008"
             },
             {
               "name": "dollName",

@@ -8,12 +8,24 @@
     {
       "name": "nextScene",
       "value": "menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
+    },
+    {
+      "name": "topRight",
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -22,15 +34,27 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
-      
+      1280,
+      0
     ],
     "y": [
-      
+      0,
+      800
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     "glass",
@@ -44,11 +68,9 @@
           "costume": "launcher",
           "x": 148,
           "y": 492,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1,
+          "scaleX": 1,
+          "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
@@ -67,124 +89,65 @@
         {
           "costume": "wall",
           "x": 0,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "y": -6.0800000000000125,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall",
-          "x": 0,
-          "y": 284,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 43.840000000000146,
+          "sizeY": 775.8719999999998,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "wood",
-          "x": -16,
-          "y": 570,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 639.2939999999999,
+          "y": 784.29,
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wood",
-          "x": 630,
-          "y": 570,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1283.5879999999997,
+          "sizeY": 43.58000000000004,
+          "alignmentX": 0.5,
+          "alignmentY": 0.5
         },
         {
           "costume": "grass",
-          "x": 0,
+          "x": -6,
           "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass",
-          "x": 419,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "grass",
-          "x": 836,
-          "y": 0,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall",
-          "x": 1208,
-          "y": -1,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
-        },
-        {
-          "costume": "wall",
-          "x": 1208,
-          "y": 283,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1287.0879999999997,
+          "sizeY": 87.23199999999997,
+          "alignmentX": 0,
+          "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 603,
-          "y": 82,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "x": 602,
+          "y": 66,
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
-          "costume": "small",
-          "x": 439,
-          "y": 486,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
+          "costume": "wall",
+          "x": 1280,
+          "y": 0,
           "direction": 0,
-          "scale": 1,
-          "text": "Knock over the skittle."
-        },
-        {
-          "costume": "small",
-          "x": 274,
-          "y": 427,
-          "zOrder": 0,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
-          "direction": 0,
-          "scale": 1,
-          "text": "Aim using the mouse and click to throw a rag doll"
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47.29600000000028,
+          "sizeY": 768.0639999999999,
+          "alignmentX": 1,
+          "alignmentY": 0
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

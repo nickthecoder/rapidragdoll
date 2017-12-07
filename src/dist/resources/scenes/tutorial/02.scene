@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1448.0x600.0"
+      "value": "1580.0x800.0"
     }
   ],
   "background": "#000000",
@@ -63,48 +63,26 @@
       "name": "main",
       "actors": [
         {
-          "costume": "launcher",
-          "x": 150,
-          "y": 395,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "panTo",
-              "value": "495.0x309.0"
-            },
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            }
-          ]
-        },
-        {
           "costume": "wall",
-          "x": 21.75,
-          "y": 282.75,
+          "x": 21.542000000000087,
+          "y": 381.8979999999999,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 48.5,
-          "sizeY": 572.5,
+          "sizeX": 48.084000000000174,
+          "sizeY": 770.7959999999998,
           "alignmentX": 0.5,
           "alignmentY": 0.5
         },
         {
           "costume": "wood",
-          "x": 722.75,
-          "y": 604.25,
+          "x": 764.444,
+          "y": 781.6780000000001,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1448.5,
-          "sizeY": 79.5,
+          "sizeX": 1645.0319999999997,
+          "sizeY": 40.35599999999988,
           "alignmentX": 0.5,
           "alignmentY": 0.5
         },
@@ -118,8 +96,8 @@
         },
         {
           "costume": "information",
-          "x": 173,
-          "y": 503,
+          "x": 192,
+          "y": 652,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "The first pin is easy!",
@@ -129,7 +107,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "215.0x175.0"
+              "value": "339.0x241.0"
             },
             {
               "name": "seconds",
@@ -139,13 +117,13 @@
         },
         {
           "costume": "wall",
-          "x": 593.75,
-          "y": 285.25,
+          "x": 592.7979999999999,
+          "y": 380.8059999999999,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 44.5,
-          "sizeY": 571.5,
+          "sizeX": 42.59600000000012,
+          "sizeY": 762.6119999999999,
           "alignmentX": 0.5,
           "alignmentY": 0.5
         },
@@ -159,15 +137,15 @@
         },
         {
           "costume": "launcher",
-          "x": 1285,
-          "y": 409,
+          "x": 192,
+          "y": 423,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "933.0x306.0"
+              "value": "567.4399999999997x425.15200000000004"
             },
             {
               "name": "dollName",
@@ -181,8 +159,8 @@
         },
         {
           "costume": "information",
-          "x": 96,
-          "y": 451,
+          "x": 98,
+          "y": 556,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Press \"2\" to select the other launcher",
@@ -202,8 +180,8 @@
         },
         {
           "costume": "information",
-          "x": 1071,
-          "y": 465,
+          "x": 1288,
+          "y": 525,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Press \"1\" to return\nto the first launcher",
@@ -223,27 +201,49 @@
         },
         {
           "costume": "wall",
-          "x": 1425,
-          "y": 315.75,
+          "x": 1557.3039999999999,
+          "y": 380.16999999999996,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 46,
-          "sizeY": 634.5,
+          "sizeX": 49.39200000000028,
+          "sizeY": 765.3399999999999,
           "alignmentX": 0.5,
           "alignmentY": 0.5
         },
         {
           "costume": "grass",
-          "x": -4,
-          "y": 0,
+          "x": -58,
+          "y": 1,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1454,
-          "sizeY": 81,
+          "sizeX": 1644.9599999999998,
+          "sizeY": 75.09600000000017,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "launcher",
+          "x": 1325.2559999999999,
+          "y": 438.32800000000003,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "1075.472x423.4240000000001"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            }
+          ]
         }
       ]
     },

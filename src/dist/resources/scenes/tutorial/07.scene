@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1252.0x600.0"
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
@@ -91,27 +91,27 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 48,
-          "sizeY": 580,
+          "sizeX": 50.75200000000018,
+          "sizeY": 773.2479999999999,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "wood",
-          "x": 0,
-          "y": 569,
+          "x": -2.8159999999998035,
+          "y": 705.856,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1260,
-          "sizeY": 69,
+          "sizeX": 1284.9039999999995,
+          "sizeY": 101.95999999999992,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 276,
-          "y": 79,
+          "x": 275,
+          "y": 70,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -139,13 +139,13 @@
         },
         {
           "costume": "wall",
-          "x": 1207,
-          "y": 0,
+          "x": 1236.1599999999999,
+          "y": 1,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 48,
-          "sizeY": 572,
+          "sizeX": 44.840000000000146,
+          "sizeY": 765.3359999999999,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -196,13 +196,13 @@
         },
         {
           "costume": "grass",
-          "x": 0,
+          "x": -20.09599999999989,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1269,
-          "sizeY": 75,
+          "sizeX": 1316.7359999999999,
+          "sizeY": 78.5920000000001,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -220,13 +220,13 @@
         },
         {
           "costume": "wood",
-          "x": 874,
-          "y": 319,
+          "x": 830.0799999999999,
+          "y": 320,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 338,
-          "sizeY": 52,
+          "sizeX": 410.9200000000001,
+          "sizeY": 48.896000000000015,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -249,8 +249,8 @@
       "actors": [
         {
           "costume": "countdown",
-          "x": 15,
-          "y": 602,
+          "x": 50,
+          "y": 789,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "0:00",

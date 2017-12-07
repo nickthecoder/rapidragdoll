@@ -2,9 +2,10 @@
   "info": {
     "title": "Rapid Rag Doll",
     "id": "rapidragdoll",
-    "width": 1024,
-    "height": 600,
+    "width": 1280,
+    "height": 800,
     "resizable": true,
+    "fullScreen": true,
     "initialScene": "menu",
     "testScene": "test",
     "producer": "uk.co.nickthecoder.tickle.NoProducer",
@@ -1453,7 +1454,7 @@
             },
             {
               "name": "toAngle",
-              "value": "90.0"
+              "value": "20.0"
             }
           ],
           "body": {
@@ -1501,7 +1502,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-90.0"
+              "value": "-20.0"
             },
             {
               "name": "offset",
@@ -2619,10 +2620,6 @@
               "value": ""
             },
             {
-              "name": "sceneName",
-              "value": ""
-            },
-            {
               "name": "showTime",
               "value": "false"
             },
@@ -2641,6 +2638,10 @@
             {
               "name": "unlocked",
               "value": "false"
+            },
+            {
+              "name": "sceneName",
+              "value": ""
             }
           ]
         },

@@ -15,11 +15,11 @@
     },
     {
       "name": "bottomLeft",
-      "value": "-80.0x20.0"
+      "value": "0.0x20.0"
     },
     {
       "name": "topRight",
-      "value": "1170.0x620.0"
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
@@ -65,8 +65,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 51,
-          "y": 376,
+          "x": 132,
+          "y": 290,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -87,36 +87,27 @@
         },
         {
           "costume": "wall",
-          "x": -112,
+          "x": 0,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 48,
-          "sizeY": 583,
+          "sizeX": 47.29600000000016,
+          "sizeY": 764.608,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "wood",
-          "x": -114,
-          "y": 579,
+          "x": -7.999999999999886,
+          "y": 759,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1290,
-          "sizeY": 50,
+          "sizeX": 1297.7279999999992,
+          "sizeY": 45.35199999999986,
           "alignmentX": 0,
           "alignmentY": 0
-        },
-        {
-          "costume": "grass",
-          "x": 87,
-          "y": 10,
-          "zOrder": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
         },
         {
           "costume": "grass0",
@@ -124,15 +115,6 @@
           "y": 13,
           "zOrder": 0,
           "direction": 355,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "grass",
-          "x": 899,
-          "y": -24,
-          "zOrder": 0,
-          "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
@@ -146,8 +128,8 @@
         },
         {
           "costume": "information",
-          "x": 160,
-          "y": 527,
+          "x": 232,
+          "y": 684,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "That's a heavy rock.",
@@ -167,20 +149,20 @@
         },
         {
           "costume": "wall",
-          "x": 1124,
-          "y": -25,
+          "x": 1237.888,
+          "y": -11,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 54,
-          "sizeY": 626,
+          "sizeX": 44.11200000000008,
+          "sizeY": 791.1599999999999,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "information",
-          "x": 66,
-          "y": 480,
+          "x": 111,
+          "y": 625,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "You'll need to throw lots of dolls !!!",
@@ -190,7 +172,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "224.0x213.0"
+              "value": "226.0x239.0"
             },
             {
               "name": "seconds",
@@ -200,61 +182,52 @@
         },
         {
           "costume": "rock",
-          "x": 413,
-          "y": 169,
+          "x": 462,
+          "y": 168,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "wood",
-          "x": 484,
-          "y": 329,
+          "x": 467.928,
+          "y": 315,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 645,
-          "sizeY": 43,
+          "sizeX": 774.072,
+          "sizeY": 43.99200000000002,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 582,
-          "y": 384,
+          "x": 813,
+          "y": 372,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "pin",
-          "x": 786,
-          "y": 382,
+          "x": 636,
+          "y": 373,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "pin",
-          "x": 883,
-          "y": 379,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "grass",
-          "x": -98,
-          "y": 11,
-          "zOrder": 0,
+          "x": 971,
+          "y": 371,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "information",
-          "x": -28,
-          "y": 432,
+          "x": 58,
+          "y": 560,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Not too fast though, they may vanish before hitting.",
@@ -274,7 +247,7 @@
         },
         {
           "costume": "grass",
-          "x": -110,
+          "x": -16,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
@@ -286,7 +259,7 @@
         },
         {
           "costume": "grass",
-          "x": 409,
+          "x": 497,
           "y": 0,
           "direction": 356.7754773934801,
           "scaleX": 1,
@@ -298,7 +271,7 @@
         },
         {
           "costume": "grass",
-          "x": 815,
+          "x": 920,
           "y": -26,
           "direction": 0,
           "scaleX": 1,

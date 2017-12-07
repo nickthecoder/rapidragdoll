@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1510.0x600.0"
+      "value": "1650.0x800.0"
     }
   ],
   "background": "#000000",
@@ -86,32 +86,32 @@
         },
         {
           "costume": "wall",
-          "x": 21.75,
-          "y": 276.25,
+          "x": 21.53400000000005,
+          "y": 399.06199999999995,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 48.5,
-          "sizeY": 561.5,
+          "sizeX": 48.0680000000001,
+          "sizeY": 807.1239999999999,
           "alignmentX": 0.5,
           "alignmentY": 0.5
         },
         {
           "costume": "wood",
           "x": 0,
-          "y": 550,
+          "y": 775,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1513,
-          "sizeY": 64,
+          "sizeX": 1656.0639999999994,
+          "sizeY": 44.90399999999977,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 1136,
-          "y": 67,
+          "x": 1358,
+          "y": 70,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -150,7 +150,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "154.0x238.0"
+              "value": "167.0x490.0"
             },
             {
               "name": "seconds",
@@ -171,7 +171,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "482.0x291.0"
+              "value": "596.0x538.0"
             },
             {
               "name": "seconds",
@@ -181,8 +181,8 @@
         },
         {
           "costume": "information",
-          "x": 1064,
-          "y": 225,
+          "x": 1286,
+          "y": 238,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Here it is !",
@@ -219,20 +219,20 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1513,
-          "sizeY": 78,
+          "sizeX": 1661.2479999999994,
+          "sizeY": 75.13599999999994,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "wall",
-          "x": 1514,
-          "y": -3,
+          "x": 1644.9119999999998,
+          "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 50,
-          "sizeY": 615,
+          "sizeX": 46.91199999999981,
+          "sizeY": 791.7999999999998,
           "alignmentX": 1,
           "alignmentY": 0
         },
@@ -249,7 +249,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "260.0x-541.0"
+              "value": "261.0x-455.0"
             },
             {
               "name": "seconds",
