@@ -39,3 +39,5 @@ class SceneComplete : AnimatedInformation() {
 }
 
 class TimeIsUp : AnimatedInformation()
+
+class YouLose : AnimatedInformation()

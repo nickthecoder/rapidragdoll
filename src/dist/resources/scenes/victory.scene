@@ -1,5 +1,27 @@
 {
   "director": "uk.co.nickthecoder.rapidragdoll.Victory",
+  "directorAttributes": [
+    {
+      "name": "bottomLeft",
+      "value": "-800.0x0.0"
+    },
+    {
+      "name": "maxDolls",
+      "value": "20"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
+    },
+    {
+      "name": "nextScene",
+      "value": ""
+    },
+    {
+      "name": "topRight",
+      "value": "2280.0x800.0"
+    }
+  ],
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
@@ -16,10 +38,12 @@
     "enabled": true,
     "closeness": 5,
     "x": [
-      
+      0,
+      1280
     ],
     "y": [
-      
+      0,
+      800
     ]
   },
   "snapToOthers": {
@@ -49,24 +73,8 @@
         },
         {
           "costume": "chair2",
-          "x": 505,
-          "y": 114,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wood-thin-600",
-          "x": -2,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "wood-thin-600",
-          "x": 596,
-          "y": 0,
+          "x": 527,
+          "y": 134,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -81,24 +89,24 @@
         },
         {
           "costume": "foxie",
-          "x": 102,
-          "y": 423,
+          "x": 659,
+          "y": 455,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "bony",
-          "x": 711,
-          "y": 293,
+          "x": 1544,
+          "y": 383,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "umbrella",
-          "x": 710,
-          "y": 45,
+          "x": 1783,
+          "y": 48,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -111,8 +119,8 @@
         },
         {
           "costume": "fiona",
-          "x": 479,
-          "y": 377,
+          "x": 432,
+          "y": 271,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -122,22 +130,119 @@
           "x": 336,
           "y": 461,
           "direction": 0,
+          "scaleX": 1.2,
+          "scaleY": 1.2
+        },
+        {
+          "costume": "chair1",
+          "x": 153,
+          "y": 138,
+          "direction": 0,
           "scaleX": 1,
           "scaleY": 1
+        },
+        {
+          "costume": "wood",
+          "x": 45,
+          "y": 778,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1188,
+          "sizeY": 46,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": -1,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47,
+          "sizeY": 1327,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 1232,
+          "y": -1,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47,
+          "sizeY": 1331,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": -959,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 960,
+          "sizeY": 89,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": 1280,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1043,
+          "sizeY": 89,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "fencePost",
+          "x": 2114,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "fencePost",
+          "x": -696,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-tree",
+          "x": 850,
+          "y": 61,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wood",
+          "x": 46,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1186,
+          "sizeY": 60,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        {
-          "costume": "chair1",
-          "x": 71,
-          "y": 119,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        }
+        
       ]
     }
   ]

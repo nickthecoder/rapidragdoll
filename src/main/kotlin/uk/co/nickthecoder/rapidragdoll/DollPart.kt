@@ -21,5 +21,9 @@ class DollPart : AbstractRole(), Draggable {
     override fun tick() {
     }
 
+    override fun scale(scale: Double) {
+        doll.scale(scale)
+    }
+
     override fun mass() = doll.totalMass
 }

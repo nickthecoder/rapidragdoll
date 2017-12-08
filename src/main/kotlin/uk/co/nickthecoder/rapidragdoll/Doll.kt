@@ -12,17 +12,23 @@ import uk.co.nickthecoder.tickle.action.ParallelAction
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Fade
 import uk.co.nickthecoder.tickle.physics.pixelsToWorld
+import uk.co.nickthecoder.tickle.util.CostumeAttribute
 import java.util.*
 
 private val random = Random()
 
 class Doll : ActionRole() {
 
+    @CostumeAttribute
+    var defaultScale = 1.0
+
     val initialVelocity = Vector2d()
 
     var totalMass = 0f
 
     val parts = mutableListOf<Actor>()
+
+    val joints = mutableListOf<RevoluteJoint>()
 
     var ending = false
 
@@ -57,6 +63,7 @@ class Doll : ActionRole() {
         val newRole = newActor.role
         if (newRole is DollPart) {
             newRole.doll = this
+            newRole.offset.mul(actor.scale)
             newActor.position.add(newRole.offset)
 
             if (joinTo != null) {
@@ -70,17 +77,46 @@ class Doll : ActionRole() {
                 jointDef.upperAngle = newRole.toAngle.radians.toFloat()
                 jointDef.enableLimit = true
                 jointDef.collideConnected = false
-                Game.instance.scene.world?.createJoint(jointDef) as RevoluteJoint
+                val joint = Game.instance.scene.world?.createJoint(jointDef) as RevoluteJoint
+                joints.add(joint)
             }
         }
         newActor.zOrder = actor.zOrder + zOrder
+        newActor.scaleXY = actor.scaleXY
 
-        totalMass += newActor.body?.mass ?: 0f
+        totalMass += (newActor.body?.mass ?: 0f) // * (actor.scale.x * actor.scale.x).toFloat()
 
         parts.add(newActor)
         return newActor
     }
 
+    fun scale(scale: Double) {
+        parts.forEach { part ->
+            part.scale.mul(scale)
+        }
+        val newJoints = mutableListOf<RevoluteJoint>()
+        joints.forEach { joint ->
+
+            val jointDef = RevoluteJointDef()
+            jointDef.bodyA = joint.bodyA
+            jointDef.bodyB = joint.bodyB
+
+            jointDef.localAnchorA = joint.m_localAnchor1.mul(scale.toFloat())
+
+            jointDef.lowerAngle = joint.m_lowerAngle
+            jointDef.upperAngle = joint.m_upperAngle
+            jointDef.enableLimit = true
+            jointDef.collideConnected = false
+
+            Game.instance.scene.world?.destroyJoint(joint)
+            val newJoint = Game.instance.scene.world?.createJoint(jointDef) as RevoluteJoint
+            newJoints.add(newJoint)
+        }
+
+        joints.clear()
+        joints.addAll(newJoints)
+        totalMass *= (scale * scale).toFloat()
+    }
 
     override fun end() {
         super.end()

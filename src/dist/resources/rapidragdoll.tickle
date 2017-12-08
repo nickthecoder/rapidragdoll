@@ -117,6 +117,10 @@
     {
       "name": "mike",
       "file": "images/mike.png"
+    },
+    {
+      "name": "xmas",
+      "file": "images/xmas/xmas.png"
     }
   ],
   "fonts": [
@@ -835,6 +839,39 @@
           "y": 81
         }
       ]
+    },
+    {
+      "name": "xmas-pin",
+      "texture": "xmas",
+      "left": 18,
+      "bottom": 172,
+      "right": 76,
+      "top": 14,
+      "offsetX": 28,
+      "offsetY": 6,
+      "direction": 0
+    },
+    {
+      "name": "xmas-tree",
+      "texture": "xmas",
+      "left": 14,
+      "bottom": 608,
+      "right": 239,
+      "top": 179,
+      "offsetX": 112,
+      "offsetY": 3,
+      "direction": 0
+    },
+    {
+      "name": "xmas-wine",
+      "texture": "xmas",
+      "left": 98,
+      "bottom": 174,
+      "right": 136,
+      "top": 26,
+      "offsetX": 19,
+      "offsetY": 2,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -1128,6 +1165,12 @@
               "costumes": [
                 "mike-abdomen"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "1.2"
             }
           ]
         }
@@ -2638,10 +2681,6 @@
             {
               "name": "unlocked",
               "value": "false"
-            },
-            {
-              "name": "sceneName",
-              "value": ""
             }
           ]
         },
@@ -2803,7 +2842,7 @@
               ]
             },
             {
-              "name": "pinch",
+              "name": "down",
               "poses": [
                 "hand-closed"
               ]
@@ -2828,6 +2867,28 @@
               }
             ]
           }
+        },
+        {
+          "name": "youLose",
+          "role": "uk.co.nickthecoder.rapidragdoll.YouLose",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "large",
+          "events": [
+            
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ],
       "showInSceneEditor": true
@@ -2932,7 +2993,7 @@
           "name": "chair1",
           "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
           "canRotate": true,
-          "zOrder": 200,
+          "zOrder": -100,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3264,11 +3325,15 @@
             }
           ],
           "body": {
-            "bodyType": "STATIC",
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": true,
             "fixtures": [
               {
                 "friction": 0.5,
-                "density": 1,
+                "density": 30,
                 "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
@@ -3371,7 +3436,45 @@
           }
         },
         {
-          "name": "wall0",
+          "name": "grass",
+          "role": "",
+          "canRotate": true,
+          "zOrder": 400,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "grass"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.8,
+                "density": 1,
+                "restitution": 0.4,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 209,
+                  "y": 29.5,
+                  "width": 420,
+                  "height": 59,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "wall",
           "role": "",
           "canRotate": true,
           "zOrder": 200,
@@ -3409,7 +3512,7 @@
           }
         },
         {
-          "name": "wood0",
+          "name": "wood",
           "role": "",
           "canRotate": false,
           "zOrder": 250,
@@ -3439,44 +3542,6 @@
                   "y": 40.5,
                   "width": 654,
                   "height": 81,
-                  "angle": 0,
-                  "roundedEnds": false
-                }
-              }
-            ]
-          }
-        },
-        {
-          "name": "grass",
-          "role": "",
-          "canRotate": true,
-          "zOrder": 400,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "events": [
-            {
-              "name": "default",
-              "poses": [
-                "grass"
-              ]
-            }
-          ],
-          "body": {
-            "bodyType": "STATIC",
-            "fixtures": [
-              {
-                "friction": 0.8,
-                "density": 1,
-                "restitution": 0.4,
-                "isSensor": false,
-                "group": 0,
-                "category": 8,
-                "mask": 15,
-                "box": {
-                  "x": 209,
-                  "y": 29.5,
-                  "width": 420,
-                  "height": 59,
                   "angle": 0,
                   "roundedEnds": false
                 }
@@ -3661,9 +3726,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -3714,9 +3779,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -3743,9 +3808,9 @@
                 }
               },
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -3811,9 +3876,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -3894,9 +3959,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -3962,9 +4027,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -4030,9 +4095,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4098,9 +4163,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4141,7 +4206,7 @@
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
-          "showInSceneEditor": true,
+          "showInSceneEditor": false,
           "events": [
             {
               "name": "default",
@@ -4172,9 +4237,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4201,9 +4266,9 @@
                 }
               },
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4238,7 +4303,7 @@
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
-          "showInSceneEditor": true,
+          "showInSceneEditor": false,
           "events": [
             {
               "name": "default",
@@ -4269,9 +4334,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -4291,7 +4356,7 @@
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
-          "showInSceneEditor": true,
+          "showInSceneEditor": false,
           "events": [
             {
               "name": "default",
@@ -4322,9 +4387,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4351,9 +4416,9 @@
                 }
               },
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4388,7 +4453,7 @@
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
-          "showInSceneEditor": true,
+          "showInSceneEditor": false,
           "events": [
             {
               "name": "default",
@@ -4405,9 +4470,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -4446,7 +4511,7 @@
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
-          "showInSceneEditor": true,
+          "showInSceneEditor": false,
           "events": [
             {
               "name": "default",
@@ -4477,9 +4542,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4514,7 +4579,7 @@
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
-          "showInSceneEditor": true,
+          "showInSceneEditor": false,
           "events": [
             {
               "name": "default",
@@ -4545,9 +4610,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -4582,7 +4647,7 @@
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
-          "showInSceneEditor": true,
+          "showInSceneEditor": false,
           "events": [
             {
               "name": "default",
@@ -4613,9 +4678,9 @@
             "fixedRotation": false,
             "fixtures": [
               {
-                "friction": 0,
+                "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.5,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -4637,6 +4702,302 @@
                     {
                       "x": 15,
                       "y": -13
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "xmas",
+      "costumes": [
+        {
+          "name": "xmas-pin",
+          "role": "uk.co.nickthecoder.rapidragdoll.Pin",
+          "canRotate": false,
+          "zOrder": 300,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "xmas-pin"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.7,
+            "angularDamping": 0.7,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.9,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 16,
+                      "y": -2
+                    },
+                    {
+                      "x": 30,
+                      "y": 56
+                    },
+                    {
+                      "x": 11,
+                      "y": 102
+                    },
+                    {
+                      "x": -10,
+                      "y": 103
+                    },
+                    {
+                      "x": -26,
+                      "y": 56
+                    },
+                    {
+                      "x": -15,
+                      "y": -2
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.9,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 10,
+                      "y": 100
+                    },
+                    {
+                      "x": 16,
+                      "y": 136
+                    },
+                    {
+                      "x": 8,
+                      "y": 149
+                    },
+                    {
+                      "x": -6,
+                      "y": 148
+                    },
+                    {
+                      "x": -14,
+                      "y": 135
+                    },
+                    {
+                      "x": -7,
+                      "y": 100
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "xmas-tree",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "xmas-tree"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.7,
+                "density": 10,
+                "restitution": 0.1,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 8,
+                      "y": 104
+                    },
+                    {
+                      "x": 108,
+                      "y": 128
+                    },
+                    {
+                      "x": 26,
+                      "y": 414
+                    },
+                    {
+                      "x": 3,
+                      "y": 422
+                    },
+                    {
+                      "x": -27,
+                      "y": 380
+                    },
+                    {
+                      "x": -112,
+                      "y": 122
+                    },
+                    {
+                      "x": -74,
+                      "y": 105
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 0.1,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 0,
+                  "y": 89,
+                  "width": 14,
+                  "height": 28,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 50,
+                "restitution": 0.01,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 20,
+                      "y": 1
+                    },
+                    {
+                      "x": 46,
+                      "y": 77
+                    },
+                    {
+                      "x": -42,
+                      "y": 77
+                    },
+                    {
+                      "x": -20,
+                      "y": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "xmas-wine",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "xmas-wine"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 1.5,
+                  "y": 128,
+                  "width": 11,
+                  "height": 34,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 18,
+                      "y": 3
+                    },
+                    {
+                      "x": 18,
+                      "y": 95
+                    },
+                    {
+                      "x": 7,
+                      "y": 113
+                    },
+                    {
+                      "x": -5,
+                      "y": 113
+                    },
+                    {
+                      "x": -17,
+                      "y": 96
+                    },
+                    {
+                      "x": -17,
+                      "y": 2
                     }
                   ]
                 }
@@ -4670,82 +5031,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "wall",
-      "role": "",
-      "canRotate": true,
-      "zOrder": 200,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wall"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.6,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 25.5,
-              "y": 145,
-              "width": 51,
-              "height": 287,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "wood",
-      "role": "",
-      "canRotate": false,
-      "zOrder": 250,
-      "initialEvent": "default",
-      "showInSceneEditor": true,
-      "events": [
-        {
-          "name": "default",
-          "poses": [
-            "wood"
-          ]
-        }
-      ],
-      "body": {
-        "bodyType": "STATIC",
-        "fixtures": [
-          {
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.7,
-            "isSensor": false,
-            "group": 0,
-            "category": 8,
-            "mask": 15,
-            "box": {
-              "x": 327,
-              "y": 40.5,
-              "width": 654,
-              "height": 81,
-              "angle": 0,
-              "roundedEnds": false
-            }
-          }
-        ]
-      }
     }
   ],
   "inputs": [
@@ -4835,6 +5120,24 @@
       "keys": [
         {
           "key": "Down",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "grow",
+      "keys": [
+        {
+          "key": "Equals",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "shrink",
+      "keys": [
+        {
+          "key": "Minus",
           "state": "PRESSED"
         }
       ]

@@ -38,6 +38,7 @@ abstract class AbstractLauncher : AbstractRole() {
         costume ?: return
 
         val dollA = actor.createChild(costume)
+
         dollA.zOrder = dollZOrder
         dollZOrder++
         if (dollZOrder > 99) {
@@ -49,6 +50,7 @@ abstract class AbstractLauncher : AbstractRole() {
         if (doll is Doll) {
             doll.initialVelocity.set(point).sub(actor.position).normalize(speed)
             Play.instance.launched(doll)
+            dollA.scaleXY = doll.defaultScale
         }
         actor.stage?.add(dollA)
     }

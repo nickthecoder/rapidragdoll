@@ -101,6 +101,27 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "costume": "youLose",
+          "x": -166,
+          "y": 179,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "You Loser !",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "884.0x388.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ]
     }

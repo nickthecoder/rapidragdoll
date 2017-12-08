@@ -294,6 +294,18 @@ open class Play : AbstractDirector(), MouseHandler {
         }
     }
 
+    /**
+     * Called from Fragile when it is knocked over
+     */
+    open fun knockedFragile() {
+        if (!sceneComplete) {
+            lost = true
+            glassView.stage.findRoles<YouLose>().forEach {
+                it.go()
+            }
+        }
+    }
+
     fun nextScene() {
         Game.instance.startScene(nextScene)
     }

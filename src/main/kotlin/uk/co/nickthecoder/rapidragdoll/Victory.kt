@@ -3,17 +3,18 @@ package uk.co.nickthecoder.rapidragdoll
 import org.jbox2d.dynamics.joints.MouseJoint
 import org.jbox2d.dynamics.joints.MouseJointDef
 import org.joml.Vector2d
-import uk.co.nickthecoder.tickle.AbstractDirector
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.events.ButtonState
+import uk.co.nickthecoder.tickle.events.KeyEvent
 import uk.co.nickthecoder.tickle.events.MouseEvent
 import uk.co.nickthecoder.tickle.events.MouseHandler
 import uk.co.nickthecoder.tickle.physics.pixelsToWorld
-import uk.co.nickthecoder.tickle.stage.StageView
+import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoleAt
+import uk.co.nickthecoder.tickle.stage.findRoles
 
-class Victory : AbstractDirector(), MouseHandler {
+class Victory : Play(), MouseHandler {
 
     var dragPosition = Vector2d()
 
@@ -23,25 +24,53 @@ class Victory : AbstractDirector(), MouseHandler {
 
     var hand: Hand? = null
 
-    lateinit var mainView: StageView
+    val grow = Resources.instance.inputs.find("grow")
+    val shrink = Resources.instance.inputs.find("shrink")
 
-    override fun activated() {
+    override fun sceneLoaded() {
+        super.sceneLoaded()
         mainView = Game.instance.scene.findStageView("main")!!
+
+        var dollZOrder = 1.0
         hand = mainView.stage.findRole<Hand>()!!
+        mainView.stage.findRoles<Doll>().forEach { doll ->
+            doll.actor.zOrder = dollZOrder++
+
+        }
+    }
+
+    override fun onKey(event: KeyEvent) {
+        if (grow?.matches(event) == true) {
+            dragging?.scale(1.2)
+        } else if (shrink?.matches(event) == true) {
+            dragging?.scale(1 / 1.2)
+        } else {
+            super.onKey(event)
+        }
     }
 
     override fun onMouseButton(event: MouseEvent) {
 
-        if (event.button == 0 && event.state == ButtonState.PRESSED) {
-            pickUpObject(event)
-        } else if (event.state == ButtonState.RELEASED) {
-            dropObject()
-            event.release()
+        if (event.button == 0) {
+            if (event.state == ButtonState.PRESSED) {
+                hand?.actor?.event("down")
+                pickUpObject(event)
+            } else if (event.state == ButtonState.RELEASED) {
+                dropObject()
+                event.release()
+                hand?.actor?.event("default")
+            }
+        } else {
+            super.onMouseButton(event)
         }
     }
 
     override fun onMouseMove(event: MouseEvent) {
-        dragObject(event)
+        if (event.button == 0) {
+            dragObject(event)
+        } else {
+            super.onMouseMove(event)
+        }
     }
 
     fun dropObject() {
@@ -80,6 +109,10 @@ class Victory : AbstractDirector(), MouseHandler {
     fun dragObject(event: MouseEvent) {
         mainView.screenToView(event.screenPosition, event.viewPosition)
         mouseJoint?.target?.set(pixelsToWorld(event.viewPosition))
+    }
+
+    override fun knockedFragile() {
+        // Do nothing
     }
 
 }

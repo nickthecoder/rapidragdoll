@@ -2,14 +2,13 @@ package uk.co.nickthecoder.rapidragdoll
 
 import org.jbox2d.dynamics.joints.RevoluteJointDef
 import org.joml.Vector2d
-import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Umbrella : AbstractRole(), Draggable {
+class Umbrella : Fragile(), Draggable {
 
     @Attribute
     val angle = Angle()
@@ -38,9 +37,8 @@ class Umbrella : AbstractRole(), Draggable {
         topHalf.direction.radians += angle.radians
     }
 
-    override fun tick() {
+    override fun mass(): Float {
+        return actor.body!!.mass + topHalf.body!!.mass
     }
-
-    override fun mass(): Float = actor.body!!.mass + topHalf.body!!.mass
 
 }

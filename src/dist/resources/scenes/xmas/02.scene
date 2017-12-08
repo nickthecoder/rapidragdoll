@@ -3,23 +3,23 @@
   "directorAttributes": [
     {
       "name": "maxDolls",
-      "value": "3"
-    },
-    {
-      "name": "menuName",
-      "value": "puzzle/menu"
+      "value": "5"
     },
     {
       "name": "nextScene",
-      "value": "puzzle/02"
+      "value": "menu"
     },
     {
       "name": "bottomLeft",
-      "value": "-440.0x0.0"
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
     },
     {
       "name": "topRight",
-      "value": "1400.0x800.0"
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
@@ -38,10 +38,12 @@
     "enabled": true,
     "closeness": 5,
     "x": [
-      
+      1280,
+      0
     ],
     "y": [
-      
+      0,
+      800
     ]
   },
   "snapToOthers": {
@@ -64,107 +66,131 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": -135,
-          "y": 376,
-          "zOrder": 0,
+          "x": 148,
+          "y": 544,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "72.0x324.0"
+              "value": "515.0x310.0"
             },
             {
               "name": "dollName",
-              "value": "annie"
+              "value": "mike"
             },
             {
               "name": "speed",
-              "value": "400"
+              "value": "600"
             }
           ]
         },
         {
-          "costume": "pin",
-          "x": -246,
-          "y": 69,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "fencePost",
-          "x": -404,
-          "y": 52,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "umbrella",
-          "x": 206,
-          "y": 61,
+          "costume": "wall",
+          "x": 0,
+          "y": -6.0800000000000125,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "attributes": [
-            {
-              "name": "angle",
-              "value": "29.999999999999996"
-            }
-          ]
-        },
-        {
-          "costume": "pin",
-          "x": 342,
-          "y": 65,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 573,
-          "y": 69,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "fencePost",
-          "x": 1246,
-          "y": 46,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 903,
-          "y": 75,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "grass",
-          "x": -666,
-          "y": -1,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 2090,
-          "sizeY": 88,
+          "sizeX": 43.840000000000146,
+          "sizeY": 775.8719999999998,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 639.2939999999999,
+          "y": 784.29,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1283.5879999999997,
+          "sizeY": 43.58000000000004,
+          "alignmentX": 0.5,
+          "alignmentY": 0.5
+        },
+        {
+          "costume": "wall",
+          "x": 1280,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47.29600000000028,
+          "sizeY": 768.0639999999999,
+          "alignmentX": 1,
+          "alignmentY": 0
+        },
+        {
+          "costume": "xmas-tree",
+          "x": 301,
+          "y": 54,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-tree",
+          "x": 977,
+          "y": 57,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 1010,
+          "y": 591,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 733,
+          "y": 58,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "wood",
+          "x": 43,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1190,
+          "sizeY": 51,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 976,
+          "y": 551,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 257,
+          "sizeY": 34,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "xmas-wine",
+          "x": 506,
+          "y": 51,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        }
       ]
     }
   ]

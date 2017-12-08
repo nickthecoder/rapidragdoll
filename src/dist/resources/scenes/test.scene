@@ -76,19 +76,19 @@
         },
         {
           "costume": "launcher",
-          "x": 451,
-          "y": 295,
+          "x": 113,
+          "y": 631,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "358.0x310.0"
+              "value": "0.0x0.0"
             },
             {
               "name": "dollName",
-              "value": "annie"
+              "value": "mike"
             },
             {
               "name": "speed",
