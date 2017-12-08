@@ -872,6 +872,61 @@
       "offsetX": 19,
       "offsetY": 2,
       "direction": 0
+    },
+    {
+      "name": "bed",
+      "texture": "scenery",
+      "left": 95,
+      "bottom": 594,
+      "right": 519,
+      "top": 340,
+      "offsetX": 204,
+      "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "cooker",
+      "texture": "scenery",
+      "left": 525,
+      "bottom": 620,
+      "right": 716,
+      "top": 334,
+      "offsetX": 91,
+      "offsetY": 3,
+      "direction": 0
+    },
+    {
+      "name": "teacup",
+      "texture": "scenery",
+      "left": 97,
+      "bottom": 643,
+      "right": 167,
+      "top": 595,
+      "offsetX": 28,
+      "offsetY": 3,
+      "direction": 0
+    },
+    {
+      "name": "teapot",
+      "texture": "scenery",
+      "left": 170,
+      "bottom": 681,
+      "right": 301,
+      "top": 594,
+      "offsetX": 63,
+      "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "table",
+      "texture": "scenery",
+      "left": 462,
+      "bottom": 779,
+      "right": 737,
+      "top": 629,
+      "offsetX": 133,
+      "offsetY": 4,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -3544,6 +3599,383 @@
                   "height": 81,
                   "angle": 0,
                   "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bed",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bed"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.96,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 219,
+                      "y": 19
+                    },
+                    {
+                      "x": 220,
+                      "y": 46
+                    },
+                    {
+                      "x": 189,
+                      "y": 141
+                    },
+                    {
+                      "x": 130,
+                      "y": 170
+                    },
+                    {
+                      "x": -149,
+                      "y": 162
+                    },
+                    {
+                      "x": -182,
+                      "y": 117
+                    },
+                    {
+                      "x": -198,
+                      "y": 41
+                    },
+                    {
+                      "x": -174,
+                      "y": 0
+                    },
+                    {
+                      "x": 182,
+                      "y": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "cooker",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "cooker"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.4,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 5,
+                  "y": 137.5,
+                  "width": 187,
+                  "height": 279,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "table",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "table"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 5,
+                  "y": 134.5,
+                  "width": 270,
+                  "height": 12,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 0.3,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 8,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 90,
+                      "y": -3
+                    },
+                    {
+                      "x": 106,
+                      "y": 130
+                    },
+                    {
+                      "x": -95,
+                      "y": 129
+                    },
+                    {
+                      "x": -78,
+                      "y": -3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "teapot",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "teapot"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 20,
+                      "y": 1
+                    },
+                    {
+                      "x": 40,
+                      "y": 20
+                    },
+                    {
+                      "x": 39,
+                      "y": 54
+                    },
+                    {
+                      "x": 17,
+                      "y": 71
+                    },
+                    {
+                      "x": -14,
+                      "y": 69
+                    },
+                    {
+                      "x": -37,
+                      "y": 51
+                    },
+                    {
+                      "x": -38,
+                      "y": 18
+                    },
+                    {
+                      "x": -17,
+                      "y": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -42,
+                      "y": 49
+                    },
+                    {
+                      "x": -51,
+                      "y": 69
+                    },
+                    {
+                      "x": -61,
+                      "y": 66
+                    },
+                    {
+                      "x": -51,
+                      "y": 36
+                    },
+                    {
+                      "x": -41,
+                      "y": 24
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 0.2,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 40,
+                      "y": 16
+                    },
+                    {
+                      "x": 66,
+                      "y": 31
+                    },
+                    {
+                      "x": 64,
+                      "y": 58
+                    },
+                    {
+                      "x": 48,
+                      "y": 66
+                    },
+                    {
+                      "x": 38,
+                      "y": 54
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "teacup",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "teacup"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 14,
+                      "y": -2
+                    },
+                    {
+                      "x": 31,
+                      "y": 44
+                    },
+                    {
+                      "x": -24,
+                      "y": 44
+                    },
+                    {
+                      "x": -11,
+                      "y": -1
+                    }
+                  ]
                 }
               }
             ]

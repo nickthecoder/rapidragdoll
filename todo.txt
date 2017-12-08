@@ -8,11 +8,9 @@ Stray pixels on Annie
 Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt when bent.
 Arms arm't correctly constrained?
 
-Stray pixels on skittle
-
 Xmas
 ----
-Tree, Presents, Wrapped pin (knock over to win)
+Presents
 
 Next
 ----
