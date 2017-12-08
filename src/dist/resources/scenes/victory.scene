@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "2280.0x800.0"
+      "value": "3280.0x1500.0"
     }
   ],
   "background": "#000000",
@@ -73,8 +73,8 @@
         },
         {
           "costume": "chair2",
-          "x": 527,
-          "y": 134,
+          "x": 645,
+          "y": 137,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -89,24 +89,24 @@
         },
         {
           "costume": "foxie",
-          "x": 659,
-          "y": 455,
+          "x": 1868,
+          "y": 634,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "bony",
-          "x": 1544,
-          "y": 383,
+          "x": 2419,
+          "y": 360,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "umbrella",
-          "x": 1783,
-          "y": 48,
+          "x": 2659,
+          "y": 65,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -119,16 +119,16 @@
         },
         {
           "costume": "fiona",
-          "x": 432,
-          "y": 271,
+          "x": 1771,
+          "y": 570,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "mike",
-          "x": 336,
-          "y": 461,
+          "x": 26,
+          "y": 327,
           "direction": 0,
           "scaleX": 1.2,
           "scaleY": 1.2
@@ -155,25 +155,25 @@
         },
         {
           "costume": "wall",
-          "x": -1,
-          "y": 0,
+          "x": -3,
+          "y": 429,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 47,
-          "sizeY": 1327,
+          "sizeX": 49,
+          "sizeY": 898,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "wall",
-          "x": 1232,
-          "y": -1,
+          "x": 1231,
+          "y": 510,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 47,
-          "sizeY": 1331,
+          "sizeX": 48,
+          "sizeY": 820,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -191,19 +191,19 @@
         },
         {
           "costume": "grass",
-          "x": 1280,
+          "x": 2073,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1043,
-          "sizeY": 89,
+          "sizeX": 1378,
+          "sizeY": 83,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "fencePost",
-          "x": 2114,
+          "x": 3068,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
@@ -232,17 +232,176 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1186,
-          "sizeY": 60,
+          "sizeX": 1978,
+          "sizeY": 59,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "xmas-wine",
+          "x": 464,
+          "y": 214,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "teacup",
+          "x": 1390,
+          "y": 224,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "teapot",
+          "x": 1489,
+          "y": 220,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "teacup",
+          "x": 1593,
+          "y": 224,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-wine",
+          "x": 1938,
+          "y": 66,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "cooker",
+          "x": 1814,
+          "y": 70,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wood",
+          "x": 1280,
+          "y": 778,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 744,
+          "sizeY": 47,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "bony",
+          "x": 2259,
+          "y": 344,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "table",
+          "x": 1484,
+          "y": 67,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "table",
+          "x": 389,
+          "y": 67,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wall",
+          "x": 2022,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 63,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 0,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47,
+          "sizeY": 58,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "xmas-wine",
+          "x": 2938,
+          "y": 68,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wall",
+          "x": 2023,
+          "y": 510,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 51,
+          "sizeY": 815,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "bed",
+          "x": 649,
+          "y": 837,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "mike",
+          "x": 593,
+          "y": 1194,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "fiona",
+          "x": 715,
+          "y": 1194,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "chair2",
+          "x": 1655,
+          "y": 141,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        }
       ]
     }
   ]

@@ -84,7 +84,7 @@ class Doll : ActionRole() {
         newActor.zOrder = actor.zOrder + zOrder
         newActor.scaleXY = actor.scaleXY
 
-        totalMass += (newActor.body?.mass ?: 0f) // * (actor.scale.x * actor.scale.x).toFloat()
+        totalMass += (newActor.body?.mass ?: 0f)
 
         parts.add(newActor)
         return newActor
