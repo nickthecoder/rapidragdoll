@@ -7,12 +7,16 @@ import uk.co.nickthecoder.tickle.action.NoAction
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.animation.Fade
+import uk.co.nickthecoder.tickle.util.Attribute
 
 /**
  * You lose if a fragile object is knocked over!
  */
-open class Fragile : ActionRole(), Draggable {
+open class Fragile : ActionRole(), Draggable, Reward {
 
+    @Attribute
+    override var rewardForScene = ""
+    
     override fun createAction(): Action {
 
         if (Play.instance is Victory) {

@@ -1,5 +1,27 @@
 {
   "director": "uk.co.nickthecoder.rapidragdoll.Victory",
+  "directorAttributes": [
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "maxDolls",
+      "value": "20"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
+    },
+    {
+      "name": "nextScene",
+      "value": ""
+    },
+    {
+      "name": "topRight",
+      "value": "1280.0x800.0"
+    }
+  ],
   "background": "#000000",
   "showMouse": false,
   "layout": "default",
@@ -52,7 +74,18 @@
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "wall",
+          "x": 101,
+          "y": -41,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 51,
+          "sizeY": 340,
+          "alignmentX": 0,
+          "alignmentY": 0
+        }
       ]
     }
   ]

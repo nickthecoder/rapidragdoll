@@ -15,6 +15,14 @@ Presents
 Next
 ----
 
+Rename Victory to Rewards?
+	Add code to show only actors that have been earned.
+	Create a TestRewards scene which include the real rewards scene, but set testing Attribute true, 
+		which allow ALL rewards to be visible (despite not being earned).
+	If the tutorial hasn't been "won", then show a message explaining. With a SceneButton to the tutorial menu?
+
+Make limbs collide with other limbs (now that jointed items don't collide with each other)?
+
 Scenery
 	Wallpaper
 
@@ -25,6 +33,16 @@ Add simple movable objects
 	table, lamp stands
 
 New objective : A ring a bell hanging from the ceiling.
+	Ring when the angle > limit, and wasn't on the previous tick.
+
+Sounds when a doll is launched
+	(Each doll has its own)
+
+Sounds when a doll bounces.
+	Save the velocity from the previous tick, and check if the magnitude of the difference > limit
+	Maybe more than one sound each with different limits.
+
+New tutorial explaining Frgaile objects.
 
 Limit the Laucher to a fixed number of dolls
 	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
@@ -47,16 +65,8 @@ Finish menu scene
 Later
 -----
 
-Create a Success Scene
-	Starts fairly blank, and as you win scenes, you get more items appearing.
-	Both Scenery and dolls.
-	Use the mouse to pick up items, and move them.
-	A "Save" button saves the scene using Preferences. Just x,y,angle for each piece.
-	A US style mail box with the flag up shows there are new rewards
-		Click to throw the reward out! + Delay to prevent overlaps.
-	
 
 Much Later
 ----------
 
-Create more sedate scenes, where the aim is to place dolls on chairs???
+

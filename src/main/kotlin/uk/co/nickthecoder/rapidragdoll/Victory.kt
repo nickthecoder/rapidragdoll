@@ -37,6 +37,13 @@ class Victory : Play(), MouseHandler {
             doll.actor.zOrder = dollZOrder++
 
         }
+        mainView.stage.findRoles<Reward>().forEach { reward ->
+            if (reward.rewardForScene.isNotBlank()) {
+                if (!scenePreferences(reward.rewardForScene).getBoolean("completed", false)) {
+                    reward.actor.die()
+                }
+            }
+        }
     }
 
     override fun onKey(event: KeyEvent) {

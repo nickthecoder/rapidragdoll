@@ -12,12 +12,16 @@ import uk.co.nickthecoder.tickle.action.ParallelAction
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Fade
 import uk.co.nickthecoder.tickle.physics.pixelsToWorld
+import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.CostumeAttribute
 import java.util.*
 
 private val random = Random()
 
-class Doll : ActionRole() {
+class Doll : ActionRole(), Reward {
+
+    @Attribute
+    override var rewardForScene: String = ""
 
     @CostumeAttribute
     var defaultScale = 1.0
