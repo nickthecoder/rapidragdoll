@@ -121,6 +121,10 @@
     {
       "name": "xmas",
       "file": "images/xmas/xmas.png"
+    },
+    {
+      "name": "emma",
+      "file": "images/emma.png"
     }
   ],
   "fonts": [
@@ -927,6 +931,83 @@
       "offsetX": 133,
       "offsetY": 4,
       "direction": 0
+    },
+    {
+      "name": "emma-head",
+      "texture": "emma",
+      "left": 134,
+      "bottom": 105,
+      "right": 218,
+      "top": 17,
+      "offsetX": 43,
+      "offsetY": 23,
+      "direction": 0
+    },
+    {
+      "name": "emma-torso",
+      "texture": "emma",
+      "left": 123,
+      "bottom": 240,
+      "right": 227,
+      "top": 112,
+      "offsetX": 53,
+      "offsetY": 113,
+      "direction": 0
+    },
+    {
+      "name": "emma-abdomen",
+      "texture": "emma",
+      "left": 112,
+      "bottom": 372,
+      "right": 212,
+      "top": 260,
+      "offsetX": 55,
+      "offsetY": 87,
+      "direction": 0
+    },
+    {
+      "name": "emma-arm-left",
+      "texture": "emma",
+      "left": 13,
+      "bottom": 212,
+      "right": 68,
+      "top": 23,
+      "offsetX": 40,
+      "offsetY": 173,
+      "direction": 0
+    },
+    {
+      "name": "emma-arm-right",
+      "texture": "emma",
+      "left": 268,
+      "bottom": 215,
+      "right": 311,
+      "top": 20,
+      "offsetX": 23,
+      "offsetY": 174,
+      "direction": 0
+    },
+    {
+      "name": "emma-leg-left",
+      "texture": "emma",
+      "left": 5,
+      "bottom": 428,
+      "right": 69,
+      "top": 210,
+      "offsetX": 47,
+      "offsetY": 216,
+      "direction": 0
+    },
+    {
+      "name": "emma-leg-right",
+      "texture": "emma",
+      "left": 266,
+      "bottom": 436,
+      "right": 320,
+      "top": 222,
+      "offsetX": 26,
+      "offsetY": 213,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -1226,6 +1307,74 @@
             {
               "name": "defaultScale",
               "value": "1.2"
+            }
+          ]
+        },
+        {
+          "name": "emma",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "emma-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "emma-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "emma-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "emma-abdomen"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "emma-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "emma-arm-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "emma-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "emma-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.5"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         }
@@ -5422,6 +5571,577 @@
                     {
                       "x": -17,
                       "y": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "emma",
+      "costumes": [
+        {
+          "name": "emma-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "emma-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "44.0x-20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 5,
+                      "y": -63
+                    },
+                    {
+                      "x": 17,
+                      "y": 8
+                    },
+                    {
+                      "x": -17,
+                      "y": -6
+                    },
+                    {
+                      "x": -21,
+                      "y": -73
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -6,
+                      "y": -174
+                    },
+                    {
+                      "x": 16,
+                      "y": -159
+                    },
+                    {
+                      "x": 7,
+                      "y": -69
+                    },
+                    {
+                      "x": -21,
+                      "y": -73
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "emma-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "emma-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "-24.0x-50.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 13,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 19,
+                      "y": -9
+                    },
+                    {
+                      "x": -24,
+                      "y": -4
+                    },
+                    {
+                      "x": -44,
+                      "y": -209
+                    },
+                    {
+                      "x": -26,
+                      "y": -213
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "emma-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "emma-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x14.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 10,
+                      "y": -8
+                    },
+                    {
+                      "x": 21,
+                      "y": 22
+                    },
+                    {
+                      "x": 8,
+                      "y": 56
+                    },
+                    {
+                      "x": -14,
+                      "y": 57
+                    },
+                    {
+                      "x": -28,
+                      "y": 25
+                    },
+                    {
+                      "x": -18,
+                      "y": -5
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "emma-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "emma-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 26,
+                      "y": -93
+                    },
+                    {
+                      "x": 51,
+                      "y": -6
+                    },
+                    {
+                      "x": 1,
+                      "y": 12
+                    },
+                    {
+                      "x": -48,
+                      "y": -1
+                    },
+                    {
+                      "x": -48,
+                      "y": -96
+                    },
+                    {
+                      "x": -7,
+                      "y": -113
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "emma-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "emma-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-40.0"
+            },
+            {
+              "name": "offset",
+              "value": "-10.0x-100.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "40.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 40,
+                      "y": -57
+                    },
+                    {
+                      "x": 45,
+                      "y": 1
+                    },
+                    {
+                      "x": 2,
+                      "y": 26
+                    },
+                    {
+                      "x": -38,
+                      "y": 10
+                    },
+                    {
+                      "x": -47,
+                      "y": -39
+                    },
+                    {
+                      "x": -10,
+                      "y": -74
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "emma-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "emma-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "offset",
+              "value": "-40.0x-14.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -9,
+                      "y": -158
+                    },
+                    {
+                      "x": 16,
+                      "y": -69
+                    },
+                    {
+                      "x": -11,
+                      "y": -61
+                    },
+                    {
+                      "x": -31,
+                      "y": -145
+                    },
+                    {
+                      "x": -21,
+                      "y": -175
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -18,
+                      "y": 11
+                    },
+                    {
+                      "x": -11,
+                      "y": -58
+                    },
+                    {
+                      "x": 12,
+                      "y": -63
+                    },
+                    {
+                      "x": 12,
+                      "y": -11
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "emma-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "emma-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-20.0"
+            },
+            {
+              "name": "offset",
+              "value": "16.0x-56.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 13,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -18,
+                      "y": -2
+                    },
+                    {
+                      "x": -21,
+                      "y": -168
+                    },
+                    {
+                      "x": -6,
+                      "y": -169
+                    },
+                    {
+                      "x": 29,
+                      "y": -9
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 13,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -22,
+                      "y": -166
+                    },
+                    {
+                      "x": -22,
+                      "y": -187
+                    },
+                    {
+                      "x": -11,
+                      "y": -209
+                    },
+                    {
+                      "x": 2,
+                      "y": -202
+                    },
+                    {
+                      "x": -4,
+                      "y": -169
                     }
                   ]
                 }

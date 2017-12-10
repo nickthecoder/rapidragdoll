@@ -173,7 +173,13 @@
           "y": 206,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "table",
@@ -181,7 +187,13 @@
           "y": 61,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "teapot",
@@ -189,7 +201,13 @@
           "y": 213,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "table",
@@ -197,7 +215,13 @@
           "y": 60,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "xmas-pin",
@@ -213,7 +237,13 @@
           "y": 59,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         }
       ]
     }

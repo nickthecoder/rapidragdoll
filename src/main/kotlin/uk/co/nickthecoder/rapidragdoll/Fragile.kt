@@ -16,7 +16,7 @@ open class Fragile : ActionRole(), Draggable, Reward {
 
     @Attribute
     override var rewardForScene = ""
-    
+
     override fun createAction(): Action {
 
         if (Play.instance is Victory) {

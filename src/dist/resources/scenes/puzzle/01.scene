@@ -77,7 +77,7 @@
             },
             {
               "name": "dollName",
-              "value": "annie"
+              "value": "foxie"
             },
             {
               "name": "speed",
@@ -112,6 +112,10 @@
             {
               "name": "angle",
               "value": "29.999999999999996"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         },

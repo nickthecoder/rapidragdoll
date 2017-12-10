@@ -15,7 +15,7 @@
     },
     {
       "name": "nextScene",
-      "value": ""
+      "value": "menu"
     },
     {
       "name": "topRight",
@@ -93,8 +93,8 @@
         },
         {
           "costume": "hand",
-          "x": 297,
-          "y": 297,
+          "x": 321,
+          "y": 397,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -544,6 +544,20 @@
             {
               "name": "rewardForScene",
               "value": "tutorial/05"
+            }
+          ]
+        },
+        {
+          "costume": "emma",
+          "x": -337,
+          "y": 464,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         }

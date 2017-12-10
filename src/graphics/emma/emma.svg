@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="emma.svg"
+   inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/emma.png"
+   inkscape:export-xdpi="40.024242"
+   inkscape:export-ydpi="40.024242">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="457.85715"
+     inkscape:cy="534.28571"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="854"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/abdomen.png"
+       xlink:href="abdomen.png"
+       y="219.75513"
+       x="45.071419"
+       id="image2993"
+       height="986.4093"
+       width="663.8811" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/arm-left.png"
+       xlink:href="arm-left.png"
+       y="-78.127342"
+       x="-217.13638"
+       id="image3004"
+       height="986.4093"
+       width="663.8811"
+       transform="matrix(0.85577147,-0.51735403,0.51735403,0.85577147,0,0)" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/arm-right.png"
+       xlink:href="arm-right.png"
+       y="-448.23352"
+       id="image3015"
+       height="986.4093"
+       width="663.8811"
+       transform="matrix(0.89482308,0.44642094,-0.44642094,0.89482308,0,0)"
+       x="180.82124" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/head.png"
+       xlink:href="head.png"
+       y="27.13135"
+       x="31.047493"
+       id="image3026"
+       height="986.4093"
+       width="663.8811" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/leg-left.png"
+       xlink:href="leg-left.png"
+       y="-4.2972221"
+       x="-161.80965"
+       id="image3037"
+       height="986.4093"
+       width="663.8811" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/leg-right.png"
+       xlink:href="leg-right.png"
+       y="-1.4400736"
+       x="296.76178"
+       id="image3048"
+       height="986.4093"
+       width="663.8811" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/torso.png"
+       xlink:href="torso.png"
+       y="94.274208"
+       x="39.618923"
+       id="image3059"
+       height="986.4093"
+       width="663.8811" />
+  </g>
+</svg>

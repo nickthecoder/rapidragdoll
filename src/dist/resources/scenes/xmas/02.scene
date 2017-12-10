@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "menu"
+      "value": "xmas/03"
     },
     {
       "name": "bottomLeft",
@@ -128,7 +128,13 @@
           "y": 54,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "xmas-tree",
@@ -136,7 +142,13 @@
           "y": 57,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "xmas-pin",
@@ -189,7 +201,13 @@
           "y": 51,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         }
       ]
     }
