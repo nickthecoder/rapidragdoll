@@ -396,6 +396,18 @@
        y1="68.623596"
        x2="427.14975"
        y2="114.08047" />
+    <filter
+       inkscape:collect="always"
+       id="filter3837"
+       x="-0.18751093"
+       width="1.3750219"
+       y="-0.18896527"
+       height="1.3779305">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="8.5436789"
+         id="feGaussianBlur3839" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -404,9 +416,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="544.03408"
-     inkscape:cy="468.38656"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="155.3239"
+     inkscape:cy="440.8094"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -440,18 +452,18 @@
        id="rect4658"
        width="466.69049"
        height="185.86807"
-       x="-512.83502"
-       y="18.156387"
+       x="-496.54062"
+       y="577.02283"
        inkscape:export-xdpi="89.969025"
        inkscape:export-ydpi="89.969025" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/pin.png"
        xlink:href="pin.png"
-       y="3.2662663"
-       x="436.99506"
-       id="image4668"
+       width="61.411152"
        height="162.73955"
-       width="61.411152" />
+       id="image4668"
+       x="436.99506"
+       y="3.2662663" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot3856"
@@ -465,11 +477,11 @@
          id="flowPara3862" /></flowRoot>    <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/chair.png"
        xlink:href="chair.png"
-       y="-0.13781738"
-       x="507"
-       id="image3884"
+       width="106"
        height="201.23438"
-       width="106" />
+       id="image3884"
+       x="507"
+       y="-0.13781738" />
     <use
        x="0"
        y="0"
@@ -481,11 +493,11 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/grass.png"
        xlink:href="grass.png"
-       y="156.36218"
-       x="10"
-       id="image3917"
+       width="421.2963"
        height="91"
-       width="421.2963" />
+       id="image3917"
+       x="10"
+       y="156.36218" />
     <image
        y="335.36218"
        x="11.5"
@@ -496,27 +508,27 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/wood.png"
        xlink:href="wood.png"
-       y="251.63351"
-       x="9.0424356"
-       id="image3086"
+       width="653.30322"
        height="79.67112"
-       width="653.30322" />
+       id="image3086"
+       x="9.0424356"
+       y="251.63351" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/rock.png"
        xlink:href="rock.png"
-       y="813.36218"
-       x="10"
-       id="image3097"
+       width="228"
        height="228"
-       width="228" />
+       id="image3097"
+       x="10"
+       y="813.36218" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fencePost.png"
        xlink:href="fencePost.png"
-       width="34"
-       height="320.04349"
-       id="image3098"
+       y="334.34042"
        x="63"
-       y="334.34042" />
+       id="image3098"
+       height="320.04349"
+       width="34" />
     <image
        y="795.36218"
        x="241.5"
@@ -527,19 +539,19 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/bed.png"
        xlink:href="bed.png"
-       width="430.10974"
-       height="263"
-       id="image3058"
+       y="334.86218"
        x="93.945129"
-       y="334.86218" />
+       id="image3058"
+       height="263"
+       width="430.10974" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/cooker.png"
        xlink:href="cooker.png"
-       width="197.04041"
-       height="290.62006"
-       id="image3069"
+       y="331.65515"
        x="521.78339"
-       y="331.65515" />
+       id="image3069"
+       height="290.62006"
+       width="197.04041" />
     <image
        y="593.94885"
        x="169.55103"
@@ -561,5 +573,37 @@
        xlink:href="file:///home/nick/projects/rapidragdoll/src/graphics/table.png"
        height="151"
        width="289.36884" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter3837)"
+       id="path3055"
+       sodipodi:sides="5"
+       sodipodi:cx="38"
+       sodipodi:cy="698.36218"
+       sodipodi:r1="58"
+       sodipodi:r2="20.745703"
+       sodipodi:arg1="0.80978357"
+       sodipodi:arg2="1.5786607"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 78,740.36218 -40.16315,-21.25494 -27.420544,30.27592 7.803552,-44.76557 -37.267518,-16.72271 44.98601,-6.4117 4.387951,-40.61112 19.999331,40.80291 39.979421,-8.37633 -32.625744,31.62928 z"
+       transform="matrix(0.27000029,0,0,0.27000029,137.0247,477.74447)" />
+    <path
+       transform="matrix(0.27000029,0,0,0.27000029,99.548045,477.03736)"
+       d="m 78,740.36218 -40.16315,-21.25494 -27.420544,30.27592 7.803552,-44.76557 -37.267518,-16.72271 44.98601,-6.4117 4.387951,-40.61112 19.999331,40.80291 39.979421,-8.37633 -32.625744,31.62928 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="1.5786607"
+       sodipodi:arg1="0.80978357"
+       sodipodi:r2="20.745703"
+       sodipodi:r1="58"
+       sodipodi:cy="698.36218"
+       sodipodi:cx="38"
+       sodipodi:sides="5"
+       id="path3841"
+       style="fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter3837)"
+       sodipodi:type="star" />
   </g>
 </svg>

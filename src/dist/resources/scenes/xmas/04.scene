@@ -1,0 +1,201 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Play",
+  "directorAttributes": [
+    {
+      "name": "maxDolls",
+      "value": "3"
+    },
+    {
+      "name": "menuName",
+      "value": "xmas/menu"
+    },
+    {
+      "name": "nextScene",
+      "value": "xmas/menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "-440.0x0.0"
+    },
+    {
+      "name": "topRight",
+      "value": "2000.0x800.0"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      
+    ],
+    "y": [
+      
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    "glass",
+    "aim"
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "launcher",
+          "x": -135,
+          "y": 376,
+          "zOrder": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "154.0x500.0"
+            },
+            {
+              "name": "dollName",
+              "value": "emma"
+            },
+            {
+              "name": "speed",
+              "value": "650"
+            }
+          ]
+        },
+        {
+          "costume": "fencePost",
+          "x": -404,
+          "y": 51,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "fencePost",
+          "x": 1246,
+          "y": 53,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "grass",
+          "x": -471,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 2698,
+          "sizeY": 85,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "snowMachine",
+          "x": -531,
+          "y": 816,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "count",
+              "value": "1000"
+            },
+            {
+              "name": "period",
+              "value": "0.1"
+            },
+            {
+              "name": "toX",
+              "value": "2000"
+            }
+          ]
+        },
+        {
+          "costume": "xmas-pin",
+          "x": -278,
+          "y": 78,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 208,
+          "y": 74,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-tree",
+          "x": 511,
+          "y": 72,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 1020,
+          "y": 76,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 1723,
+          "y": 69,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 783,
+          "y": 78,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
+      ]
+    }
+  ]
+}

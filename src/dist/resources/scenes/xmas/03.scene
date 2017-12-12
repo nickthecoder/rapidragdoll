@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "menu"
+      "value": "xmas/04"
     },
     {
       "name": "bottomLeft",
@@ -15,7 +15,7 @@
     },
     {
       "name": "menuName",
-      "value": "menu"
+      "value": "xmas/menu"
     },
     {
       "name": "topRight",

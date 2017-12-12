@@ -1008,6 +1008,28 @@
       "offsetX": 26,
       "offsetY": 213,
       "direction": 0
+    },
+    {
+      "name": "snow",
+      "texture": "scenery",
+      "left": 130,
+      "bottom": 681,
+      "right": 163,
+      "top": 649,
+      "offsetX": 17,
+      "offsetY": 15,
+      "direction": 0
+    },
+    {
+      "name": "snowMachine",
+      "texture": "scenery",
+      "left": 92,
+      "bottom": 680,
+      "right": 125,
+      "top": 648,
+      "offsetX": 18,
+      "offsetY": 14,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -5402,16 +5424,22 @@
               ]
             }
           ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
               {
                 "friction": 0.7,
-                "density": 10,
+                "density": 8,
                 "restitution": 0.1,
                 "isSensor": false,
                 "group": 0,
@@ -5420,39 +5448,23 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 8,
-                      "y": 104
+                      "x": -117,
+                      "y": 109
                     },
                     {
-                      "x": 108,
-                      "y": 128
+                      "x": 6,
+                      "y": 436
                     },
                     {
-                      "x": 26,
-                      "y": 414
-                    },
-                    {
-                      "x": 3,
-                      "y": 422
-                    },
-                    {
-                      "x": -27,
-                      "y": 380
-                    },
-                    {
-                      "x": -112,
-                      "y": 122
-                    },
-                    {
-                      "x": -74,
-                      "y": 105
+                      "x": 117,
+                      "y": 120
                     }
                   ]
                 }
               },
               {
-                "friction": 0,
-                "density": 1,
+                "friction": 0.6,
+                "density": 10,
                 "restitution": 0.1,
                 "isSensor": false,
                 "group": 0,
@@ -5469,8 +5481,8 @@
               },
               {
                 "friction": 0.7,
-                "density": 50,
-                "restitution": 0.01,
+                "density": 10,
+                "restitution": 0.1,
                 "isSensor": false,
                 "group": 0,
                 "category": 8,
@@ -5478,19 +5490,19 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 20,
-                      "y": 1
+                      "x": -22,
+                      "y": 2
                     },
                     {
-                      "x": 46,
+                      "x": -44,
                       "y": 77
                     },
                     {
-                      "x": -42,
-                      "y": 77
+                      "x": 48,
+                      "y": 80
                     },
                     {
-                      "x": -20,
+                      "x": 21,
                       "y": 1
                     }
                   ]
@@ -5573,6 +5585,91 @@
                       "y": 2
                     }
                   ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "snowMachine",
+          "role": "uk.co.nickthecoder.rapidragdoll.SnowMachine",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "snowMachine"
+              ]
+            },
+            {
+              "name": "snow",
+              "costumes": [
+                "snow"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "count",
+              "value": "1000"
+            },
+            {
+              "name": "period",
+              "value": "1"
+            },
+            {
+              "name": "toX",
+              "value": "1280"
+            },
+            {
+              "name": "fromX",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "snow",
+          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "snow"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.8,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 1,
+                "density": 0.1,
+                "restitution": 0,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 13,
+                "circle": {
+                  "x": 0,
+                  "y": 0,
+                  "radius": 5
                 }
               }
             ]
