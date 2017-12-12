@@ -41,11 +41,11 @@ class Doll : ActionRole(), Reward {
         val torso = createPart("torso", 0.0)
         val abdomen = createPart("abdomen", 0.1, torso)
 
-        createPart("head", 0.1, torso)
+        createPart("head", 0.2, torso)
         createPart("arm-left", -0.1, torso)
-        createPart("arm-right", -0.1, torso)
-        createPart("leg-left", -0.1, abdomen)
-        createPart("leg-right", -0.1, abdomen)
+        createPart("arm-right", -0.2, torso)
+        createPart("leg-left", -0.3, abdomen)
+        createPart("leg-right", -0.4, abdomen)
 
         // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
         // depending on which body part is thrown.

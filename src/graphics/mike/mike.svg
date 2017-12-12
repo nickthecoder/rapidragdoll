@@ -17,8 +17,8 @@
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="mike.svg"
    inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/mike.png"
-   inkscape:export-xdpi="14.966331"
-   inkscape:export-ydpi="14.966331">
+   inkscape:export-xdpi="40.024242"
+   inkscape:export-ydpi="40.024242">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,7 +28,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
+     inkscape:zoom="0.49497475"
      inkscape:cx="209.28571"
      inkscape:cy="408.57143"
      inkscape:document-units="px"
@@ -58,61 +58,61 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/mike/abdomen.png"
        xlink:href="abdomen.png"
-       y="338.2287"
-       x="148.97545"
-       id="image3012"
+       width="467.07071"
        height="966.2525"
-       width="467.07071" />
+       id="image3012"
+       x="148.97545"
+       y="338.2287" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/mike/arm-left.png"
        xlink:href="arm-left.png"
-       y="-99.756866"
-       x="26.759018"
-       id="image3023"
+       width="467.07071"
        height="966.2525"
-       width="467.07071" />
+       id="image3023"
+       x="26.759018"
+       y="-99.756866" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/mike/arm-right.png"
        xlink:href="arm-right.png"
-       y="-92.374481"
-       x="223.80949"
-       id="image3034"
+       width="467.07071"
        height="966.2525"
-       width="467.07071" />
+       id="image3034"
+       x="223.80949"
+       y="-92.374481" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/mike/head.png"
        xlink:href="head.png"
-       y="88.012253"
-       x="135.15154"
-       id="image3045"
+       width="467.07071"
        height="966.2525"
-       width="467.07071" />
+       id="image3045"
+       x="135.15154"
+       y="88.012253" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/mike/leg-left.png"
        xlink:href="leg-left.png"
-       y="69.663055"
-       x="-42.857159"
-       id="image3056"
+       width="467.07071"
        height="966.2525"
-       width="467.07071" />
+       id="image3056"
+       x="-42.857159"
+       y="69.663055" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/mike/leg-right.png"
        xlink:href="leg-right.png"
-       inkscape:export-ydpi="20"
-       inkscape:export-xdpi="20"
-       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/mike.png"
-       y="72.999268"
-       x="304.35785"
-       id="image3067"
+       width="467.07071"
        height="966.2525"
-       width="467.07071" />
+       id="image3067"
+       x="304.35785"
+       y="72.999268"
+       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/mike.png"
+       inkscape:export-xdpi="20"
+       inkscape:export-ydpi="20" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/mike/torso.png"
        xlink:href="torso.png"
-       y="154.0267"
-       x="141.11398"
-       id="image3078"
+       width="467.07071"
        height="966.2525"
-       width="467.07071" />
+       id="image3078"
+       x="141.11398"
+       y="154.0267" />
   </g>
 </svg>

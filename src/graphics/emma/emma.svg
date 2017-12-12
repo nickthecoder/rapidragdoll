@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="457.85715"
-     inkscape:cy="534.28571"
+     inkscape:cx="416.42858"
+     inkscape:cy="551.42857"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,60 +58,60 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/abdomen.png"
        xlink:href="abdomen.png"
-       y="219.75513"
-       x="45.071419"
-       id="image2993"
+       width="663.8811"
        height="986.4093"
-       width="663.8811" />
+       id="image2993"
+       x="45.071419"
+       y="219.75513" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/arm-left.png"
        xlink:href="arm-left.png"
-       y="-78.127342"
-       x="-217.13638"
-       id="image3004"
-       height="986.4093"
+       transform="matrix(0.85577147,-0.51735403,0.51735403,0.85577147,0,0)"
        width="663.8811"
-       transform="matrix(0.85577147,-0.51735403,0.51735403,0.85577147,0,0)" />
+       height="986.4093"
+       id="image3004"
+       x="-217.13638"
+       y="-78.127342" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/arm-right.png"
        xlink:href="arm-right.png"
-       y="-448.23352"
-       id="image3015"
-       height="986.4093"
-       width="663.8811"
+       x="180.82124"
        transform="matrix(0.89482308,0.44642094,-0.44642094,0.89482308,0,0)"
-       x="180.82124" />
+       width="663.8811"
+       height="986.4093"
+       id="image3015"
+       y="-448.23352" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/head.png"
        xlink:href="head.png"
-       y="27.13135"
-       x="31.047493"
-       id="image3026"
+       width="663.8811"
        height="986.4093"
-       width="663.8811" />
+       id="image3026"
+       x="31.047493"
+       y="27.13135" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/leg-left.png"
        xlink:href="leg-left.png"
-       y="-4.2972221"
-       x="-161.80965"
-       id="image3037"
+       width="663.8811"
        height="986.4093"
-       width="663.8811" />
+       id="image3037"
+       x="-161.80965"
+       y="-4.2972221" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/leg-right.png"
        xlink:href="leg-right.png"
-       y="-1.4400736"
-       x="296.76178"
-       id="image3048"
+       width="663.8811"
        height="986.4093"
-       width="663.8811" />
+       id="image3048"
+       x="296.76178"
+       y="-1.4400736" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/emma/torso.png"
        xlink:href="torso.png"
-       y="94.274208"
-       x="39.618923"
-       id="image3059"
+       width="663.8811"
        height="986.4093"
-       width="663.8811" />
+       id="image3059"
+       x="39.618923"
+       y="94.274208" />
   </g>
 </svg>

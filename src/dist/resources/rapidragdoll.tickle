@@ -647,155 +647,155 @@
     {
       "name": "fiona-head",
       "texture": "fiona",
-      "left": 44,
-      "bottom": 32,
-      "right": 69,
-      "top": 2,
-      "offsetX": 15,
-      "offsetY": 1,
+      "left": 119,
+      "bottom": 87,
+      "right": 187,
+      "top": 6,
+      "offsetX": 34,
+      "offsetY": 19,
       "direction": 0
     },
     {
       "name": "fiona-arm-right",
       "texture": "fiona",
-      "left": 83,
-      "bottom": 76,
-      "right": 118,
-      "top": 5,
-      "offsetX": 6,
-      "offsetY": 67,
+      "left": 220,
+      "bottom": 205,
+      "right": 316,
+      "top": 13,
+      "offsetX": 26,
+      "offsetY": 173,
       "direction": 0
     },
     {
       "name": "fiona-arm-left",
       "texture": "fiona",
       "left": 3,
-      "bottom": 71,
-      "right": 36,
-      "top": 13,
-      "offsetX": 27,
-      "offsetY": 52,
+      "bottom": 198,
+      "right": 96,
+      "top": 34,
+      "offsetX": 72,
+      "offsetY": 150,
       "direction": 0
     },
     {
       "name": "fiona-torso",
       "texture": "fiona",
-      "left": 39,
-      "bottom": 83,
-      "right": 81,
-      "top": 34,
-      "offsetX": 19,
-      "offsetY": 44,
+      "left": 106,
+      "bottom": 239,
+      "right": 216,
+      "top": 86,
+      "offsetX": 52,
+      "offsetY": 116,
       "direction": 0
     },
     {
       "name": "fiona-abdomen",
       "texture": "fiona",
-      "left": 40,
-      "bottom": 149,
-      "right": 78,
-      "top": 93,
-      "offsetX": 19,
-      "offsetY": 45,
+      "left": 107,
+      "bottom": 397,
+      "right": 211,
+      "top": 247,
+      "offsetX": 49,
+      "offsetY": 116,
       "direction": 0
     },
     {
       "name": "fiona-leg-left",
       "texture": "fiona",
-      "left": 12,
-      "bottom": 166,
-      "right": 29,
-      "top": 87,
-      "offsetX": 8,
-      "offsetY": 81,
+      "left": 31,
+      "bottom": 441,
+      "right": 79,
+      "top": 231,
+      "offsetX": 24,
+      "offsetY": 199,
       "direction": 0
     },
     {
       "name": "fiona-leg-right",
       "texture": "fiona",
-      "left": 94,
-      "bottom": 165,
-      "right": 111,
-      "top": 86,
-      "offsetX": 8,
-      "offsetY": 81,
+      "left": 250,
+      "bottom": 440,
+      "right": 296,
+      "top": 230,
+      "offsetX": 26,
+      "offsetY": 196,
       "direction": 0
     },
     {
       "name": "mike-head",
       "texture": "mike",
-      "left": 51,
-      "bottom": 42,
-      "right": 69,
-      "top": 17,
-      "offsetX": 10,
-      "offsetY": 6,
+      "left": 137,
+      "bottom": 114,
+      "right": 187,
+      "top": 46,
+      "offsetX": 26,
+      "offsetY": 13,
       "direction": 0
     },
     {
       "name": "mike-arm-right",
       "texture": "mike",
-      "left": 88,
-      "bottom": 75,
-      "right": 112,
-      "top": 16,
-      "offsetX": 4,
-      "offsetY": 54,
+      "left": 235,
+      "bottom": 203,
+      "right": 300,
+      "top": 45,
+      "offsetX": 12,
+      "offsetY": 141,
       "direction": 0
     },
     {
       "name": "mike-arm-left",
       "texture": "mike",
-      "left": 6,
-      "bottom": 76,
-      "right": 32,
-      "top": 16,
-      "offsetX": 21,
-      "offsetY": 52,
+      "left": 19,
+      "bottom": 204,
+      "right": 97,
+      "top": 44,
+      "offsetX": 56,
+      "offsetY": 146,
       "direction": 0
     },
     {
       "name": "mike-torso",
       "texture": "mike",
-      "left": 42,
-      "bottom": 106,
-      "right": 82,
-      "top": 47,
-      "offsetX": 21,
-      "offsetY": 44,
+      "left": 112,
+      "bottom": 284,
+      "right": 222,
+      "top": 125,
+      "offsetX": 53,
+      "offsetY": 116,
       "direction": 0
     },
     {
       "name": "mike-leg-left",
       "texture": "mike",
-      "left": 15,
-      "bottom": 170,
-      "right": 34,
-      "top": 90,
-      "offsetX": 10,
-      "offsetY": 73,
+      "left": 40,
+      "bottom": 455,
+      "right": 93,
+      "top": 231,
+      "offsetX": 33,
+      "offsetY": 207,
       "direction": 0
     },
     {
       "name": "mike-leg-right",
       "texture": "mike",
-      "left": 91,
-      "bottom": 165,
-      "right": 115,
-      "top": 90,
-      "offsetX": 9,
-      "offsetY": 65,
+      "left": 240,
+      "bottom": 442,
+      "right": 308,
+      "top": 241,
+      "offsetX": 22,
+      "offsetY": 191,
       "direction": 0
     },
     {
       "name": "mike-abdomen",
       "texture": "mike",
-      "left": 47,
-      "bottom": 155,
-      "right": 82,
-      "top": 120,
-      "offsetX": 19,
-      "offsetY": 20,
+      "left": 126,
+      "bottom": 418,
+      "right": 223,
+      "top": 321,
+      "offsetX": 50,
+      "offsetY": 85,
       "direction": 0
     },
     {
@@ -1266,6 +1266,16 @@
                 "fiona-leg-right"
               ]
             }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.4"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
           ]
         },
         {
@@ -1328,7 +1338,11 @@
           "attributes": [
             {
               "name": "defaultScale",
-              "value": "1.2"
+              "value": "0.5"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         },
@@ -1392,7 +1406,7 @@
           "attributes": [
             {
               "name": "defaultScale",
-              "value": "0.5"
+              "value": "0.3"
             },
             {
               "name": "rewardForScene",
@@ -4306,7 +4320,7 @@
             },
             {
               "name": "offset",
-              "value": "0.0x2.0"
+              "value": "0.0x34.0"
             },
             {
               "name": "toAngle",
@@ -4315,8 +4329,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0.5,
-            "angularDamping": 0.5,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4329,9 +4343,9 @@
                 "category": 1,
                 "mask": 15,
                 "circle": {
-                  "x": -2,
-                  "y": 14,
-                  "radius": 11
+                  "x": 0,
+                  "y": 20,
+                  "radius": 28
                 }
               }
             ]
@@ -4359,7 +4373,7 @@
             },
             {
               "name": "offset",
-              "value": "-13.0x-10.0"
+              "value": "-36.0x0.0"
             },
             {
               "name": "toAngle",
@@ -4368,8 +4382,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0.5,
-            "angularDamping": 0.5,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4384,20 +4398,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 5,
-                      "y": -2
+                      "x": 16,
+                      "y": -22
                     },
                     {
-                      "x": -5,
-                      "y": 7
+                      "x": -14,
+                      "y": 6
                     },
                     {
-                      "x": -4,
-                      "y": -19
+                      "x": -12,
+                      "y": -39
                     },
                     {
-                      "x": 1,
-                      "y": -23
+                      "x": 6,
+                      "y": -56
                     }
                   ]
                 }
@@ -4413,20 +4427,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 1,
-                      "y": -22
+                      "x": 10,
+                      "y": -50
                     },
                     {
-                      "x": -5,
-                      "y": -19
+                      "x": -14,
+                      "y": -49
                     },
                     {
-                      "x": -23,
-                      "y": -46
+                      "x": -61,
+                      "y": -128
                     },
                     {
-                      "x": -16,
-                      "y": -48
+                      "x": -45,
+                      "y": -135
                     }
                   ]
                 }
@@ -4456,7 +4470,7 @@
             },
             {
               "name": "offset",
-              "value": "16.0x-8.0"
+              "value": "40.0x0.0"
             },
             {
               "name": "toAngle",
@@ -4465,8 +4479,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0.5,
-            "angularDamping": 0.5,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4481,20 +4495,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 9,
-                      "y": -4
+                      "x": 13,
+                      "y": 10
                     },
                     {
-                      "x": -1,
-                      "y": 4
+                      "x": -19,
+                      "y": -16
                     },
                     {
-                      "x": -2,
-                      "y": -25
+                      "x": -13,
+                      "y": -72
                     },
                     {
-                      "x": 7,
-                      "y": -22
+                      "x": 8,
+                      "y": -59
                     }
                   ]
                 }
@@ -4510,20 +4524,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 6,
-                      "y": -21
+                      "x": 8,
+                      "y": -60
                     },
                     {
-                      "x": -3,
-                      "y": -26
+                      "x": -15,
+                      "y": -70
                     },
                     {
-                      "x": 15,
-                      "y": -63
+                      "x": 43,
+                      "y": -169
                     },
                     {
-                      "x": 21,
-                      "y": -59
+                      "x": 60,
+                      "y": -158
                     }
                   ]
                 }
@@ -4548,8 +4562,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0.5,
-            "angularDamping": 0.5,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4564,20 +4578,24 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -16,
-                      "y": -2
+                      "x": -46,
+                      "y": 10
                     },
                     {
-                      "x": -8,
-                      "y": -35
+                      "x": -27,
+                      "y": -101
                     },
                     {
-                      "x": 14,
-                      "y": -34
+                      "x": 38,
+                      "y": -97
                     },
                     {
-                      "x": 20,
-                      "y": -3
+                      "x": 51,
+                      "y": 10
+                    },
+                    {
+                      "x": 1,
+                      "y": 27
                     }
                   ]
                 }
@@ -4607,7 +4625,7 @@
             },
             {
               "name": "offset",
-              "value": "0.0x-44.0"
+              "value": "0.0x-110.0"
             },
             {
               "name": "toAngle",
@@ -4616,8 +4634,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4632,20 +4650,28 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 14,
-                      "y": 4
+                      "x": 52,
+                      "y": -18
                     },
                     {
-                      "x": -13,
-                      "y": 4
+                      "x": 45,
+                      "y": 14
                     },
                     {
-                      "x": -15,
-                      "y": -22
+                      "x": -34,
+                      "y": 15
                     },
                     {
-                      "x": 19,
-                      "y": -20
+                      "x": -45,
+                      "y": -16
+                    },
+                    {
+                      "x": -37,
+                      "y": -104
+                    },
+                    {
+                      "x": 48,
+                      "y": -103
                     }
                   ]
                 }
@@ -4675,7 +4701,7 @@
             },
             {
               "name": "offset",
-              "value": "-10.0x-10.0"
+              "value": "-20.0x-30.0"
             },
             {
               "name": "toAngle",
@@ -4684,8 +4710,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4700,20 +4726,49 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 8,
-                      "y": -5
+                      "x": 19,
+                      "y": -7
                     },
                     {
-                      "x": -6,
+                      "x": -21,
                       "y": -5
                     },
                     {
                       "x": -3,
-                      "y": -74
+                      "y": -165
                     },
                     {
-                      "x": 4,
-                      "y": -75
+                      "x": 8,
+                      "y": -173
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -5,
+                      "y": -198
+                    },
+                    {
+                      "x": 11,
+                      "y": -170
+                    },
+                    {
+                      "x": -2,
+                      "y": -160
+                    },
+                    {
+                      "x": -18,
+                      "y": -187
                     }
                   ]
                 }
@@ -4743,7 +4798,7 @@
             },
             {
               "name": "offset",
-              "value": "10.0x-10.0"
+              "value": "20.0x-30.0"
             },
             {
               "name": "toAngle",
@@ -4752,8 +4807,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4768,20 +4823,49 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 6,
-                      "y": -6
+                      "x": 16,
+                      "y": 2
                     },
                     {
-                      "x": -6,
+                      "x": -24,
                       "y": -8
                     },
                     {
-                      "x": -2,
-                      "y": -72
+                      "x": -10,
+                      "y": -165
                     },
                     {
-                      "x": 5,
-                      "y": -75
+                      "x": 1,
+                      "y": -156
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 16,
+                      "y": -180
+                    },
+                    {
+                      "x": -1,
+                      "y": -158
+                    },
+                    {
+                      "x": -15,
+                      "y": -163
+                    },
+                    {
+                      "x": 3,
+                      "y": -194
                     }
                   ]
                 }
@@ -4817,17 +4901,17 @@
             },
             {
               "name": "offset",
-              "value": "15.0x0.0"
+              "value": "40.0x0.0"
             },
             {
               "name": "toAngle",
-              "value": "130.0"
+              "value": "80.0"
             }
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4842,20 +4926,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 10,
-                      "y": -27
+                      "x": 27,
+                      "y": -68
                     },
                     {
-                      "x": 17,
-                      "y": -23
+                      "x": 45,
+                      "y": -53
                     },
                     {
-                      "x": 3,
-                      "y": -1
+                      "x": 4,
+                      "y": 14
                     },
                     {
-                      "x": -1,
-                      "y": -9
+                      "x": -4,
+                      "y": -24
                     }
                   ]
                 }
@@ -4871,20 +4955,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 12,
-                      "y": -29
+                      "x": 28,
+                      "y": -67
                     },
                     {
-                      "x": 13,
-                      "y": -53
+                      "x": 30,
+                      "y": -138
                     },
                     {
-                      "x": 19,
-                      "y": -54
+                      "x": 49,
+                      "y": -126
                     },
                     {
-                      "x": 19,
-                      "y": -26
+                      "x": 46,
+                      "y": -52
                     }
                   ]
                 }
@@ -4914,7 +4998,7 @@
             },
             {
               "name": "offset",
-              "value": "0.0x14.0"
+              "value": "0.0x32.0"
             },
             {
               "name": "toAngle",
@@ -4923,8 +5007,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4937,9 +5021,9 @@
                 "category": 1,
                 "mask": 15,
                 "circle": {
-                  "x": 0,
-                  "y": 8,
-                  "radius": 9
+                  "x": -1,
+                  "y": 23,
+                  "radius": 22
                 }
               }
             ]
@@ -4963,11 +5047,11 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-130.0"
+              "value": "-80.0"
             },
             {
               "name": "offset",
-              "value": "-15.0x0.0"
+              "value": "-40.0x0.0"
             },
             {
               "name": "toAngle",
@@ -4976,8 +5060,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -4992,20 +5076,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -10,
-                      "y": -21
+                      "x": -26,
+                      "y": -63
                     },
                     {
-                      "x": 1,
-                      "y": -8
+                      "x": 4,
+                      "y": -33
                     },
                     {
-                      "x": -1,
+                      "x": -12,
                       "y": 8
                     },
                     {
-                      "x": -18,
-                      "y": -21
+                      "x": -49,
+                      "y": -51
                     }
                   ]
                 }
@@ -5021,20 +5105,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -19,
-                      "y": -25
+                      "x": -54,
+                      "y": -58
                     },
                     {
-                      "x": -16,
-                      "y": -50
+                      "x": -45,
+                      "y": -138
                     },
                     {
-                      "x": -9,
-                      "y": -49
+                      "x": -26,
+                      "y": -140
                     },
                     {
-                      "x": -12,
-                      "y": -25
+                      "x": -31,
+                      "y": -75
                     }
                   ]
                 }
@@ -5059,8 +5143,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -5075,24 +5159,24 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 19,
-                      "y": 0
+                      "x": 51,
+                      "y": 7
                     },
                     {
-                      "x": -1,
-                      "y": 8
+                      "x": 3,
+                      "y": 27
                     },
                     {
-                      "x": -21,
-                      "y": 0
+                      "x": -44,
+                      "y": 9
                     },
                     {
-                      "x": -14,
-                      "y": -38
+                      "x": -36,
+                      "y": -105
                     },
                     {
-                      "x": 15,
-                      "y": -40
+                      "x": 39,
+                      "y": -102
                     }
                   ]
                 }
@@ -5122,7 +5206,7 @@
             },
             {
               "name": "offset",
-              "value": "-10.0x-10.0"
+              "value": "-20.0x-50.0"
             },
             {
               "name": "toAngle",
@@ -5131,8 +5215,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -5147,20 +5231,49 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -9,
-                      "y": -2
+                      "x": -27,
+                      "y": 2
                     },
                     {
-                      "x": -5,
-                      "y": -69
+                      "x": -19,
+                      "y": -171
+                    },
+                    {
+                      "x": 3,
+                      "y": -170
+                    },
+                    {
+                      "x": 17,
+                      "y": -2
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -17,
+                      "y": -172
+                    },
+                    {
+                      "x": -30,
+                      "y": -196
+                    },
+                    {
+                      "x": -16,
+                      "y": -202
                     },
                     {
                       "x": 2,
-                      "y": -66
-                    },
-                    {
-                      "x": 8,
-                      "y": -1
+                      "y": -170
                     }
                   ]
                 }
@@ -5190,7 +5303,7 @@
             },
             {
               "name": "offset",
-              "value": "10.0x-10.0"
+              "value": "20.0x-50.0"
             },
             {
               "name": "toAngle",
@@ -5199,8 +5312,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -5215,20 +5328,49 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -5,
-                      "y": -7
+                      "x": -15,
+                      "y": -22
                     },
                     {
-                      "x": 0,
-                      "y": -52
+                      "x": 4,
+                      "y": -164
                     },
                     {
-                      "x": 9,
-                      "y": -59
+                      "x": 24,
+                      "y": -158
                     },
                     {
-                      "x": 6,
-                      "y": -4
+                      "x": 20,
+                      "y": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 12,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 8,
+                      "y": -163
+                    },
+                    {
+                      "x": 30,
+                      "y": -190
+                    },
+                    {
+                      "x": 44,
+                      "y": -181
+                    },
+                    {
+                      "x": 23,
+                      "y": -157
                     }
                   ]
                 }
@@ -5258,7 +5400,7 @@
             },
             {
               "name": "offset",
-              "value": "0.0x-36.0"
+              "value": "6.0x-80.0"
             },
             {
               "name": "toAngle",
@@ -5267,8 +5409,8 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
@@ -5283,20 +5425,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 14,
-                      "y": 2
+                      "x": 33,
+                      "y": 12
                     },
                     {
-                      "x": -15,
-                      "y": 3
+                      "x": -41,
+                      "y": 5
                     },
                     {
-                      "x": -17,
-                      "y": -12
+                      "x": -46,
+                      "y": -41
                     },
                     {
-                      "x": 15,
-                      "y": -13
+                      "x": 42,
+                      "y": -41
                     }
                   ]
                 }
@@ -5448,16 +5590,16 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -117,
-                      "y": 109
+                      "x": 117,
+                      "y": 120
                     },
                     {
                       "x": 6,
                       "y": 436
                     },
                     {
-                      "x": 117,
-                      "y": 120
+                      "x": -117,
+                      "y": 109
                     }
                   ]
                 }
@@ -5490,20 +5632,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -22,
-                      "y": 2
-                    },
-                    {
-                      "x": -44,
-                      "y": 77
+                      "x": 21,
+                      "y": 1
                     },
                     {
                       "x": 48,
                       "y": 80
                     },
                     {
-                      "x": 21,
-                      "y": 1
+                      "x": -44,
+                      "y": 77
+                    },
+                    {
+                      "x": -22,
+                      "y": 2
                     }
                   ]
                 }
