@@ -150,8 +150,8 @@
           "x": 1771,
           "y": 570,
           "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
           "attributes": [
             {
               "name": "rewardForScene",
@@ -164,8 +164,8 @@
           "x": 180,
           "y": 337,
           "direction": 0,
-          "scaleX": 1.2,
-          "scaleY": 1.2,
+          "scaleX": 0.45,
+          "scaleY": 0.45,
           "attributes": [
             {
               "name": "rewardForScene",
@@ -496,8 +496,8 @@
           "x": 593,
           "y": 1194,
           "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
+          "scaleX": 0.45,
+          "scaleY": 0.45,
           "attributes": [
             {
               "name": "rewardForScene",
@@ -510,8 +510,8 @@
           "x": 715,
           "y": 1194,
           "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
           "attributes": [
             {
               "name": "rewardForScene",

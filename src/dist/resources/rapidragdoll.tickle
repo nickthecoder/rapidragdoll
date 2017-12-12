@@ -1856,15 +1856,15 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
               {
                 "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.7,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -1917,7 +1917,7 @@
               {
                 "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.7,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -1990,7 +1990,7 @@
               {
                 "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.7,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -2024,15 +2024,15 @@
           ],
           "body": {
             "bodyType": "DYNAMIC",
-            "linearDamping": 0,
-            "angularDamping": 0,
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
             "bullet": false,
             "fixedRotation": false,
             "fixtures": [
               {
                 "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.7,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -2088,7 +2088,7 @@
               {
                 "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.7,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -2144,7 +2144,7 @@
               {
                 "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.7,
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
@@ -2200,7 +2200,7 @@
               {
                 "friction": 0.5,
                 "density": 1,
-                "restitution": 1,
+                "restitution": 0.7,
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
@@ -3804,6 +3804,12 @@
               ]
             }
           ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
           "body": {
             "bodyType": "DYNAMIC",
             "linearDamping": 0,
@@ -3830,12 +3836,12 @@
                       "y": 131
                     },
                     {
-                      "x": 142,
-                      "y": 161
+                      "x": 168,
+                      "y": 148
                     },
                     {
-                      "x": -151,
-                      "y": 157
+                      "x": -164,
+                      "y": 146
                     },
                     {
                       "x": -200,
@@ -4119,6 +4125,12 @@
               ]
             }
           ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
           "body": {
             "bodyType": "DYNAMIC",
             "linearDamping": 0.5,
@@ -4141,16 +4153,45 @@
                       "y": -2
                     },
                     {
-                      "x": 31,
-                      "y": 44
+                      "x": 29,
+                      "y": 42
                     },
                     {
-                      "x": -24,
-                      "y": 44
+                      "x": -23,
+                      "y": 42
                     },
                     {
                       "x": -11,
                       "y": -1
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 0.1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 22,
+                      "y": 20
+                    },
+                    {
+                      "x": 37,
+                      "y": 25
+                    },
+                    {
+                      "x": 40,
+                      "y": 40
+                    },
+                    {
+                      "x": 27,
+                      "y": 42
                     }
                   ]
                 }
@@ -5605,23 +5646,6 @@
                 }
               },
               {
-                "friction": 0.6,
-                "density": 10,
-                "restitution": 0.1,
-                "isSensor": false,
-                "group": 0,
-                "category": 8,
-                "mask": 15,
-                "box": {
-                  "x": 0,
-                  "y": 89,
-                  "width": 14,
-                  "height": 28,
-                  "angle": 0,
-                  "roundedEnds": false
-                }
-              },
-              {
                 "friction": 0.7,
                 "density": 10,
                 "restitution": 0.1,
@@ -5934,7 +5958,7 @@
             },
             {
               "name": "offset",
-              "value": "-24.0x-50.0"
+              "value": "-24.0x-40.0"
             },
             {
               "name": "toAngle",
@@ -6309,7 +6333,7 @@
             },
             {
               "name": "offset",
-              "value": "16.0x-56.0"
+              "value": "16.0x-45.0"
             },
             {
               "name": "toAngle",
