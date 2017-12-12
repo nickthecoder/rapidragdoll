@@ -125,6 +125,10 @@
     {
       "name": "emma",
       "file": "images/emma.png"
+    },
+    {
+      "name": "santa",
+      "file": "images/santa.png"
     }
   ],
   "fonts": [
@@ -1030,6 +1034,83 @@
       "offsetX": 18,
       "offsetY": 14,
       "direction": 0
+    },
+    {
+      "name": "santa-head",
+      "texture": "santa",
+      "left": 87,
+      "bottom": 93,
+      "right": 148,
+      "top": 8,
+      "offsetX": 30,
+      "offsetY": 35,
+      "direction": 0
+    },
+    {
+      "name": "santa-arm-left",
+      "texture": "santa",
+      "left": 6,
+      "bottom": 107,
+      "right": 65,
+      "top": 11,
+      "offsetX": 46,
+      "offsetY": 21,
+      "direction": 0
+    },
+    {
+      "name": "santa-arm-right",
+      "texture": "santa",
+      "left": 170,
+      "bottom": 90,
+      "right": 241,
+      "top": 9,
+      "offsetX": 20,
+      "offsetY": 23,
+      "direction": 0
+    },
+    {
+      "name": "santa-torso",
+      "texture": "santa",
+      "left": 89,
+      "bottom": 169,
+      "right": 181,
+      "top": 101,
+      "offsetX": 50,
+      "offsetY": 48,
+      "direction": 0
+    },
+    {
+      "name": "santa-leg-left",
+      "texture": "santa",
+      "left": 6,
+      "bottom": 286,
+      "right": 72,
+      "top": 134,
+      "offsetX": 47,
+      "offsetY": 132,
+      "direction": 0
+    },
+    {
+      "name": "santa-leg-right",
+      "texture": "santa",
+      "left": 192,
+      "bottom": 296,
+      "right": 242,
+      "top": 145,
+      "offsetX": 17,
+      "offsetY": 139,
+      "direction": 0
+    },
+    {
+      "name": "santa-abdomen",
+      "texture": "santa",
+      "left": 84,
+      "bottom": 270,
+      "right": 182,
+      "top": 197,
+      "offsetX": 51,
+      "offsetY": 47,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -1413,6 +1494,74 @@
               "value": ""
             }
           ]
+        },
+        {
+          "name": "santa",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "santa-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "santa-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "santa-torso"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "santa-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "santa-arm-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "santa-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "santa-leg-right"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "santa-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.6"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         }
       ],
       "showInSceneEditor": true
@@ -1465,9 +1614,9 @@
                 "category": 1,
                 "mask": 15,
                 "circle": {
-                  "x": 3,
-                  "y": 32,
-                  "radius": 25
+                  "x": 2,
+                  "y": 28,
+                  "radius": 30
                 }
               }
             ]
@@ -1516,12 +1665,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
-                  "x": -11.5,
-                  "y": -16,
-                  "width": 9,
-                  "height": 36,
+                  "x": -10.5,
+                  "y": -19.5,
+                  "width": 7,
+                  "height": 35,
                   "angle": -23,
                   "roundedEnds": false
                 }
@@ -1572,12 +1721,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
-                  "x": 9.5,
-                  "y": -14,
-                  "width": 10,
-                  "height": 36,
+                  "x": 9,
+                  "y": -14.5,
+                  "width": 7,
+                  "height": 37,
                   "angle": 24,
                   "roundedEnds": false
                 }
@@ -1618,12 +1767,12 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -14,
-                      "y": -14
+                      "x": -15,
+                      "y": -11
                     },
                     {
-                      "x": 14,
-                      "y": -13
+                      "x": 17,
+                      "y": -7
                     },
                     {
                       "x": 13,
@@ -1682,7 +1831,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 1,
-                "mask": 13,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -1737,7 +1886,7 @@
             },
             {
               "name": "toAngle",
-              "value": "20.0"
+              "value": "40.0"
             }
           ],
           "body": {
@@ -1754,12 +1903,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
-                  "x": -1,
-                  "y": -15,
-                  "width": 13,
-                  "height": 82,
+                  "x": -2.5,
+                  "y": -39.5,
+                  "width": 10,
+                  "height": 53,
                   "angle": -5,
                   "roundedEnds": false
                 }
@@ -1785,7 +1934,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-20.0"
+              "value": "-40.0"
             },
             {
               "name": "offset",
@@ -1810,12 +1959,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
-                  "x": 5,
-                  "y": -21,
+                  "x": 3,
+                  "y": -37.5,
                   "width": 10,
-                  "height": 67,
+                  "height": 52,
                   "angle": 0,
                   "roundedEnds": false
                 }
@@ -1921,7 +2070,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
                   "x": 7,
                   "y": -12,
@@ -1994,7 +2143,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
                   "x": -8,
                   "y": -29.5,
@@ -2092,12 +2241,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
-                  "x": -15.5,
-                  "y": -46.5,
-                  "width": 16,
-                  "height": 104,
+                  "x": -14,
+                  "y": -47.5,
+                  "width": 13,
+                  "height": 88,
                   "angle": -14.999999999999998,
                   "roundedEnds": false
                 }
@@ -2148,12 +2297,12 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
-                  "x": 17.5,
-                  "y": -50.5,
-                  "width": 17,
-                  "height": 105,
+                  "x": 16.5,
+                  "y": -51.5,
+                  "width": 15,
+                  "height": 85,
                   "angle": 18,
                   "roundedEnds": false
                 }
@@ -2266,7 +2415,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
                   "x": 1.5,
                   "y": -36.5,
@@ -2429,7 +2578,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
                   "x": -1,
                   "y": -28,
@@ -2485,7 +2634,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
                   "x": 4.5,
                   "y": -26.5,
@@ -2541,7 +2690,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "box": {
                   "x": -2.5,
                   "y": -35,
@@ -3907,7 +4056,7 @@
           "name": "table",
           "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": -50,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -3916,6 +4065,12 @@
               "poses": [
                 "table"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ],
           "body": {
@@ -4435,7 +4590,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -4532,7 +4687,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -4763,16 +4918,16 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
-                      "x": 19,
-                      "y": -7
+                      "x": 17,
+                      "y": -65
                     },
                     {
-                      "x": -21,
-                      "y": -5
+                      "x": -12,
+                      "y": -64
                     },
                     {
                       "x": -3,
@@ -4860,16 +5015,16 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
-                      "x": 16,
-                      "y": 2
+                      "x": 11,
+                      "y": -52
                     },
                     {
-                      "x": -24,
-                      "y": -8
+                      "x": -21,
+                      "y": -52
                     },
                     {
                       "x": -10,
@@ -4963,7 +5118,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -5113,7 +5268,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -5251,7 +5406,7 @@
             },
             {
               "name": "toAngle",
-              "value": "20.0"
+              "value": "40.0"
             }
           ],
           "body": {
@@ -5268,7 +5423,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -5340,7 +5495,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-20.0"
+              "value": "-40.0"
             },
             {
               "name": "offset",
@@ -5365,7 +5520,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 12,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -5631,16 +5786,28 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 117,
-                      "y": 120
+                      "x": 99,
+                      "y": 166
                     },
                     {
-                      "x": 6,
-                      "y": 436
+                      "x": 15,
+                      "y": 417
                     },
                     {
-                      "x": -117,
-                      "y": 109
+                      "x": 0,
+                      "y": 414
+                    },
+                    {
+                      "x": -96,
+                      "y": 167
+                    },
+                    {
+                      "x": -101,
+                      "y": 108
+                    },
+                    {
+                      "x": 102,
+                      "y": 121
                     }
                   ]
                 }
@@ -5681,7 +5848,7 @@
           "name": "xmas-wine",
           "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": -40,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -5690,6 +5857,12 @@
               "poses": [
                 "xmas-wine"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ],
           "body": {
@@ -5979,7 +6152,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 13,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -6354,7 +6527,7 @@
                 "isSensor": false,
                 "group": 0,
                 "category": 2,
-                "mask": 13,
+                "mask": 15,
                 "polygon": {
                   "points": [
                     {
@@ -6405,6 +6578,591 @@
                     {
                       "x": -4,
                       "y": -169
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "santa",
+      "costumes": [
+        {
+          "name": "santa-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "santa-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x20.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 24,
+                      "y": -12
+                    },
+                    {
+                      "x": 28,
+                      "y": 31
+                    },
+                    {
+                      "x": 12,
+                      "y": 48
+                    },
+                    {
+                      "x": -16,
+                      "y": 31
+                    },
+                    {
+                      "x": -28,
+                      "y": 0
+                    },
+                    {
+                      "x": -8,
+                      "y": -35
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "santa-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "santa-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "-40.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -22,
+                      "y": 19
+                    },
+                    {
+                      "x": -39,
+                      "y": 7
+                    },
+                    {
+                      "x": -9,
+                      "y": -17
+                    },
+                    {
+                      "x": 8,
+                      "y": 17
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -20,
+                      "y": 24
+                    },
+                    {
+                      "x": -17,
+                      "y": 65
+                    },
+                    {
+                      "x": -42,
+                      "y": 43
+                    },
+                    {
+                      "x": -37,
+                      "y": 5
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "santa-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "santa-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "36.0x-5.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 2,
+                      "y": -16
+                    },
+                    {
+                      "x": 37,
+                      "y": 9
+                    },
+                    {
+                      "x": 19,
+                      "y": 19
+                    },
+                    {
+                      "x": -11,
+                      "y": 8
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 37,
+                      "y": 7
+                    },
+                    {
+                      "x": 49,
+                      "y": 43
+                    },
+                    {
+                      "x": 37,
+                      "y": 56
+                    },
+                    {
+                      "x": 19,
+                      "y": 19
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "santa-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "santa-torso"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-50.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 31,
+                      "y": 19
+                    },
+                    {
+                      "x": -47,
+                      "y": 15
+                    },
+                    {
+                      "x": -39,
+                      "y": -46
+                    },
+                    {
+                      "x": 34,
+                      "y": -47
+                    },
+                    {
+                      "x": 42,
+                      "y": -13
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "santa-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "santa-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "20.0x-22.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -14,
+                      "y": -27
+                    },
+                    {
+                      "x": 3,
+                      "y": -129
+                    },
+                    {
+                      "x": 15,
+                      "y": -116
+                    },
+                    {
+                      "x": 29,
+                      "y": -62
+                    },
+                    {
+                      "x": 23,
+                      "y": -24
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 2,
+                      "y": -124
+                    },
+                    {
+                      "x": 20,
+                      "y": -136
+                    },
+                    {
+                      "x": 33,
+                      "y": -135
+                    },
+                    {
+                      "x": 15,
+                      "y": -115
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "santa-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "santa-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "-20.0x-25.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 16,
+                      "y": -18
+                    },
+                    {
+                      "x": -21,
+                      "y": -19
+                    },
+                    {
+                      "x": -43,
+                      "y": -132
+                    },
+                    {
+                      "x": -24,
+                      "y": -123
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "santa-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "santa-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-50.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -31,
+                      "y": 8
+                    },
+                    {
+                      "x": -50,
+                      "y": -39
+                    },
+                    {
+                      "x": 49,
+                      "y": -45
+                    },
+                    {
+                      "x": 31,
+                      "y": 6
                     }
                   ]
                 }

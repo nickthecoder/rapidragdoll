@@ -13,8 +13,12 @@ import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoleAt
 import uk.co.nickthecoder.tickle.stage.findRoles
+import uk.co.nickthecoder.tickle.util.Attribute
 
 class Victory : Play(), MouseHandler {
+
+    @Attribute
+    var showAll = false
 
     var dragPosition = Vector2d()
 
@@ -37,10 +41,12 @@ class Victory : Play(), MouseHandler {
             doll.actor.zOrder = dollZOrder++
 
         }
-        mainView.stage.findRoles<Reward>().forEach { reward ->
-            if (reward.rewardForScene.isNotBlank()) {
-                if (!scenePreferences(reward.rewardForScene).getBoolean("completed", false)) {
-                    reward.actor.die()
+        if (!showAll) {
+            mainView.stage.findRoles<Reward>().forEach { reward ->
+                if (reward.rewardForScene.isNotBlank()) {
+                    if (!scenePreferences(reward.rewardForScene).getBoolean("completed", false)) {
+                        reward.actor.die()
+                    }
                 }
             }
         }

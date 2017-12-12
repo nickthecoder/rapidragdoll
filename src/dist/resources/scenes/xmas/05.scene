@@ -3,23 +3,23 @@
   "directorAttributes": [
     {
       "name": "maxDolls",
-      "value": "5"
-    },
-    {
-      "name": "nextScene",
-      "value": "xmas/02"
-    },
-    {
-      "name": "bottomLeft",
-      "value": "0.0x0.0"
+      "value": "6"
     },
     {
       "name": "menuName",
       "value": "xmas/menu"
     },
     {
+      "name": "nextScene",
+      "value": "xmas/menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "-440.0x0.0"
+    },
+    {
       "name": "topRight",
-      "value": "1280.0x800.0"
+      "value": "2000.0x800.0"
     }
   ],
   "background": "#000000",
@@ -38,12 +38,10 @@
     "enabled": true,
     "closeness": 5,
     "x": [
-      1280,
-      0
+      
     ],
     "y": [
-      0,
-      800
+      
     ]
   },
   "snapToOthers": {
@@ -66,23 +64,24 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 1161,
-          "y": 577,
+          "x": -135,
+          "y": 376,
+          "zOrder": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "515.0x310.0"
+              "value": "154.0x500.0"
             },
             {
               "name": "dollName",
-              "value": "mike"
+              "value": "santa"
             },
             {
               "name": "speed",
-              "value": "600"
+              "value": "300"
             },
             {
               "name": "randomSeed",
@@ -91,128 +90,115 @@
           ]
         },
         {
-          "costume": "wall",
-          "x": 0,
-          "y": -6.0800000000000125,
+          "costume": "fencePost",
+          "x": -404,
+          "y": 51,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 43.840000000000146,
-          "sizeY": 775.8719999999998,
-          "alignmentX": 0,
-          "alignmentY": 0
+          "scaleY": 1
         },
         {
-          "costume": "wood",
-          "x": 639.2939999999999,
-          "y": 784.29,
+          "costume": "fencePost",
+          "x": 1260,
+          "y": 50,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1283.5879999999997,
-          "sizeY": 43.58000000000004,
-          "alignmentX": 0.5,
-          "alignmentY": 0.5
+          "scaleY": 1
         },
         {
-          "costume": "wall",
-          "x": 1280,
+          "costume": "grass",
+          "x": -471,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 47.29600000000028,
-          "sizeY": 768.0639999999999,
-          "alignmentX": 1,
+          "sizeX": 2698,
+          "sizeY": 85,
+          "alignmentX": 0,
           "alignmentY": 0
         },
         {
-          "costume": "xmas-tree",
-          "x": 512,
-          "y": 57,
+          "costume": "snowMachine",
+          "x": -531,
+          "y": 816,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "xmas-tree",
-          "x": 977,
-          "y": 57,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
+              "name": "count",
+              "value": "1000"
+            },
             {
-              "name": "rewardForScene",
-              "value": ""
+              "name": "period",
+              "value": "0.1"
+            },
+            {
+              "name": "toX",
+              "value": "2000"
             }
           ]
         },
         {
           "costume": "xmas-pin",
-          "x": 247,
-          "y": 57,
+          "x": 208,
+          "y": 74,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "xmas-pin",
-          "x": 733,
-          "y": 58,
+          "x": 1020,
+          "y": 76,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 783,
+          "y": 78,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "autoLauncher",
+          "x": -514,
+          "y": 418,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "point",
+              "value": "-114.0x552.0"
+            },
+            {
+              "name": "dollName",
+              "value": "santa"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "speed",
+              "value": "400"
+            }
+          ]
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        {
-          "costume": "wood",
-          "x": 43,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1190,
-          "sizeY": 51,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "xmas-wine",
-          "x": 210,
-          "y": 602,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "wood",
-          "x": 42,
-          "y": 573,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 184,
-          "sizeY": 29,
-          "alignmentX": 0,
-          "alignmentY": 0
-        }
+        
       ]
     }
   ]

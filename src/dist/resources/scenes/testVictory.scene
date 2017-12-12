@@ -1,0 +1,78 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Victory",
+  "directorAttributes": [
+    {
+      "name": "showAll",
+      "value": "false"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "-800.0x0.0"
+    },
+    {
+      "name": "maxDolls",
+      "value": "20"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
+    },
+    {
+      "name": "nextScene",
+      "value": ""
+    },
+    {
+      "name": "topRight",
+      "value": "3280.0x1500.0"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      
+    ],
+    "y": [
+      
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    "victory"
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
+      ]
+    }
+  ]
+}

@@ -15,11 +15,15 @@
     },
     {
       "name": "bottomLeft",
-      "value": "0.0x-328.0"
+      "value": "-1000.0x0.0"
     },
     {
       "name": "topRight",
-      "value": "1720.0x870.0"
+      "value": "1720.0x800.0"
+    },
+    {
+      "name": "showAll",
+      "value": "false"
     }
   ],
   "background": "#000000",
@@ -63,13 +67,13 @@
       "actors": [
         {
           "costume": "grass",
-          "x": -3,
+          "x": -425,
           "y": -2,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1029,
-          "sizeY": 81,
+          "sizeX": 1944,
+          "sizeY": 87,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -83,8 +87,36 @@
         },
         {
           "costume": "mike",
-          "x": 241,
-          "y": 656,
+          "x": 136,
+          "y": 426,
+          "direction": 0,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "fiona",
+          "x": 261,
+          "y": 438,
+          "direction": 0,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "annie",
+          "x": -315,
+          "y": 363,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -96,12 +128,54 @@
           ]
         },
         {
-          "costume": "fiona",
-          "x": 550,
-          "y": 657,
+          "costume": "bony",
+          "x": -140,
+          "y": 409,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "foxie",
+          "x": -10,
+          "y": 399,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "emma",
+          "x": 371,
+          "y": 440,
+          "direction": 0,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "santa",
+          "x": 485,
+          "y": 439,
+          "direction": 0,
+          "scaleX": 0.6,
+          "scaleY": 0.6,
           "attributes": [
             {
               "name": "rewardForScene",

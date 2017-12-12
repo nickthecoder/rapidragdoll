@@ -11,7 +11,7 @@
     },
     {
       "name": "nextScene",
-      "value": "xmas/menu"
+      "value": "xmas/05"
     },
     {
       "name": "bottomLeft",
@@ -82,6 +82,10 @@
             {
               "name": "speed",
               "value": "650"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
             }
           ]
         },

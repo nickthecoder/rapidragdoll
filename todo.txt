@@ -2,24 +2,12 @@
 Bugs
 ----
 
-Chair looks horrible
-
 Stray pixels on Annie
 Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt when bent.
-Arms arm't correctly constrained?
 
-Xmas
-----
-Presents
 
 Next
 ----
-
-Rename Victory to Rewards?
-	Add code to show only actors that have been earned.
-	Create a TestRewards scene which include the real rewards scene, but set testing Attribute true, 
-		which allow ALL rewards to be visible (despite not being earned).
-	If the tutorial hasn't been "won", then show a message explaining. With a SceneButton to the tutorial menu?
 
 Make limbs collide with other limbs (now that jointed items don't collide with each other)?
 
@@ -27,10 +15,7 @@ Scenery
 	Wallpaper
 
 Items which must NOT be knocked over :
-	Vase
-
-Add simple movable objects
-	table, lamp stands
+	Vase, lamp, lamp stand
 
 New objective : A ring a bell hanging from the ceiling.
 	Ring when the angle > limit, and wasn't on the previous tick.
@@ -42,7 +27,7 @@ Sounds when a doll bounces.
 	Save the velocity from the previous tick, and check if the magnitude of the difference > limit
 	Maybe more than one sound each with different limits.
 
-New tutorial explaining Frgaile objects.
+New tutorial scene xplaining Frgaile objects.
 
 Limit the Laucher to a fixed number of dolls
 	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.

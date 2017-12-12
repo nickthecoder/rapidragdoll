@@ -7,10 +7,11 @@ import uk.co.nickthecoder.tickle.Costume
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Delay
 import uk.co.nickthecoder.tickle.events.Input
+import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.util.Attribute
-import uk.co.nickthecoder.tickle.util.Rand
-
+import uk.co.nickthecoder.tickle.util.RandomFactory
+import uk.co.nickthecoder.tickle.util.item
 
 /**
  * Each doll is given a zOrder incremented by 1, and then resets to back to 1 when it reaches 100.
@@ -34,10 +35,17 @@ abstract class AbstractLauncher : AbstractRole() {
     @Attribute
     var dollName: String = "annie"
 
+    @Attribute
+    var randomSeed = 0
+
     val dollCostumes = mutableListOf<Costume>()
+
+    lateinit var random: RandomFactory
 
     override fun activated() {
         super.activated()
+
+        random = RandomFactory(randomSeed.toLong())
 
         dollName.split(",").forEach {
             val name = it.trim()
@@ -53,8 +61,13 @@ abstract class AbstractLauncher : AbstractRole() {
 
     fun launch(point: Vector2d) {
 
-        val costume = Rand.item(dollCostumes)
+        val costume = random.item(dollCostumes)
         val dollA = actor.createChild(costume)
+        val doll = dollA.role
+
+        if (doll is Doll) {
+            dollA.scaleXY = doll.defaultScale
+        }
 
         dollA.zOrder = dollZOrder
         dollZOrder++
@@ -62,14 +75,19 @@ abstract class AbstractLauncher : AbstractRole() {
             dollZOrder = 1.0
         }
 
-        val doll = dollA.role
+        actor.stage?.add(dollA)
 
         if (doll is Doll) {
-            doll.initialVelocity.set(point).sub(actor.position).normalize(speed)
+            // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
+            // depending on which body part is thrown.
+            // Don't throw using the legs, because that can cause them to overlap and STICK.
+            val partNumber = random.nextInt(doll.parts.size - 2)
+            val throwBy = doll.parts[partNumber].body!!
+            val initialVelocity = Vector2d(point).sub(actor.position).normalize(speed)
+            throwBy.linearVelocity = pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.mass))
+
             Play.instance.launched(doll)
-            dollA.scaleXY = doll.defaultScale
         }
-        actor.stage?.add(dollA)
     }
 
 }

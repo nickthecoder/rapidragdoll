@@ -2,7 +2,6 @@ package uk.co.nickthecoder.rapidragdoll
 
 import org.jbox2d.dynamics.joints.RevoluteJoint
 import org.jbox2d.dynamics.joints.RevoluteJointDef
-import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.Game
@@ -26,8 +25,6 @@ class Doll : ActionRole(), Reward {
     @CostumeAttribute
     var defaultScale = 1.0
 
-    val initialVelocity = Vector2d()
-
     var totalMass = 0f
 
     val parts = mutableListOf<Actor>()
@@ -46,11 +43,6 @@ class Doll : ActionRole(), Reward {
         createPart("arm-right", -0.2, torso)
         createPart("leg-left", -0.3, abdomen)
         createPart("leg-right", -0.4, abdomen)
-
-        // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
-        // depending on which body part is thrown.
-        val throwBy = parts[random.nextInt(parts.size)].body!!
-        throwBy.linearVelocity = pixelsToWorld(initialVelocity.mul(totalMass.toDouble() / throwBy.mass))
 
         val fades = ParallelAction()
         parts.forEach { part ->

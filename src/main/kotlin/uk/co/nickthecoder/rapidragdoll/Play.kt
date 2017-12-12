@@ -209,7 +209,7 @@ open class Play : AbstractDirector(), MouseHandler {
      */
     override fun onMouseButton(event: MouseEvent) {
         if (event.button == 0) {
-            if (event.state == ButtonState.PRESSED) {
+            if (event.state == ButtonState.RELEASED) {
                 if (sceneComplete) {
                     nextScene()
                 } else {

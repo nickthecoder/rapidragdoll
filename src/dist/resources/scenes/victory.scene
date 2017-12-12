@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "3280.0x1500.0"
+    },
+    {
+      "name": "showAll",
+      "value": "false"
     }
   ],
   "background": "#000000",
@@ -554,6 +558,20 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "santa",
+          "x": 2177,
+          "y": 325,
+          "direction": 0,
+          "scaleX": 0.6,
+          "scaleY": 0.6,
           "attributes": [
             {
               "name": "rewardForScene",
