@@ -3,11 +3,13 @@ package uk.co.nickthecoder.rapidragdoll
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.AttributeType
+import uk.co.nickthecoder.tickle.Costume
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Delay
 import uk.co.nickthecoder.tickle.events.Input
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.util.Attribute
+import uk.co.nickthecoder.tickle.util.Rand
 
 
 /**
@@ -32,11 +34,26 @@ abstract class AbstractLauncher : AbstractRole() {
     @Attribute
     var dollName: String = "annie"
 
+    val dollCostumes = mutableListOf<Costume>()
+
+    override fun activated() {
+        super.activated()
+
+        dollName.split(",").forEach {
+            val name = it.trim()
+            val dollCostume = Resources.instance.costumes.find(name)
+            if (dollCostume != null) {
+                dollCostumes.add(dollCostume)
+            }
+        }
+        if (dollCostumes.isEmpty()) {
+            dollCostumes.add(Resources.instance.costumes.find("annie")!!)
+        }
+    }
+
     fun launch(point: Vector2d) {
 
-        val costume = Resources.instance.costumes.find(dollName)
-        costume ?: return
-
+        val costume = Rand.item(dollCostumes)
         val dollA = actor.createChild(costume)
 
         dollA.zOrder = dollZOrder
@@ -73,6 +90,7 @@ class Launcher : AbstractLauncher() {
     var select: Input? = null
 
     override fun activated() {
+        super.activated()
         select = Resources.instance.inputs.find("select${number}")
         if (Play.instance.launcher === this) {
             actor.event("select${number}")
@@ -105,6 +123,7 @@ class AutoLauncher : AbstractLauncher() {
     lateinit var action: Action
 
     override fun activated() {
+        super.activated()
         action = Delay(period).then { launch(point) }.forever()
         action.begin()
     }

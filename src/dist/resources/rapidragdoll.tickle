@@ -1338,7 +1338,7 @@
           "attributes": [
             {
               "name": "defaultScale",
-              "value": "0.5"
+              "value": "0.45"
             },
             {
               "name": "rewardForScene",

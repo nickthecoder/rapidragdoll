@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="fiona.svg">
+   sodipodi:docname="fiona.svg"
+   inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/fiona.png"
+   inkscape:export-xdpi="40.024242"
+   inkscape:export-ydpi="40.024242">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -55,60 +58,60 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fiona/abdomen.png"
        xlink:href="abdomen.png"
-       width="800"
-       height="979"
-       id="image3056"
+       y="157.1479"
        x="-31.428572"
-       y="157.1479" />
+       id="image3056"
+       height="979"
+       width="800" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fiona/arm-left.png"
        xlink:href="arm-left.png"
-       transform="matrix(0.83743267,-0.54654051,0.54654051,0.83743267,0,0)"
-       width="800"
-       height="979"
+       y="-61.089249"
+       x="-242.88832"
        id="image3067"
-       x="-218.56853"
-       y="-35.620815" />
+       height="1060.2438"
+       width="866.3894"
+       transform="matrix(0.83743267,-0.54654051,0.54654051,0.83743267,0,0)" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fiona/arm-right.png"
        xlink:href="arm-right.png"
-       transform="matrix(0.80720233,0.59027485,-0.59027485,0.80720233,0,0)"
-       width="800"
-       height="979"
-       id="image3078"
+       y="-492.78516"
        x="22.345152"
-       y="-492.78516" />
+       id="image3078"
+       height="979"
+       width="800"
+       transform="matrix(0.80720233,0.59027485,-0.59027485,0.80720233,0,0)" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fiona/head.png"
        xlink:href="head.png"
-       width="800"
-       height="979"
-       id="image3089"
+       y="5.7193255"
        x="-37.142883"
-       y="5.7193255" />
+       id="image3089"
+       height="979"
+       width="800" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fiona/leg-left.png"
        xlink:href="leg-left.png"
-       width="800"
-       height="979"
-       id="image3122"
+       y="45.719326"
        x="-199.99997"
-       y="45.719326" />
+       id="image3122"
+       height="979"
+       width="800" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fiona/leg-right.png"
        xlink:href="leg-right.png"
-       width="800"
-       height="979"
-       id="image3133"
+       y="42.862183"
        x="137.14288"
-       y="42.862183" />
+       id="image3133"
+       height="979"
+       width="800" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fiona/torso.png"
        xlink:href="torso.png"
-       width="800"
-       height="979"
-       id="image3144"
+       y="48.576469"
        x="-22.857117"
-       y="48.576469" />
+       id="image3144"
+       height="979"
+       width="800" />
   </g>
 </svg>
