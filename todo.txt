@@ -9,8 +9,6 @@ Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt wh
 Next
 ----
 
-Make limbs collide with other limbs (now that jointed items don't collide with each other)?
-
 Scenery
 	Wallpaper
 

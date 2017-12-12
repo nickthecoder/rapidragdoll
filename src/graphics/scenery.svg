@@ -416,9 +416,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50000001"
-     inkscape:cx="291.3239"
-     inkscape:cy="516.53523"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="99.393186"
+     inkscape:cy="976.60986"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -439,7 +439,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -605,5 +605,33 @@
        id="path3841"
        style="fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter3837)"
        sodipodi:type="star" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/clock.png"
+       xlink:href="clock.png"
+       width="148.00002"
+       height="147.71208"
+       id="image3067"
+       x="5.9999785"
+       y="3.5061448" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/clock-hand.png"
+       xlink:href="clock-hand.png"
+       transform="matrix(0,-1,1,0,0,0)"
+       width="62.918259"
+       height="6.9506469"
+       id="image3078"
+       x="-124.77678"
+       y="153.28899" />
+    <image
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/clock-hand.png"
+       xlink:href="clock-hand.png"
+       inkscape:transform-center-y="-17.75312"
+       transform="matrix(-0.0066573,-0.99997784,0.99997784,-0.0066573,0,0)"
+       inkscape:transform-center-x="0.11818312"
+       y="153.98209"
+       x="-56.479782"
+       id="image3081"
+       height="5.6294107"
+       width="50.958237" />
   </g>
 </svg>

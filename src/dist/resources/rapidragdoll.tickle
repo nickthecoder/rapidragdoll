@@ -129,6 +129,10 @@
     {
       "name": "santa",
       "file": "images/santa.png"
+    },
+    {
+      "name": "paper1",
+      "file": "images/paper1.png"
     }
   ],
   "fonts": [
@@ -1111,6 +1115,51 @@
       "offsetX": 51,
       "offsetY": 47,
       "direction": 0
+    },
+    {
+      "name": "paper1",
+      "texture": "paper1",
+      "left": 0,
+      "bottom": 90,
+      "right": 110,
+      "top": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0,
+      "tiled": true
+    },
+    {
+      "name": "clock",
+      "texture": "scenery",
+      "left": 7,
+      "bottom": 150,
+      "right": 152,
+      "top": 5,
+      "offsetX": 72,
+      "offsetY": 75,
+      "direction": 0
+    },
+    {
+      "name": "hour-hand",
+      "texture": "scenery",
+      "left": 154,
+      "bottom": 56,
+      "right": 160,
+      "top": 3,
+      "offsetX": 3,
+      "offsetY": 15,
+      "direction": 90
+    },
+    {
+      "name": "minute-hand",
+      "texture": "scenery",
+      "left": 153,
+      "bottom": 125,
+      "right": 160,
+      "top": 61,
+      "offsetX": 4,
+      "offsetY": 15,
+      "direction": 90
     }
   ],
   "costumeGroups": [
@@ -4353,6 +4402,66 @@
               }
             ]
           }
+        },
+        {
+          "name": "clock",
+          "role": "uk.co.nickthecoder.rapidragdoll.Clock",
+          "canRotate": false,
+          "zOrder": -910,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "clock"
+              ]
+            },
+            {
+              "name": "minute-hand",
+              "costumes": [
+                "minute-hand"
+              ]
+            },
+            {
+              "name": "hour-hand",
+              "costumes": [
+                "hour-hand"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hour-hand",
+          "role": "",
+          "canRotate": false,
+          "zOrder": -909,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "hour-hand"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "minute-hand",
+          "role": "",
+          "canRotate": false,
+          "zOrder": -908,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "minute-hand"
+              ]
+            }
+          ]
         }
       ],
       "showInSceneEditor": true
@@ -7169,6 +7278,28 @@
               }
             ]
           }
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "paper",
+      "costumes": [
+        {
+          "name": "paper1",
+          "role": "",
+          "canRotate": false,
+          "zOrder": -1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "paper1"
+              ]
+            }
+          ]
         }
       ],
       "showInSceneEditor": true

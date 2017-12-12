@@ -578,6 +578,35 @@
               "value": ""
             }
           ]
+        },
+        {
+          "costume": "paper-pink",
+          "x": 625.2248995983936,
+          "y": 222.488888888889,
+          "zOrder": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "paper1",
+          "x": 44,
+          "y": 39,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1207,
+          "sizeY": 740,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "clock",
+          "x": 419,
+          "y": 661,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     },
