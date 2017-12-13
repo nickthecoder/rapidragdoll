@@ -619,6 +619,24 @@
           "sizeY": 725,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "bell",
+          "x": 1036,
+          "y": 704,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "-1.0x74.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
         }
       ]
     },

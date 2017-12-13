@@ -416,11 +416,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="99.393186"
-     inkscape:cy="976.60986"
+     inkscape:zoom="2"
+     inkscape:cx="254.89318"
+     inkscape:cy="924.10987"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3084"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="854"
@@ -439,7 +439,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -459,11 +459,11 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/pin.png"
        xlink:href="pin.png"
-       y="3.2662663"
-       x="436.99506"
-       id="image4668"
+       width="61.411152"
        height="162.73955"
-       width="61.411152" />
+       id="image4668"
+       x="436.99506"
+       y="3.2662663" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot3856"
@@ -477,11 +477,11 @@
          id="flowPara3862" /></flowRoot>    <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/chair.png"
        xlink:href="chair.png"
-       y="-0.13781738"
-       x="507"
-       id="image3884"
+       width="106"
        height="201.23438"
-       width="106" />
+       id="image3884"
+       x="507"
+       y="-0.13781738" />
     <use
        x="0"
        y="0"
@@ -493,11 +493,11 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/grass.png"
        xlink:href="grass.png"
-       y="156.36218"
-       x="10"
-       id="image3917"
+       width="421.2963"
        height="91"
-       width="421.2963" />
+       id="image3917"
+       x="10"
+       y="156.36218" />
     <image
        y="335.36218"
        x="11.5"
@@ -508,27 +508,27 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/wood.png"
        xlink:href="wood.png"
-       y="251.63351"
-       x="9.0424356"
-       id="image3086"
+       width="653.30322"
        height="79.67112"
-       width="653.30322" />
+       id="image3086"
+       x="9.0424356"
+       y="251.63351" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/rock.png"
        xlink:href="rock.png"
-       y="813.36218"
-       x="10"
-       id="image3097"
+       width="228"
        height="228"
-       width="228" />
+       id="image3097"
+       x="10"
+       y="813.36218" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/fencePost.png"
        xlink:href="fencePost.png"
-       width="34"
-       height="320.04349"
-       id="image3098"
+       y="334.34042"
        x="63"
-       y="334.34042" />
+       id="image3098"
+       height="320.04349"
+       width="34" />
     <image
        y="795.36218"
        x="241.5"
@@ -539,19 +539,19 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/bed.png"
        xlink:href="bed.png"
-       width="430.10974"
-       height="263"
-       id="image3058"
+       y="334.86218"
        x="93.945129"
-       y="334.86218" />
+       id="image3058"
+       height="263"
+       width="430.10974" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/cooker.png"
        xlink:href="cooker.png"
-       width="197.04041"
-       height="290.62006"
-       id="image3069"
+       y="331.65515"
        x="521.78339"
-       y="331.65515" />
+       id="image3069"
+       height="290.62006"
+       width="197.04041" />
     <image
        y="593.94885"
        x="169.55103"
@@ -608,30 +608,66 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/clock.png"
        xlink:href="clock.png"
-       width="148.00002"
-       height="147.71208"
+       y="3.5061448"
+       x="1.9999785"
        id="image3067"
-       x="5.9999785"
-       y="3.5061448" />
+       height="147.71208"
+       width="148.00002" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/clock-hand.png"
        xlink:href="clock-hand.png"
-       transform="matrix(0,-1,1,0,0,0)"
-       width="62.918259"
-       height="6.9506469"
-       id="image3078"
+       y="149.28899"
        x="-124.77678"
-       y="153.28899" />
+       id="image3078"
+       height="6.9506469"
+       width="62.918259"
+       transform="matrix(0,-1,1,0,0,0)" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/clock-hand.png"
        xlink:href="clock-hand.png"
-       inkscape:transform-center-y="-17.75312"
-       transform="matrix(-0.0066573,-0.99997784,0.99997784,-0.0066573,0,0)"
-       inkscape:transform-center-x="0.11818312"
-       y="153.98209"
-       x="-56.479782"
-       id="image3081"
+       width="50.958237"
        height="5.6294107"
-       width="50.958237" />
+       id="image3081"
+       x="-56.453156"
+       y="149.98218"
+       inkscape:transform-center-x="0.11818312"
+       transform="matrix(-0.0066573,-0.99997784,0.99997784,-0.0066573,0,0)"
+       inkscape:transform-center-y="-17.75312" />
+    <g
+       id="g3084"
+       transform="matrix(0.32321043,0,0,0.32321043,-44.642082,-106.93491)">
+      <image
+         sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/bell-clanger.png"
+         xlink:href="bell-clanger.png"
+         y="658.40918"
+         x="636.58057"
+         id="image3070"
+         height="91"
+         width="60" />
+      <image
+         sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/bell.png"
+         xlink:href="bell.png"
+         y="336.90915"
+         x="705.86237"
+         id="image3081-3"
+         height="414"
+         width="394" />
+      <image
+         sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/rope.png"
+         xlink:href="rope.png"
+         y="343.61591"
+         x="650.17102"
+         id="image3073"
+         height="306.2207"
+         width="30.939608" />
+      <image
+         sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/bell-front.png"
+         xlink:href="bell-front.png"
+         width="394.00027"
+         height="413.99963"
+         id="image3081-36"
+         x="1092.6073"
+         y="338.75174" />
+    </g>
   </g>
 </svg>

@@ -15,11 +15,11 @@
     },
     {
       "name": "bottomLeft",
-      "value": "0.0x-328.0"
+      "value": "0.0x0.0"
     },
     {
       "name": "topRight",
-      "value": "1720.0x870.0"
+      "value": "1280.0x800.0"
     }
   ],
   "background": "#000000",
@@ -69,22 +69,22 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1029,
-          "sizeY": 81,
+          "sizeX": 1288,
+          "sizeY": 85,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "launcher",
-          "x": 113,
-          "y": 631,
+          "x": 571,
+          "y": 659,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "0.0x0.0"
+              "value": "558.0x498.0"
             },
             {
               "name": "dollName",
@@ -93,29 +93,84 @@
             {
               "name": "speed",
               "value": "600"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
             }
           ]
         },
         {
-          "costume": "emma",
-          "x": 577,
-          "y": 650,
+          "costume": "bell",
+          "x": 901,
+          "y": 699,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
-              "name": "rewardForScene",
-              "value": ""
+              "name": "ceiling",
+              "value": "0.0x68.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
             }
           ]
+        },
+        {
+          "costume": "wood",
+          "x": -3,
+          "y": 769,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1284,
+          "sizeY": 35,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "bell",
+          "x": 390,
+          "y": 573,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "0.0x198.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "bell",
+          "x": 155,
+          "y": 627,
+          "direction": 0,
+          "scaleX": 0.5,
+          "scaleY": 0.5,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "0.0x142.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
+        }
       ]
     }
   ]

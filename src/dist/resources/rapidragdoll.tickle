@@ -1135,9 +1135,9 @@
     {
       "name": "clock",
       "texture": "scenery",
-      "left": 7,
+      "left": 3,
       "bottom": 150,
-      "right": 152,
+      "right": 148,
       "top": 5,
       "offsetX": 72,
       "offsetY": 75,
@@ -1146,9 +1146,9 @@
     {
       "name": "hour-hand",
       "texture": "scenery",
-      "left": 154,
+      "left": 150,
       "bottom": 56,
-      "right": 160,
+      "right": 156,
       "top": 3,
       "offsetX": 3,
       "offsetY": 15,
@@ -1157,9 +1157,9 @@
     {
       "name": "minute-hand",
       "texture": "scenery",
-      "left": 153,
+      "left": 149,
       "bottom": 125,
-      "right": 160,
+      "right": 156,
       "top": 61,
       "offsetX": 4,
       "offsetY": 15,
@@ -1176,6 +1176,51 @@
       "offsetY": 0,
       "direction": 0,
       "tiled": true
+    },
+    {
+      "name": "bell",
+      "texture": "scenery",
+      "left": 184,
+      "bottom": 135,
+      "right": 311,
+      "top": 1,
+      "offsetX": 64,
+      "offsetY": 127,
+      "direction": 0
+    },
+    {
+      "name": "clanger",
+      "texture": "scenery",
+      "left": 161,
+      "bottom": 135,
+      "right": 181,
+      "top": 105,
+      "offsetX": 10,
+      "offsetY": 115,
+      "direction": 0
+    },
+    {
+      "name": "rope",
+      "texture": "scenery",
+      "left": 165,
+      "bottom": 103,
+      "right": 176,
+      "top": 4,
+      "offsetX": 6,
+      "offsetY": 0,
+      "direction": 0,
+      "tiled": true
+    },
+    {
+      "name": "bell-front",
+      "texture": "scenery",
+      "left": 309,
+      "bottom": 135,
+      "right": 436,
+      "top": 1,
+      "offsetX": 64,
+      "offsetY": 127,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -4478,6 +4523,279 @@
               ]
             }
           ]
+        },
+        {
+          "name": "rope",
+          "role": "",
+          "canRotate": false,
+          "zOrder": -200,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "rope"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 0,
+                "mask": 0,
+                "box": {
+                  "x": 0.5,
+                  "y": 70.5,
+                  "width": 6,
+                  "height": 145,
+                  "angle": 0,
+                  "roundedEnds": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "clanger",
+          "role": "",
+          "canRotate": false,
+          "zOrder": -201,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "clanger"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.1,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 4,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 0,
+                      "y": -62
+                    },
+                    {
+                      "x": -8,
+                      "y": -115
+                    },
+                    {
+                      "x": 9,
+                      "y": -115
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bell",
+          "role": "uk.co.nickthecoder.rapidragdoll.Bell",
+          "canRotate": false,
+          "zOrder": -202,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bell"
+              ]
+            },
+            {
+              "name": "rope",
+              "costumes": [
+                "rope"
+              ]
+            },
+            {
+              "name": "clanger",
+              "costumes": [
+                "clanger"
+              ]
+            },
+            {
+              "name": "front",
+              "costumes": [
+                "bell-front"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "0.0x0.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 30,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -49,
+                      "y": -117
+                    },
+                    {
+                      "x": -25,
+                      "y": -82
+                    },
+                    {
+                      "x": -38,
+                      "y": -82
+                    },
+                    {
+                      "x": -65,
+                      "y": -121
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 30,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -26,
+                      "y": -82
+                    },
+                    {
+                      "x": -11,
+                      "y": -19
+                    },
+                    {
+                      "x": -21,
+                      "y": -18
+                    },
+                    {
+                      "x": -38,
+                      "y": -81
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 30,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 38,
+                      "y": -81
+                    },
+                    {
+                      "x": 21,
+                      "y": -18
+                    },
+                    {
+                      "x": 11,
+                      "y": -19
+                    },
+                    {
+                      "x": 26,
+                      "y": -82
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 30,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 65,
+                      "y": -121
+                    },
+                    {
+                      "x": 38,
+                      "y": -82
+                    },
+                    {
+                      "x": 25,
+                      "y": -82
+                    },
+                    {
+                      "x": 49,
+                      "y": -117
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "bell-front",
+          "role": "uk.co.nickthecoder.rapidragdoll.Follower",
+          "canRotate": false,
+          "zOrder": -200,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "bell-front"
+              ]
+            }
+          ]
         }
       ],
       "showInSceneEditor": true
@@ -5552,8 +5870,8 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -27,
-                      "y": 2
+                      "x": -29,
+                      "y": -21
                     },
                     {
                       "x": -19,
@@ -5564,8 +5882,8 @@
                       "y": -170
                     },
                     {
-                      "x": 17,
-                      "y": -2
+                      "x": 16,
+                      "y": -22
                     }
                   ]
                 }
@@ -5649,8 +5967,8 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -15,
-                      "y": -22
+                      "x": -12,
+                      "y": -33
                     },
                     {
                       "x": 4,
@@ -5661,8 +5979,8 @@
                       "y": -158
                     },
                     {
-                      "x": 20,
-                      "y": 1
+                      "x": 24,
+                      "y": -26
                     }
                   ]
                 }
@@ -5768,7 +6086,7 @@
           }
         }
       ],
-      "showInSceneEditor": true
+      "showInSceneEditor": false
     },
     {
       "name": "xmas",
@@ -6711,7 +7029,7 @@
           }
         }
       ],
-      "showInSceneEditor": true
+      "showInSceneEditor": false
     },
     {
       "name": "santa",
