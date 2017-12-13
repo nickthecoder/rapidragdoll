@@ -133,6 +133,10 @@
     {
       "name": "paper1",
       "file": "images/paper1.png"
+    },
+    {
+      "name": "tiles1",
+      "file": "images/tiles1.png"
     }
   ],
   "fonts": [
@@ -1160,6 +1164,18 @@
       "offsetX": 4,
       "offsetY": 15,
       "direction": 90
+    },
+    {
+      "name": "tiles1",
+      "texture": "tiles1",
+      "left": 0,
+      "bottom": 234,
+      "right": 239,
+      "top": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0,
+      "tiled": true
     }
   ],
   "costumeGroups": [
@@ -7297,6 +7313,22 @@
               "name": "default",
               "poses": [
                 "paper1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tiles1",
+          "role": "",
+          "canRotate": false,
+          "zOrder": -1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "tiles1"
               ]
             }
           ]

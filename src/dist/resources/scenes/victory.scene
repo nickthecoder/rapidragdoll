@@ -607,6 +607,18 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
+        },
+        {
+          "costume": "tiles1",
+          "x": 1249,
+          "y": 58,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 796,
+          "sizeY": 725,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

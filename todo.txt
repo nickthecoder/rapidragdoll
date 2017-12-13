@@ -10,7 +10,7 @@ Next
 ----
 
 Scenery
-	Wallpaper
+	more wallpaper
 
 Items which must NOT be knocked over :
 	Vase, lamp, lamp stand
@@ -25,7 +25,7 @@ Sounds when a doll bounces.
 	Save the velocity from the previous tick, and check if the magnitude of the difference > limit
 	Maybe more than one sound each with different limits.
 
-New tutorial scene xplaining Frgaile objects.
+New tutorial scene explaining Frgaile objects.
 
 Limit the Laucher to a fixed number of dolls
 	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
@@ -39,11 +39,6 @@ Collectables
 	Increase/Descrease speed of the current/all Launchers
 	Increase/Descrease max dolls
 
-Finish menu scene
-		Fire Frenzy
-		Limited Launchers
-		Puzzle Picnic
-		Chucking Challenge
 
 Later
 -----
