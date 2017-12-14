@@ -87,6 +87,10 @@
             {
               "name": "randomSeed",
               "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },

@@ -79,8 +79,8 @@
         },
         {
           "costume": "hand",
-          "x": 661,
-          "y": 518,
+          "x": 767,
+          "y": 530,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -176,6 +176,20 @@
           "direction": 0,
           "scaleX": 0.6,
           "scaleY": 0.6,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "lilian",
+          "x": 637,
+          "y": 544,
+          "direction": 0,
+          "scaleX": 0.5,
+          "scaleY": 0.5,
           "attributes": [
             {
               "name": "rewardForScene",

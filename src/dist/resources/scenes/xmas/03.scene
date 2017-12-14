@@ -78,7 +78,7 @@
             },
             {
               "name": "dollName",
-              "value": "mike"
+              "value": "lilian"
             },
             {
               "name": "speed",
@@ -87,6 +87,10 @@
             {
               "name": "randomSeed",
               "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },

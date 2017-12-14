@@ -86,6 +86,10 @@
             {
               "name": "randomSeed",
               "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -190,6 +194,10 @@
             {
               "name": "speed",
               "value": "400"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         }

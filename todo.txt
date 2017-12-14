@@ -9,17 +9,15 @@ Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt wh
 Next
 ----
 
-Tutorial for bell.
-	Scenes using bells.
+Tutorial for bell and power ups.
+	Scenes using bells and power ups.
+
 
 Scenery
 	more wallpaper
 
-Items which must NOT be knocked over :
+More fragile items
 	Vase, lamp, lamp stand
-
-New objective : A ring a bell hanging from the ceiling.
-	Ring when the angle > limit, and wasn't on the previous tick.
 
 Sounds when a doll is launched
 	(Each doll has its own)

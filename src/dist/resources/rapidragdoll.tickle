@@ -137,6 +137,10 @@
     {
       "name": "tiles1",
       "file": "images/tiles1.png"
+    },
+    {
+      "name": "lilian",
+      "file": "images/lilian.png"
     }
   ],
   "fonts": [
@@ -1265,6 +1269,83 @@
       "offsetX": 38,
       "offsetY": 10,
       "direction": 0
+    },
+    {
+      "name": "lilian-head",
+      "texture": "lilian",
+      "left": 122,
+      "bottom": 123,
+      "right": 166,
+      "top": 41,
+      "offsetX": 24,
+      "offsetY": 19,
+      "direction": 0
+    },
+    {
+      "name": "lilian-arm-left",
+      "texture": "lilian",
+      "left": 16,
+      "bottom": 162,
+      "right": 79,
+      "top": 12,
+      "offsetX": 28,
+      "offsetY": 135,
+      "direction": 0
+    },
+    {
+      "name": "lilian-arm-right",
+      "texture": "lilian",
+      "left": 205,
+      "bottom": 178,
+      "right": 273,
+      "top": 15,
+      "offsetX": 37,
+      "offsetY": 152,
+      "direction": 0
+    },
+    {
+      "name": "lilian-torso",
+      "texture": "lilian",
+      "left": 95,
+      "bottom": 258,
+      "right": 187,
+      "top": 154,
+      "offsetX": 45,
+      "offsetY": 86,
+      "direction": 0
+    },
+    {
+      "name": "lilian-abdomen",
+      "texture": "lilian",
+      "left": 94,
+      "bottom": 361,
+      "right": 175,
+      "top": 288,
+      "offsetX": 41,
+      "offsetY": 46,
+      "direction": 0
+    },
+    {
+      "name": "lilian-leg-left",
+      "texture": "lilian",
+      "left": 13,
+      "bottom": 375,
+      "right": 76,
+      "top": 176,
+      "offsetX": 42,
+      "offsetY": 179,
+      "direction": 0
+    },
+    {
+      "name": "lilian-leg-right",
+      "texture": "lilian",
+      "left": 217,
+      "bottom": 372,
+      "right": 262,
+      "top": 181,
+      "offsetX": 19,
+      "offsetY": 177,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -1710,6 +1791,74 @@
             {
               "name": "defaultScale",
               "value": "0.6"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "lilian",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "lilian-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "lilian-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "lilian-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "lilian-abdomen"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "lilian-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "lilian-arm-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "lilian-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "lilian-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.4"
             },
             {
               "name": "rewardForScene",
@@ -7859,6 +8008,544 @@
         }
       ],
       "showInSceneEditor": true
+    },
+    {
+      "name": "lilian",
+      "costumes": [
+        {
+          "name": "lilian-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lilian-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-180.0"
+            },
+            {
+              "name": "offset",
+              "value": "-30.0x-10.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -16,
+                      "y": -1
+                    },
+                    {
+                      "x": 11,
+                      "y": -51
+                    },
+                    {
+                      "x": 33,
+                      "y": -61
+                    },
+                    {
+                      "x": 19,
+                      "y": -12
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 14,
+                      "y": -46
+                    },
+                    {
+                      "x": -25,
+                      "y": -122
+                    },
+                    {
+                      "x": -6,
+                      "y": -132
+                    },
+                    {
+                      "x": 32,
+                      "y": -52
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lilian-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lilian-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "30.0x-6.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "180.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 14,
+                      "y": -4
+                    },
+                    {
+                      "x": -17,
+                      "y": -24
+                    },
+                    {
+                      "x": -28,
+                      "y": -59
+                    },
+                    {
+                      "x": -7,
+                      "y": -55
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -29,
+                      "y": -55
+                    },
+                    {
+                      "x": 8,
+                      "y": -147
+                    },
+                    {
+                      "x": 27,
+                      "y": -143
+                    },
+                    {
+                      "x": -11,
+                      "y": -57
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lilian-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lilian-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x15.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 9,
+                      "y": -4
+                    },
+                    {
+                      "x": 17,
+                      "y": 30
+                    },
+                    {
+                      "x": 11,
+                      "y": 58
+                    },
+                    {
+                      "x": -10,
+                      "y": 58
+                    },
+                    {
+                      "x": -20,
+                      "y": 34
+                    },
+                    {
+                      "x": -12,
+                      "y": -4
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lilian-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lilian-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 42,
+                      "y": 8
+                    },
+                    {
+                      "x": 3,
+                      "y": 14
+                    },
+                    {
+                      "x": -35,
+                      "y": 5
+                    },
+                    {
+                      "x": -25,
+                      "y": -57
+                    },
+                    {
+                      "x": 25,
+                      "y": -58
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lilian-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lilian-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "-15.0x-12.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -19,
+                      "y": -14
+                    },
+                    {
+                      "x": -39,
+                      "y": -174
+                    },
+                    {
+                      "x": -25,
+                      "y": -177
+                    },
+                    {
+                      "x": 10,
+                      "y": -30
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lilian-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lilian-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-90.0"
+            },
+            {
+              "name": "offset",
+              "value": "15.0x-12.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "90.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -11,
+                      "y": -36
+                    },
+                    {
+                      "x": 7,
+                      "y": -173
+                    },
+                    {
+                      "x": 25,
+                      "y": -175
+                    },
+                    {
+                      "x": 14,
+                      "y": -33
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lilian-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lilian-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-70.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -32,
+                      "y": 3
+                    },
+                    {
+                      "x": -40,
+                      "y": -38
+                    },
+                    {
+                      "x": 36,
+                      "y": -43
+                    },
+                    {
+                      "x": 32,
+                      "y": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": false
     }
   ],
   "costumes": [
