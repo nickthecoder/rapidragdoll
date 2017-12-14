@@ -1221,6 +1221,50 @@
       "offsetX": 64,
       "offsetY": 127,
       "direction": 0
+    },
+    {
+      "name": "collectable-grow",
+      "texture": "ui",
+      "left": 96,
+      "bottom": 191,
+      "right": 143,
+      "top": 153,
+      "offsetX": 24,
+      "offsetY": 18,
+      "direction": 0
+    },
+    {
+      "name": "collectable-shrink",
+      "texture": "ui",
+      "left": 97,
+      "bottom": 241,
+      "right": 142,
+      "top": 203,
+      "offsetX": 23,
+      "offsetY": 19,
+      "direction": 0
+    },
+    {
+      "name": "collectable-speedUp",
+      "texture": "ui",
+      "left": 153,
+      "bottom": 197,
+      "right": 203,
+      "top": 154,
+      "offsetX": 36,
+      "offsetY": 14,
+      "direction": 0
+    },
+    {
+      "name": "collectable-slowDown",
+      "texture": "ui",
+      "left": 152,
+      "bottom": 243,
+      "right": 203,
+      "top": 200,
+      "offsetX": 38,
+      "offsetY": 10,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -1781,8 +1825,7 @@
                   "y": -19.5,
                   "width": 7,
                   "height": 35,
-                  "angle": -23,
-                  "roundedEnds": false
+                  "angle": -23
                 }
               }
             ]
@@ -1837,8 +1880,7 @@
                   "y": -14.5,
                   "width": 7,
                   "height": 37,
-                  "angle": 24,
-                  "roundedEnds": false
+                  "angle": 24
                 }
               }
             ]
@@ -2019,8 +2061,7 @@
                   "y": -39.5,
                   "width": 10,
                   "height": 53,
-                  "angle": -5,
-                  "roundedEnds": false
+                  "angle": -5
                 }
               }
             ]
@@ -2075,8 +2116,7 @@
                   "y": -37.5,
                   "width": 10,
                   "height": 52,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -2186,8 +2226,7 @@
                   "y": -12,
                   "width": 8,
                   "height": 39,
-                  "angle": 21,
-                  "roundedEnds": false
+                  "angle": 21
                 }
               },
               {
@@ -2203,8 +2242,7 @@
                   "y": -34,
                   "width": 42,
                   "height": 8,
-                  "angle": -20,
-                  "roundedEnds": false
+                  "angle": -20
                 }
               }
             ]
@@ -2259,8 +2297,7 @@
                   "y": -29.5,
                   "width": 9,
                   "height": 69,
-                  "angle": -23,
-                  "roundedEnds": false
+                  "angle": -23
                 }
               }
             ]
@@ -2301,8 +2338,7 @@
                   "y": -23,
                   "width": 32,
                   "height": 40,
-                  "angle": 10.999999999999998,
-                  "roundedEnds": false
+                  "angle": 10.999999999999998
                 }
               }
             ]
@@ -2357,8 +2393,7 @@
                   "y": -47.5,
                   "width": 13,
                   "height": 88,
-                  "angle": -14.999999999999998,
-                  "roundedEnds": false
+                  "angle": -14.999999999999998
                 }
               }
             ]
@@ -2413,8 +2448,7 @@
                   "y": -51.5,
                   "width": 15,
                   "height": 85,
-                  "angle": 18,
-                  "roundedEnds": false
+                  "angle": 18
                 }
               }
             ]
@@ -2469,8 +2503,7 @@
                   "y": -16.5,
                   "width": 48,
                   "height": 25,
-                  "angle": 12,
-                  "roundedEnds": false
+                  "angle": 12
                 }
               }
             ]
@@ -2531,8 +2564,7 @@
                   "y": -36.5,
                   "width": 6,
                   "height": 80,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -2694,8 +2726,7 @@
                   "y": -28,
                   "width": 8,
                   "height": 62,
-                  "angle": -6,
-                  "roundedEnds": false
+                  "angle": -6
                 }
               }
             ]
@@ -2750,8 +2781,7 @@
                   "y": -26.5,
                   "width": 8,
                   "height": 61,
-                  "angle": 3,
-                  "roundedEnds": false
+                  "angle": 3
                 }
               }
             ]
@@ -2806,8 +2836,7 @@
                   "y": -35,
                   "width": 8,
                   "height": 80,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -3430,8 +3459,7 @@
                   "y": 3.5,
                   "width": 72,
                   "height": 20,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -3447,8 +3475,7 @@
                   "y": -35.5,
                   "width": 10,
                   "height": 79,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -3464,8 +3491,7 @@
                   "y": -33.5,
                   "width": 9,
                   "height": 79,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -3481,8 +3507,7 @@
                   "y": 61.5,
                   "width": 10,
                   "height": 99,
-                  "angle": -10.999999999999998,
-                  "roundedEnds": false
+                  "angle": -10.999999999999998
                 }
               }
             ]
@@ -3523,8 +3548,7 @@
                   "y": -0.5,
                   "width": 77,
                   "height": 21,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -3540,8 +3564,7 @@
                   "y": -37,
                   "width": 10,
                   "height": 76,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -3557,8 +3580,7 @@
                   "y": -41,
                   "width": 9,
                   "height": 68,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -3574,8 +3596,7 @@
                   "y": 57,
                   "width": 9,
                   "height": 106,
-                  "angle": 9,
-                  "roundedEnds": false
+                  "angle": 9
                 }
               }
             ]
@@ -3612,8 +3633,7 @@
                   "y": 134,
                   "width": 27,
                   "height": 268,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -3843,8 +3863,7 @@
                   "y": 11.5,
                   "width": 44,
                   "height": 22,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -3965,8 +3984,7 @@
                   "y": 29.5,
                   "width": 420,
                   "height": 59,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -4003,8 +4021,7 @@
                   "y": 145,
                   "width": 51,
                   "height": 287,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -4041,8 +4058,7 @@
                   "y": 40.5,
                   "width": 654,
                   "height": 81,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -4155,8 +4171,7 @@
                   "y": 137.5,
                   "width": 187,
                   "height": 279,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -4203,8 +4218,7 @@
                   "y": 134.5,
                   "width": 270,
                   "height": 12,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -4555,8 +4569,7 @@
                   "y": 70.5,
                   "width": 6,
                   "height": 145,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               }
             ]
@@ -6328,8 +6341,7 @@
                   "y": 128,
                   "width": 11,
                   "height": 34,
-                  "angle": 0,
-                  "roundedEnds": false
+                  "angle": 0
                 }
               },
               {
@@ -7614,7 +7626,7 @@
           }
         }
       ],
-      "showInSceneEditor": true
+      "showInSceneEditor": false
     },
     {
       "name": "paper",
@@ -7650,6 +7662,200 @@
               ]
             }
           ]
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "collectable",
+      "costumes": [
+        {
+          "name": "collectable-shrink",
+          "role": "uk.co.nickthecoder.rapidragdoll.CollectableShrink",
+          "canRotate": false,
+          "zOrder": 1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "collectable-shrink"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": true,
+                "group": 0,
+                "category": 4,
+                "mask": 3,
+                "box": {
+                  "x": -1,
+                  "y": -1,
+                  "width": 41,
+                  "height": 33,
+                  "angle": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "collectable-grow",
+          "role": "uk.co.nickthecoder.rapidragdoll.CollectableGrow",
+          "canRotate": false,
+          "zOrder": 1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "collectable-grow"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": true,
+                "group": 0,
+                "category": 4,
+                "mask": 3,
+                "box": {
+                  "x": 0,
+                  "y": 0.5,
+                  "width": 43,
+                  "height": 34,
+                  "angle": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "collectable-speedUp",
+          "role": "uk.co.nickthecoder.rapidragdoll.CollectableSpeedUp",
+          "canRotate": false,
+          "zOrder": 1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "collectable-speedUp"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": true,
+                "group": 0,
+                "category": 4,
+                "mask": 3,
+                "box": {
+                  "x": -11.5,
+                  "y": 7,
+                  "width": 42,
+                  "height": 37,
+                  "angle": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "collectable-slowDown",
+          "role": "uk.co.nickthecoder.rapidragdoll.CollectableSlowDown",
+          "canRotate": false,
+          "zOrder": 1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "collectable-slowDown"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": true,
+                "group": 0,
+                "category": 4,
+                "mask": 3,
+                "box": {
+                  "x": -12.5,
+                  "y": 11.5,
+                  "width": 44,
+                  "height": 36,
+                  "angle": 0
+                }
+              }
+            ]
+          }
         }
       ],
       "showInSceneEditor": true

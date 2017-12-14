@@ -7,6 +7,7 @@ import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.movement.PanTo
 import uk.co.nickthecoder.tickle.events.*
+import uk.co.nickthecoder.tickle.physics.RoleContactManager
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.StageView
 import uk.co.nickthecoder.tickle.stage.findRole
@@ -161,6 +162,11 @@ open class Play : AbstractDirector(), MouseHandler {
             }
         }
         startTime = Game.instance.seconds
+    }
+
+    override fun activated() {
+        super.activated()
+        Game.instance.scene.world?.setContactListener(RoleContactManager())
     }
 
     override fun tick() {

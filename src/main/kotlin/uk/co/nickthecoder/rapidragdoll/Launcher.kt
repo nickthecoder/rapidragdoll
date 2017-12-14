@@ -38,6 +38,9 @@ abstract class AbstractLauncher : AbstractRole() {
     @Attribute
     var randomSeed = 0
 
+    @Attribute
+    var scale = 1.0
+
     val dollCostumes = mutableListOf<Costume>()
 
     lateinit var random: RandomFactory
@@ -66,18 +69,16 @@ abstract class AbstractLauncher : AbstractRole() {
         val doll = dollA.role
 
         if (doll is Doll) {
-            dollA.scaleXY = doll.defaultScale
-        }
+            dollA.scaleXY = scale * doll.defaultScale
 
-        dollA.zOrder = dollZOrder
-        dollZOrder++
-        if (dollZOrder > 99) {
-            dollZOrder = 1.0
-        }
+            dollA.zOrder = dollZOrder
+            dollZOrder++
+            if (dollZOrder > 99) {
+                dollZOrder = 1.0
+            }
 
-        actor.stage?.add(dollA)
+            actor.stage?.add(dollA)
 
-        if (doll is Doll) {
             // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
             // depending on which body part is thrown.
             // Don't throw using the legs, because that can cause them to overlap and STICK.
