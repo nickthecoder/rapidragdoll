@@ -58,7 +58,8 @@
   },
   "include": [
     "glass",
-    "aim"
+    "aim",
+    "tutorial/info"
   ],
   "stages": [
     {
@@ -83,6 +84,14 @@
             {
               "name": "speed",
               "value": "600"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -101,15 +110,15 @@
         {
           "costume": "pin",
           "x": 713,
-          "y": 80,
+          "y": 67,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "information",
-          "x": 391,
-          "y": 718,
+          "x": 437,
+          "y": 634,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Knock over the pin to win !",
@@ -119,67 +128,13 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-204.0x248.0"
+              "value": "-204.0x273.0"
             },
             {
               "name": "seconds",
               "value": "2"
             }
           ]
-        },
-        {
-          "costume": "information",
-          "x": 458,
-          "y": 653,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "Aim at the pin with the mouse",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "-128.0x270.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "costume": "information",
-          "x": 549,
-          "y": 589,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "Click to throw a rag doll",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "-10.0x334.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "costume": "grass",
-          "x": -7,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1293.272,
-          "sizeY": 75.13600000000008,
-          "alignmentX": 0,
-          "alignmentY": 0
         },
         {
           "costume": "wall",
@@ -191,6 +146,18 @@
           "sizeX": 49,
           "sizeY": 1026,
           "alignmentX": 1,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 51,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1180,
+          "sizeY": 53,
+          "alignmentX": 0,
           "alignmentY": 0
         }
       ]

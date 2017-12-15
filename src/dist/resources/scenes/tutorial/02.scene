@@ -56,7 +56,8 @@
   },
   "include": [
     "glass",
-    "aim"
+    "aim",
+    "tutorial/info"
   ],
   "stages": [
     {
@@ -76,20 +77,20 @@
         },
         {
           "costume": "wood",
-          "x": 764.444,
-          "y": 781.6780000000001,
+          "x": 763.4799999999999,
+          "y": 772.928,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1645.0319999999997,
-          "sizeY": 40.35599999999988,
+          "sizeX": 1646.9599999999998,
+          "sizeY": 57.85600000000011,
           "alignmentX": 0.5,
           "alignmentY": 0.5
         },
         {
           "costume": "pin",
           "x": 970,
-          "y": 73,
+          "y": 67,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -129,8 +130,8 @@
         },
         {
           "costume": "pin",
-          "x": 334,
-          "y": 70,
+          "x": 336,
+          "y": 66,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -154,6 +155,14 @@
             {
               "name": "speed",
               "value": "600"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -212,18 +221,6 @@
           "alignmentY": 0.5
         },
         {
-          "costume": "grass",
-          "x": -58,
-          "y": 1,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1644.9599999999998,
-          "sizeY": 75.09600000000017,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
           "costume": "launcher",
           "x": 1325.2559999999999,
           "y": 438.32800000000003,
@@ -242,8 +239,28 @@
             {
               "name": "speed",
               "value": "600"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
+        },
+        {
+          "costume": "wood",
+          "x": 47,
+          "y": -3,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1485,
+          "sizeY": 59,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

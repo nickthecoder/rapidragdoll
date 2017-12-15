@@ -23,7 +23,7 @@
     }
   ],
   "background": "#000000",
-  "showMouse": true,
+  "showMouse": false,
   "layout": "default",
   "snapToGrid": {
     "enabled": false,
@@ -84,6 +84,14 @@
             {
               "name": "speed",
               "value": "400"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -110,6 +118,14 @@
             {
               "name": "speed",
               "value": "500"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -136,6 +152,14 @@
             {
               "name": "speed",
               "value": "500"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -162,6 +186,14 @@
             {
               "name": "speed",
               "value": "300"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -184,13 +216,21 @@
             {
               "name": "speed",
               "value": "600"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
         {
           "costume": "sceneButton",
           "x": 655.5519999999997,
-          "y": 223.7439999999998,
+          "y": 237.7439999999998,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Christmas Capers",
@@ -211,8 +251,8 @@
       "actors": [
         {
           "costume": "sceneButton",
-          "x": 657,
-          "y": 386,
+          "x": 652,
+          "y": 436,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Tutorial",
@@ -257,7 +297,7 @@
         {
           "costume": "large",
           "x": 666,
-          "y": 626,
+          "y": 664,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Rapid Rag Doll",
@@ -267,8 +307,8 @@
         },
         {
           "costume": "small",
-          "x": 685,
-          "y": 555,
+          "x": 682,
+          "y": 607,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "by Nick Robinson",
@@ -278,8 +318,8 @@
         },
         {
           "costume": "sceneButton",
-          "x": 660,
-          "y": 307,
+          "x": 656,
+          "y": 344,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Puzzle Picnic",
@@ -292,6 +332,31 @@
               "value": "puzzle/menu"
             }
           ]
+        },
+        {
+          "costume": "sceneButton",
+          "x": 665,
+          "y": 3,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "The Doll's House",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "scene",
+              "value": "dollHouse"
+            }
+          ]
+        },
+        {
+          "costume": "pointer",
+          "x": 240,
+          "y": 514,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     }

@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "menu"
+      "value": "tutorial/08"
     },
     {
       "name": "menuName",
@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1280.0x800.0"
+      "value": "1680.0x800.0"
     }
   ],
   "background": "#000000",
@@ -56,7 +56,8 @@
   },
   "include": [
     "glass",
-    "aim"
+    "aim",
+    "tutorial/info"
   ],
   "stages": [
     {
@@ -80,11 +81,15 @@
             },
             {
               "name": "speed",
-              "value": "350"
+              "value": "300"
             },
             {
               "name": "randomSeed",
               "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -95,38 +100,26 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 50.75200000000018,
-          "sizeY": 773.2479999999999,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": -2.8159999999998035,
-          "y": 705.856,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1284.9039999999995,
-          "sizeY": 101.95999999999992,
+          "sizeX": 51,
+          "sizeY": 802,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 275,
-          "y": 70,
+          "x": 274,
+          "y": 58,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "information",
-          "x": 302,
-          "y": 447,
+          "x": 436,
+          "y": 543,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
-          "text": "You only have 20 seconds to finish the level !",
+          "text": "Rag doll Annie can grab the floating power-ups.",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -143,20 +136,20 @@
         },
         {
           "costume": "wall",
-          "x": 1236.1599999999999,
-          "y": 1,
+          "x": 1758.1599999999999,
+          "y": 2,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 44.840000000000146,
-          "sizeY": 765.3359999999999,
+          "sizeX": 46.840000000000146,
+          "sizeY": 819,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 931,
-          "y": 381,
+          "x": 1387,
+          "y": 491,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -171,44 +164,11 @@
         },
         {
           "costume": "pin",
-          "x": 1015,
-          "y": 72,
+          "x": 1085,
+          "y": 57,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
-        },
-        {
-          "costume": "information",
-          "x": 419,
-          "y": 507,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "This is the last tutorial !",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "214.0x216.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "costume": "grass",
-          "x": -20.09599999999989,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1316.7359999999999,
-          "sizeY": 78.5920000000001,
-          "alignmentX": 0,
-          "alignmentY": 0
         },
         {
           "costume": "wood",
@@ -224,50 +184,167 @@
         },
         {
           "costume": "wood",
-          "x": 830.0799999999999,
-          "y": 320,
+          "x": 885,
+          "y": 431,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 410.9200000000001,
-          "sizeY": 48.896000000000015,
+          "sizeX": 876,
+          "sizeY": 45,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "wall",
-          "x": 593,
-          "y": -3,
+          "x": 884,
+          "y": 27,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 46,
-          "sizeY": 209,
+          "sizeX": 45,
+          "sizeY": 119,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 50,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1709,
+          "sizeY": 46,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "collectable-speedUp",
+          "x": 429,
+          "y": 614,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "factor",
+              "value": "1.2"
+            },
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "100"
+            }
+          ]
+        },
+        {
+          "costume": "collectable-slowDown",
+          "x": 568,
+          "y": 728,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "factor",
+              "value": "1.2"
+            },
+            {
+              "name": "period",
+              "value": "3"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": 885,
+          "y": 237,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 45,
+          "sizeY": 195,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "collectable-shrink",
+          "x": 336,
+          "y": 251,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "factor",
+              "value": "2"
+            },
+            {
+              "name": "period",
+              "value": "2.5"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "costume": "collectable-grow",
+          "x": 846,
+          "y": 605,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "factor",
+              "value": "2"
+            },
+            {
+              "name": "period",
+              "value": "1.5"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "costume": "information",
+          "x": 484,
+          "y": 457,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Some are useful, some aren't !",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-697.0x-55.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        {
-          "costume": "countdown",
-          "x": 50,
-          "y": 789,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "0:00",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "seconds",
-              "value": "20"
-            }
-          ]
-        }
+        
       ]
     }
   ]

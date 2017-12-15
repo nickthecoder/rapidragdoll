@@ -23,7 +23,7 @@
     }
   ],
   "background": "#000000",
-  "showMouse": true,
+  "showMouse": false,
   "layout": "default",
   "snapToGrid": {
     "enabled": false,
@@ -732,6 +732,14 @@
               "value": ""
             }
           ]
+        },
+        {
+          "costume": "pointer",
+          "x": 236,
+          "y": 522,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     }

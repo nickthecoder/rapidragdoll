@@ -351,7 +351,7 @@
       "texture": "ui",
       "left": 31,
       "bottom": 222,
-      "right": 97,
+      "right": 96,
       "top": 156,
       "offsetX": 33,
       "offsetY": 33,
@@ -1345,6 +1345,17 @@
       "top": 181,
       "offsetX": 19,
       "offsetY": 177,
+      "direction": 0
+    },
+    {
+      "name": "pointer",
+      "texture": "ui",
+      "left": 181,
+      "bottom": 347,
+      "right": 257,
+      "top": 279,
+      "offsetX": 8,
+      "offsetY": 66,
       "direction": 0
     }
   ],
@@ -2538,10 +2549,10 @@
                 "category": 2,
                 "mask": 15,
                 "box": {
-                  "x": -14,
-                  "y": -47.5,
-                  "width": 13,
-                  "height": 88,
+                  "x": -14.5,
+                  "y": -52.5,
+                  "width": 12,
+                  "height": 78,
                   "angle": -14.999999999999998
                 }
               }
@@ -2593,10 +2604,10 @@
                 "category": 2,
                 "mask": 15,
                 "box": {
-                  "x": 16.5,
-                  "y": -51.5,
-                  "width": 15,
-                  "height": 85,
+                  "x": 16,
+                  "y": -56,
+                  "width": 14,
+                  "height": 76,
                   "angle": 18
                 }
               }
@@ -3564,6 +3575,22 @@
             {
               "name": "seconds",
               "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "pointer",
+          "role": "uk.co.nickthecoder.rapidragdoll.Hand",
+          "canRotate": false,
+          "zOrder": 1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "pointer"
+              ]
             }
           ]
         }
@@ -6566,10 +6593,6 @@
             {
               "name": "toX",
               "value": "1280"
-            },
-            {
-              "name": "fromX",
-              "value": "0"
             }
           ]
         },
@@ -6612,7 +6635,7 @@
                 "circle": {
                   "x": 0,
                   "y": 0,
-                  "radius": 5
+                  "radius": 9
                 }
               }
             ]
@@ -8366,7 +8389,7 @@
             },
             {
               "name": "toAngle",
-              "value": "90.0"
+              "value": "20.0"
             }
           ],
           "body": {
@@ -8426,7 +8449,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-90.0"
+              "value": "-20.0"
             },
             {
               "name": "offset",
@@ -8494,7 +8517,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-29.999999999999996"
+              "value": "-20.0"
             },
             {
               "name": "offset",
@@ -8502,7 +8525,7 @@
             },
             {
               "name": "toAngle",
-              "value": "29.999999999999996"
+              "value": "20.0"
             }
           ],
           "body": {
@@ -8523,20 +8546,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": -32,
-                      "y": 3
+                      "x": -28,
+                      "y": -5
                     },
                     {
                       "x": -40,
                       "y": -38
                     },
                     {
-                      "x": 36,
+                      "x": 41,
                       "y": -43
                     },
                     {
-                      "x": 32,
-                      "y": 3
+                      "x": 30,
+                      "y": -5
                     }
                   ]
                 }

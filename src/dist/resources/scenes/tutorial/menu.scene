@@ -23,7 +23,7 @@
     }
   ],
   "background": "#000000",
-  "showMouse": true,
+  "showMouse": false,
   "layout": "default",
   "snapToGrid": {
     "enabled": false,
@@ -493,6 +493,14 @@
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
           "text": "Tutorial",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "pointer",
+          "x": 206,
+          "y": 523,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1

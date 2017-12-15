@@ -56,7 +56,8 @@
   },
   "include": [
     "glass",
-    "aim"
+    "aim",
+    "tutorial/info"
   ],
   "stages": [
     {
@@ -81,6 +82,14 @@
             {
               "name": "speed",
               "value": "600"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -99,7 +108,7 @@
         {
           "costume": "wood",
           "x": 0,
-          "y": 766,
+          "y": 743,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -150,14 +159,14 @@
           "alignmentY": 0
         },
         {
-          "costume": "grass",
-          "x": 0,
+          "costume": "wood",
+          "x": 48,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1286.272,
-          "sizeY": 83.77600000000007,
+          "sizeX": 1238,
+          "sizeY": 49,
           "alignmentX": 0,
           "alignmentY": 0
         }
