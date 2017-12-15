@@ -1,0 +1,62 @@
+{
+  "director": "uk.co.nickthecoder.tickle.NoDirector",
+  "background": "#000000",
+  "showMouse": true,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      
+    ],
+    "y": [
+      
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        {
+          "costume": "small",
+          "x": 139,
+          "y": 751,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Aim with the mouse. Click to throw rag doll Annie.  F5 to restart.  Esc to exit. ",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        }
+      ]
+    }
+  ]
+}

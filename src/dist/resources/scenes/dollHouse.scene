@@ -1,0 +1,650 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Victory",
+  "directorAttributes": [
+    {
+      "name": "bottomLeft",
+      "value": "-800.0x0.0"
+    },
+    {
+      "name": "maxDolls",
+      "value": "20"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
+    },
+    {
+      "name": "nextScene",
+      "value": "menu"
+    },
+    {
+      "name": "topRight",
+      "value": "3280.0x1500.0"
+    },
+    {
+      "name": "showAll",
+      "value": "false"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      0,
+      1280
+    ],
+    "y": [
+      0,
+      800
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "annie",
+          "x": 65,
+          "y": 288,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "tutorial/01"
+            }
+          ]
+        },
+        {
+          "costume": "chair2",
+          "x": 645,
+          "y": 137,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "tutorial/07"
+            }
+          ]
+        },
+        {
+          "costume": "hand",
+          "x": 321,
+          "y": 397,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "foxie",
+          "x": 1868,
+          "y": 634,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "bony",
+          "x": 2419,
+          "y": 360,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "umbrella",
+          "x": 2659,
+          "y": 65,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "angle",
+              "value": "0.0"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "fiona",
+          "x": 1771,
+          "y": 570,
+          "direction": 0,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "mike",
+          "x": 180,
+          "y": 337,
+          "direction": 0,
+          "scaleX": 0.45,
+          "scaleY": 0.45,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "chair1",
+          "x": 153,
+          "y": 138,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "tutorial/03"
+            }
+          ]
+        },
+        {
+          "costume": "wood",
+          "x": 45,
+          "y": 778,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1188,
+          "sizeY": 46,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": -3,
+          "y": 510,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47,
+          "sizeY": 817,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 1231,
+          "y": 510,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 48,
+          "sizeY": 820,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": -959,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 960,
+          "sizeY": 89,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": 2073,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1378,
+          "sizeY": 83,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "fencePost",
+          "x": 3068,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "fencePost",
+          "x": -696,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "xmas-tree",
+          "x": 850,
+          "y": 61,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "tutorial/06"
+            }
+          ]
+        },
+        {
+          "costume": "wood",
+          "x": 46,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1978,
+          "sizeY": 59,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "xmas-wine",
+          "x": 464,
+          "y": 214,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "tutorial/04"
+            }
+          ]
+        },
+        {
+          "costume": "teacup",
+          "x": 1390,
+          "y": 217,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "teapot",
+          "x": 1489,
+          "y": 213,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "puzzle/02"
+            }
+          ]
+        },
+        {
+          "costume": "teacup",
+          "x": 1593,
+          "y": 216,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "xmas-wine",
+          "x": 1938,
+          "y": 66,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "cooker",
+          "x": 1814,
+          "y": 70,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "wood",
+          "x": 1280,
+          "y": 778,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 744,
+          "sizeY": 47,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "bony",
+          "x": 2259,
+          "y": 344,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "table",
+          "x": 1484,
+          "y": 67,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "puzzle/01"
+            }
+          ]
+        },
+        {
+          "costume": "table",
+          "x": 389,
+          "y": 67,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "tutorial/02"
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": 2022,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 63,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 0,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47,
+          "sizeY": 58,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "xmas-wine",
+          "x": 2938,
+          "y": 68,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": 2023,
+          "y": 510,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 51,
+          "sizeY": 815,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "bed",
+          "x": 649,
+          "y": 837,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "mike",
+          "x": 593,
+          "y": 1194,
+          "direction": 0,
+          "scaleX": 0.45,
+          "scaleY": 0.45,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "fiona",
+          "x": 715,
+          "y": 1194,
+          "direction": 0,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "chair2",
+          "x": 1655,
+          "y": 141,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "foxie",
+          "x": 607,
+          "y": 388,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "tutorial/05"
+            }
+          ]
+        },
+        {
+          "costume": "emma",
+          "x": -337,
+          "y": 464,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "santa",
+          "x": 2177,
+          "y": 325,
+          "direction": 0,
+          "scaleX": 0.6,
+          "scaleY": 0.6,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "paper-pink",
+          "x": 625.2248995983936,
+          "y": 222.488888888889,
+          "zOrder": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "paper1",
+          "x": 44,
+          "y": 39,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1207,
+          "sizeY": 740,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "clock",
+          "x": 419,
+          "y": 661,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "tiles1",
+          "x": 1249,
+          "y": 58,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 796,
+          "sizeY": 725,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "bell",
+          "x": 1036,
+          "y": 704,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "-1.0x74.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
+      ]
+    }
+  ]
+}

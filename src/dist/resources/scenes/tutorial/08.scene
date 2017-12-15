@@ -1,0 +1,278 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Play",
+  "directorAttributes": [
+    {
+      "name": "maxDolls",
+      "value": "5"
+    },
+    {
+      "name": "nextScene",
+      "value": "tutorial/congratulations"
+    },
+    {
+      "name": "menuName",
+      "value": "tutorial/menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "topRight",
+      "value": "1280.0x800.0"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      
+    ],
+    "y": [
+      
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    "glass",
+    "aim"
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "launcher",
+          "x": 592,
+          "y": 352,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "485.0x305.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "speed",
+              "value": "350"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": 0,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50.75200000000018,
+          "sizeY": 773.2479999999999,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": -4,
+          "y": 726.856,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1286.0879999999997,
+          "sizeY": 77.144,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "pin",
+          "x": 275,
+          "y": 70,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "information",
+          "x": 302,
+          "y": 447,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "You only have 20 seconds to finish the level !",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-99.0x272.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": 1236.1599999999999,
+          "y": 1,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 44.840000000000146,
+          "sizeY": 765.3359999999999,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "pin",
+          "x": 931,
+          "y": 381,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "pin",
+          "x": 224,
+          "y": 393,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "pin",
+          "x": 1015,
+          "y": 72,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "information",
+          "x": 419,
+          "y": 507,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "This is the last tutorial !",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "214.0x216.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "costume": "grass",
+          "x": -20.09599999999989,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1316.7359999999999,
+          "sizeY": 78.5920000000001,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 45,
+          "y": 340,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 215,
+          "sizeY": 41,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 830.0799999999999,
+          "y": 320,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 410.9200000000001,
+          "sizeY": 48.896000000000015,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 593,
+          "y": -3,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 46,
+          "sizeY": 209,
+          "alignmentX": 0,
+          "alignmentY": 0
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        {
+          "costume": "countdown",
+          "x": 572,
+          "y": 800,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "0:00",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "seconds",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
