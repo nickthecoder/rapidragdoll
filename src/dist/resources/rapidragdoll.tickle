@@ -4569,7 +4569,7 @@
           "name": "teacup",
           "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
           "canRotate": false,
-          "zOrder": 0,
+          "zOrder": 200,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -4604,20 +4604,20 @@
                 "polygon": {
                   "points": [
                     {
-                      "x": 14,
-                      "y": -2
+                      "x": -5,
+                      "y": 4
                     },
                     {
-                      "x": 29,
-                      "y": 42
+                      "x": -19,
+                      "y": 40
                     },
                     {
-                      "x": -23,
-                      "y": 42
+                      "x": -25,
+                      "y": 41
                     },
                     {
-                      "x": -11,
-                      "y": -1
+                      "x": -12,
+                      "y": 4
                     }
                   ]
                 }
@@ -4647,6 +4647,64 @@
                     {
                       "x": 27,
                       "y": 42
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 11,
+                      "y": 6
+                    },
+                    {
+                      "x": 29,
+                      "y": 39
+                    },
+                    {
+                      "x": 22,
+                      "y": 40
+                    },
+                    {
+                      "x": 6,
+                      "y": 6
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 17,
+                      "y": -1
+                    },
+                    {
+                      "x": 13,
+                      "y": 12
+                    },
+                    {
+                      "x": -11,
+                      "y": 13
+                    },
+                    {
+                      "x": -13,
+                      "y": 0
                     }
                   ]
                 }
@@ -4966,22 +5024,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "friction": 0.5,
-                "density": 1,
-                "restitution": 0.7,
-                "isSensor": false,
-                "group": 0,
-                "category": 8,
-                "mask": 3,
-                "box": {
-                  "x": -1,
-                  "y": -114.5,
-                  "width": 99,
-                  "height": 14,
-                  "angle": 0
-                }
               }
             ]
           }
@@ -4990,7 +5032,7 @@
           "name": "bell-front",
           "role": "uk.co.nickthecoder.rapidragdoll.Follower",
           "canRotate": false,
-          "zOrder": -200,
+          "zOrder": 200,
           "initialEvent": "default",
           "showInSceneEditor": false,
           "events": [
@@ -6277,12 +6319,12 @@
                       "y": 5
                     },
                     {
-                      "x": -46,
-                      "y": -41
+                      "x": -45,
+                      "y": -68
                     },
                     {
-                      "x": 42,
-                      "y": -41
+                      "x": 41,
+                      "y": -65
                     }
                   ]
                 }

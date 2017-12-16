@@ -358,7 +358,7 @@
             },
             {
               "name": "text",
-              "value": "End"
+              "value": "Part 8"
             },
             {
               "name": "unlocked",
@@ -504,6 +504,58 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
+        },
+        {
+          "costume": "levelStatus",
+          "x": 695,
+          "y": 526,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "requiredScene",
+              "value": ""
+            },
+            {
+              "name": "showTime",
+              "value": "true"
+            },
+            {
+              "name": "text",
+              "value": "End"
+            },
+            {
+              "name": "textPosition",
+              "value": "1.0x9.0"
+            },
+            {
+              "name": "timePosition",
+              "value": "0.0x0.0"
+            },
+            {
+              "name": "unlocked",
+              "value": "false"
+            },
+            {
+              "name": "scene",
+              "value": "tutorial/09"
+            }
+          ]
+        },
+        {
+          "costume": "join1",
+          "x": 748,
+          "y": 482,
+          "direction": 315,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "requiredScene",
+              "value": ""
+            }
+          ]
         }
       ]
     }

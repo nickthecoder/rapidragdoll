@@ -173,35 +173,6 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
-        }
-      ]
-    },
-    {
-      "name": "glass",
-      "actors": [
-        {
-          "costume": "wood",
-          "x": 43,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1190,
-          "sizeY": 51,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": 976,
-          "y": 551,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 257,
-          "sizeY": 34,
-          "alignmentX": 0,
-          "alignmentY": 0
         },
         {
           "costume": "xmas-wine",
@@ -216,7 +187,37 @@
               "value": ""
             }
           ]
+        },
+        {
+          "costume": "wood",
+          "x": 976,
+          "y": 551,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 257,
+          "sizeY": 34,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 43,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1190,
+          "sizeY": 51,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

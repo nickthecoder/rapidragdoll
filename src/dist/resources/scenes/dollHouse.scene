@@ -567,11 +567,11 @@
         },
         {
           "costume": "santa",
-          "x": 931,
-          "y": 122,
+          "x": 1389,
+          "y": 297,
           "direction": 0,
-          "scaleX": 0.2,
-          "scaleY": 0.2,
+          "scaleX": 0.1,
+          "scaleY": 0.1,
           "attributes": [
             {
               "name": "rewardForScene",
@@ -590,8 +590,8 @@
         },
         {
           "costume": "paper1",
-          "x": 44,
-          "y": 39,
+          "x": 41,
+          "y": 53,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -635,6 +635,34 @@
             {
               "name": "ringThreshold",
               "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "lilian",
+          "x": 1602,
+          "y": 352,
+          "direction": 0,
+          "scaleX": 0.1,
+          "scaleY": 0.1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "lilian",
+          "x": 1183,
+          "y": 331,
+          "direction": 0,
+          "scaleX": 0.5,
+          "scaleY": 0.5,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         }

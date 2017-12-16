@@ -3,11 +3,11 @@
   "directorAttributes": [
     {
       "name": "maxDolls",
-      "value": "5"
+      "value": "20"
     },
     {
       "name": "nextScene",
-      "value": "tutorial/congratulations"
+      "value": "tutorial/09"
     },
     {
       "name": "menuName",
@@ -56,7 +56,8 @@
   },
   "include": [
     "glass",
-    "aim"
+    "aim",
+    "tutorial/info"
   ],
   "stages": [
     {
@@ -64,15 +65,15 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 592,
-          "y": 352,
+          "x": 571,
+          "y": 659,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "485.0x305.0"
+              "value": "558.0x498.0"
             },
             {
               "name": "dollName",
@@ -80,7 +81,7 @@
             },
             {
               "name": "speed",
-              "value": "350"
+              "value": "400"
             },
             {
               "name": "randomSeed",
@@ -93,51 +94,97 @@
           ]
         },
         {
-          "costume": "wall",
-          "x": 0,
-          "y": 0,
+          "costume": "bell",
+          "x": 901,
+          "y": 699,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 50.75200000000018,
-          "sizeY": 773.2479999999999,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "0.0x68.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "bell",
+          "x": 390,
+          "y": 573,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "0.0x198.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "bell",
+          "x": 155,
+          "y": 627,
+          "direction": 0,
+          "scaleX": 0.5,
+          "scaleY": 0.5,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "0.0x142.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "wood",
+          "x": -301,
+          "y": -1,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1774,
+          "sizeY": 48,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "wood",
-          "x": -4,
-          "y": 726.856,
+          "x": -1,
+          "y": 735,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1286.0879999999997,
-          "sizeY": 77.144,
+          "sizeX": 1283,
+          "sizeY": 68,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
-          "costume": "pin",
-          "x": 275,
-          "y": 70,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
           "costume": "information",
-          "x": 302,
-          "y": 447,
+          "x": 545,
+          "y": 283,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
-          "text": "You only have 20 seconds to finish the level !",
+          "text": "Ring the bells !",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-99.0x272.0"
+              "value": "343.0x-438.0"
             },
             {
               "name": "seconds",
@@ -146,132 +193,32 @@
           ]
         },
         {
-          "costume": "wall",
-          "x": 1236.1599999999999,
-          "y": 1,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 44.840000000000146,
-          "sizeY": 765.3359999999999,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "pin",
-          "x": 931,
-          "y": 381,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 224,
-          "y": 393,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 1015,
-          "y": 72,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
           "costume": "information",
-          "x": 419,
-          "y": 507,
+          "x": 328,
+          "y": 215,
           "textAlignmentX": "LEFT",
           "textAlignmentY": "BOTTOM",
-          "text": "This is the last tutorial !",
+          "text": "If you need to hit them more than once, timing is key!",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "214.0x216.0"
+              "value": "-203.0x-319.0"
             },
             {
               "name": "seconds",
               "value": "2"
             }
           ]
-        },
-        {
-          "costume": "grass",
-          "x": -20.09599999999989,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1316.7359999999999,
-          "sizeY": 78.5920000000001,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": 45,
-          "y": 340,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 215,
-          "sizeY": 41,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": 830.0799999999999,
-          "y": 320,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 410.9200000000001,
-          "sizeY": 48.896000000000015,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wall",
-          "x": 593,
-          "y": -3,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 46,
-          "sizeY": 209,
-          "alignmentX": 0,
-          "alignmentY": 0
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        {
-          "costume": "countdown",
-          "x": 572,
-          "y": 800,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "0:00",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "seconds",
-              "value": "20"
-            }
-          ]
-        }
+        
       ]
     }
   ]

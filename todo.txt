@@ -9,7 +9,7 @@ Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt wh
 Next
 ----
 
-Tutorial for bell and power ups.
+Tutorial for bell
 	Scenes using bells and power ups.
 
 
