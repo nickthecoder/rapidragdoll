@@ -1,0 +1,273 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Play",
+  "directorAttributes": [
+    {
+      "name": "maxDolls",
+      "value": "5"
+    },
+    {
+      "name": "nextScene",
+      "value": "xmas/08"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "menuName",
+      "value": "xmas/menu"
+    },
+    {
+      "name": "topRight",
+      "value": "1560.0x800.0"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      1280,
+      0
+    ],
+    "y": [
+      0,
+      800
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    "glass",
+    "aim"
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "launcher",
+          "x": 217,
+          "y": 564,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "515.0x310.0"
+            },
+            {
+              "name": "dollName",
+              "value": "lilian,mike,fiona,santa"
+            },
+            {
+              "name": "speed",
+              "value": "600"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "0.3"
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": 0,
+          "y": -6.0800000000000125,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 43.840000000000146,
+          "sizeY": 775.8719999999998,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 1197.25,
+          "y": 781.75,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 2399.5,
+          "sizeY": 38.500000000000114,
+          "alignmentX": 0.5,
+          "alignmentY": 0.5
+        },
+        {
+          "costume": "wall",
+          "x": 1280,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 47.29600000000028,
+          "sizeY": 768.0639999999999,
+          "alignmentX": 1,
+          "alignmentY": 0
+        },
+        {
+          "costume": "xmas-tree",
+          "x": 951,
+          "y": 54,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 778,
+          "y": 56,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wood",
+          "x": 43,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1190,
+          "sizeY": 51,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 1280,
+          "y": 1,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1115,
+          "sizeY": 49,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 2396,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 49,
+          "sizeY": 800,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "grass",
+          "x": 2446,
+          "y": 6,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 555,
+          "sizeY": 81,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "collectable-grow",
+          "x": 1351,
+          "y": 600,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "factor",
+              "value": "2"
+            },
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "80"
+            }
+          ]
+        },
+        {
+          "costume": "collectable-grow",
+          "x": 1343,
+          "y": 316,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "factor",
+              "value": "1.2"
+            },
+            {
+              "name": "period",
+              "value": "4"
+            },
+            {
+              "name": "radius",
+              "value": "80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        {
+          "costume": "bell",
+          "x": 670,
+          "y": 600,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "ceiling",
+              "value": "0.0x161.0"
+            },
+            {
+              "name": "ringThreshold",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,11 @@ class Menu : Play() {
 
     override fun onKey(event: KeyEvent) {
         if (Resources.instance.inputs.find("escape")?.matches(event) == true) {
-            Game.instance.quit()
+            if (menuName.isBlank()) {
+                Game.instance.quit()
+            } else {
+                Game.instance.startScene(menuName)
+            }
         }
     }
 
