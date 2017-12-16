@@ -97,6 +97,10 @@
             {
               "name": "randomSeed",
               "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
             }
           ]
         },
@@ -145,6 +149,10 @@
             {
               "name": "radius",
               "value": "30"
+            },
+            {
+              "name": "factor",
+              "value": "1.2"
             }
           ]
         },
@@ -163,6 +171,10 @@
             {
               "name": "radius",
               "value": "30"
+            },
+            {
+              "name": "factor",
+              "value": "1.2"
             }
           ]
         },
@@ -181,6 +193,10 @@
             {
               "name": "radius",
               "value": "30"
+            },
+            {
+              "name": "factor",
+              "value": "1.2"
             }
           ]
         },
@@ -199,14 +215,13 @@
             {
               "name": "radius",
               "value": "30"
+            },
+            {
+              "name": "factor",
+              "value": "1.2"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "glass",
-      "actors": [
+        },
         {
           "costume": "bell",
           "x": 390,
@@ -243,6 +258,12 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

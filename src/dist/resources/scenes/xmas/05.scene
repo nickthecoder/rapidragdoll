@@ -64,8 +64,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": -135,
-          "y": 376,
+          "x": -166,
+          "y": 273,
           "zOrder": 0,
           "direction": 0,
           "scaleX": 1,
@@ -73,7 +73,7 @@
           "attributes": [
             {
               "name": "panTo",
-              "value": "154.0x500.0"
+              "value": "89.0x566.0"
             },
             {
               "name": "dollName",
@@ -81,7 +81,7 @@
             },
             {
               "name": "speed",
-              "value": "300"
+              "value": "350"
             },
             {
               "name": "randomSeed",
@@ -95,8 +95,8 @@
         },
         {
           "costume": "fencePost",
-          "x": -404,
-          "y": 51,
+          "x": -400,
+          "y": 2,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -131,7 +131,7 @@
           "attributes": [
             {
               "name": "count",
-              "value": "1000"
+              "value": "400"
             },
             {
               "name": "period",
@@ -181,11 +181,11 @@
             },
             {
               "name": "point",
-              "value": "-114.0x552.0"
+              "value": "-236.0x476.0"
             },
             {
               "name": "dollName",
-              "value": "santa"
+              "value": "lilian"
             },
             {
               "name": "randomSeed",
@@ -200,6 +200,14 @@
               "value": "1"
             }
           ]
+        },
+        {
+          "costume": "fencePost",
+          "x": 535,
+          "y": -77,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     },

@@ -126,21 +126,18 @@ open class Play : AbstractDirector(), MouseHandler {
 
     var startTime = 0.0
 
-    var left: Input? = null
-    var right: Input? = null
-    var up: Input? = null
-    var down: Input? = null
+    var inputLeft: Input? = Resources.instance.inputs.find("left")
+    var inputRight: Input? = Resources.instance.inputs.find("right")
+    var inputUp: Input? = Resources.instance.inputs.find("up")
+    var inputDown: Input? = Resources.instance.inputs.find("down")
+    var inputContinue: Input? = Resources.instance.inputs.find("continue")
+
 
     init {
         instance = this
     }
 
     override fun begin() {
-
-        left = Resources.instance.inputs.find("left")
-        right = Resources.instance.inputs.find("right")
-        up = Resources.instance.inputs.find("up")
-        down = Resources.instance.inputs.find("down")
 
         mainView = Game.instance.scene.findView("main") as StageView
         glassView = Game.instance.scene.findView("glass") as StageView
@@ -173,19 +170,19 @@ open class Play : AbstractDirector(), MouseHandler {
         super.tick()
         panAction?.act()
 
-        if (up?.isPressed() == true) {
+        if (inputUp?.isPressed() == true) {
             mainView.centerY += 5
             constrainView()
         }
-        if (down?.isPressed() == true) {
+        if (inputDown?.isPressed() == true) {
             mainView.centerY -= 5
             constrainView()
         }
-        if (left?.isPressed() == true) {
+        if (inputLeft?.isPressed() == true) {
             mainView.centerX -= 5
             constrainView()
         }
-        if (right?.isPressed() == true) {
+        if (inputRight?.isPressed() == true) {
             mainView.centerX += 5
             constrainView()
         }
@@ -204,6 +201,9 @@ open class Play : AbstractDirector(), MouseHandler {
         if (restart?.matches(event) == true) {
             Game.instance.startScene(Game.instance.sceneName)
         }
+        if (sceneComplete && inputContinue?.matches(event) == true) {
+            nextScene()
+        }
     }
 
     var panStart = Vector2d()
@@ -214,29 +214,24 @@ open class Play : AbstractDirector(), MouseHandler {
      * When the middle or right button is pressed and dragged, pan the scene.
      */
     override fun onMouseButton(event: MouseEvent) {
-        if (event.button == 0) {
-            if (event.state == ButtonState.RELEASED) {
-                if (sceneComplete) {
-                    nextScene()
-                } else {
-                    aim?.let {
-                        if (!started) {
-                            glassView.stage.findRole<Countdown>()?.go()
-                            mainView.stage.findRoles<Information>().forEach { it.go() }
-                            started = true
-                        }
-                        launcher?.launch(it.actor.position)
+        if (event.state == ButtonState.PRESSED) {
+            if (event.button == 0) {
+                aim?.let {
+                    if (!started) {
+                        glassView.stage.findRole<Countdown>()?.go()
+                        mainView.stage.findRoles<Information>().forEach { it.go() }
+                        started = true
                     }
+                    launcher?.launch(it.actor.position)
                 }
-            }
-        } else {
-            if (event.state == ButtonState.PRESSED) {
+            } else {
                 panStart.set(mainView.screenToView(event.screenPosition))
                 event.capture()
-            } else if (event.state == ButtonState.RELEASED) {
-                event.release() // End dragging
             }
+        } else {
+            event.release() // End dragging.
         }
+
     }
 
     override fun onMouseMove(event: MouseEvent) {

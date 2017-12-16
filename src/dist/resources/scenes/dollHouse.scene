@@ -567,11 +567,11 @@
         },
         {
           "costume": "santa",
-          "x": 2177,
-          "y": 325,
+          "x": 931,
+          "y": 122,
           "direction": 0,
-          "scaleX": 0.6,
-          "scaleY": 0.6,
+          "scaleX": 0.2,
+          "scaleY": 0.2,
           "attributes": [
             {
               "name": "rewardForScene",
