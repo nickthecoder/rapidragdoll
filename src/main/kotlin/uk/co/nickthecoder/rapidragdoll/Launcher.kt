@@ -9,6 +9,7 @@ import uk.co.nickthecoder.tickle.action.Delay
 import uk.co.nickthecoder.tickle.events.Input
 import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.resources.Resources
+import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.RandomFactory
 import uk.co.nickthecoder.tickle.util.item
@@ -64,6 +65,10 @@ abstract class AbstractLauncher : AbstractRole() {
 
     fun launch(point: Vector2d) {
 
+        if (!clearToLaunch()) {
+            return
+        }
+
         val costume = random.item(dollCostumes)
         val dollA = actor.createChild(costume)
         val doll = dollA.role
@@ -84,13 +89,29 @@ abstract class AbstractLauncher : AbstractRole() {
             // Don't throw using the legs, because that can cause them to overlap and STICK.
             val partNumber = random.nextInt(doll.parts.size - 2)
             val throwBy = doll.parts[partNumber].body!!
-            val initialVelocity = Vector2d(point).sub(actor.position).normalize(speed)
+            val direction = Vector2d(point).sub(actor.position)
+            val magnitude = Math.min(direction.length(), speed)
+
+            val initialVelocity = direction.normalize(magnitude)
             throwBy.linearVelocity = pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.mass))
 
             Play.instance.launched(doll)
         }
     }
 
+    /**
+     * Cannot launch if there is a doll close to the launcher
+     */
+    fun clearToLaunch(): Boolean {
+        val distance = Vector2d()
+        actor.stage?.findRoles<DollPart>()?.forEach { dollPart ->
+            actor.position.sub(dollPart.actor.position, distance)
+            if (distance.length() < 100.0) {
+                return false
+            }
+        }
+        return true
+    }
 }
 
 class Launcher : AbstractLauncher() {
