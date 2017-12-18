@@ -235,12 +235,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="133.61056"
-     inkscape:cy="705.567"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="75.2466"
+     inkscape:cy="758.67612"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1440"
      inkscape:window-height="854"
      inkscape:window-x="-4"
@@ -544,19 +544,19 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/hand-closed.png"
        xlink:href="hand-closed.png"
-       y="272.36218"
-       x="90"
-       id="image3086"
+       width="90"
        height="59.0625"
-       width="90" />
+       id="image3086"
+       x="90"
+       y="272.36218" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/hand-open.png"
        xlink:href="hand-open.png"
-       y="272.36218"
-       x="0"
-       id="image3097"
+       width="90"
        height="59.0625"
-       width="90" />
+       id="image3097"
+       x="0"
+       y="272.36218" />
     <g
        id="g3904"
        transform="translate(-125,-24.999997)">
@@ -811,10 +811,16 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/pointer.png"
        xlink:href="pointer.png"
-       width="83.794296"
-       height="76.732979"
-       id="image3120"
+       y="277.89755"
        x="180.13435"
-       y="277.89755" />
+       id="image3120"
+       height="76.732979"
+       width="83.794296" />
+    <path
+       id="path3880"
+       style="fill:none;stroke:#15af2a;stroke-width:6;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 50,362.36218 20,-10 m 0,0 -20,-10 m -40,10 60,0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
   </g>
 </svg>

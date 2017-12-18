@@ -3,7 +3,7 @@
   "background": "#000000",
   "showMouse": true,
   "layout": "default",
-  "grid": {
+  "snapToGrid": {
     "enabled": false,
     "xSpacing": 50,
     "ySpacing": 50,
@@ -12,7 +12,7 @@
     "xCloseness": 10,
     "yCloseness": 10
   },
-  "guides": {
+  "snapToGuides": {
     "enabled": true,
     "closeness": 5,
     "x": [
@@ -21,6 +21,16 @@
     "y": [
       
     ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
   },
   "include": [
     
@@ -33,10 +43,21 @@
           "costume": "aim",
           "x": 251,
           "y": 436,
-          "xAlignment": "LEFT",
-          "yAlignment": "BOTTOM",
           "direction": 0,
-          "scale": 1
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "arrow",
+          "x": 228,
+          "y": 532,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 247,
+          "sizeY": 28,
+          "alignmentX": 0.024291497975708502,
+          "alignmentY": 0.42857142857142855
         }
       ]
     },

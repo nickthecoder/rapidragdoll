@@ -1357,6 +1357,17 @@
       "offsetX": 8,
       "offsetY": 66,
       "direction": 0
+    },
+    {
+      "name": "arrow",
+      "texture": "ui",
+      "left": 11,
+      "bottom": 366,
+      "right": 76,
+      "top": 338,
+      "offsetX": 0,
+      "offsetY": 14,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -5079,6 +5090,14 @@
               "value": "annie"
             },
             {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
+            },
+            {
               "name": "speed",
               "value": "600"
             }
@@ -5104,7 +5123,7 @@
           "name": "launcher",
           "role": "uk.co.nickthecoder.rapidragdoll.Launcher",
           "canRotate": false,
-          "zOrder": 200,
+          "zOrder": 910,
           "initialEvent": "default",
           "showInSceneEditor": true,
           "events": [
@@ -5173,8 +5192,38 @@
               "value": "annie"
             },
             {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
+            },
+            {
               "name": "speed",
               "value": "600"
+            }
+          ]
+        },
+        {
+          "name": "arrow",
+          "role": "uk.co.nickthecoder.rapidragdoll.Arrow",
+          "canRotate": false,
+          "zOrder": 900,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "ninePatches": [
+                {
+                  "pose": "arrow",
+                  "left": 4,
+                  "bottom": 0,
+                  "right": 30,
+                  "top": 0
+                }
+              ]
             }
           ]
         }
