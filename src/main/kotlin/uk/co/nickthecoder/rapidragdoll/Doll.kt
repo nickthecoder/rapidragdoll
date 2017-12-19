@@ -118,4 +118,9 @@ class Doll : ActionRole(), Reward {
         super.end()
         parts.forEach { it.die() }
     }
+
+    fun zapped() {
+        Play.instance.dolls.remove(this)
+        ending = true
+    }
 }

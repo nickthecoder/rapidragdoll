@@ -141,6 +141,10 @@
     {
       "name": "lilian",
       "file": "images/lilian.png"
+    },
+    {
+      "name": "plasma",
+      "file": "images/plasma.png"
     }
   ],
   "fonts": [
@@ -1367,6 +1371,56 @@
       "top": 338,
       "offsetX": 0,
       "offsetY": 14,
+      "direction": 0
+    },
+    {
+      "name": "plasma1",
+      "texture": "plasma",
+      "left": 0,
+      "bottom": 120,
+      "right": 300,
+      "top": 0,
+      "offsetX": 0,
+      "offsetY": 60,
+      "direction": 0,
+      "snapPoints": [
+        {
+          "x": 300,
+          "y": 60
+        }
+      ]
+    },
+    {
+      "name": "plasma2",
+      "texture": "plasma",
+      "left": 0,
+      "bottom": 240,
+      "right": 300,
+      "top": 120,
+      "offsetX": 0,
+      "offsetY": 60,
+      "direction": 0
+    },
+    {
+      "name": "plasma3",
+      "texture": "plasma",
+      "left": 0,
+      "bottom": 360,
+      "right": 300,
+      "top": 240,
+      "offsetX": 0,
+      "offsetY": 60,
+      "direction": 0
+    },
+    {
+      "name": "plasma4",
+      "texture": "plasma",
+      "left": 0,
+      "bottom": 480,
+      "right": 300,
+      "top": 360,
+      "offsetX": 0,
+      "offsetY": 60,
       "direction": 0
     }
   ],
@@ -5054,6 +5108,70 @@
               ]
             }
           ]
+        },
+        {
+          "name": "plasma",
+          "role": "uk.co.nickthecoder.rapidragdoll.Plasma",
+          "canRotate": true,
+          "zOrder": -500,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "ninePatches": [
+                {
+                  "pose": "plasma1",
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "top": 0
+                },
+                {
+                  "pose": "plasma2",
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "top": 0
+                },
+                {
+                  "pose": "plasma3",
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "top": 0
+                },
+                {
+                  "pose": "plasma4",
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "top": 0
+                }
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": true,
+                "group": 0,
+                "category": 4,
+                "mask": 3,
+                "box": {
+                  "x": 149,
+                  "y": 0.5,
+                  "width": 297,
+                  "height": 16,
+                  "angle": 0
+                }
+              }
+            ]
+          }
         }
       ],
       "showInSceneEditor": true

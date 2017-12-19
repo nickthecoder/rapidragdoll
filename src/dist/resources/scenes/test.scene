@@ -105,24 +105,6 @@
           ]
         },
         {
-          "costume": "bell",
-          "x": 901,
-          "y": 699,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "ceiling",
-              "value": "0.0x68.0"
-            },
-            {
-              "name": "ringThreshold",
-              "value": "1"
-            }
-          ]
-        },
-        {
           "costume": "wood",
           "x": -3,
           "y": 769,
@@ -133,24 +115,6 @@
           "sizeY": 35,
           "alignmentX": 0,
           "alignmentY": 0
-        },
-        {
-          "costume": "bell",
-          "x": 390,
-          "y": 573,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "ceiling",
-              "value": "0.0x198.0"
-            },
-            {
-              "name": "ringThreshold",
-              "value": "1"
-            }
-          ]
         },
         {
           "costume": "bell",
