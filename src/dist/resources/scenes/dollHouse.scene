@@ -312,7 +312,7 @@
           "x": 1390,
           "y": 217,
           "direction": 0,
-          "scaleX": 1,
+          "scaleX": -1,
           "scaleY": 1,
           "attributes": [
             {
