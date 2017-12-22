@@ -236,8 +236,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="75.2466"
-     inkscape:cy="758.67612"
+     inkscape:cx="42.189358"
+     inkscape:cy="754.07993"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -544,19 +544,19 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/hand-closed.png"
        xlink:href="hand-closed.png"
-       width="90"
-       height="59.0625"
-       id="image3086"
+       y="272.36218"
        x="90"
-       y="272.36218" />
+       id="image3086"
+       height="59.0625"
+       width="90" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/hand-open.png"
        xlink:href="hand-open.png"
-       width="90"
-       height="59.0625"
-       id="image3097"
+       y="272.36218"
        x="0"
-       y="272.36218" />
+       id="image3097"
+       height="59.0625"
+       width="90" />
     <g
        id="g3904"
        transform="translate(-125,-24.999997)">
@@ -811,16 +811,26 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/pointer.png"
        xlink:href="pointer.png"
-       y="277.89755"
-       x="180.13435"
-       id="image3120"
+       width="83.794296"
        height="76.732979"
-       width="83.794296" />
+       id="image3120"
+       x="180.13435"
+       y="277.89755" />
     <path
        id="path3880"
        style="fill:none;stroke:#15af2a;stroke-width:6;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 50,362.36218 20,-10 m 0,0 -20,-10 m -40,10 60,0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3110"
+       d="m 80,352.36218 60,0"
+       style="fill:none;stroke:#747474;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 80,352.36218 60,0"
+       id="path3108"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

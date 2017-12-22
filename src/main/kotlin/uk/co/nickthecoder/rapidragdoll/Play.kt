@@ -8,6 +8,7 @@ import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.movement.PanTo
 import uk.co.nickthecoder.tickle.events.*
 import uk.co.nickthecoder.tickle.physics.RoleContactManager
+import uk.co.nickthecoder.tickle.physics.TickleWorld
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.StageView
 import uk.co.nickthecoder.tickle.stage.findRole
@@ -44,6 +45,9 @@ open class Play : AbstractDirector(), MouseHandler {
     // Extent of the game area - Used to constrain panning
     @Attribute
     val topRight = Vector2d(Resources.instance.gameInfo.width.toDouble(), Resources.instance.gameInfo.height.toDouble())
+
+    @Attribute
+    val gravity = Vector2d(Resources.instance.gameInfo.physicsInfo.gravity)
 
     /**
      * Set to true by SceneComplete role when it's animation is finished.
@@ -135,6 +139,12 @@ open class Play : AbstractDirector(), MouseHandler {
 
     init {
         instance = this
+    }
+
+    override fun createWorlds() {
+        val pi = Resources.instance.gameInfo.physicsInfo
+        val world: TickleWorld = TickleWorld(gravity, pi.scale.toFloat(), velocityIterations = pi.velocityIterations, positionIterations = pi.positionIterations)
+        Game.instance.scene.findStage("main")?.world = world
     }
 
     override fun begin() {

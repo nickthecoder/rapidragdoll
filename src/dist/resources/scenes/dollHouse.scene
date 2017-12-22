@@ -24,6 +24,10 @@
     {
       "name": "showAll",
       "value": "false"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -97,8 +101,8 @@
         },
         {
           "costume": "hand",
-          "x": 321,
-          "y": 397,
+          "x": -100,
+          "y": 464,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -590,8 +594,8 @@
         },
         {
           "costume": "paper1",
-          "x": 41,
-          "y": 53,
+          "x": 45,
+          "y": 57,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -665,6 +669,14 @@
               "value": ""
             }
           ]
+        },
+        {
+          "costume": "elastic",
+          "x": -107,
+          "y": 428,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     },

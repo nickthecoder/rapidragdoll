@@ -27,6 +27,8 @@ class Victory : Play(), MouseHandler {
 
     var hand: Hand? = null
 
+    var elastic: Elastic? = null
+
     val grow = Resources.instance.inputs.find("grow")
     val shrink = Resources.instance.inputs.find("shrink")
 
@@ -36,6 +38,7 @@ class Victory : Play(), MouseHandler {
 
         var dollZOrder = 1.0
         hand = mainView.stage.findRole<Hand>()!!
+        elastic = mainView.stage.findRole<Elastic>()!!
         mainView.stage.findRoles<Doll>().forEach { doll ->
             doll.actor.zOrder = dollZOrder++
 
@@ -91,6 +94,7 @@ class Victory : Play(), MouseHandler {
             mouseJoint?.let { mainView.stage.world?.destroyJoint(it) }
         }
         hand?.actor?.event("default")
+        elastic?.mouseJoint = null
     }
 
     fun pickUpObject(event: MouseEvent) {
@@ -113,6 +117,7 @@ class Victory : Play(), MouseHandler {
 
             val joint = world.createJoint(jointDef)
             mouseJoint = joint as MouseJoint
+            elastic?.mouseJoint = mouseJoint
             return
 
         }

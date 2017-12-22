@@ -1423,6 +1423,17 @@
       "offsetX": 0,
       "offsetY": 60,
       "direction": 0
+    },
+    {
+      "name": "elastic",
+      "texture": "ui",
+      "left": 80,
+      "bottom": 354,
+      "right": 140,
+      "top": 349,
+      "offsetX": 0,
+      "offsetY": 2,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -3678,6 +3689,34 @@
               "name": "default",
               "poses": [
                 "pointer"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "elastic",
+          "role": "uk.co.nickthecoder.rapidragdoll.Elastic",
+          "canRotate": true,
+          "zOrder": 1050,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "show",
+              "ninePatches": [
+                {
+                  "pose": "elastic",
+                  "left": 0,
+                  "bottom": 0,
+                  "right": 0,
+                  "top": 0
+                }
+              ]
+            },
+            {
+              "name": "editor",
+              "poses": [
+                "elastic"
               ]
             }
           ]
