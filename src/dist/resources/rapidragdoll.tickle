@@ -34,6 +34,7 @@
       "stages": [
         {
           "name": "main",
+          "isDefault": true,
           "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
           "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
         },
@@ -1484,6 +1485,12 @@
                 "annie-leg-right"
               ]
             }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
           ]
         },
         {
@@ -1542,6 +1549,12 @@
                 "foxie-abdomen"
               ]
             }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
           ]
         },
         {
@@ -1599,6 +1612,12 @@
               "costumes": [
                 "bony-leg-right"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         },
@@ -3434,6 +3453,10 @@
             {
               "name": "unlocked",
               "value": "false"
+            },
+            {
+              "name": "scene",
+              "value": ""
             }
           ]
         },
@@ -3680,6 +3703,12 @@
               ]
             }
           ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
           "body": {
             "bodyType": "DYNAMIC",
             "linearDamping": 0,
@@ -3767,6 +3796,12 @@
               "poses": [
                 "chair1"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ],
           "body": {
@@ -4027,6 +4062,12 @@
               ]
             }
           ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
           "body": {
             "bodyType": "DYNAMIC",
             "linearDamping": 0.8,
@@ -4082,6 +4123,10 @@
             {
               "name": "angle",
               "value": "0.0"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ],
           "body": {
@@ -4123,6 +4168,12 @@
               "poses": [
                 "umbrella-top"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ],
           "body": {
@@ -4392,6 +4443,12 @@
               ]
             }
           ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
           "body": {
             "bodyType": "DYNAMIC",
             "linearDamping": 0,
@@ -4507,6 +4564,12 @@
               "poses": [
                 "teapot"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ],
           "body": {
@@ -8083,6 +8146,10 @@
           ],
           "attributes": [
             {
+              "name": "factor",
+              "value": "1.2"
+            },
+            {
               "name": "period",
               "value": "2"
             },
@@ -8129,6 +8196,10 @@
             }
           ],
           "attributes": [
+            {
+              "name": "factor",
+              "value": "1.2"
+            },
             {
               "name": "period",
               "value": "2"
@@ -8177,6 +8248,10 @@
           ],
           "attributes": [
             {
+              "name": "factor",
+              "value": "1.2"
+            },
+            {
               "name": "period",
               "value": "2"
             },
@@ -8223,6 +8298,10 @@
             }
           ],
           "attributes": [
+            {
+              "name": "factor",
+              "value": "1.2"
+            },
             {
               "name": "period",
               "value": "2"

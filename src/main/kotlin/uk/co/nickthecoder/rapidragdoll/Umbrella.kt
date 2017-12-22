@@ -3,8 +3,6 @@ package uk.co.nickthecoder.rapidragdoll
 import org.jbox2d.dynamics.joints.RevoluteJointDef
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.Actor
-import uk.co.nickthecoder.tickle.Game
-import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.Attribute
 
@@ -18,6 +16,8 @@ class Umbrella : Fragile(), Draggable {
     lateinit var topHalf: Actor
 
     override fun activated() {
+        val world = actor.stage?.world
+
         topHalf = actor.createChildOnStage("topHalf")
         topHalf.position.y += joinPoint.y
 
@@ -27,12 +27,12 @@ class Umbrella : Fragile(), Draggable {
             jointDef.bodyA = joinTo
             jointDef.bodyB = topHalf.body
 
-            jointDef.localAnchorA = pixelsToWorld(joinPoint)
+            jointDef.localAnchorA = world?.pixelsToWorld(joinPoint)
             jointDef.lowerAngle = Math.toRadians(-60.0).toFloat()
             jointDef.upperAngle = Math.toRadians(60.0).toFloat()
             jointDef.enableLimit = true
 
-            Game.instance.scene.world?.createJoint(jointDef)
+            world?.createJoint(jointDef)
         }
         topHalf.direction.radians += angle.radians
     }

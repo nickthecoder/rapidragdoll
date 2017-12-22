@@ -4,13 +4,11 @@ import org.jbox2d.dynamics.joints.RevoluteJoint
 import org.jbox2d.dynamics.joints.RevoluteJointDef
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.Actor
-import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Kill
 import uk.co.nickthecoder.tickle.action.ParallelAction
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Fade
-import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.CostumeAttribute
 import java.util.*
@@ -35,15 +33,6 @@ class Doll : ActionRole(), Reward {
 
     override fun createAction(): Action {
 
-        val torso = createPart("torso", 0.0)
-        val abdomen = createPart("abdomen", 0.1, torso)
-
-        createPart("head", 0.2, torso)
-        createPart("arm-left", -0.1, torso)
-        createPart("arm-right", -0.2, torso)
-        createPart("leg-left", -0.3, abdomen)
-        createPart("leg-right", -0.4, abdomen)
-
         val fades = ParallelAction()
         parts.forEach { part ->
             fades.add(Fade(part.color, 0.5, 0f))
@@ -54,7 +43,21 @@ class Doll : ActionRole(), Reward {
                 .then(Kill(actor))
     }
 
+    override fun activated() {
+        super.activated()
+
+        val torso = createPart("torso", 0.0)
+        val abdomen = createPart("abdomen", 0.1, torso)
+
+        createPart("head", 0.2, torso)
+        createPart("arm-left", -0.1, torso)
+        createPart("arm-right", -0.2, torso)
+        createPart("leg-left", -0.3, abdomen)
+        createPart("leg-right", -0.4, abdomen)
+    }
+
     fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
+        val world = actor.stage?.world
         val newActor = actor.createChildOnStage(part)
         val newRole = newActor.role
         if (newRole is DollPart) {
@@ -68,12 +71,12 @@ class Doll : ActionRole(), Reward {
                 jointDef.bodyA = joinTo.body
                 jointDef.bodyB = newActor.body
 
-                jointDef.localAnchorA = pixelsToWorld(newRole.offset)
+                jointDef.localAnchorA = world?.pixelsToWorld(newRole.offset)
                 jointDef.lowerAngle = newRole.fromAngle.radians.toFloat()
                 jointDef.upperAngle = newRole.toAngle.radians.toFloat()
                 jointDef.enableLimit = true
                 jointDef.collideConnected = false
-                val joint = Game.instance.scene.world?.createJoint(jointDef) as RevoluteJoint
+                val joint = world?.createJoint(jointDef) as RevoluteJoint
                 joints.add(joint)
             }
         }
@@ -87,6 +90,8 @@ class Doll : ActionRole(), Reward {
     }
 
     fun scale(scale: Double) {
+        val world = actor.stage?.world
+
         parts.forEach { part ->
             part.scale.mul(scale)
         }
@@ -104,8 +109,8 @@ class Doll : ActionRole(), Reward {
             jointDef.enableLimit = true
             jointDef.collideConnected = false
 
-            Game.instance.scene.world?.destroyJoint(joint)
-            val newJoint = Game.instance.scene.world?.createJoint(jointDef) as RevoluteJoint
+            world?.destroyJoint(joint)
+            val newJoint = world?.createJoint(jointDef) as RevoluteJoint
             newJoints.add(newJoint)
         }
 

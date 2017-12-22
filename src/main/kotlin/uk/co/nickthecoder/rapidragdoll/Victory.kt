@@ -8,7 +8,6 @@ import uk.co.nickthecoder.tickle.events.ButtonState
 import uk.co.nickthecoder.tickle.events.KeyEvent
 import uk.co.nickthecoder.tickle.events.MouseEvent
 import uk.co.nickthecoder.tickle.events.MouseHandler
-import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoleAt
@@ -89,7 +88,7 @@ class Victory : Play(), MouseHandler {
     fun dropObject() {
         if (dragging != null) {
             dragging = null
-            mouseJoint?.let { Game.instance.scene.world?.destroyJoint(it) }
+            mouseJoint?.let { mainView.stage.world?.destroyJoint(it) }
         }
         hand?.actor?.event("default")
     }
@@ -103,7 +102,7 @@ class Victory : Play(), MouseHandler {
             dragging = role
             event.capture()
 
-            val world = Game.instance.scene.world!!
+            val world = mainView.stage.world!!
             dragging!!.actor.body!!.isAwake = true
 
             val jointDef = MouseJointDef()
@@ -121,7 +120,7 @@ class Victory : Play(), MouseHandler {
 
     fun dragObject(event: MouseEvent) {
         mainView.screenToView(event.screenPosition, event.viewPosition)
-        mouseJoint?.target?.set(pixelsToWorld(event.viewPosition))
+        mouseJoint?.target?.set(mainView.stage.world?.pixelsToWorld(event.viewPosition))
     }
 
     override fun knockedFragile() {

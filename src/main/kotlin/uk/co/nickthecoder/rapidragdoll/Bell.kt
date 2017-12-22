@@ -10,7 +10,6 @@ import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.animation.Fade
-import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.util.Attribute
 
 
@@ -49,7 +48,7 @@ class Bell : ActionRole(), Draggable {
         jointDef.bodyB = clanger.body
         jointDef.collideConnected = true
 
-        jointDef.localAnchorA = pixelsToWorld(Vector2d(0.0, -20.0 * actor.scaleXY))
+        jointDef.localAnchorA = actor.stage?.world?.pixelsToWorld(Vector2d(0.0, -20.0 * actor.scaleXY))
         world.createJoint(jointDef) as RevoluteJoint
 
         if (Play.instance is Victory) {

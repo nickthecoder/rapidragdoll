@@ -7,7 +7,6 @@ import uk.co.nickthecoder.tickle.Costume
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Delay
 import uk.co.nickthecoder.tickle.events.Input
-import uk.co.nickthecoder.tickle.physics.pixelsToWorld
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
@@ -64,6 +63,7 @@ abstract class AbstractLauncher : AbstractRole() {
     }
 
     fun launch(point: Vector2d) {
+        val world = actor.stage?.world
 
         if (!clearToLaunch()) {
             return
@@ -93,7 +93,7 @@ abstract class AbstractLauncher : AbstractRole() {
             val magnitude = Math.min(direction.length(), speed)
 
             val initialVelocity = direction.normalize(magnitude)
-            throwBy.linearVelocity = pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.mass))
+            throwBy.linearVelocity = world?.pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.mass))
 
             Play.instance.launched(doll)
         }

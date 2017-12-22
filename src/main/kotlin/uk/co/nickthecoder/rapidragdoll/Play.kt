@@ -163,7 +163,7 @@ open class Play : AbstractDirector(), MouseHandler {
 
     override fun activated() {
         super.activated()
-        Game.instance.scene.world?.setContactListener(RoleContactManager())
+        mainView.stage.world?.setContactListener(RoleContactManager())
     }
 
     override fun tick() {
