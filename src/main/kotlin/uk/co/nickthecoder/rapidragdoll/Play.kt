@@ -135,7 +135,12 @@ open class Play : AbstractDirector(), MouseHandler {
     var inputUp: Input? = Resources.instance.inputs.find("up")
     var inputDown: Input? = Resources.instance.inputs.find("down")
     var inputContinue: Input? = Resources.instance.inputs.find("continue")
+    var inputPause: Input? = Resources.instance.inputs.find("pause")
 
+    /**
+     * Set when the first Doll of launched.
+     */
+    var started = false
 
     init {
         instance = this
@@ -148,6 +153,7 @@ open class Play : AbstractDirector(), MouseHandler {
     }
 
     override fun begin() {
+        super.begin()
 
         mainView = Game.instance.scene.findView("main") as StageView
         glassView = Game.instance.scene.findView("glass") as StageView
@@ -178,6 +184,11 @@ open class Play : AbstractDirector(), MouseHandler {
 
     override fun tick() {
         super.tick()
+        // When paused, the Pause Role won't animate without this.
+        if (paused) {
+            glassView.stage.findRole<Pause>()?.tick()
+        }
+
         panAction?.act()
 
         if (inputUp?.isPressed() == true) {
@@ -199,12 +210,14 @@ open class Play : AbstractDirector(), MouseHandler {
     }
 
     override fun postTick() {
+        super.postTick()
         constrainView()
     }
 
-    var started = false
-
     override fun onKey(event: KeyEvent) {
+        if (inputPause?.matches(event) == true) {
+            paused = !paused
+        }
         if (escape?.matches(event) == true) {
             Game.instance.startScene(menuName)
         }

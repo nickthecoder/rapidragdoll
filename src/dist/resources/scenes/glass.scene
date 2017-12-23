@@ -122,6 +122,27 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "costume": "paused",
+          "x": 967,
+          "y": 796,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Paused",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-346.0x-411.0"
+            },
+            {
+              "name": "seconds",
+              "value": "0.5"
+            }
+          ]
         }
       ]
     }

@@ -1,6 +1,5 @@
 package uk.co.nickthecoder.rapidragdoll
 
-import org.jbox2d.common.Vec2
 import org.jbox2d.dynamics.joints.MouseJoint
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractRole
@@ -27,8 +26,6 @@ class Elastic : AbstractRole() {
     private val from = Vector2d()
 
     private val to = Vector2d()
-
-    private val tempVec = Vec2()
 
     override fun tick() {
         mouseJoint?.let { mouseJoint ->

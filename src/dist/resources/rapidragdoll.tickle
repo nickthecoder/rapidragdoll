@@ -3720,6 +3720,28 @@
               ]
             }
           ]
+        },
+        {
+          "name": "paused",
+          "role": "uk.co.nickthecoder.rapidragdoll.Pause",
+          "canRotate": false,
+          "zOrder": 1000,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "inheritsEventsFrom": "large",
+          "events": [
+            
+          ],
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "0.0x-300.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
         }
       ],
       "showInSceneEditor": true
@@ -9052,6 +9074,19 @@
       "keys": [
         {
           "key": "Enter",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "pause",
+      "keys": [
+        {
+          "key": "P",
+          "state": "PRESSED"
+        },
+        {
+          "key": "Pause",
           "state": "PRESSED"
         }
       ]
