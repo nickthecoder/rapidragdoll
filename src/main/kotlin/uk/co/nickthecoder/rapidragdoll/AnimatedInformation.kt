@@ -32,11 +32,7 @@ class Information : AnimatedInformation() {
     }
 }
 
-class SceneComplete : AnimatedInformation() {
-    override fun goAction(): Action {
-        return super.goAction().then { Play.instance.sceneComplete = true }
-    }
-}
+class SceneComplete : AnimatedInformation()
 
 class TimeIsUp : AnimatedInformation()
 

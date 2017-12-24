@@ -3742,6 +3742,28 @@
               "value": "2"
             }
           ]
+        },
+        {
+          "name": "levelButton",
+          "role": "uk.co.nickthecoder.rapidragdoll.LevelButton",
+          "canRotate": false,
+          "zOrder": 60,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "textStyles": [
+                {
+                  "font": "small",
+                  "halign": "CENTER",
+                  "valign": "BOTTOM",
+                  "color": "#330033ff",
+                  "outlineColor": "#ffffffff"
+                }
+              ]
+            }
+          ]
         }
       ],
       "showInSceneEditor": true
@@ -8934,30 +8956,6 @@
         }
       ],
       "showInSceneEditor": false
-    }
-  ],
-  "costumes": [
-    {
-      "name": "levelButton",
-      "role": "uk.co.nickthecoder.rapidragdoll.LevelButton",
-      "canRotate": false,
-      "zOrder": 60,
-      "initialEvent": "default",
-      "showInSceneEditor": false,
-      "events": [
-        {
-          "name": "default",
-          "textStyles": [
-            {
-              "font": "small",
-              "halign": "CENTER",
-              "valign": "BOTTOM",
-              "color": "#330033ff",
-              "outlineColor": "#ffffffff"
-            }
-          ]
-        }
-      ]
     }
   ],
   "inputs": [

@@ -298,6 +298,7 @@ open class Play : AbstractDirector(), MouseHandler {
     }
 
     fun objectivesComplete() {
+        sceneComplete = true
         glassView.stage.findRoles<SceneComplete>().forEach { it.go() }
         glassView.stage.findRoles<Countdown>().forEach { it.stop() }
 

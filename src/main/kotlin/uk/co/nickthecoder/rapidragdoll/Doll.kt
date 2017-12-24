@@ -66,7 +66,6 @@ class Doll : ActionRole(), Reward {
             newActor.position.add(newRole.offset)
 
             if (joinTo != null) {
-
                 val jointDef = RevoluteJointDef()
                 jointDef.bodyA = joinTo.body
                 jointDef.bodyB = newActor.body
