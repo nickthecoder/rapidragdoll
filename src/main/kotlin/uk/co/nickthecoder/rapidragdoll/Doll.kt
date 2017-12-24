@@ -44,7 +44,6 @@ class Doll : ActionRole(), Reward {
     }
 
     override fun activated() {
-        super.activated()
 
         val torso = createPart("torso", 0.0)
         val abdomen = createPart("abdomen", 0.1, torso)
@@ -54,6 +53,8 @@ class Doll : ActionRole(), Reward {
         createPart("arm-right", -0.2, torso)
         createPart("leg-left", -0.3, abdomen)
         createPart("leg-right", -0.4, abdomen)
+
+        super.activated()
     }
 
     fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
