@@ -677,6 +677,31 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
+        },
+        {
+          "costume": "paper2",
+          "x": 38,
+          "y": 819,
+          "zOrder": -2000,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1210,
+          "sizeY": 511,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "paper3",
+          "x": 1273,
+          "y": 822,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 767,
+          "sizeY": 502,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },
