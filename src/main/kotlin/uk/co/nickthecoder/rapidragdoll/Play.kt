@@ -268,16 +268,16 @@ open class Play : AbstractDirector(), MouseListener {
 
     fun constrainView() {
 
-        var x = mainView.centerX - Game.instance.window.width / 2
-        var y = mainView.centerY - Game.instance.window.height / 2
+        var x = mainView.centerX - mainView.rect.width / 2
+        var y = mainView.centerY - mainView.rect.height / 2
         if (x < bottomLeft.x) {
             mainView.centerX += bottomLeft.x - x
         }
         if (y < bottomLeft.y) {
             mainView.centerY += bottomLeft.y - y
         }
-        x = mainView.centerX + Game.instance.window.width / 2
-        y = mainView.centerY + Game.instance.window.height / 2
+        x = mainView.centerX + mainView.rect.width / 2
+        y = mainView.centerY + mainView.rect.height / 2
         if (x > topRight.x) {
             mainView.centerX -= x - topRight.x
         }

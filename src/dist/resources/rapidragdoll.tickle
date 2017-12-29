@@ -4,7 +4,7 @@
     "id": "rapidragdoll",
     "width": 1280,
     "height": 800,
-    "resizable": true,
+    "resizable": false,
     "fullScreen": true,
     "initialScene": "menu",
     "testScene": "test",

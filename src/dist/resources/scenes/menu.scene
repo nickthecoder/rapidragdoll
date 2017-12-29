@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1280.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -226,23 +230,6 @@
               "value": "1"
             }
           ]
-        },
-        {
-          "costume": "sceneButton",
-          "x": 655.5519999999997,
-          "y": 237.7439999999998,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "Christmas Capers",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "scene",
-              "value": "xmas/menu"
-            }
-          ]
         }
       ]
     },
@@ -357,6 +344,23 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
+        },
+        {
+          "costume": "sceneButton",
+          "x": 655.5519999999997,
+          "y": 237.7439999999998,
+          "textAlignmentX": "LEFT",
+          "textAlignmentY": "BOTTOM",
+          "text": "Christmas Capers",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "scene",
+              "value": "xmas/menu"
+            }
+          ]
         }
       ]
     }
