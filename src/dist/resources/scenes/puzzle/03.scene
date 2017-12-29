@@ -11,7 +11,7 @@
     },
     {
       "name": "nextScene",
-      "value": "puzzle/02"
+      "value": "puzzle/menu"
     },
     {
       "name": "bottomLeft",
@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1400.0x800.0"
+      "value": "1300.0x800.0"
     },
     {
       "name": "gravity",
@@ -68,23 +68,23 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": -135,
-          "y": 376,
+          "x": -63,
+          "y": 652,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "72.0x324.0"
+              "value": "83.0x391.0"
             },
             {
               "name": "dollName",
-              "value": "annie"
+              "value": "lilian,santa"
             },
             {
               "name": "speed",
-              "value": "400"
+              "value": "550"
             },
             {
               "name": "randomSeed",
@@ -97,25 +97,17 @@
           ]
         },
         {
-          "costume": "pin",
-          "x": -246,
-          "y": 69,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
           "costume": "fencePost",
           "x": -404,
-          "y": 52,
+          "y": 51,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "pin",
-          "x": 342,
-          "y": 65,
+          "x": 373,
+          "y": 64,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -131,30 +123,100 @@
         {
           "costume": "fencePost",
           "x": 1246,
-          "y": 46,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 903,
-          "y": 75,
+          "y": 53,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "grass",
-          "x": -666,
-          "y": -1,
+          "x": -471,
+          "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 2090,
+          "sizeX": 1794,
           "sizeY": 88,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "table",
+          "x": 165,
+          "y": 65,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "teacup",
+          "x": 272,
+          "y": 210,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "teapot",
+          "x": 101,
+          "y": 209,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "table",
+          "x": 928,
+          "y": 69,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "pin",
+          "x": 853,
+          "y": 229,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "teacup",
+          "x": 1015,
+          "y": 220,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         }
       ]
     },

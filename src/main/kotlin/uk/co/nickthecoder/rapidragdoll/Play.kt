@@ -15,7 +15,7 @@ import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
-open class Play : AbstractDirector(), MouseHandler {
+open class Play : AbstractDirector(), MouseListener {
 
     /**
      * Maximum number of dolls - The oldest dolls are killed when this number is exceeded.

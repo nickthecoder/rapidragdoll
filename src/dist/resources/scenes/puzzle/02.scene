@@ -11,7 +11,7 @@
     },
     {
       "name": "nextScene",
-      "value": "puzzle/menu"
+      "value": "puzzle/03"
     },
     {
       "name": "bottomLeft",
@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1300.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -66,7 +70,6 @@
           "costume": "launcher",
           "x": -135,
           "y": 376,
-          "zOrder": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -129,7 +132,7 @@
         },
         {
           "costume": "pin",
-          "x": 342,
+          "x": 354,
           "y": 65,
           "direction": 0,
           "scaleX": 1,

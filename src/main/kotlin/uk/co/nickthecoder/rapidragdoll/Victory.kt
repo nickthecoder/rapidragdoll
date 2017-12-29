@@ -7,14 +7,14 @@ import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.events.ButtonState
 import uk.co.nickthecoder.tickle.events.KeyEvent
 import uk.co.nickthecoder.tickle.events.MouseEvent
-import uk.co.nickthecoder.tickle.events.MouseHandler
+import uk.co.nickthecoder.tickle.events.MouseListener
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoleAt
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Victory : Play(), MouseHandler {
+class Victory : Play(), MouseListener{
 
     @Attribute
     var showAll = false
