@@ -41,6 +41,8 @@ class LevelStatus : SceneButton() {
         buttonA.textAppearance?.text = text
         buttonA.position.add(textPosition)
         buttonA.zOrder = actor.zOrder + 1
+        buttonA.viewAlignmentX = actor.viewAlignmentX
+        buttonA.viewAlignmentY = actor.viewAlignmentY
 
         preferences = Game.instance.preferences.node("scenes").node(scene)
         unlocked = unlocked || preferences?.getBoolean("unlocked", false) ?: false
