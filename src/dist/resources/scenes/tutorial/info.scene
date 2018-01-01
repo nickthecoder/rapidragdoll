@@ -49,8 +49,6 @@
           "costume": "small",
           "x": 139,
           "y": 751,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Aim with the mouse. Click to throw rag doll Annie.  F5 to restart.  Esc to exit. ",
           "direction": 0,
           "scaleX": 1,

@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1280.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -129,8 +133,6 @@
           "costume": "information",
           "x": 302,
           "y": 447,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "You only have 20 seconds to finish the level !",
           "direction": 0,
           "scaleX": 1,
@@ -186,8 +188,6 @@
           "costume": "information",
           "x": 419,
           "y": 507,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "This is the last tutorial !",
           "direction": 0,
           "scaleX": 1,
@@ -260,8 +260,6 @@
           "costume": "countdown",
           "x": 1157,
           "y": 803,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "0:00",
           "direction": 0,
           "scaleX": 1,

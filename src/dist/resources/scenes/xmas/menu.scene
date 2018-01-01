@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1024.0x600.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -147,8 +151,6 @@
           "costume": "sceneButton",
           "x": 89,
           "y": 21,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Back",
           "direction": 0,
           "scaleX": 1,
@@ -414,8 +416,6 @@
           "costume": "large",
           "x": 1038,
           "y": 691,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Christmas Capers",
           "direction": 0,
           "scaleX": 1,

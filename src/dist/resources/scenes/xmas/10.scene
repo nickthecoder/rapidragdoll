@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1560.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -187,8 +191,6 @@
           "costume": "information",
           "x": 410,
           "y": 589,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Want more levels ?\n     Well, you'll have to create them yourself !",
           "direction": 0,
           "scaleX": 1,

@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1580.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -99,8 +103,6 @@
           "costume": "information",
           "x": 192,
           "y": 652,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "The first pin is easy!",
           "direction": 0,
           "scaleX": 1,
@@ -170,8 +172,6 @@
           "costume": "information",
           "x": 98,
           "y": 556,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Press \"2\" to select the other launcher",
           "direction": 0,
           "scaleX": 1,
@@ -191,8 +191,6 @@
           "costume": "information",
           "x": 1288,
           "y": 525,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Press \"1\" to return\nto the first launcher",
           "direction": 0,
           "scaleX": 1,

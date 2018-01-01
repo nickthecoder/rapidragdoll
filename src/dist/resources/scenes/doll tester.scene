@@ -24,6 +24,10 @@
     {
       "name": "showAll",
       "value": "false"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",

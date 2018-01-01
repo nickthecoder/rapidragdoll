@@ -4,11 +4,11 @@
     "id": "rapidragdoll",
     "width": 1280,
     "height": 800,
-    "resizable": false,
+    "resizable": true,
     "fullScreen": true,
     "initialScene": "menu",
     "testScene": "test",
-    "producer": "uk.co.nickthecoder.tickle.NoProducer",
+    "producer": "uk.co.nickthecoder.rapidragdoll.RapidRagDoll",
     "physics": {
       "gravity_x": 0,
       "gravity_y": -100,
@@ -72,6 +72,7 @@
       "stages": [
         {
           "name": "glass",
+          "isDefault": true,
           "stage": "uk.co.nickthecoder.tickle.stage.GameStage",
           "constraint": "uk.co.nickthecoder.tickle.resources.NoStageConstraint"
         }

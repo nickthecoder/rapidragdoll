@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1280.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -139,8 +143,6 @@
           "costume": "information",
           "x": 232,
           "y": 684,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "That's a heavy rock.",
           "direction": 0,
           "scaleX": 1,
@@ -172,8 +174,6 @@
           "costume": "information",
           "x": 111,
           "y": 625,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "You'll need to throw lots of dolls !!!",
           "direction": 0,
           "scaleX": 1,
@@ -243,8 +243,6 @@
           "costume": "information",
           "x": 58,
           "y": 560,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Not too fast though, they may vanish before hitting.",
           "direction": 0,
           "scaleX": 1,

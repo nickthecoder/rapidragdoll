@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1650.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -117,8 +121,6 @@
           "costume": "information",
           "x": 208,
           "y": 498,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Where's the skittle?",
           "direction": 0,
           "scaleX": 1,
@@ -138,8 +140,6 @@
           "costume": "information",
           "x": 279,
           "y": 449,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Hold down the right mouse button,",
           "direction": 0,
           "scaleX": 1,
@@ -159,8 +159,6 @@
           "costume": "information",
           "x": 361,
           "y": 389,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "and drag to scroll to the right ->",
           "direction": 0,
           "scaleX": 1,
@@ -180,8 +178,6 @@
           "costume": "information",
           "x": 1286,
           "y": 238,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Here it is !",
           "direction": 0,
           "scaleX": 1,
@@ -237,8 +233,6 @@
           "costume": "information",
           "x": 273,
           "y": 327,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Or use the arrow keys to scroll ->",
           "direction": 0,
           "scaleX": 1,

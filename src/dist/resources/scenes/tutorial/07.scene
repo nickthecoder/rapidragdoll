@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1680.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -117,8 +121,6 @@
           "costume": "information",
           "x": 436,
           "y": 543,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Rag doll Annie can grab the floating power-ups.",
           "direction": 0,
           "scaleX": 1,
@@ -322,8 +324,6 @@
           "costume": "information",
           "x": 484,
           "y": 457,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Some are useful, some aren't !",
           "direction": 0,
           "scaleX": 1,

@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1280.0x1600.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",

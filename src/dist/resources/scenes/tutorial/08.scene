@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1280.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -175,8 +179,6 @@
           "costume": "information",
           "x": 545,
           "y": 283,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Ring the bells !",
           "direction": 0,
           "scaleX": 1,
@@ -196,8 +198,6 @@
           "costume": "information",
           "x": 328,
           "y": 215,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "If you need to hit them more than once, timing is key!",
           "direction": 0,
           "scaleX": 1,

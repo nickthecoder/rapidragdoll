@@ -72,42 +72,38 @@
       "name": "glass",
       "actors": [
         {
-          "costume": "levelStatus",
-          "x": 122,
-          "y": 359,
+          "costume": "sceneButton",
+          "x": 92,
+          "y": 16,
+          "text": "Back",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "scene",
-              "value": "tutorial/01"
-            },
-            {
-              "name": "text",
-              "value": "Start"
-            },
-            {
-              "name": "unlocked",
-              "value": "true"
-            },
-            {
-              "name": "textPosition",
-              "value": "1.0x16.0"
-            },
-            {
-              "name": "timePosition",
-              "value": "0.0x0.0"
-            },
-            {
-              "name": "showTime",
-              "value": "false"
-            },
-            {
-              "name": "requiredScene",
-              "value": ""
+              "value": "menu"
             }
           ]
+        },
+        {
+          "costume": "large",
+          "x": 660,
+          "y": 689,
+          "text": "Tutorial",
+          "viewAlignmentX": "CENTER",
+          "viewAlignmentY": "TOP",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "pointer",
+          "x": 206,
+          "y": 523,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         },
         {
           "costume": "levelStatus",
@@ -148,27 +144,10 @@
           ]
         },
         {
-          "costume": "sceneButton",
-          "x": 92,
-          "y": 16,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "Back",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "scene",
-              "value": "menu"
-            }
-          ]
-        },
-        {
           "costume": "join1",
-          "x": 193,
-          "y": 344,
-          "direction": 342.99999999999994,
+          "x": 306,
+          "y": 265,
+          "direction": 306,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -210,34 +189,6 @@
               "name": "showTime",
               "value": "false"
             },
-            {
-              "name": "requiredScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "join1",
-          "x": 306,
-          "y": 265,
-          "direction": 306,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "requiredScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "join1",
-          "x": 664,
-          "y": 239,
-          "direction": 317.00000000000006,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
             {
               "name": "requiredScene",
               "value": ""
@@ -349,20 +300,34 @@
           ]
         },
         {
+          "costume": "join1",
+          "x": 664,
+          "y": 239,
+          "direction": 317.00000000000006,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "requiredScene",
+              "value": ""
+            }
+          ]
+        },
+        {
           "costume": "levelStatus",
-          "x": 794,
-          "y": 427,
+          "x": 709,
+          "y": 185,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "scene",
-              "value": "tutorial/08"
+              "value": "tutorial/06"
             },
             {
               "name": "text",
-              "value": "Part 8"
+              "value": "Part 6"
             },
             {
               "name": "unlocked",
@@ -370,7 +335,7 @@
             },
             {
               "name": "textPosition",
-              "value": "-1.0x13.0"
+              "value": "-1.0x14.0"
             },
             {
               "name": "timePosition",
@@ -388,9 +353,9 @@
         },
         {
           "costume": "join1",
-          "x": 806,
-          "y": 357,
-          "direction": 274,
+          "x": 762,
+          "y": 231,
+          "direction": 229.00000000000003,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -440,9 +405,9 @@
         },
         {
           "costume": "join1",
-          "x": 762,
-          "y": 231,
-          "direction": 229.00000000000003,
+          "x": 806,
+          "y": 357,
+          "direction": 274,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -454,19 +419,19 @@
         },
         {
           "costume": "levelStatus",
-          "x": 709,
-          "y": 185,
+          "x": 794,
+          "y": 427,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "scene",
-              "value": "tutorial/06"
+              "value": "tutorial/08"
             },
             {
               "name": "text",
-              "value": "Part 6"
+              "value": "Part 8"
             },
             {
               "name": "unlocked",
@@ -474,7 +439,7 @@
             },
             {
               "name": "textPosition",
-              "value": "-1.0x14.0"
+              "value": "-1.0x13.0"
             },
             {
               "name": "timePosition",
@@ -491,23 +456,18 @@
           ]
         },
         {
-          "costume": "large",
-          "x": 660,
-          "y": 689,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
-          "text": "Tutorial",
-          "direction": 0,
+          "costume": "join1",
+          "x": 748,
+          "y": 482,
+          "direction": 315,
           "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pointer",
-          "x": 206,
-          "y": 523,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "requiredScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "levelStatus",
@@ -549,12 +509,50 @@
         },
         {
           "costume": "join1",
-          "x": 748,
-          "y": 482,
-          "direction": 315,
+          "x": 193,
+          "y": 344,
+          "direction": 342.99999999999994,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
+            {
+              "name": "requiredScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "levelStatus",
+          "x": 122,
+          "y": 359,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "scene",
+              "value": "tutorial/01"
+            },
+            {
+              "name": "text",
+              "value": "Start"
+            },
+            {
+              "name": "unlocked",
+              "value": "true"
+            },
+            {
+              "name": "textPosition",
+              "value": "1.0x16.0"
+            },
+            {
+              "name": "timePosition",
+              "value": "0.0x0.0"
+            },
+            {
+              "name": "showTime",
+              "value": "false"
+            },
             {
               "name": "requiredScene",
               "value": ""

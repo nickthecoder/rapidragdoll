@@ -20,6 +20,10 @@
     {
       "name": "topRight",
       "value": "1280.0x800.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
     }
   ],
   "background": "#000000",
@@ -129,8 +133,6 @@
           "costume": "information",
           "x": 275,
           "y": 593,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Bounce off of the ceiling",
           "direction": 0,
           "scaleX": 1,

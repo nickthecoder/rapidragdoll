@@ -200,36 +200,6 @@
               "value": "1"
             }
           ]
-        },
-        {
-          "costume": "launcher",
-          "x": 467.19999999999976,
-          "y": -59.64800000000017,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "panTo",
-              "value": "646.9119999999997x415.5519999999998"
-            },
-            {
-              "name": "dollName",
-              "value": "annie"
-            },
-            {
-              "name": "speed",
-              "value": "600"
-            },
-            {
-              "name": "randomSeed",
-              "value": "0"
-            },
-            {
-              "name": "scale",
-              "value": "1"
-            }
-          ]
         }
       ]
     },
@@ -240,9 +210,9 @@
           "costume": "sceneButton",
           "x": 652,
           "y": 436,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Tutorial",
+          "viewAlignmentX": "CENTER",
+          "viewAlignmentY": "CENTER",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -257,8 +227,6 @@
           "costume": "quitButton",
           "x": 80,
           "y": 13,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Quit",
           "direction": 0,
           "scaleX": 1,
@@ -268,9 +236,8 @@
           "costume": "urlButton",
           "x": 1258,
           "y": 15,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Created using Tickle",
+          "viewAlignmentX": "RIGHT",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -285,9 +252,9 @@
           "costume": "large",
           "x": 666,
           "y": 664,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Rapid Rag Doll",
+          "viewAlignmentX": "CENTER",
+          "viewAlignmentY": "TOP",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -296,9 +263,9 @@
           "costume": "small",
           "x": 682,
           "y": 607,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "by Nick Robinson",
+          "viewAlignmentX": "CENTER",
+          "viewAlignmentY": "TOP",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -307,9 +274,9 @@
           "costume": "sceneButton",
           "x": 656,
           "y": 344,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Puzzle Picnic",
+          "viewAlignmentX": "CENTER",
+          "viewAlignmentY": "CENTER",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -324,9 +291,8 @@
           "costume": "sceneButton",
           "x": 665,
           "y": 3,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "The Doll's House",
+          "viewAlignmentX": "CENTER",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -349,9 +315,9 @@
           "costume": "sceneButton",
           "x": 655.5519999999997,
           "y": 237.7439999999998,
-          "textAlignmentX": "LEFT",
-          "textAlignmentY": "BOTTOM",
           "text": "Christmas Capers",
+          "viewAlignmentX": "CENTER",
+          "viewAlignmentY": "CENTER",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
