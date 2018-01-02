@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="annie.svg"
-   inkscape:export-filename="/home/nick/projects/rapidragdoll/src/annie.png"
+   inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/annie.png"
    inkscape:export-xdpi="39.995243"
    inkscape:export-ydpi="39.995243">
   <defs
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="206.08773"
-     inkscape:cy="284.84999"
+     inkscape:zoom="1.7207866"
+     inkscape:cx="135.1929"
+     inkscape:cy="269.87011"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,11 +38,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="713"
-     inkscape:window-height="659"
-     inkscape:window-x="467"
-     inkscape:window-y="43"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1440"
+     inkscape:window-height="854"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -61,15 +61,15 @@
      id="layer1"
      transform="translate(29.077631,-10.557969)">
     <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/annie/annie-abdomen.png"
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/annie/annie-abdomen.png"
        xlink:href="annie-abdomen.png"
        width="232"
        height="426"
        id="image2993"
-       x="2.0638185"
-       y="81.932175" />
+       x="2.063818"
+       y="89.932175" />
     <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/annie/annie-arm-left.png"
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/annie/annie-arm-left.png"
        xlink:href="annie-arm-left.png"
        width="232"
        height="426"
@@ -77,15 +77,15 @@
        x="-29.077631"
        y="23.689951" />
     <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/annie/annie-arm-right.png"
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/annie/annie-arm-right.png"
        xlink:href="annie-arm-right.png"
        y="24.700104"
-       x="9.3081656"
+       x="21.308167"
        id="image3015"
        height="426"
        width="232" />
     <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/annie/annie-head.png"
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/annie/annie-head.png"
        xlink:href="annie-head.png"
        width="232"
        height="426"
@@ -93,15 +93,15 @@
        x="-11.905037"
        y="10.557969" />
     <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/annie/annie-leg-left.png"
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/annie/annie-leg-left.png"
        xlink:href="annie-leg-left.png"
        width="232"
        height="426"
        id="image3037"
-       x="-17.965952"
-       y="133.62328" />
+       x="-17.96595"
+       y="133.62329" />
     <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/annie/annie-leg-right.png"
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/annie/annie-leg-right.png"
        xlink:href="annie-leg-right.png"
        y="129.58266"
        x="-11.905037"
@@ -109,7 +109,7 @@
        height="426"
        width="232" />
     <image
-       sodipodi:absref="/home/nick/projects/rapidragdoll/src/annie/annie-torso.png"
+       sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/annie/annie-torso.png"
        xlink:href="annie-torso.png"
        y="30.587709"
        x="-7.8644271"

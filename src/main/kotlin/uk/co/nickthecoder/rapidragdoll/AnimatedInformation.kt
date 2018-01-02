@@ -22,9 +22,12 @@ open class AnimatedInformation : ActionRole() {
     }
 
     open fun goAction(): Action {
+        // Adjust the "moveBy" to account for window resizing. moveBy is suitable for the size defined in game info.
         val view = actor.stage?.firstView()!!
         val gi = Resources.instance.gameInfo
         moveBy.mul(view.rect.width.toDouble() / gi.width, view.rect.height.toDouble() / gi.height)
+        // Now it is suitable for the current window size.
+
         return MoveBy(actor.position, moveBy, seconds, Eases.bounce3)
     }
 

@@ -9,8 +9,7 @@ Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt wh
 Next
 ---
 
-Finish resize work.
-	Off screen objects need to be redone
+If view size > scene's bounds, then CENTER it.
 
 More fragile items
 	Vase, lamp, lamp stand
