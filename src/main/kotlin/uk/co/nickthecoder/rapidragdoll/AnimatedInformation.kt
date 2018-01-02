@@ -6,6 +6,7 @@ import uk.co.nickthecoder.tickle.AttributeType
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.movement.MoveBy
+import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.util.Attribute
 
 open class AnimatedInformation : ActionRole() {
@@ -21,6 +22,9 @@ open class AnimatedInformation : ActionRole() {
     }
 
     open fun goAction(): Action {
+        val view = actor.stage?.firstView()!!
+        val gi = Resources.instance.gameInfo
+        moveBy.mul(view.rect.width.toDouble() / gi.width, view.rect.height.toDouble() / gi.height)
         return MoveBy(actor.position, moveBy, seconds, Eases.bounce3)
     }
 

@@ -120,25 +120,6 @@
           "scaleY": 1
         },
         {
-          "costume": "information",
-          "x": 437,
-          "y": 634,
-          "text": "Knock over the pin to win !",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "-204.0x273.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
           "costume": "wall",
           "x": 1280,
           "y": 0,
@@ -167,7 +148,27 @@
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "information",
+          "x": 437,
+          "y": 634,
+          "text": "Knock over the pin to win !",
+          "viewAlignmentX": "RATIO",
+          "viewAlignmentY": "RATIO",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "-204.0x273.0"
+            },
+            {
+              "name": "seconds",
+              "value": "2"
+            }
+          ]
+        }
       ]
     }
   ]

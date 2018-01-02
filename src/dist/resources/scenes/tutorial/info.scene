@@ -50,6 +50,8 @@
           "x": 139,
           "y": 751,
           "text": "Aim with the mouse. Click to throw rag doll Annie.  F5 to restart.  Esc to exit. ",
+          "viewAlignmentX": "CENTER",
+          "viewAlignmentY": "TOP",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
