@@ -7,9 +7,6 @@ Next
 
 If view size > scene's bounds, then CENTER it.
 
-More fragile items
-	Vase, lamp, lamp stand
-
 Sounds
 	When a doll is launched
 	When a doll is picked up on the Victory scene.

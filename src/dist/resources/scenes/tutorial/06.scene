@@ -3,7 +3,7 @@
   "directorAttributes": [
     {
       "name": "maxDolls",
-      "value": "3"
+      "value": "5"
     },
     {
       "name": "nextScene",
@@ -15,7 +15,7 @@
     },
     {
       "name": "bottomLeft",
-      "value": "0.0x20.0"
+      "value": "0.0x0.0"
     },
     {
       "name": "topRight",
@@ -45,8 +45,7 @@
       0
     ],
     "y": [
-      0,
-      800
+      0
     ]
   },
   "snapToOthers": {
@@ -70,15 +69,15 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 132,
-          "y": 290,
+          "x": 165,
+          "y": 647,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "438.0x315.0"
+              "value": "684.0x481.0"
             },
             {
               "name": "dollName",
@@ -86,7 +85,7 @@
             },
             {
               "name": "speed",
-              "value": "500"
+              "value": "450"
             },
             {
               "name": "randomSeed",
@@ -100,57 +99,48 @@
         },
         {
           "costume": "wall",
-          "x": 0,
+          "x": 22.75,
+          "y": 402.25,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50.5,
+          "sizeY": 805.5,
+          "alignmentX": 0.5,
+          "alignmentY": 0.5
+        },
+        {
+          "costume": "pin",
+          "x": 887,
+          "y": 63,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wall",
+          "x": 1283,
           "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 47.29600000000016,
-          "sizeY": 764.608,
-          "alignmentX": 0,
+          "sizeX": 48,
+          "sizeY": 805,
+          "alignmentX": 1,
           "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": -6,
-          "y": 733,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1295.7279999999992,
-          "sizeY": 71.35199999999986,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "grass0",
-          "x": 482,
-          "y": 13,
-          "zOrder": 0,
-          "direction": 355,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 903,
-          "y": 41,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
         },
         {
           "costume": "information",
-          "x": 232,
-          "y": 684,
-          "text": "That's a heavy rock.",
+          "x": 166,
+          "y": 477,
+          "text": "Don't knock over fragile objects !",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "360.0x225.0"
+              "value": "352.0x455.0"
             },
             {
               "name": "seconds",
@@ -159,40 +149,37 @@
           ]
         },
         {
-          "costume": "wall",
-          "x": 1237.888,
-          "y": -11,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 44.11200000000008,
-          "sizeY": 791.1599999999999,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "information",
-          "x": 111,
-          "y": 625,
-          "text": "You'll need to throw lots of dolls !!!",
+          "costume": "lamp3",
+          "x": 599,
+          "y": 206,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
-              "name": "moveBy",
-              "value": "226.0x239.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         },
         {
-          "costume": "rock",
-          "x": 462,
-          "y": 168,
+          "costume": "table",
+          "x": 518,
+          "y": 63,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "teapot",
+          "x": 455,
+          "y": 203,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -205,92 +192,55 @@
         },
         {
           "costume": "wood",
-          "x": 467.928,
-          "y": 315,
+          "x": 44,
+          "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 774.072,
-          "sizeY": 43.99200000000002,
+          "sizeX": 1193,
+          "sizeY": 55,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
-          "costume": "pin",
-          "x": 813,
-          "y": 372,
+          "costume": "shelf",
+          "x": 868,
+          "y": 530,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
-          "costume": "pin",
-          "x": 636,
-          "y": 373,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "pin",
-          "x": 971,
-          "y": 371,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
-          "costume": "information",
-          "x": 58,
-          "y": 560,
-          "text": "Not too fast though, they may vanish before hitting.",
+          "costume": "vase2",
+          "x": 776,
+          "y": 539,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
-              "name": "moveBy",
-              "value": "-120.0x284.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         },
         {
-          "costume": "grass",
-          "x": -16,
-          "y": 0,
+          "costume": "pin",
+          "x": 912,
+          "y": 547,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "paper2",
+          "x": 45,
+          "y": 50,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 541,
-          "sizeY": 85,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "grass",
-          "x": 497,
-          "y": 0,
-          "direction": 356.7754773934801,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 427.5767318945833,
-          "sizeY": 81.96425039215362,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "grass",
-          "x": 920,
-          "y": -26,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 365,
-          "sizeY": 81,
+          "sizeX": 1197,
+          "sizeY": 749,
           "alignmentX": 0,
           "alignmentY": 0
         }

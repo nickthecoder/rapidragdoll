@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/09"
+      "value": "tutorial/congratulations"
     },
     {
       "name": "menuName",
@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "1680.0x800.0"
+      "value": "1280.0x800.0"
     },
     {
       "name": "gravity",
@@ -85,7 +85,7 @@
             },
             {
               "name": "speed",
-              "value": "300"
+              "value": "350"
             },
             {
               "name": "randomSeed",
@@ -104,31 +104,43 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 51,
-          "sizeY": 802,
+          "sizeX": 50.75200000000018,
+          "sizeY": 773.2479999999999,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": -4,
+          "y": 726.856,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1286.0879999999997,
+          "sizeY": 77.144,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 274,
-          "y": 58,
+          "x": 275,
+          "y": 70,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
           "costume": "information",
-          "x": 436,
-          "y": 543,
-          "text": "Rag doll Annie can grab the floating power-ups.",
+          "x": 302,
+          "y": 447,
+          "text": "You only have 20 seconds to finish the level !",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-99.0x272.0"
+              "value": "-268.0x465.0"
             },
             {
               "name": "seconds",
@@ -138,20 +150,20 @@
         },
         {
           "costume": "wall",
-          "x": 1758.1599999999999,
-          "y": 2,
+          "x": 1236.1599999999999,
+          "y": 1,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 46.840000000000146,
-          "sizeY": 819,
+          "sizeX": 44.840000000000146,
+          "sizeY": 765.3359999999999,
           "alignmentX": 0,
           "alignmentY": 0
         },
         {
           "costume": "pin",
-          "x": 1387,
-          "y": 491,
+          "x": 931,
+          "y": 381,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -166,185 +178,99 @@
         },
         {
           "costume": "pin",
-          "x": 1085,
-          "y": 57,
+          "x": 1015,
+          "y": 72,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
         },
         {
-          "costume": "wood",
-          "x": 45,
-          "y": 340,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 215,
-          "sizeY": 41,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": 885,
-          "y": 431,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 876,
-          "sizeY": 45,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wall",
-          "x": 884,
-          "y": 27,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 45,
-          "sizeY": 119,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": 50,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1709,
-          "sizeY": 46,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "collectable-speedUp",
-          "x": 429,
-          "y": 614,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "factor",
-              "value": "1.2"
-            },
-            {
-              "name": "period",
-              "value": "2"
-            },
-            {
-              "name": "radius",
-              "value": "100"
-            }
-          ]
-        },
-        {
-          "costume": "collectable-slowDown",
-          "x": 568,
-          "y": 728,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "factor",
-              "value": "1.2"
-            },
-            {
-              "name": "period",
-              "value": "3"
-            },
-            {
-              "name": "radius",
-              "value": "30"
-            }
-          ]
-        },
-        {
-          "costume": "wall",
-          "x": 885,
-          "y": 237,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 45,
-          "sizeY": 195,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "collectable-shrink",
-          "x": 336,
-          "y": 251,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "factor",
-              "value": "2"
-            },
-            {
-              "name": "period",
-              "value": "2.5"
-            },
-            {
-              "name": "radius",
-              "value": "30"
-            }
-          ]
-        },
-        {
-          "costume": "collectable-grow",
-          "x": 846,
-          "y": 605,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "factor",
-              "value": "2"
-            },
-            {
-              "name": "period",
-              "value": "1.5"
-            },
-            {
-              "name": "radius",
-              "value": "30"
-            }
-          ]
-        },
-        {
           "costume": "information",
-          "x": 484,
-          "y": 457,
-          "text": "Some are useful, some aren't !",
+          "x": 419,
+          "y": 507,
+          "text": "This is the last tutorial !",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "moveBy",
-              "value": "-697.0x-55.0"
+              "value": "371.0x434.0"
             },
             {
               "name": "seconds",
               "value": "2"
             }
           ]
+        },
+        {
+          "costume": "wood",
+          "x": 50,
+          "y": 340,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 210,
+          "sizeY": 40,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 830.0799999999999,
+          "y": 320,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 410.9200000000001,
+          "sizeY": 48.896000000000015,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 593,
+          "y": -3,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 46,
+          "sizeY": 209,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 50,
+          "y": -1,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1188,
+          "sizeY": 45,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "countdown",
+          "x": 1157,
+          "y": 803,
+          "text": "0:00",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "seconds",
+              "value": "20"
+            }
+          ]
+        }
       ]
     }
   ]

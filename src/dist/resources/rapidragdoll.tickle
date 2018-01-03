@@ -1522,6 +1522,17 @@
       "offsetX": 31,
       "offsetY": 3,
       "direction": 0
+    },
+    {
+      "name": "shelf",
+      "texture": "scenery",
+      "left": 463,
+      "bottom": 645,
+      "right": 737,
+      "top": 629,
+      "offsetX": 137,
+      "offsetY": 2,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -5945,6 +5956,43 @@
                       "y": 79
                     }
                   ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "shelf",
+          "role": "",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "shelf"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": 0,
+                  "y": 2.5,
+                  "width": 273,
+                  "height": 10,
+                  "angle": 0
                 }
               }
             ]
