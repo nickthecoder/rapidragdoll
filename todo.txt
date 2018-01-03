@@ -2,10 +2,6 @@
 Bugs
 ----
 
-Stray pixels on Annie
-Annie's torso needs a bigger Pose, so that it isn't disjointed with the skirt when bent.
-
-
 Next
 ---
 

@@ -327,8 +327,8 @@
         },
         {
           "costume": "teapot",
-          "x": 1489,
-          "y": 213,
+          "x": 1498,
+          "y": 211,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -702,6 +702,90 @@
           "sizeY": 502,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "lamp1",
+          "x": 1314,
+          "y": 65,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "lamp3",
+          "x": 322,
+          "y": 209,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "lamp2",
+          "x": 136,
+          "y": 825,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "lamp2",
+          "x": 1115,
+          "y": 824,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "vase1",
+          "x": 398,
+          "y": 217,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "vase2",
+          "x": 1016,
+          "y": 61,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         }
       ]
     },

@@ -1467,6 +1467,61 @@
       "offsetY": 0,
       "direction": 0,
       "tiled": true
+    },
+    {
+      "name": "lamp1",
+      "texture": "scenery",
+      "left": 4,
+      "bottom": 783,
+      "right": 88,
+      "top": 659,
+      "offsetX": 41,
+      "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "lamp2",
+      "texture": "scenery",
+      "left": 304,
+      "bottom": 742,
+      "right": 376,
+      "top": 596,
+      "offsetX": 36,
+      "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "lamp3",
+      "texture": "scenery",
+      "left": 377,
+      "bottom": 739,
+      "right": 458,
+      "top": 598,
+      "offsetX": 39,
+      "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "vase1",
+      "texture": "scenery",
+      "left": 96,
+      "bottom": 796,
+      "right": 158,
+      "top": 696,
+      "offsetX": 31,
+      "offsetY": 1,
+      "direction": 0
+    },
+    {
+      "name": "vase2",
+      "texture": "scenery",
+      "left": 161,
+      "bottom": 804,
+      "right": 225,
+      "top": 682,
+      "offsetX": 31,
+      "offsetY": 3,
+      "direction": 0
     }
   ],
   "costumeGroups": [
@@ -5397,6 +5452,499 @@
                   "width": 297,
                   "height": 16,
                   "angle": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lamp1",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lamp1"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.7,
+                "density": 0.5,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 42,
+                      "y": 62
+                    },
+                    {
+                      "x": 33,
+                      "y": 119
+                    },
+                    {
+                      "x": -34,
+                      "y": 117
+                    },
+                    {
+                      "x": -40,
+                      "y": 63
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 1,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 14,
+                      "y": 2
+                    },
+                    {
+                      "x": 27,
+                      "y": 22
+                    },
+                    {
+                      "x": 4,
+                      "y": 58
+                    },
+                    {
+                      "x": -5,
+                      "y": 58
+                    },
+                    {
+                      "x": -28,
+                      "y": 24
+                    },
+                    {
+                      "x": -14,
+                      "y": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lamp2",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lamp2"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.7,
+                "density": 0.5,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -35,
+                      "y": 87
+                    },
+                    {
+                      "x": 35,
+                      "y": 87
+                    },
+                    {
+                      "x": 34,
+                      "y": 140
+                    },
+                    {
+                      "x": -35,
+                      "y": 140
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -16,
+                      "y": 2
+                    },
+                    {
+                      "x": 16,
+                      "y": 3
+                    },
+                    {
+                      "x": 1,
+                      "y": 34
+                    },
+                    {
+                      "x": -4,
+                      "y": 34
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 2,
+                      "y": 37
+                    },
+                    {
+                      "x": 5,
+                      "y": 81
+                    },
+                    {
+                      "x": -7,
+                      "y": 80
+                    },
+                    {
+                      "x": -3,
+                      "y": 38
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "lamp3",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "lamp3"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.5,
+            "angularDamping": 0.5,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.7,
+                "density": 0.5,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 19,
+                      "y": 136
+                    },
+                    {
+                      "x": -16,
+                      "y": 136
+                    },
+                    {
+                      "x": -34,
+                      "y": 76
+                    },
+                    {
+                      "x": 37,
+                      "y": 75
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 5,
+                      "y": 15
+                    },
+                    {
+                      "x": 9,
+                      "y": 37
+                    },
+                    {
+                      "x": 6,
+                      "y": 69
+                    },
+                    {
+                      "x": -7,
+                      "y": 70
+                    },
+                    {
+                      "x": -11,
+                      "y": 43
+                    },
+                    {
+                      "x": -7,
+                      "y": 16
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.7,
+                "density": 2,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "box": {
+                  "x": -1,
+                  "y": 7.5,
+                  "width": 29,
+                  "height": 10,
+                  "angle": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "vase2",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "vase2"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 20,
+                      "y": 1
+                    },
+                    {
+                      "x": 36,
+                      "y": 58
+                    },
+                    {
+                      "x": 22,
+                      "y": 117
+                    },
+                    {
+                      "x": -18,
+                      "y": 117
+                    },
+                    {
+                      "x": -30,
+                      "y": 61
+                    },
+                    {
+                      "x": -19,
+                      "y": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "vase1",
+          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "vase1"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.2,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 19,
+                      "y": 2
+                    },
+                    {
+                      "x": 32,
+                      "y": 30
+                    },
+                    {
+                      "x": 18,
+                      "y": 80
+                    },
+                    {
+                      "x": -17,
+                      "y": 79
+                    },
+                    {
+                      "x": -29,
+                      "y": 27
+                    },
+                    {
+                      "x": -19,
+                      "y": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.2,
+                "density": 1,
+                "restitution": 0.7,
+                "isSensor": false,
+                "group": 0,
+                "category": 8,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 14,
+                      "y": 79
+                    },
+                    {
+                      "x": 24,
+                      "y": 97
+                    },
+                    {
+                      "x": -24,
+                      "y": 97
+                    },
+                    {
+                      "x": -15,
+                      "y": 79
+                    }
+                  ]
                 }
               }
             ]
