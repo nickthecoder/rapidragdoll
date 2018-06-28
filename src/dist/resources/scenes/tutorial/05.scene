@@ -140,7 +140,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "221.0x293.0"
+              "value": "221.0x393.0"
             },
             {
               "name": "seconds",
@@ -159,7 +159,7 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "388.0x263.0"
+              "value": "388.0x-462.0"
             },
             {
               "name": "seconds",

@@ -17,8 +17,6 @@ Sounds
 		Maybe more than one sound each with different limits.
 		Head has different sounds?
 
-New tutorial scene explaining Frgaile objects.
-
 Limit the Laucher to a fixed number of dolls
 	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
 	Default is MAXINT

@@ -80,7 +80,7 @@
             },
             {
               "name": "dollName",
-              "value": "lilian,santa"
+              "value": "lilian"
             },
             {
               "name": "speed",
@@ -156,7 +156,7 @@
         },
         {
           "costume": "teacup",
-          "x": 272,
+          "x": 256,
           "y": 210,
           "direction": 0,
           "scaleX": 1,

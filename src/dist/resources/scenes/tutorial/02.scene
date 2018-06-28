@@ -189,7 +189,7 @@
         },
         {
           "costume": "information",
-          "x": 1288,
+          "x": 1281,
           "y": 525,
           "text": "Press \"1\" to return\nto the first launcher",
           "direction": 0,
@@ -198,11 +198,11 @@
           "attributes": [
             {
               "name": "moveBy",
-              "value": "640.0x53.0"
+              "value": "0.0x0.0"
             },
             {
               "name": "seconds",
-              "value": "2"
+              "value": "1000"
             }
           ]
         },
@@ -220,8 +220,8 @@
         },
         {
           "costume": "launcher",
-          "x": 1325.2559999999999,
-          "y": 438.32800000000003,
+          "x": 1172.2559999999999,
+          "y": 464.32800000000003,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,

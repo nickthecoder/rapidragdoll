@@ -132,7 +132,7 @@
         },
         {
           "costume": "pin",
-          "x": 354,
+          "x": 378,
           "y": 65,
           "direction": 0,
           "scaleX": 1,
@@ -173,6 +173,25 @@
           "sizeY": 88,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "information",
+          "x": 455,
+          "y": 320,
+          "text": "There's antother pin to \nthe right  --------->",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "moveBy",
+              "value": "600.0x-200.0"
+            },
+            {
+              "name": "seconds",
+              "value": "4"
+            }
+          ]
         }
       ]
     },
