@@ -7,6 +7,10 @@ interface Draggable : Role {
     fun mass() = actor.body?.mass ?: 0f
 
     fun scale(scale: Double) {
-        actor.scale.mul(scale)
+        scale(scale, scale)
+    }
+
+    fun scale(scaleX: Double, scaleY: Double) {
+        actor.scale.mul(scaleX, scaleY)
     }
 }

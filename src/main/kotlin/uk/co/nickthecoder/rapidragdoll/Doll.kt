@@ -9,6 +9,7 @@ import uk.co.nickthecoder.tickle.action.Kill
 import uk.co.nickthecoder.tickle.action.ParallelAction
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Fade
+import uk.co.nickthecoder.tickle.physics.mul
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.CostumeAttribute
 import java.util.*
@@ -90,10 +91,14 @@ class Doll : ActionRole(), Reward {
     }
 
     fun scale(scale: Double) {
+        scale(scale, scale)
+    }
+
+    fun scale(scaleX: Double, scaleY: Double) {
         val world = actor.stage?.world
 
         parts.forEach { part ->
-            part.scale.mul(scale)
+            part.scale.mul(scaleX, scaleY)
         }
         val newJoints = mutableListOf<RevoluteJoint>()
         joints.forEach { joint ->
@@ -102,7 +107,7 @@ class Doll : ActionRole(), Reward {
             jointDef.bodyA = joint.bodyA
             jointDef.bodyB = joint.bodyB
 
-            jointDef.localAnchorA = joint.m_localAnchor1.mul(scale.toFloat())
+            jointDef.localAnchorA = joint.m_localAnchor1.mul(scaleX.toFloat(), scaleY.toFloat())
 
             jointDef.lowerAngle = joint.m_lowerAngle
             jointDef.upperAngle = joint.m_upperAngle
@@ -116,7 +121,7 @@ class Doll : ActionRole(), Reward {
 
         joints.clear()
         joints.addAll(newJoints)
-        totalMass *= (scale * scale).toFloat()
+        totalMass *= (scaleX * scaleY).toFloat()
     }
 
     override fun end() {

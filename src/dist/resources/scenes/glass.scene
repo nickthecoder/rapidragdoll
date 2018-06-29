@@ -140,6 +140,28 @@
               "value": "0.5"
             }
           ]
+        },
+        {
+          "costume": "restart",
+          "x": 1174,
+          "y": 38,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "exit",
+          "x": 1244,
+          "y": 40,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "scene",
+              "value": "menu"
+            }
+          ]
         }
       ]
     }

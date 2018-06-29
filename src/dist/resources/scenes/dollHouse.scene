@@ -786,6 +786,20 @@
               "value": ""
             }
           ]
+        },
+        {
+          "costume": "rock",
+          "x": -413,
+          "y": 184,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         }
       ]
     },

@@ -14,7 +14,7 @@ import uk.co.nickthecoder.tickle.stage.findRoleAt
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Victory : Play(), MouseListener{
+class Victory : Play(), MouseListener {
 
     @Attribute
     var showAll = false
@@ -29,8 +29,11 @@ class Victory : Play(), MouseListener{
 
     var elastic: Elastic? = null
 
+    // Inputs to grow/shrink items while they are being dragged
     val grow = Resources.instance.inputs.find("grow")
     val shrink = Resources.instance.inputs.find("shrink")
+    val stretch = Resources.instance.inputs.find("stretch") // Grow in Y direction only
+    val squash = Resources.instance.inputs.find("squash") // Shrink in Y direction only
 
     override fun sceneLoaded() {
         super.sceneLoaded()
@@ -59,6 +62,10 @@ class Victory : Play(), MouseListener{
             dragging?.scale(1.2)
         } else if (shrink?.matches(event) == true) {
             dragging?.scale(1 / 1.2)
+        } else if (stretch?.matches(event) == true) {
+            dragging?.scale(1.0, 1.2)
+        } else if (squash?.matches(event) == true) {
+            dragging?.scale(1.0, 1 / 1.2)
         } else {
             super.onKey(event)
         }

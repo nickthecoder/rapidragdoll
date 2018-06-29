@@ -264,10 +264,10 @@
     {
       "name": "launcher",
       "texture": "ui",
-      "left": 31,
-      "bottom": 150,
-      "right": 97,
-      "top": 84,
+      "left": 25,
+      "bottom": 138,
+      "right": 91,
+      "top": 72,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -275,10 +275,10 @@
     {
       "name": "launcher-deselected-1",
       "texture": "ui",
-      "left": 110,
-      "bottom": 150,
-      "right": 176,
-      "top": 84,
+      "left": 101,
+      "bottom": 138,
+      "right": 167,
+      "top": 72,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -286,10 +286,10 @@
     {
       "name": "launcher-deselected-2",
       "texture": "ui",
-      "left": 190,
-      "bottom": 150,
-      "right": 256,
-      "top": 84,
+      "left": 178,
+      "bottom": 138,
+      "right": 244,
+      "top": 72,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -297,10 +297,10 @@
     {
       "name": "launcher-deselected-3",
       "texture": "ui",
-      "left": 270,
-      "bottom": 150,
-      "right": 336,
-      "top": 84,
+      "left": 251,
+      "bottom": 138,
+      "right": 317,
+      "top": 72,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -308,10 +308,10 @@
     {
       "name": "launcher-deselected-4",
       "texture": "ui",
-      "left": 350,
-      "bottom": 150,
-      "right": 416,
-      "top": 84,
+      "left": 326,
+      "bottom": 138,
+      "right": 392,
+      "top": 72,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -319,10 +319,10 @@
     {
       "name": "launcher-selected-1",
       "texture": "ui",
-      "left": 109,
-      "bottom": 70,
-      "right": 174,
-      "top": 4,
+      "left": 100,
+      "bottom": 63,
+      "right": 165,
+      "top": -3,
       "offsetX": 32,
       "offsetY": 33,
       "direction": 0
@@ -330,10 +330,10 @@
     {
       "name": "launcher-selected-2",
       "texture": "ui",
-      "left": 187,
-      "bottom": 70,
-      "right": 253,
-      "top": 4,
+      "left": 173,
+      "bottom": 63,
+      "right": 239,
+      "top": -3,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -341,10 +341,10 @@
     {
       "name": "launcher-selected-3",
       "texture": "ui",
-      "left": 265,
-      "bottom": 70,
-      "right": 331,
-      "top": 4,
+      "left": 246,
+      "bottom": 63,
+      "right": 312,
+      "top": -3,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -352,10 +352,10 @@
     {
       "name": "launcher-selected-4",
       "texture": "ui",
-      "left": 343,
-      "bottom": 70,
-      "right": 409,
-      "top": 4,
+      "left": 319,
+      "bottom": 63,
+      "right": 385,
+      "top": -3,
       "offsetX": 33,
       "offsetY": 33,
       "direction": 0
@@ -363,12 +363,12 @@
     {
       "name": "aim",
       "texture": "ui",
-      "left": 31,
-      "bottom": 222,
-      "right": 96,
-      "top": 156,
-      "offsetX": 33,
-      "offsetY": 33,
+      "left": 28,
+      "bottom": 204,
+      "right": 90,
+      "top": 142,
+      "offsetX": 32,
+      "offsetY": 32,
       "direction": 0
     },
     {
@@ -407,12 +407,12 @@
     {
       "name": "autoLaucher",
       "texture": "ui",
-      "left": 30,
-      "bottom": 70,
-      "right": 96,
-      "top": 4,
-      "offsetX": 33,
-      "offsetY": 33,
+      "left": 29,
+      "bottom": 60,
+      "right": 89,
+      "top": 0,
+      "offsetX": 30,
+      "offsetY": 30,
       "direction": 0
     },
     {
@@ -633,21 +633,21 @@
     {
       "name": "levelStatus",
       "texture": "ui",
-      "left": 17,
-      "bottom": 277,
-      "right": 59,
-      "top": 235,
-      "offsetX": 21,
-      "offsetY": 21,
+      "left": 24,
+      "bottom": 247,
+      "right": 48,
+      "top": 223,
+      "offsetX": 12,
+      "offsetY": 12,
       "direction": 0
     },
     {
       "name": "levelRoute-1",
       "texture": "ui",
-      "left": 59,
-      "bottom": 273,
-      "right": 189,
-      "top": 252,
+      "left": 52,
+      "bottom": 251,
+      "right": 182,
+      "top": 230,
       "offsetX": 65,
       "offsetY": 10,
       "direction": 0
@@ -655,23 +655,23 @@
     {
       "name": "hand-open",
       "texture": "ui",
-      "left": 2,
-      "bottom": 332,
-      "right": 88,
-      "top": 275,
-      "offsetX": 11,
-      "offsetY": 9,
+      "left": 0,
+      "bottom": 308,
+      "right": 86,
+      "top": 251,
+      "offsetX": 10,
+      "offsetY": 12,
       "direction": 0
     },
     {
       "name": "hand-closed",
       "texture": "ui",
-      "left": 91,
-      "bottom": 327,
-      "right": 177,
-      "top": 276,
-      "offsetX": 13,
-      "offsetY": 4,
+      "left": 83,
+      "bottom": 303,
+      "right": 169,
+      "top": 252,
+      "offsetX": 15,
+      "offsetY": 6,
       "direction": 0
     },
     {
@@ -1243,10 +1243,10 @@
     {
       "name": "collectable-grow",
       "texture": "ui",
-      "left": 96,
-      "bottom": 191,
-      "right": 143,
-      "top": 153,
+      "left": 89,
+      "bottom": 175,
+      "right": 136,
+      "top": 137,
       "offsetX": 24,
       "offsetY": 18,
       "direction": 0
@@ -1254,10 +1254,10 @@
     {
       "name": "collectable-shrink",
       "texture": "ui",
-      "left": 97,
-      "bottom": 241,
-      "right": 142,
-      "top": 203,
+      "left": 90,
+      "bottom": 223,
+      "right": 135,
+      "top": 185,
       "offsetX": 23,
       "offsetY": 19,
       "direction": 0
@@ -1265,10 +1265,10 @@
     {
       "name": "collectable-speedUp",
       "texture": "ui",
-      "left": 153,
-      "bottom": 197,
-      "right": 203,
-      "top": 154,
+      "left": 142,
+      "bottom": 181,
+      "right": 192,
+      "top": 138,
       "offsetX": 36,
       "offsetY": 14,
       "direction": 0
@@ -1276,10 +1276,10 @@
     {
       "name": "collectable-slowDown",
       "texture": "ui",
-      "left": 152,
-      "bottom": 243,
-      "right": 203,
-      "top": 200,
+      "left": 141,
+      "bottom": 224,
+      "right": 192,
+      "top": 181,
       "offsetX": 38,
       "offsetY": 10,
       "direction": 0
@@ -1364,21 +1364,21 @@
     {
       "name": "pointer",
       "texture": "ui",
-      "left": 181,
-      "bottom": 347,
-      "right": 257,
-      "top": 279,
-      "offsetX": 8,
-      "offsetY": 66,
+      "left": 169,
+      "bottom": 323,
+      "right": 245,
+      "top": 255,
+      "offsetX": 6,
+      "offsetY": 64,
       "direction": 0
     },
     {
       "name": "arrow",
       "texture": "ui",
-      "left": 11,
-      "bottom": 366,
-      "right": 76,
-      "top": 338,
+      "left": 5,
+      "bottom": 339,
+      "right": 70,
+      "top": 311,
       "offsetX": 0,
       "offsetY": 14,
       "direction": 0
@@ -1436,10 +1436,10 @@
     {
       "name": "elastic",
       "texture": "ui",
-      "left": 80,
-      "bottom": 354,
-      "right": 140,
-      "top": 349,
+      "left": 73,
+      "bottom": 328,
+      "right": 133,
+      "top": 323,
       "offsetX": 0,
       "offsetY": 2,
       "direction": 0
@@ -1532,6 +1532,28 @@
       "top": 629,
       "offsetX": 137,
       "offsetY": 2,
+      "direction": 0
+    },
+    {
+      "name": "restart",
+      "texture": "ui",
+      "left": 253,
+      "bottom": 308,
+      "right": 302,
+      "top": 260,
+      "offsetX": 26,
+      "offsetY": 23,
+      "direction": 0
+    },
+    {
+      "name": "exit",
+      "texture": "ui",
+      "left": 310,
+      "bottom": 310,
+      "right": 362,
+      "top": 259,
+      "offsetX": 25,
+      "offsetY": 26,
       "direction": 0
     }
   ],
@@ -3861,6 +3883,44 @@
                   "outlineColor": "#ffffffff"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "restart",
+          "role": "uk.co.nickthecoder.tickle.util.RestartSceneButton",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "restart"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "exit",
+          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
+          "canRotate": false,
+          "zOrder": 100,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "exit"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "scene",
+              "value": ""
             }
           ]
         }
@@ -9796,6 +9856,24 @@
         },
         {
           "key": "Pause",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "squash",
+      "keys": [
+        {
+          "key": "9",
+          "state": "PRESSED"
+        }
+      ]
+    },
+    {
+      "name": "stretch",
+      "keys": [
+        {
+          "key": "0",
           "state": "PRESSED"
         }
       ]
