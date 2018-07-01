@@ -40,7 +40,7 @@ class PlasmaScript {
      * Each line is drawn multiple times, each with different line widths, blurs, and colors.
      * This is the styles of the front-most plasma, and is the thickest and most prominent
      */
-    val majorLineStyles = listOf<LineStyle>(
+    val majorLineStyles = listOf(
             LineStyle(32.0, BoxBlur(16.0, 16.0, 4), Color(0.1, 0.1, 1.0, 0.5)),
             LineStyle(16.0, BoxBlur(16.0, 16.0, 2), Color(0.1, 0.1, 1.0, 0.8)),
             LineStyle(10.0, BoxBlur(8.0, 8.0, 2), Color(0.3, 0.3, 1.0, 1.0)),

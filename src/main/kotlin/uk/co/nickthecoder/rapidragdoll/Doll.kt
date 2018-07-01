@@ -12,9 +12,6 @@ import uk.co.nickthecoder.tickle.action.animation.Fade
 import uk.co.nickthecoder.tickle.physics.mul
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.CostumeAttribute
-import java.util.*
-
-private val random = Random()
 
 class Doll : ActionRole(), Reward {
 
@@ -88,10 +85,6 @@ class Doll : ActionRole(), Reward {
 
         parts.add(newActor)
         return newActor
-    }
-
-    fun scale(scale: Double) {
-        scale(scale, scale)
     }
 
     fun scale(scaleX: Double, scaleY: Double) {

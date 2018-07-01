@@ -644,9 +644,9 @@
     {
       "name": "levelRoute-1",
       "texture": "ui",
-      "left": 52,
+      "left": 48,
       "bottom": 251,
-      "right": 182,
+      "right": 184,
       "top": 230,
       "offsetX": 65,
       "offsetY": 10,
@@ -1376,9 +1376,9 @@
       "name": "arrow",
       "texture": "ui",
       "left": 5,
-      "bottom": 339,
+      "bottom": 337,
       "right": 70,
-      "top": 311,
+      "top": 312,
       "offsetX": 0,
       "offsetY": 14,
       "direction": 0
@@ -6221,7 +6221,7 @@
               "ninePatches": [
                 {
                   "pose": "arrow",
-                  "left": 4,
+                  "left": 0,
                   "bottom": 0,
                   "right": 30,
                   "top": 0

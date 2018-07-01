@@ -185,7 +185,7 @@
        xlink:href="#linearGradient3890"
        id="radialGradient3873"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-0.26460221,310.89819,383.61751)"
+       gradientTransform="matrix(-1.1297978,0,0,-0.298947,335.15084,398.87273)"
        cx="185.89819"
        cy="480.93069"
        fx="185.89819"
@@ -241,9 +241,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2175873"
-     inkscape:cx="191.36205"
-     inkscape:cy="919.79166"
+     inkscape:zoom="2.4351746"
+     inkscape:cx="80.897692"
+     inkscape:cy="809.73795"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -540,8 +540,8 @@
        inkscape:export-xdpi="89.969025"
        inkscape:export-ydpi="89.969025" />
     <path
-       style="fill:none;stroke:url(#radialGradient3873);stroke-width:4.80000019;stroke-miterlimit:4"
-       d="M 61.270244,270.92084 C 101.84515,258.37516 146.12449,258.17348 186.8487,270.34886"
+       style="fill:none;stroke:url(#radialGradient3873);stroke-width:5.4230299;stroke-miterlimit:4"
+       d="M 53.121734,271.54826 C 98.963179,257.37418 148.98988,257.14633 195,270.90204"
        id="path3871"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
@@ -550,25 +550,25 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/hand-closed.png"
        xlink:href="hand-closed.png"
-       inkscape:export-ydpi="89.969025"
-       inkscape:export-xdpi="89.969025"
-       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
-       width="90"
-       height="59.0625"
-       id="image3086"
+       y="276.36218"
        x="90"
-       y="276.36218" />
+       id="image3086"
+       height="59.0625"
+       width="90"
+       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
+       inkscape:export-xdpi="89.969025"
+       inkscape:export-ydpi="89.969025" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/hand-open.png"
        xlink:href="hand-open.png"
-       inkscape:export-ydpi="89.969025"
-       inkscape:export-xdpi="89.969025"
-       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
-       width="90"
-       height="59.0625"
-       id="image3097"
+       y="276.36218"
        x="0"
-       y="276.36218" />
+       id="image3097"
+       height="59.0625"
+       width="90"
+       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
+       inkscape:export-xdpi="89.969025"
+       inkscape:export-ydpi="89.969025" />
     <g
        id="g3904"
        transform="translate(-125,-20.999997)"
@@ -817,14 +817,14 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/pointer.png"
        xlink:href="pointer.png"
-       inkscape:export-ydpi="89.969025"
-       inkscape:export-xdpi="89.969025"
-       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
-       y="281.89755"
-       x="180.13435"
-       id="image3120"
+       width="83.794296"
        height="76.732979"
-       width="83.794296" />
+       id="image3120"
+       x="180.13435"
+       y="281.89755"
+       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
+       inkscape:export-xdpi="89.969025"
+       inkscape:export-ydpi="89.969025" />
     <path
        id="path3880"
        style="fill:none;stroke:#15af2a;stroke-width:6;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -853,26 +853,26 @@
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/refresh.png"
        xlink:href="refresh.png"
-       inkscape:export-ydpi="89.969025"
-       inkscape:export-xdpi="89.969025"
-       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
-       width="54"
-       height="54"
-       preserveAspectRatio="none"
-       id="image946"
+       y="286.36218"
        x="270"
-       y="286.36218" />
+       id="image946"
+       preserveAspectRatio="none"
+       height="54"
+       width="54"
+       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
+       inkscape:export-xdpi="89.969025"
+       inkscape:export-ydpi="89.969025" />
     <image
        sodipodi:absref="/home/nick/projects/rapidragdoll/src/graphics/exit.png"
        xlink:href="exit.png"
-       inkscape:export-ydpi="89.969025"
-       inkscape:export-xdpi="89.969025"
-       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
-       width="57.599998"
-       height="57.599998"
-       preserveAspectRatio="none"
-       id="image4627"
+       y="286.36218"
        x="330"
-       y="286.36218" />
+       id="image4627"
+       preserveAspectRatio="none"
+       height="57.599998"
+       width="57.599998"
+       inkscape:export-filename="/home/nick/projects/rapidragdoll/src/dist/resources/images/path2986.png"
+       inkscape:export-xdpi="89.969025"
+       inkscape:export-ydpi="89.969025" />
   </g>
 </svg>

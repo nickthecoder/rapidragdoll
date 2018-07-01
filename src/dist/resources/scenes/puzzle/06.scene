@@ -1,0 +1,278 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Play",
+  "directorAttributes": [
+    {
+      "name": "maxDolls",
+      "value": "5"
+    },
+    {
+      "name": "nextScene",
+      "value": "menu"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
+    },
+    {
+      "name": "topRight",
+      "value": "1280.0x1200.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      1280,
+      0
+    ],
+    "y": [
+      0,
+      800
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    "glass",
+    "aim"
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "launcher",
+          "x": 302,
+          "y": 362,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "515.0x310.0"
+            },
+            {
+              "name": "dollName",
+              "value": "lilian"
+            },
+            {
+              "name": "speed",
+              "value": "500"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": -3,
+          "y": -6.0800000000000125,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 45,
+          "sizeY": 1198.08,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "pin",
+          "x": 278,
+          "y": 74,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wall",
+          "x": 1280,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 45,
+          "sizeY": 1197,
+          "alignmentX": 1,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 0,
+          "y": -6.0800000000000125,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1283,
+          "sizeY": 67.08000000000001,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "pin",
+          "x": 1045,
+          "y": 71,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wood",
+          "x": 429,
+          "y": 474,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 804,
+          "sizeY": 67,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "launcher",
+          "x": 151,
+          "y": 732,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "300.0x900.0"
+            },
+            {
+              "name": "dollName",
+              "value": "annie"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1.5"
+            },
+            {
+              "name": "speed",
+              "value": "400"
+            }
+          ]
+        },
+        {
+          "costume": "pin",
+          "x": 872,
+          "y": 558,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "pin",
+          "x": 666,
+          "y": 555,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wall",
+          "x": 430,
+          "y": 540,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 51,
+          "sizeY": 232,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 430,
+          "y": 910,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 51,
+          "sizeY": 285,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 41,
+          "y": 1146,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1195,
+          "sizeY": 50,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "collectable-slowDown",
+          "x": 646,
+          "y": 323,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "factor",
+              "value": "1.2"
+            },
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
+      ]
+    }
+  ]
+}

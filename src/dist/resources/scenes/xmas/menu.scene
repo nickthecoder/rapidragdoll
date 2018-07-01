@@ -316,7 +316,7 @@
           "y": 84,
           "viewAlignmentX": "CENTER",
           "viewAlignmentY": "CENTER",
-          "direction": 180,
+          "direction": 178.75463573323165,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -408,11 +408,11 @@
         },
         {
           "costume": "join1",
-          "x": 946,
-          "y": 445,
+          "x": 943,
+          "y": 448,
           "viewAlignmentX": "CENTER",
           "viewAlignmentY": "CENTER",
-          "direction": 276.6699863182421,
+          "direction": 277.1250163489018,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -424,11 +424,11 @@
         },
         {
           "costume": "join1",
-          "x": 906,
-          "y": 316,
+          "x": 907,
+          "y": 321,
           "viewAlignmentX": "CENTER",
           "viewAlignmentY": "CENTER",
-          "direction": 229.00000000000003,
+          "direction": 229.3987053549955,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -529,11 +529,11 @@
         },
         {
           "costume": "join1",
-          "x": 706.4000000000002,
-          "y": 122.40000000000012,
+          "x": 709.4000000000002,
+          "y": 124.40000000000012,
           "viewAlignmentX": "CENTER",
           "viewAlignmentY": "CENTER",
-          "direction": 216.78760464464276,
+          "direction": 217.21152090290195,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -722,10 +722,10 @@
         {
           "costume": "join1",
           "x": 631.0277777777785,
-          "y": 559.5222222222226,
+          "y": 557.5222222222226,
           "viewAlignmentX": "CENTER",
           "viewAlignmentY": "CENTER",
-          "direction": 38.259943902053955,
+          "direction": 36.29050744547868,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
@@ -770,10 +770,10 @@
         {
           "costume": "join1",
           "x": 744.2500000000002,
-          "y": 599.5222222222229,
+          "y": 598.5222222222229,
           "viewAlignmentX": "CENTER",
           "viewAlignmentY": "CENTER",
-          "direction": 0,
+          "direction": 0.7656788982763175,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [

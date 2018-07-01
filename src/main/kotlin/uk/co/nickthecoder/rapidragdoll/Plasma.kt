@@ -10,8 +10,6 @@ import uk.co.nickthecoder.tickle.physics.ContactListenerRole
 
 class Plasma : ActionRole(), ContactListenerRole {
 
-    var frame = 0
-
     override fun createAction(): Action {
         return Do {
             actor.event("default")
