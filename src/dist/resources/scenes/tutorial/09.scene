@@ -117,8 +117,8 @@
         },
         {
           "costume": "bell",
-          "x": 390,
-          "y": 573,
+          "x": 143,
+          "y": 576,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -135,8 +135,8 @@
         },
         {
           "costume": "bell",
-          "x": 155,
-          "y": 627,
+          "x": 337,
+          "y": 626,
           "direction": 0,
           "scaleX": 0.5,
           "scaleY": 0.5,
