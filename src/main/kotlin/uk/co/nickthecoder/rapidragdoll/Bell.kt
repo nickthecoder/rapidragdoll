@@ -10,16 +10,17 @@ import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.animation.Fade
+import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.Attribute
 
 
 class Bell : ActionRole(), Draggable {
 
-    @Attribute
-    var ringThreshold = 1f
-
     @Attribute(attributeType = AttributeType.RELATIVE_POSITION)
     val ceiling = Vector2d()
+
+    @Attribute
+    var angleThreshold = Angle.degrees(30.0)
 
     lateinit var front: Actor
 
@@ -27,7 +28,6 @@ class Bell : ActionRole(), Draggable {
 
     lateinit var rope: Actor
 
-    var oldAngularVelocity = 0f
 
     override fun createAction(): Action {
 
@@ -92,10 +92,19 @@ class Bell : ActionRole(), Draggable {
 
     }
 
+    /**
+     * Return true when the bell has been rung.
+     * I used to test for the difference in angular velocity of the clanger and the bell.
+     * The idea was to "win" the bell when the clanger hit the bell hard, but this turned out to
+     * be not obvious, and tricky to do, so I've replaced it with a simple test for the angle of the bell
+     * being beyond a threshold.
+     */
     fun hit(): Boolean {
-        val diff = Math.abs(clanger.body!!.angularVelocity - oldAngularVelocity)
-        oldAngularVelocity = clanger.body!!.angularVelocity
-        return diff > ringThreshold
+        //val diff = Math.abs(clanger.body!!.angularVelocity - oldAngularVelocity)
+        //oldAngularVelocity = clanger.body!!.angularVelocity
+        //return diff > ringThreshold
+        val degrees = Math.abs(actor.direction.degrees)
+        return degrees > Math.abs(angleThreshold.degrees)
     }
 
 }

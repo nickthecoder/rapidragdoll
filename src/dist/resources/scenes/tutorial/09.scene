@@ -110,8 +110,8 @@
               "value": "0.0x68.0"
             },
             {
-              "name": "ringThreshold",
-              "value": "1"
+              "name": "angleThreshold",
+              "value": "29.999999999999996"
             }
           ]
         },
@@ -128,8 +128,8 @@
               "value": "0.0x198.0"
             },
             {
-              "name": "ringThreshold",
-              "value": "1"
+              "name": "angleThreshold",
+              "value": "20.0"
             }
           ]
         },
@@ -146,8 +146,8 @@
               "value": "0.0x142.0"
             },
             {
-              "name": "ringThreshold",
-              "value": "1"
+              "name": "angleThreshold",
+              "value": "59.99999999999999"
             }
           ]
         },

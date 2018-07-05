@@ -26,7 +26,10 @@
       "uk.co.nickthecoder.rapidragdoll"
     ],
     "treeThumbnailSize": 24,
-    "costumePickerThumbnailSize": 40
+    "costumePickerThumbnailSize": 40,
+    "isMaximized": false,
+    "windowWidth": 1000,
+    "windowHeight": 600
   },
   "layouts": [
     {
@@ -5313,6 +5316,10 @@
             }
           ],
           "attributes": [
+            {
+              "name": "angleThreshold",
+              "value": "29.999999999999996"
+            },
             {
               "name": "ceiling",
               "value": "0.0x0.0"
