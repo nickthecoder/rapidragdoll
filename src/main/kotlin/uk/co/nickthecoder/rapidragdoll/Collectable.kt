@@ -49,7 +49,7 @@ class CollectableGrow : Collectable() {
     var factor = 1.2
 
     override fun collected() {
-        Play.instance.launcher?.let {
+        AbstractPlay.instance.launcher?.let {
             it.scale *= factor
         }
     }
@@ -61,7 +61,7 @@ class CollectableShrink : Collectable() {
     var factor = 1.2
 
     override fun collected() {
-        Play.instance.launcher?.let {
+        AbstractPlay.instance.launcher?.let {
             it.scale /= factor
         }
     }
@@ -74,7 +74,7 @@ class CollectableSpeedUp : Collectable() {
     var factor = 1.2
 
     override fun collected() {
-        Play.instance.launcher?.let {
+        AbstractPlay.instance.launcher?.let {
             it.speed *= factor
         }
     }
@@ -87,7 +87,7 @@ class CollectableSlowDown : Collectable() {
     var factor = 1.2
 
     override fun collected() {
-        Play.instance.launcher?.let {
+        AbstractPlay.instance.launcher?.let {
             it.speed /= factor
         }
     }

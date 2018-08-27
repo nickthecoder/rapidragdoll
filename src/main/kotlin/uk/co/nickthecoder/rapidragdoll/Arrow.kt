@@ -10,7 +10,7 @@ class Arrow : AbstractRole() {
 
     override fun tick() {
         actor.stage?.firstView()?.mousePosition(mouse)
-        Play.instance.launcher?.let {
+        AbstractPlay.instance.launcher?.let {
             actor.position.set(it.actor.position)
             mouse.sub(actor.position, tempVector)
             val magnitude = tempVector.length()
@@ -18,12 +18,12 @@ class Arrow : AbstractRole() {
             if (magnitude > it.speed) {
                 // Show the Aim actor, and draw the arrow from the launcher towards the mouse position
                 // With magnitude of the maximum speed of the launcher.
-                Play.instance.aim?.actor?.event("default")
+                AbstractPlay.instance.aim?.actor?.event("default")
                 tempVector.normalize(it.speed).add(actor.position)
                 actor.ninePatchAppearance?.lineTo(tempVector)
             } else {
                 // Hide the Aim actor, and draw the arrow from the launcher to the mouse position
-                Play.instance.aim?.actor?.hide()
+                AbstractPlay.instance.aim?.actor?.hide()
                 actor.ninePatchAppearance?.lineTo(mouse)
             }
         }

@@ -1560,6 +1560,16 @@
       "direction": 0
     }
   ],
+  "sounds": [
+    {
+      "name": "ah1",
+      "file": "sounds/ah1.ogg"
+    },
+    {
+      "name": "ah2",
+      "file": "sounds/ah2.ogg"
+    }
+  ],
   "costumeGroups": [
     {
       "name": "dolls",
@@ -1618,6 +1628,18 @@
               "name": "leg-right",
               "costumes": [
                 "annie-leg-right"
+              ]
+            },
+            {
+              "name": "hitHard",
+              "sounds": [
+                "ah1"
+              ]
+            },
+            {
+              "name": "hit",
+              "sounds": [
+                "ah2"
               ]
             }
           ],
@@ -2104,7 +2126,7 @@
       "costumes": [
         {
           "name": "annie-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.MajorDollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2267,7 +2289,7 @@
         },
         {
           "name": "annie-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.MajorDollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",

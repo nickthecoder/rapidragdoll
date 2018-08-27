@@ -14,12 +14,12 @@ class Pin : ActionRole() {
 
     override fun createAction(): Action {
 
-        Play.instance.objectives++
+        AbstractPlay.instance.objectives++
 
         return Until { (actor.direction.degrees < -70 || actor.direction.degrees > 70) }
                 .then {
                     actor.event("score")
-                    Play.instance.objectives--
+                    AbstractPlay.instance.objectives--
                 }
                 .then(Fade(actor.color, 1.0, 0f, Eases.easeIn))
                 .then(Kill(actor))

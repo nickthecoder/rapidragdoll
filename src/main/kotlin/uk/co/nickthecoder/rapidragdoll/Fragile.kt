@@ -19,13 +19,13 @@ open class Fragile : ActionRole(), Draggable, Reward {
 
     override fun createAction(): Action {
 
-        if (Play.instance is Victory) {
+        if (AbstractPlay.instance is Victory) {
             // Don't disappear on the "Victory" scene
             return NoAction()
         } else {
             return Until { (actor.direction.degrees < -45 || actor.direction.degrees > 45) }
                     .then {
-                        Play.instance.knockedFragile()
+                        AbstractPlay.instance.knockedFragile()
                     }
                     .then(Fade(actor.color, 1.0, 0f, Eases.easeIn))
                     .then(Kill(actor))

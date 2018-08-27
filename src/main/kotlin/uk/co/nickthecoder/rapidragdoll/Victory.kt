@@ -14,7 +14,7 @@ import uk.co.nickthecoder.tickle.stage.findRoleAt
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Victory : Play(), MouseListener {
+class Victory : AbstractPlay(), MouseListener {
 
     @Attribute
     var showAll = false
@@ -40,13 +40,23 @@ class Victory : Play(), MouseListener {
         mainView = Game.instance.scene.findStageView("main")!!
 
         var dollZOrder = 1.0
+
+        // All Victory scenes must have one and only one Hand object
         hand = mainView.stage.findRole<Hand>()!!
+        // All Victory scenes must have one and only one Elastic object.
         elastic = mainView.stage.findRole<Elastic>()!!
+
+        // Ensure that the dolls' parts overlap in a sensible fashion by giving each Doll a unique
+        // z-order. Each DollPart will use the Doll's z-order, plus a fractional amount, so that
+        // every z-order is unique.
         mainView.stage.findRoles<Doll>().forEach { doll ->
             doll.actor.zOrder = dollZOrder++
-
         }
+
         if (!showAll) {
+            // Only keep the objects that have been "earned".
+            // Some objects will only appear if the player has successfully completed a scene.
+            // If the scene hasn't been completed, then kill the actor before the scene starts.
             mainView.stage.findRoles<Reward>().forEach { reward ->
                 if (reward.rewardForScene.isNotBlank()) {
                     if (!scenePreferences(reward.rewardForScene).getBoolean("completed", false)) {

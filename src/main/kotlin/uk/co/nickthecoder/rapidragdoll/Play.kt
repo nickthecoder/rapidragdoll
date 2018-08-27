@@ -15,7 +15,7 @@ import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
-open class Play : AbstractDirector(), MouseListener {
+abstract class AbstractPlay : AbstractDirector(), MouseListener {
 
     /**
      * Maximum number of dolls - The oldest dolls are killed when this number is exceeded.
@@ -339,7 +339,9 @@ open class Play : AbstractDirector(), MouseListener {
         /**
          * Allows easy access to this Director, set when a Play object is created.
          */
-        lateinit var instance: Play
+        lateinit var instance: AbstractPlay
     }
 
 }
+
+class Play : AbstractPlay()

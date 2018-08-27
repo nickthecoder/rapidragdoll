@@ -92,7 +92,7 @@
             },
             {
               "name": "dollName",
-              "value": "mike"
+              "value": "annie"
             },
             {
               "name": "speed",
@@ -133,8 +133,8 @@
               "value": "0.0x142.0"
             },
             {
-              "name": "ringThreshold",
-              "value": "1"
+              "name": "angleThreshold",
+              "value": "29.999999999999996"
             }
           ]
         }

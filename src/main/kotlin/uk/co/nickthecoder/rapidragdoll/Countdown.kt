@@ -15,7 +15,7 @@ class Countdown : ActionRole() {
     }
 
     fun go() {
-        action = Delay(1.0).then { countdown() }.repeat(seconds).then { Play.instance.timeIsUp() }
+        action = Delay(1.0).then { countdown() }.repeat(seconds).then { AbstractPlay.instance.timeIsUp() }
     }
 
     fun stop() {

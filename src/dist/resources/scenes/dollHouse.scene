@@ -637,8 +637,8 @@
               "value": "-1.0x74.0"
             },
             {
-              "name": "ringThreshold",
-              "value": "1"
+              "name": "angleThreshold",
+              "value": "29.999999999999996"
             }
           ]
         },

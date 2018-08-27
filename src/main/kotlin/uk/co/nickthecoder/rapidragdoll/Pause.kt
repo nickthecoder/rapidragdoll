@@ -21,9 +21,9 @@ class Pause : ActionRole() {
 
         val backAgain = Vector2d(moveBy).mul(-1.0)
 
-        return Until { Play.instance.paused }
+        return Until { AbstractPlay.instance.paused }
                 .then(MoveBy(actor.position, moveBy, seconds, Eases.easeOut))
-                .then(Until { !Play.instance.paused })
+                .then(Until { !AbstractPlay.instance.paused })
                 .then(MoveBy(actor.position, backAgain, seconds, Eases.easeIn))
                 .forever()
     }

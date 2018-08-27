@@ -95,7 +95,7 @@ abstract class AbstractLauncher : AbstractRole() {
             val initialVelocity = direction.normalize(magnitude)
             throwBy.linearVelocity = world?.pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.mass))
 
-            Play.instance.launched(doll)
+            AbstractPlay.instance.launched(doll)
         }
     }
 
@@ -132,7 +132,7 @@ class Launcher : AbstractLauncher() {
     override fun activated() {
         super.activated()
         select = Resources.instance.inputs.find("select${number}")
-        if (Play.instance.launcher === this) {
+        if (AbstractPlay.instance.launcher === this) {
             actor.event("select${number}")
         } else {
             actor.event("deselect${number}")
@@ -141,7 +141,7 @@ class Launcher : AbstractLauncher() {
 
     override fun tick() {
         if (select?.isPressed() == true) {
-            Play.instance.launcher = this
+            AbstractPlay.instance.launcher = this
             actor.event("select${number}")
         }
     }

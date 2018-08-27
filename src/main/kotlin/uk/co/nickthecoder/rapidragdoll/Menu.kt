@@ -4,7 +4,7 @@ import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.events.KeyEvent
 import uk.co.nickthecoder.tickle.resources.Resources
 
-class Menu : Play() {
+class Menu : AbstractPlay() {
 
     override fun onKey(event: KeyEvent) {
         if (Resources.instance.inputs.find("escape")?.matches(event) == true) {

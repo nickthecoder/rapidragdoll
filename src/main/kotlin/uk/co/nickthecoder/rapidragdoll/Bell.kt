@@ -31,7 +31,7 @@ class Bell : ActionRole(), Draggable {
 
     override fun createAction(): Action {
 
-        Play.instance.objectives++
+        AbstractPlay.instance.objectives++
 
         front = actor.createChildOnStage("front")
         front.scaleXY = actor.scaleXY
@@ -51,7 +51,7 @@ class Bell : ActionRole(), Draggable {
         jointDef.localAnchorA = actor.stage?.world?.pixelsToWorld(Vector2d(0.0, -20.0 * actor.scaleXY))
         world.createJoint(jointDef) as RevoluteJoint
 
-        if (Play.instance is Victory) {
+        if (AbstractPlay.instance is Victory) {
             // Don't disappear on the "Victory" scene
             return Until { hit() }
                     .then {
@@ -62,7 +62,7 @@ class Bell : ActionRole(), Draggable {
         return Until { hit() }
                 .then {
                     actor.event("ding")
-                    Play.instance.objectives--
+                    AbstractPlay.instance.objectives--
                 }
                 .then((Fade(actor.color, 1.0, 0f, Eases.easeIn))
                         .and(Fade(rope.color, 1.0, 0f, Eases.easeIn))
