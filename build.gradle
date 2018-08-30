@@ -31,13 +31,8 @@ repositories {
 }
 
 dependencies {
-
-    compile 'uk.co.nickthecoder:tickle:0.1'
-    //compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
-
-    // Only needed for the editor
-    // Not sure why I need to include this (as it is in tickle's dependencies),
-    // but I got errors when running the editor without it. Hmm.
+    compile 'uk.co.nickthecoder:tickle-core:0.1'
+    compile 'uk.co.nickthecoder:tickle-editor:0.1'
     compile 'org.reflections:reflections:0.9.11'
 }
 

@@ -27,7 +27,7 @@
     ],
     "treeThumbnailSize": 24,
     "costumePickerThumbnailSize": 40,
-    "isMaximized": false,
+    "isMaximized": true,
     "windowWidth": 1000,
     "windowHeight": 600
   },
