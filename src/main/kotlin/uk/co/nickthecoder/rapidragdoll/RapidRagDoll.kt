@@ -19,14 +19,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package uk.co.nickthecoder.rapidragdoll
 
 import uk.co.nickthecoder.tickle.AbstractProducer
-import uk.co.nickthecoder.tickle.namedMain
+import uk.co.nickthecoder.tickle.editor.EditorMain
 
 /**
  * The main entry point for the game.
- * See [namedMain] for usage information.
  */
 fun main(args: Array<String>) {
-    namedMain("rapidragdoll", args)
+    EditorMain("rapidragdoll", args).start()
 }
 
 class RapidRagDoll : AbstractProducer()
