@@ -19,7 +19,7 @@ apply plugin: 'application'
 
 mainClassName = "uk.co.nickthecoder.rapidragdoll.RapidRagDollKt"
 
-defaultTasks 'installApp'
+defaultTasks 'installDist'
 
 version = '0.1'
 group = 'uk.co.nickthecoder'

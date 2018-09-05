@@ -95,7 +95,7 @@ class Doll : ActionRole(), Reward {
 
     fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
         val world = actor.stage?.world
-        val newActor = actor.createChildOnStage(part)
+        val newActor = actor.createChild(part)
         val newRole = newActor.role
         if (newRole is DollPart) {
             newRole.doll = this

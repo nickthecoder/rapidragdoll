@@ -51,13 +51,13 @@ class Bell : ActionRole(), Draggable {
 
         AbstractPlay.instance.objectives++
 
-        front = actor.createChildOnStage("front")
+        front = actor.createChild("front")
         front.scaleXY = actor.scaleXY
         (front.role as Follower).following = actor
 
         createRope()
 
-        clanger = actor.createChildOnStage("clanger")
+        clanger = actor.createChild("clanger")
         clanger.scaleXY = actor.scaleXY
 
         val world = actor.body!!.world
@@ -95,7 +95,7 @@ class Bell : ActionRole(), Draggable {
     }
 
     fun createRope() {
-        rope = actor.createChildOnStage("rope")
+        rope = actor.createChild("rope")
         rope.scaleXY = actor.scaleXY
 
         val world = actor.body!!.world

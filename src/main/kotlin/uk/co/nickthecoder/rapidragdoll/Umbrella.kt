@@ -36,7 +36,7 @@ class Umbrella : Fragile(), Draggable {
     override fun activated() {
         val world = actor.stage?.world
 
-        topHalf = actor.createChildOnStage("topHalf")
+        topHalf = actor.createChild("topHalf")
         topHalf.position.y += joinPoint.y
 
         actor.body?.let { joinTo ->

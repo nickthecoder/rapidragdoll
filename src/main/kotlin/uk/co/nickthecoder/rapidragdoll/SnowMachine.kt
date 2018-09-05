@@ -38,7 +38,7 @@ class SnowMachine : ActionRole() {
     override fun createAction(): Action {
         return Delay(period)
                 .then {
-                    val snowA = actor.createChildOnStage("snow")
+                    val snowA = actor.createChild("snow")
                     snowA.x = Rand.between(actor.x, toX)
                     snowA.y = actor.y
                 }.repeat(count)

@@ -33,8 +33,8 @@ class Clock : ActionRole() {
     override fun activated() {
         super.activated()
 
-        minuteHand = actor.createChildOnStage("minute-hand")
-        hourHand = actor.createChildOnStage("hour-hand")
+        minuteHand = actor.createChild("minute-hand")
+        hourHand = actor.createChild("hour-hand")
         updateHands()
     }
 

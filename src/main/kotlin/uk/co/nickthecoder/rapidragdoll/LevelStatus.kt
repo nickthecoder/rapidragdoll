@@ -55,7 +55,7 @@ class LevelStatus : SceneButton() {
             return
         }
 
-        val buttonA = actor.createChildOnStage("text")
+        val buttonA = actor.createChild("text")
         buttonA.textAppearance?.text = text
         buttonA.position.add(textPosition)
         buttonA.zOrder = actor.zOrder + 1
@@ -74,7 +74,7 @@ class LevelStatus : SceneButton() {
             val seconds = preferences?.getInt("seconds", -1) ?: -1
             if (seconds >= 0) {
                 actor.event("completed")
-                val timeA = actor.createChildOnStage("time")
+                val timeA = actor.createChild("time")
                 timeA.textAppearance?.text = text
                 timeA.position.add(textPosition)
             }
