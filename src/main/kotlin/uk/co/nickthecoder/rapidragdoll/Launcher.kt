@@ -29,7 +29,7 @@ import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.RandomFactory
-import uk.co.nickthecoder.tickle.util.randomListItem
+import uk.co.nickthecoder.tickle.util.listItem
 
 /**
  * Each doll is given a zOrder incremented by 1, and then resets to back to 1 when it reaches 100.
@@ -87,7 +87,7 @@ abstract class AbstractLauncher : AbstractRole() {
             return
         }
 
-        val costume = random.randomListItem(dollCostumes)
+        val costume = random.listItem(dollCostumes)
         val dollA = actor.createChild(costume)
         val doll = dollA.role
 
@@ -99,7 +99,7 @@ abstract class AbstractLauncher : AbstractRole() {
             if (dollZOrder > 99) {
                 dollZOrder = 1.0
             }
-            
+
             // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
             // depending on which body part is thrown.
             // Don't throw using the legs, because that can cause them to overlap and STICK.

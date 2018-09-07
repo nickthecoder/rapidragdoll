@@ -29,7 +29,8 @@
     "costumePickerThumbnailSize": 40,
     "isMaximized": true,
     "windowWidth": 1000,
-    "windowHeight": 600
+    "windowHeight": 600,
+    "apiURL": "http://nickthecoder.co.uk/public/tickle/api-0.1/tickle-core/"
   },
   "layouts": [
     {
