@@ -36,7 +36,7 @@ open class AnimatedInformation : ActionRole() {
     var seconds = 2.0
 
     open fun go() {
-        action = goAction()
+        replaceAction(goAction())
     }
 
     open fun goAction(): Action {

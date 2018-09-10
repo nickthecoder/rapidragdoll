@@ -20,7 +20,6 @@ package uk.co.nickthecoder.rapidragdoll
 
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.action.Delay
-import uk.co.nickthecoder.tickle.action.NoAction
 import uk.co.nickthecoder.tickle.util.Attribute
 
 class Countdown : ActionRole() {
@@ -33,11 +32,11 @@ class Countdown : ActionRole() {
     }
 
     fun go() {
-        action = Delay(1.0).then { countdown() }.repeat(seconds).then { AbstractPlay.instance.timeIsUp() }
+        replaceAction(Delay(1.0).then { countdown() }.repeat(seconds).then { AbstractPlay.instance.timeIsUp() })
     }
 
     fun stop() {
-        action = NoAction()
+        replaceAction(null)
     }
 
     fun countdown() {

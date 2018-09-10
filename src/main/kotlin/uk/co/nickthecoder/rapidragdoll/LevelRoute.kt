@@ -18,11 +18,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package uk.co.nickthecoder.rapidragdoll
 
+import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.util.Attribute
-import uk.co.nickthecoder.tickle.util.Button
 
-class LevelRoute : Button() {
+class LevelRoute : AbstractRole() {
 
     @Attribute
     var requiredScene = ""
@@ -33,4 +33,5 @@ class LevelRoute : Button() {
         }
     }
 
+    override fun tick() {}
 }

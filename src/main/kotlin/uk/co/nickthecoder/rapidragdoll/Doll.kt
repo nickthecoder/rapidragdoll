@@ -174,7 +174,6 @@ class Doll : ActionRole(), Reward {
             if (Game.instance.director is Play) {
                 actor.event(if (deltaV > 2.0f) "hitHard" else "hit")
                 ignoreHitTick = now
-                println("Hit $now, $deltaV")
             }
         }
     }

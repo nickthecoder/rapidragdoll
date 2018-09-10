@@ -88,10 +88,11 @@ abstract class AbstractLauncher : AbstractRole() {
         }
 
         val costume = random.listItem(dollCostumes)
-        val dollA = actor.createChild(costume)
+        val dollA = costume.createActor()
         val doll = dollA.role
 
         if (doll is Doll) {
+            dollA.position.set(actor.position)
             dollA.scaleXY = scale * doll.defaultScale
 
             dollA.zOrder = dollZOrder
@@ -99,6 +100,7 @@ abstract class AbstractLauncher : AbstractRole() {
             if (dollZOrder > 99) {
                 dollZOrder = 1.0
             }
+            actor.stage?.add(dollA)
 
             // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
             // depending on which body part is thrown.

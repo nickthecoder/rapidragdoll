@@ -50,9 +50,10 @@ abstract class Collectable : ActionRole(), ContactListenerRole {
         if (!collected && otherRole is DollPart) {
             collected = true
             collected()
-            action = MoveBy(actor.position, Vector2d(0.0, 200.0), 1.0)
+            replaceAction(MoveBy(actor.position, Vector2d(0.0, 200.0), 1.0)
                     .and(Fade(actor.color, 1.0, 0f, Eases.easeIn))
                     .then(Kill(actor))
+            )
         }
     }
 
