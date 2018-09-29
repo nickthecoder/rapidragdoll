@@ -72,7 +72,7 @@ class MajorDollPart : DollPart() {
      * Make a sound when the change in velocity is high (because it has hit something)
      */
     override fun tick() {
-        val newSpeed = actor.body?.linearVelocity?.clone() ?: Vec2(0.0f, 0.0f)
+        val newSpeed = actor.body?.jBox2DBody?.linearVelocity?.clone() ?: Vec2(0.0f, 0.0f)
         val dx = Math.abs(oldSpeed.x - newSpeed.x)
         val dy = Math.abs(oldSpeed.y - newSpeed.y)
 

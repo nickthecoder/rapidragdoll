@@ -18,8 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package uk.co.nickthecoder.rapidragdoll
 
-import org.jbox2d.dynamics.joints.RevoluteJoint
-import org.jbox2d.dynamics.joints.RevoluteJointDef
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.Game
@@ -28,7 +26,7 @@ import uk.co.nickthecoder.tickle.action.Kill
 import uk.co.nickthecoder.tickle.action.ParallelAction
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Fade
-import uk.co.nickthecoder.tickle.physics.mul
+import uk.co.nickthecoder.tickle.physics.TicklePinJoint
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.CostumeAttribute
 
@@ -51,11 +49,11 @@ class Doll : ActionRole(), Reward {
     @CostumeAttribute
     var defaultScale = 1.0
 
-    var totalMass = 0f
+    var totalMass = 0.0
 
     val parts = mutableListOf<Actor>()
 
-    val joints = mutableListOf<RevoluteJoint>()
+    val joints = mutableListOf<TicklePinJoint>()
 
     var ending = false
 
@@ -94,7 +92,7 @@ class Doll : ActionRole(), Reward {
     }
 
     fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
-        val world = actor.stage?.world
+
         val newActor = actor.createChild(part)
         val newRole = newActor.role
         if (newRole is DollPart) {
@@ -103,55 +101,27 @@ class Doll : ActionRole(), Reward {
             newActor.position.add(newRole.offset)
 
             if (joinTo != null) {
-                val jointDef = RevoluteJointDef()
-                jointDef.bodyA = joinTo.body
-                jointDef.bodyB = newActor.body
-
-                jointDef.localAnchorA = world?.pixelsToWorld(newRole.offset)
-                jointDef.lowerAngle = newRole.fromAngle.radians.toFloat()
-                jointDef.upperAngle = newRole.toAngle.radians.toFloat()
-                jointDef.enableLimit = true
-                jointDef.collideConnected = false
-                val joint = world?.createJoint(jointDef) as RevoluteJoint
+                val joint = TicklePinJoint(joinTo, newActor, newRole.offset)
+                joint.limitRotation(newRole.fromAngle, newRole.toAngle)
                 joints.add(joint)
             }
         }
         newActor.zOrder = actor.zOrder + zOrder
         newActor.scaleXY = actor.scaleXY
 
-        totalMass += (newActor.body?.mass ?: 0f)
+        totalMass += (newActor.body?.jBox2DBody?.mass ?: 0f)
 
         parts.add(newActor)
         return newActor
     }
 
     fun scale(scaleX: Double, scaleY: Double) {
-        val world = actor.stage?.world
-
         parts.forEach { part ->
             part.scale.mul(scaleX, scaleY)
         }
-        val newJoints = mutableListOf<RevoluteJoint>()
         joints.forEach { joint ->
-
-            val jointDef = RevoluteJointDef()
-            jointDef.bodyA = joint.bodyA
-            jointDef.bodyB = joint.bodyB
-
-            jointDef.localAnchorA = joint.m_localAnchor1.mul(scaleX.toFloat(), scaleY.toFloat())
-
-            jointDef.lowerAngle = joint.m_lowerAngle
-            jointDef.upperAngle = joint.m_upperAngle
-            jointDef.enableLimit = true
-            jointDef.collideConnected = false
-
-            world?.destroyJoint(joint)
-            val newJoint = world?.createJoint(jointDef) as RevoluteJoint
-            newJoints.add(newJoint)
+            joint.pointA = joint.pointA.mul(scaleX, scaleY)
         }
-
-        joints.clear()
-        joints.addAll(newJoints)
         totalMass *= (scaleX * scaleY).toFloat()
     }
 

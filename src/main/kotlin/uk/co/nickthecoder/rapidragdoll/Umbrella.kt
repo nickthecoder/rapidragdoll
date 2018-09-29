@@ -42,21 +42,21 @@ class Umbrella : Fragile(), Draggable {
         actor.body?.let { joinTo ->
 
             val jointDef = RevoluteJointDef()
-            jointDef.bodyA = joinTo
-            jointDef.bodyB = topHalf.body
+            jointDef.bodyA = joinTo.jBox2DBody
+            jointDef.bodyB = topHalf.body!!.jBox2DBody
 
             jointDef.localAnchorA = world?.pixelsToWorld(joinPoint)
             jointDef.lowerAngle = Math.toRadians(-60.0).toFloat()
             jointDef.upperAngle = Math.toRadians(60.0).toFloat()
             jointDef.enableLimit = true
 
-            world?.createJoint(jointDef)
+            world?.jBox2dWorld?.createJoint(jointDef)
         }
         topHalf.direction.radians += angle.radians
     }
 
-    override fun mass(): Float {
-        return actor.body!!.mass + topHalf.body!!.mass
+    override fun mass(): Double {
+        return (actor.body?.mass ?: 0.0) + (topHalf.body?.mass ?: 0.0)
     }
 
 }

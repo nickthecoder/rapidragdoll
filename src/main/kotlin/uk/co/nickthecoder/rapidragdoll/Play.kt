@@ -197,7 +197,7 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
 
     override fun activated() {
         super.activated()
-        mainView.stage.world?.setContactListener(RoleContactManager())
+        mainView.stage.world?.addContactListener(RoleContactManager())
     }
 
     override fun tick() {
@@ -276,12 +276,14 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
     }
 
     override fun onMouseMove(event: MouseEvent) {
-
-        mainView.screenToView(event.screenPosition, event.viewPosition)
-        mainView.centerX += panStart.x - event.viewPosition.x
-        mainView.centerY += panStart.y - event.viewPosition.y
-        mainView.screenToView(event.screenPosition, panStart)
-        constrainView()
+        if (event.button != 0) {
+            // Scroll the view
+            mainView.screenToView(event.screenPosition, event.viewPosition)
+            mainView.centerX += panStart.x - event.viewPosition.x
+            mainView.centerY += panStart.y - event.viewPosition.y
+            mainView.screenToView(event.screenPosition, panStart)
+            constrainView()
+        }
     }
 
     fun constrainView() {

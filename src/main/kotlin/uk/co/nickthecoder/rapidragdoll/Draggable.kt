@@ -22,7 +22,7 @@ import uk.co.nickthecoder.tickle.Role
 
 interface Draggable : Role {
 
-    fun mass() = actor.body?.mass ?: 0f
+    fun mass() = actor.body?.mass ?: 0.0
 
     fun scale(scale: Double) {
         scale(scale, scale)

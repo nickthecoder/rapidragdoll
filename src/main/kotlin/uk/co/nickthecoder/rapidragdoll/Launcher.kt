@@ -111,7 +111,7 @@ abstract class AbstractLauncher : AbstractRole() {
             val magnitude = Math.min(direction.length(), speed)
 
             val initialVelocity = direction.normalize(magnitude)
-            throwBy.linearVelocity = world?.pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.mass))
+            throwBy.jBox2DBody.linearVelocity = world?.pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.jBox2DBody.mass))
 
             AbstractPlay.instance.launched(doll)
         }

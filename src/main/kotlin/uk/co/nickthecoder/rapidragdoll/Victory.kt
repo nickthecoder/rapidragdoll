@@ -18,14 +18,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package uk.co.nickthecoder.rapidragdoll
 
-import org.jbox2d.dynamics.joints.MouseJoint
-import org.jbox2d.dynamics.joints.MouseJointDef
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.events.ButtonState
 import uk.co.nickthecoder.tickle.events.KeyEvent
 import uk.co.nickthecoder.tickle.events.MouseEvent
 import uk.co.nickthecoder.tickle.events.MouseListener
+import uk.co.nickthecoder.tickle.physics.TickleMouseJoint
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.findRole
 import uk.co.nickthecoder.tickle.stage.findRoleAt
@@ -41,7 +40,7 @@ class Victory : AbstractPlay(), MouseListener {
 
     var dragging: Draggable? = null
 
-    var mouseJoint: MouseJoint? = null
+    var mouseJoint: TickleMouseJoint? = null
 
     var hand: Hand? = null
 
@@ -115,18 +114,10 @@ class Victory : AbstractPlay(), MouseListener {
         }
     }
 
-    override fun onMouseMove(event: MouseEvent) {
-        if (event.button == 0) {
-            dragObject(event)
-        } else {
-            super.onMouseMove(event)
-        }
-    }
-
     fun dropObject() {
         if (dragging != null) {
             dragging = null
-            mouseJoint?.let { mainView.stage.world?.destroyJoint(it) }
+            mouseJoint?.destroy()
         }
         hand?.actor?.event("default")
         elastic?.mouseJoint = null
@@ -142,25 +133,15 @@ class Victory : AbstractPlay(), MouseListener {
             event.capture()
 
             val world = mainView.stage.world!!
-            dragging!!.actor.body!!.isAwake = true
+            dragging!!.actor.body!!.jBox2DBody.isAwake = true
 
-            val jointDef = MouseJointDef()
-            jointDef.maxForce = role.mass() * (Math.abs(world.gravity.y) + Math.abs(world.gravity.x)) * 2f
-            world.pixelsToWorld(jointDef.target, dragPosition)
-            jointDef.bodyA = hand!!.actor.body
-            jointDef.bodyB = dragging!!.actor.body
-
-            val joint = world.createJoint(jointDef)
-            mouseJoint = joint as MouseJoint
+            val maxForce = role.mass() * (Math.abs(world.gravity.y) + Math.abs(world.gravity.x)) / 50.0
+            mouseJoint = TickleMouseJoint(dragging!!.actor, dragPosition, maxForce)
             elastic?.mouseJoint = mouseJoint
+
             return
 
         }
-    }
-
-    fun dragObject(event: MouseEvent) {
-        mainView.screenToView(event.screenPosition, event.viewPosition)
-        mouseJoint?.target?.set(mainView.stage.world?.pixelsToWorld(event.viewPosition))
     }
 
     override fun knockedFragile() {

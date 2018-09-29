@@ -18,20 +18,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package uk.co.nickthecoder.rapidragdoll
 
-import org.jbox2d.dynamics.joints.MouseJoint
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.NinePatchAppearance
-import uk.co.nickthecoder.tickle.physics.anchorA
-import uk.co.nickthecoder.tickle.physics.anchorB
+import uk.co.nickthecoder.tickle.physics.TickleMouseJoint
 
 /**
  * An elastic line between the Hand and the item being dragged.
- * Used on the Victory scenes only.
+ * Used on the Victory (Doll House) scenes to pick up [Doll]s, and other [Draggable] items.
  */
 class Elastic : AbstractRole() {
 
-    var mouseJoint: MouseJoint? = null
+    var mouseJoint: TickleMouseJoint? = null
         set(v) {
             field = v
             if (v == null) {
@@ -47,6 +45,9 @@ class Elastic : AbstractRole() {
 
     override fun tick() {
         mouseJoint?.let { mouseJoint ->
+
+            actor.stage?.firstView()?.mousePosition()?.let { mouseJoint.target(it) }
+
             val app = actor.appearance
             if (app is NinePatchAppearance) {
                 mouseJoint.anchorA(from)
@@ -55,6 +56,7 @@ class Elastic : AbstractRole() {
                 actor.position.set(from)
                 app.lineTo(to)
             }
+
         }
     }
 

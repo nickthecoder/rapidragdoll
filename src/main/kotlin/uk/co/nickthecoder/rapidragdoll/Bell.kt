@@ -60,14 +60,14 @@ class Bell : ActionRole(), Draggable {
         clanger = actor.createChild("clanger")
         clanger.scaleXY = actor.scaleXY
 
-        val world = actor.body!!.world
+        val world = actor.body!!.tickleWorld
         val jointDef = RevoluteJointDef()
-        jointDef.bodyA = actor.body
-        jointDef.bodyB = clanger.body
+        jointDef.bodyA = actor.body!!.jBox2DBody
+        jointDef.bodyB = clanger.body!!.jBox2DBody
         jointDef.collideConnected = true
 
         jointDef.localAnchorA = actor.stage?.world?.pixelsToWorld(Vector2d(0.0, -20.0 * actor.scaleXY))
-        world.createJoint(jointDef) as RevoluteJoint
+        world.jBox2dWorld.createJoint(jointDef) as RevoluteJoint
 
         if (AbstractPlay.instance is Victory) {
             // Don't disappear on the "Victory" scene
@@ -98,15 +98,15 @@ class Bell : ActionRole(), Draggable {
         rope = actor.createChild("rope")
         rope.scaleXY = actor.scaleXY
 
-        val world = actor.body!!.world
+        val world = actor.body!!.tickleWorld
         val jointDef = RevoluteJointDef()
-        jointDef.bodyA = actor.body
-        jointDef.bodyB = rope.body
+        jointDef.bodyA = actor.body!!.jBox2DBody
+        jointDef.bodyB = rope.body!!.jBox2DBody
 
         rope.tiledAppearance?.let { appearance ->
             appearance.size.y = ceiling.y / actor.scaleXY
         }
-        world.createJoint(jointDef) as RevoluteJoint
+        world.jBox2dWorld.createJoint(jointDef) as RevoluteJoint
 
     }
 
