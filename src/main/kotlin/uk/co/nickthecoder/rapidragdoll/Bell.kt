@@ -18,8 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package uk.co.nickthecoder.rapidragdoll
 
-import org.jbox2d.dynamics.joints.RevoluteJoint
-import org.jbox2d.dynamics.joints.RevoluteJointDef
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.Actor
@@ -28,6 +26,7 @@ import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.animation.Fade
+import uk.co.nickthecoder.tickle.physics.TicklePinJoint
 import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.Attribute
 
@@ -44,6 +43,9 @@ class Bell : ActionRole(), Draggable {
 
     lateinit var clanger: Actor
 
+    /**
+     * I call it a rope, but it's more like a bar. Used to connect the bell to the ceiling.
+     */
     lateinit var rope: Actor
 
 
@@ -60,14 +62,8 @@ class Bell : ActionRole(), Draggable {
         clanger = actor.createChild("clanger")
         clanger.scaleXY = actor.scaleXY
 
-        val world = actor.body!!.tickleWorld
-        val jointDef = RevoluteJointDef()
-        jointDef.bodyA = actor.body!!.jBox2DBody
-        jointDef.bodyB = clanger.body!!.jBox2DBody
-        jointDef.collideConnected = true
-
-        jointDef.localAnchorA = actor.stage?.world?.pixelsToWorld(Vector2d(0.0, -20.0 * actor.scaleXY))
-        world.jBox2dWorld.createJoint(jointDef) as RevoluteJoint
+        val joint = TicklePinJoint(actor, clanger, Vector2d(0.0, -20.0 * actor.scaleXY))
+        joint.collideConnected = true
 
         if (AbstractPlay.instance is Victory) {
             // Don't disappear on the "Victory" scene
@@ -98,16 +94,11 @@ class Bell : ActionRole(), Draggable {
         rope = actor.createChild("rope")
         rope.scaleXY = actor.scaleXY
 
-        val world = actor.body!!.tickleWorld
-        val jointDef = RevoluteJointDef()
-        jointDef.bodyA = actor.body!!.jBox2DBody
-        jointDef.bodyB = rope.body!!.jBox2DBody
+        TicklePinJoint(actor, rope)
 
         rope.tiledAppearance?.let { appearance ->
             appearance.size.y = ceiling.y / actor.scaleXY
         }
-        world.jBox2dWorld.createJoint(jointDef) as RevoluteJoint
-
     }
 
     /**

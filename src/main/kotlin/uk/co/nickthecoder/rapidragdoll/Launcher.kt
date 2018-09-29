@@ -81,7 +81,6 @@ abstract class AbstractLauncher : AbstractRole() {
     }
 
     fun launch(point: Vector2d) {
-        val world = actor.stage?.world
 
         if (!clearToLaunch()) {
             return
@@ -102,8 +101,8 @@ abstract class AbstractLauncher : AbstractRole() {
             }
             actor.stage?.add(dollA)
 
-            // Throw the doll by giving ONE body part an initial velocity. This causes it to spin differently
-            // depending on which body part is thrown.
+            // Throw the doll by giving ONE body part an initial velocity.
+            // This causes it to spin differently depending on which body part is thrown.
             // Don't throw using the legs, because that can cause them to overlap and STICK.
             val partNumber = random.randomInt(doll.parts.size - 2)
             val throwBy = doll.parts[partNumber].body!!
@@ -111,7 +110,7 @@ abstract class AbstractLauncher : AbstractRole() {
             val magnitude = Math.min(direction.length(), speed)
 
             val initialVelocity = direction.normalize(magnitude)
-            throwBy.jBox2DBody.linearVelocity = world?.pixelsToWorld(initialVelocity.mul(doll.totalMass.toDouble() / throwBy.jBox2DBody.mass))
+            throwBy.setLinearVelocity(initialVelocity.mul(doll.totalMass / throwBy.mass))
 
             AbstractPlay.instance.launched(doll)
         }

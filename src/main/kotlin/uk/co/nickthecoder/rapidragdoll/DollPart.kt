@@ -18,7 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package uk.co.nickthecoder.rapidragdoll
 
-import org.jbox2d.common.Vec2
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.util.Angle
@@ -66,20 +65,21 @@ class MajorDollPart : DollPart() {
     /**
      * Used to test for then the doll part has hit something
      */
-    private var oldSpeed = Vec2(0.0f, 0.0f)
+    private var oldSpeed = Vector2d(0.0, 0.0)
 
     /**
      * Make a sound when the change in velocity is high (because it has hit something)
      */
     override fun tick() {
-        val newSpeed = actor.body?.jBox2DBody?.linearVelocity?.clone() ?: Vec2(0.0f, 0.0f)
+        // This is measured in pixels per second.
+        val newSpeed = actor.body!!.linearVelocity
+
         val dx = Math.abs(oldSpeed.x - newSpeed.x)
         val dy = Math.abs(oldSpeed.y - newSpeed.y)
 
-        // 1 pixel per tick is a reasonable change in velocity to initiate a sound.
-        if (dx > 1f || dy > 1f) {
+        if (dx > 100.0 || dy > 100.0) {
             doll.hit(this, dx + dy)
         }
-        oldSpeed = newSpeed
+        oldSpeed.set(newSpeed)
     }
 }

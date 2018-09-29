@@ -2,7 +2,7 @@ Current Work
 ------------
 
 Convert to new JBox2D interface
-    Launcher, Umbrella, DollPart, Bell
+     Bell
 
 
 Bugs

@@ -18,9 +18,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package uk.co.nickthecoder.rapidragdoll
 
-import org.jbox2d.dynamics.joints.RevoluteJointDef
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.Actor
+import uk.co.nickthecoder.tickle.physics.TicklePinJoint
 import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.Attribute
 
@@ -34,24 +34,11 @@ class Umbrella : Fragile(), Draggable {
     lateinit var topHalf: Actor
 
     override fun activated() {
-        val world = actor.stage?.world
-
         topHalf = actor.createChild("topHalf")
         topHalf.position.y += joinPoint.y
 
-        actor.body?.let { joinTo ->
+        TicklePinJoint(actor, topHalf, joinPoint).limitRotation(Angle.degrees(-60.0), Angle.degrees(60.0))
 
-            val jointDef = RevoluteJointDef()
-            jointDef.bodyA = joinTo.jBox2DBody
-            jointDef.bodyB = topHalf.body!!.jBox2DBody
-
-            jointDef.localAnchorA = world?.pixelsToWorld(joinPoint)
-            jointDef.lowerAngle = Math.toRadians(-60.0).toFloat()
-            jointDef.upperAngle = Math.toRadians(60.0).toFloat()
-            jointDef.enableLimit = true
-
-            world?.jBox2dWorld?.createJoint(jointDef)
-        }
         topHalf.direction.radians += angle.radians
     }
 
