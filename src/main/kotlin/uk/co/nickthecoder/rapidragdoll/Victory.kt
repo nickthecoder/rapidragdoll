@@ -136,7 +136,7 @@ class Victory : AbstractPlay(), MouseListener {
             dragging!!.actor.body!!.jBox2DBody.isAwake = true
 
             val maxForce = role.mass() * (Math.abs(world.gravity.y) + Math.abs(world.gravity.x)) / 50.0
-            mouseJoint = TickleMouseJoint(dragging!!.actor, dragPosition, maxForce)
+            mouseJoint = TickleMouseJoint(dragging!!.actor, dragPosition, maxForce, hand!!.actor)
             elastic?.mouseJoint = mouseJoint
 
             return
