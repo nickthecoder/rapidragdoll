@@ -1,10 +1,6 @@
 Current Work
 ------------
 
-Convert to new JBox2D interface
-     Bell
-
-
 Bugs
 ----
 
@@ -25,7 +21,7 @@ Sounds
         Maybe more than one sound each with different limits.
         Head has different sounds?
 
-Limit the Laucher to a fixed number of dolls
+Limit the Launcher to a fixed number of dolls
     When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
     Default is MAXINT
 
@@ -35,7 +31,7 @@ Add a recharge time to a Launcher?
 
 Collectables
     Add "ammo" to the current/all Launchers
-    Increase/Descrease max dolls
+    Increase/Decrease max dolls
 
 
 Later
