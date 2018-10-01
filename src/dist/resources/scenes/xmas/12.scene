@@ -181,6 +181,14 @@
           "sizeY": 81,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "xmas-pin",
+          "x": 385,
+          "y": 70,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
         }
       ]
     },
@@ -205,14 +213,6 @@
               "value": "2"
             }
           ]
-        },
-        {
-          "costume": "xmas-pin",
-          "x": 385,
-          "y": 70,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
         }
       ]
     }

@@ -247,12 +247,7 @@
               "value": "80"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "glass",
-      "actors": [
+        },
         {
           "costume": "bell",
           "x": 670,
@@ -266,11 +261,17 @@
               "value": "0.0x161.0"
             },
             {
-              "name": "ringThreshold",
-              "value": "1"
+              "name": "angleThreshold",
+              "value": "29.999999999999996"
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]

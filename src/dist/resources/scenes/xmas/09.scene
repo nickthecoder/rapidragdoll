@@ -231,12 +231,7 @@
           "sizeY": 81,
           "alignmentX": 0,
           "alignmentY": 0
-        }
-      ]
-    },
-    {
-      "name": "glass",
-      "actors": [
+        },
         {
           "costume": "bell",
           "x": 670,
@@ -250,11 +245,17 @@
               "value": "1.0x120.0"
             },
             {
-              "name": "ringThreshold",
-              "value": "1"
+              "name": "angleThreshold",
+              "value": "29.999999999999996"
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
       ]
     }
   ]
