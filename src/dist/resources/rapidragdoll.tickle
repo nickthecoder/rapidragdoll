@@ -163,6 +163,10 @@
     {
       "name": "jishna",
       "file": "images/jishna.png"
+    },
+    {
+      "name": "eesha",
+      "file": "images/eesha.png"
     }
   ],
   "fonts": [
@@ -170,6 +174,7 @@
       "name": "small",
       "fontName": "Anaktoria",
       "style": "PLAIN",
+      "pngFile": "fonts/small.png",
       "size": 32,
       "xPadding": 10,
       "yPadding": 4
@@ -178,6 +183,7 @@
       "name": "large",
       "fontName": "Anaktoria",
       "style": "PLAIN",
+      "pngFile": "fonts/large.png",
       "size": 60,
       "xPadding": 16,
       "yPadding": 16
@@ -186,6 +192,7 @@
       "name": "tiny",
       "fontName": "Anaktoria",
       "style": "PLAIN",
+      "pngFile": "fonts/tiny.png",
       "size": 22,
       "xPadding": 3,
       "yPadding": 3
@@ -1640,6 +1647,83 @@
       "offsetX": 10,
       "offsetY": 200,
       "direction": 0
+    },
+    {
+      "name": "eesha-head",
+      "texture": "eesha",
+      "left": 109,
+      "bottom": 104,
+      "right": 186,
+      "top": 2,
+      "offsetX": 36,
+      "offsetY": 20,
+      "direction": 0
+    },
+    {
+      "name": "eesha-arm-right",
+      "texture": "eesha",
+      "left": 202,
+      "bottom": 237,
+      "right": 268,
+      "top": 33,
+      "offsetX": 21,
+      "offsetY": 189,
+      "direction": 0
+    },
+    {
+      "name": "eesha-arm-left",
+      "texture": "eesha",
+      "left": 7,
+      "bottom": 206,
+      "right": 54,
+      "top": 35,
+      "offsetX": 33,
+      "offsetY": 163,
+      "direction": 0
+    },
+    {
+      "name": "eesha-torso",
+      "texture": "eesha",
+      "left": 72,
+      "bottom": 262,
+      "right": 197,
+      "top": 106,
+      "offsetX": 66,
+      "offsetY": 99,
+      "direction": 0
+    },
+    {
+      "name": "eesha-abdomen",
+      "texture": "eesha",
+      "left": 87,
+      "bottom": 435,
+      "right": 207,
+      "top": 264,
+      "offsetX": 54,
+      "offsetY": 139,
+      "direction": 0
+    },
+    {
+      "name": "eesha-leg-left",
+      "texture": "eesha",
+      "left": 14,
+      "bottom": 428,
+      "right": 50,
+      "top": 273,
+      "offsetX": 23,
+      "offsetY": 180,
+      "direction": 0
+    },
+    {
+      "name": "eesha-leg-right",
+      "texture": "eesha",
+      "left": 226,
+      "bottom": 431,
+      "right": 259,
+      "top": 287,
+      "offsetX": 18,
+      "offsetY": 180,
+      "direction": 0
     }
   ],
   "sounds": [
@@ -2261,6 +2345,74 @@
             {
               "name": "defaultScale",
               "value": "0.5"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "eesha",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "eesha-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "eesha-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "eesha-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "eesha-abdomen"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "eesha-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "eesha-leg-right"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "eesha-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "eesha-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.3333"
             },
             {
               "name": "rewardForScene",
@@ -10382,6 +10534,490 @@
         }
       ],
       "showInSceneEditor": false
+    },
+    {
+      "name": "eesha",
+      "costumes": [
+        {
+          "name": "eesha-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "eesha-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-12.999999999999998"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x25.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "12.999999999999998"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 0,
+                      "y": 83
+                    },
+                    {
+                      "x": -31,
+                      "y": 62
+                    },
+                    {
+                      "x": -27,
+                      "y": 5
+                    },
+                    {
+                      "x": -2,
+                      "y": -21
+                    },
+                    {
+                      "x": 33,
+                      "y": 8
+                    },
+                    {
+                      "x": 35,
+                      "y": 55
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "eesha-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "eesha-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-10.0"
+            },
+            {
+              "name": "offset",
+              "value": "50.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "140.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -7,
+                      "y": -27
+                    },
+                    {
+                      "x": 28,
+                      "y": -183
+                    },
+                    {
+                      "x": 44,
+                      "y": -171
+                    },
+                    {
+                      "x": 11,
+                      "y": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "eesha-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "eesha-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-140.0"
+            },
+            {
+              "name": "offset",
+              "value": "-45.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "10.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -12,
+                      "y": -6
+                    },
+                    {
+                      "x": -28,
+                      "y": -155
+                    },
+                    {
+                      "x": -11,
+                      "y": -159
+                    },
+                    {
+                      "x": 5,
+                      "y": -25
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "eesha-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "eesha-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.2,
+                "density": 1,
+                "restitution": 0.2,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 1,
+                      "y": 27
+                    },
+                    {
+                      "x": -53,
+                      "y": 4
+                    },
+                    {
+                      "x": -30,
+                      "y": -89
+                    },
+                    {
+                      "x": 47,
+                      "y": -89
+                    },
+                    {
+                      "x": 53,
+                      "y": 11
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "eesha-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "eesha-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-80.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -37,
+                      "y": -8
+                    },
+                    {
+                      "x": -52,
+                      "y": -113
+                    },
+                    {
+                      "x": 12,
+                      "y": -136
+                    },
+                    {
+                      "x": 63,
+                      "y": -108
+                    },
+                    {
+                      "x": 45,
+                      "y": -7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "eesha-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "eesha-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-21.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-50.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -10,
+                      "y": -32
+                    },
+                    {
+                      "x": -17,
+                      "y": -173
+                    },
+                    {
+                      "x": 9,
+                      "y": -178
+                    },
+                    {
+                      "x": 4,
+                      "y": -34
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "eesha-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "eesha-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-20.0"
+            },
+            {
+              "name": "offset",
+              "value": "10.0x-50.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -8,
+                      "y": -37
+                    },
+                    {
+                      "x": -12,
+                      "y": -174
+                    },
+                    {
+                      "x": 10,
+                      "y": -175
+                    },
+                    {
+                      "x": 11,
+                      "y": -40
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": true
     }
   ],
   "inputs": [

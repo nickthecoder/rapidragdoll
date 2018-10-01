@@ -12,7 +12,7 @@ Here's some scaled down screenshots from the game.
 However, to get a real feel for the game, you have to see it in action.
 
 I love to watch the doll's fly gracefully through the air (and also, not
-so gracefully when the tumble out of control).
+so gracefully when they tumble out of control).
 
 ![Menu](./screenshots/menu.jpeg)
 
@@ -20,7 +20,8 @@ It's just so cute, watching the dolls fly by on the menu.
 
 ![Tutorial](./screenshots/tutorial.jpeg)
 
-(The text isn't fuzzy in the game!)
+The text isn't fuzzy in the game. A combination of jpeg compression,
+and scaling it down makes it look a little naff.
 
 ![Doll's House](./screenshots/dollsHouse.jpeg)
 
@@ -50,17 +51,18 @@ My favourite though, is Bony - a skeleton.
 
 ## Status
 
-The game has been fully working for a while now. But there's no sound yet :-(
+The game has been fully working for a while now.
+But there's still no sound yet :-(
 
 There's a series of "Tutorial" levels, 9 Christmas related levels, plus
-a few others. It really needs more levels though.
+a few others. It really needs more though.
 
 ## Design
 
 Written in Kotlin, using the
 [Tickle Game Engine](https://github.com/nickthecoder/tickle).
 The physics of the game uses JBox2D (and in fact, the reason for writing the
-game was as a demonstation of using JBox2D within Tickle).
+game was as a demonstration of using JBox2D within Tickle).
 
 I've only tested it on Linux, but it should work with Windows and MacOS
 too (fingers crossed).
