@@ -7,7 +7,7 @@
     "resizable": true,
     "fullScreen": true,
     "initialScene": "menu",
-    "testScene": "test",
+    "testScene": "dollTester",
     "producer": "uk.co.nickthecoder.rapidragdoll.RapidRagDoll",
     "physics": {
       "gravity_x": 0,
@@ -159,6 +159,10 @@
     {
       "name": "paper3",
       "file": "images/paper3.png"
+    },
+    {
+      "name": "jishna",
+      "file": "images/jishna.png"
     }
   ],
   "fonts": [
@@ -1559,6 +1563,83 @@
       "offsetX": 25,
       "offsetY": 26,
       "direction": 0
+    },
+    {
+      "name": "jishna-head",
+      "texture": "jishna",
+      "left": 53,
+      "bottom": 87,
+      "right": 126,
+      "top": 0,
+      "offsetX": 38,
+      "offsetY": 26,
+      "direction": 0
+    },
+    {
+      "name": "jishna-torso",
+      "texture": "jishna",
+      "left": 47,
+      "bottom": 199,
+      "right": 147,
+      "top": 84,
+      "offsetX": 47,
+      "offsetY": 78,
+      "direction": 0
+    },
+    {
+      "name": "jishna-arm-left",
+      "texture": "jishna",
+      "left": 4,
+      "bottom": 144,
+      "right": 35,
+      "top": 3,
+      "offsetX": 25,
+      "offsetY": 135,
+      "direction": 0
+    },
+    {
+      "name": "jishna-arm-right",
+      "texture": "jishna",
+      "left": 145,
+      "bottom": 165,
+      "right": 180,
+      "top": 0,
+      "offsetX": 9,
+      "offsetY": 158,
+      "direction": 0
+    },
+    {
+      "name": "jishna-abdomen",
+      "texture": "jishna",
+      "left": 45,
+      "bottom": 335,
+      "right": 150,
+      "top": 196,
+      "offsetX": 54,
+      "offsetY": 102,
+      "direction": 0
+    },
+    {
+      "name": "jishna-leg-left",
+      "texture": "jishna",
+      "left": 0,
+      "bottom": 329,
+      "right": 47,
+      "top": 198,
+      "offsetX": 47,
+      "offsetY": 200,
+      "direction": 0
+    },
+    {
+      "name": "jishna-leg-right",
+      "texture": "jishna",
+      "left": 154,
+      "bottom": 333,
+      "right": 190,
+      "top": 196,
+      "offsetX": 10,
+      "offsetY": 200,
+      "direction": 0
     }
   ],
   "sounds": [
@@ -2112,6 +2193,74 @@
             {
               "name": "defaultScale",
               "value": "0.4"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "jishna",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "jishna-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "jishna-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "jishna-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "jishna-abdomen"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "jishna-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "jishna-arm-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "jishna-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "jishna-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.5"
             },
             {
               "name": "rewardForScene",
@@ -5346,10 +5495,6 @@
             {
               "name": "ceiling",
               "value": "0.0x0.0"
-            },
-            {
-              "name": "ringThreshold",
-              "value": "1"
             }
           ],
           "body": {
@@ -9748,6 +9893,486 @@
                     {
                       "x": 30,
                       "y": -5
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": false
+    },
+    {
+      "name": "jishna",
+      "costumes": [
+        {
+          "name": "jishna-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "jishna-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-20.0"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x40.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -7,
+                      "y": 61
+                    },
+                    {
+                      "x": -34,
+                      "y": 29
+                    },
+                    {
+                      "x": -33,
+                      "y": 5
+                    },
+                    {
+                      "x": -1,
+                      "y": -24
+                    },
+                    {
+                      "x": 20,
+                      "y": -3
+                    },
+                    {
+                      "x": 31,
+                      "y": 38
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "jishna-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "jishna-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -2,
+                      "y": 25
+                    },
+                    {
+                      "x": -45,
+                      "y": 7
+                    },
+                    {
+                      "x": -23,
+                      "y": -65
+                    },
+                    {
+                      "x": 39,
+                      "y": -64
+                    },
+                    {
+                      "x": 40,
+                      "y": 17
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "jishna-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "jishna-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-140.0"
+            },
+            {
+              "name": "offset",
+              "value": "-25.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "10.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -17,
+                      "y": -26
+                    },
+                    {
+                      "x": -12,
+                      "y": -132
+                    },
+                    {
+                      "x": 2,
+                      "y": -117
+                    },
+                    {
+                      "x": -2,
+                      "y": -1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "jishna-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": false,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "jishna-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "10.0"
+            },
+            {
+              "name": "offset",
+              "value": "30.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "140.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 20,
+                      "y": 2
+                    },
+                    {
+                      "x": -1,
+                      "y": -28
+                    },
+                    {
+                      "x": 7,
+                      "y": -147
+                    },
+                    {
+                      "x": 18,
+                      "y": -151
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "jishna-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "jishna-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "5.0x-70.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -39,
+                      "y": -6
+                    },
+                    {
+                      "x": -54,
+                      "y": -77
+                    },
+                    {
+                      "x": 48,
+                      "y": -80
+                    },
+                    {
+                      "x": 41,
+                      "y": -6
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "jishna-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "jishna-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-20.0"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x15.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -21,
+                      "y": -79
+                    },
+                    {
+                      "x": -44,
+                      "y": -193
+                    },
+                    {
+                      "x": -24,
+                      "y": -193
+                    },
+                    {
+                      "x": -5,
+                      "y": -80
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "jishna-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "jishna-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-12.0"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x15.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "20.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -6,
+                      "y": -73
+                    },
+                    {
+                      "x": 2,
+                      "y": -195
+                    },
+                    {
+                      "x": 21,
+                      "y": -191
+                    },
+                    {
+                      "x": 10,
+                      "y": -71
                     }
                   ]
                 }

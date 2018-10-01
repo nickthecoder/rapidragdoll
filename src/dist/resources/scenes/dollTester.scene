@@ -31,7 +31,7 @@
     }
   ],
   "background": "#000000",
-  "showMouse": false,
+  "showMouse": true,
   "layout": "default",
   "snapToGrid": {
     "enabled": false,
@@ -189,11 +189,47 @@
         },
         {
           "costume": "lilian",
-          "x": 637,
-          "y": 544,
+          "x": 117,
+          "y": 679,
           "direction": 0,
           "scaleX": 0.5,
           "scaleY": 0.5,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "elastic",
+          "x": 761,
+          "y": 500,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "jishna",
+          "x": 779,
+          "y": 391,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "jishna",
+          "x": 592,
+          "y": 438,
+          "direction": 0,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
           "attributes": [
             {
               "name": "rewardForScene",

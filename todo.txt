@@ -16,26 +16,26 @@ Next
 If view size > scene's bounds, then CENTER it.
 
 Sounds
-	When a doll is launched
-	When a doll is picked up on the Victory scene.
-	
-	When a doll bounces.
-		Save the velocity from the previous tick, and check if the magnitude of the difference > limit
-		Only one sound - not for every DollPart.
-		Maybe more than one sound each with different limits.
-		Head has different sounds?
+    When a doll is launched
+    When a doll is picked up on the Victory scene.
+
+    When a doll bounces.
+        Save the velocity from the previous tick, and check if the magnitude of the difference > limit
+        Only one sound - not for every DollPart.
+        Maybe more than one sound each with different limits.
+        Head has different sounds?
 
 Limit the Laucher to a fixed number of dolls
-	When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
-	Default is MAXINT
+    When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.
+    Default is MAXINT
 
 Add a recharge time to a Launcher?
-	Aim changes to an hour-glass when recharging (and line is not shown).
-	Ditto when there is a doll in the vicinity?
+    Aim changes to an hour-glass when recharging (and line is not shown).
+    Ditto when there is a doll in the vicinity?
 
 Collectables
-	Add "ammo" to the current/all Launchers
-	Increase/Descrease max dolls
+    Add "ammo" to the current/all Launchers
+    Increase/Descrease max dolls
 
 
 Later
