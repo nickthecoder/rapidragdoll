@@ -136,7 +136,7 @@ class Doll : ActionRole(), Reward {
      * Note, the sounds must be added to the [Doll]'s events, not the [DollPart] or [MajorDollPart].
      * i.e. added to Annie, Mike, Fiona, etc.
      */
-    fun hit(dollPart: DollPart, deltaV: Double) {
+    fun hit(deltaV: Double) {
         val now = Game.instance.gameLoop.tickCount
         // Has a hit already occurred recently (the last 10 ticks) for this doll? Then ignore the hit.
         // This lets the head, body and torso all call hit, and only the first will cause a sound effect.

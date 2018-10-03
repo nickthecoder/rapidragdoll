@@ -78,7 +78,7 @@ class MajorDollPart : DollPart() {
         val dy = Math.abs(oldSpeed.y - newSpeed.y)
 
         if (dx > 100.0 || dy > 100.0) {
-            doll.hit(this, dx + dy)
+            doll.hit(dx + dy)
         }
         oldSpeed.set(newSpeed)
     }
