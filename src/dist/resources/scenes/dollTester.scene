@@ -225,39 +225,25 @@
         },
         {
           "costume": "eesha",
-          "x": 770,
-          "y": 606,
-          "direction": 0,
-          "scaleX": 0.85,
-          "scaleY": 0.85,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "jishna",
-          "x": 613,
-          "y": 616,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "eesha",
           "x": 672,
           "y": 436,
           "direction": 0,
           "scaleX": 0.3333,
           "scaleY": 0.3333,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "asul",
+          "x": 734,
+          "y": 412,
+          "direction": 0,
+          "scaleX": 0.3,
+          "scaleY": 0.3,
           "attributes": [
             {
               "name": "rewardForScene",

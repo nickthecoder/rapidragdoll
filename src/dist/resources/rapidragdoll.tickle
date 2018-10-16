@@ -167,6 +167,10 @@
     {
       "name": "eesha",
       "file": "images/eesha.png"
+    },
+    {
+      "name": "asul",
+      "file": "images/asul.png"
     }
   ],
   "fonts": [
@@ -1724,6 +1728,83 @@
       "offsetX": 18,
       "offsetY": 180,
       "direction": 0
+    },
+    {
+      "name": "asul-head",
+      "texture": "asul",
+      "left": 187,
+      "bottom": 116,
+      "right": 264,
+      "top": 4,
+      "offsetX": 38,
+      "offsetY": 26,
+      "direction": 0
+    },
+    {
+      "name": "asul-arm-left",
+      "texture": "asul",
+      "left": 7,
+      "bottom": 269,
+      "right": 119,
+      "top": 3,
+      "offsetX": 86,
+      "offsetY": 246,
+      "direction": 0
+    },
+    {
+      "name": "asul-arm-right",
+      "texture": "asul",
+      "left": 330,
+      "bottom": 272,
+      "right": 410,
+      "top": 4,
+      "offsetX": 37,
+      "offsetY": 244,
+      "direction": 0
+    },
+    {
+      "name": "asul-torso",
+      "texture": "asul",
+      "left": 147,
+      "bottom": 327,
+      "right": 300,
+      "top": 115,
+      "offsetX": 79,
+      "offsetY": 160,
+      "direction": 0
+    },
+    {
+      "name": "asul-abdomen",
+      "texture": "asul",
+      "left": 151,
+      "bottom": 509,
+      "right": 292,
+      "top": 356,
+      "offsetX": 69,
+      "offsetY": 107,
+      "direction": 0
+    },
+    {
+      "name": "asul-leg-left",
+      "texture": "asul",
+      "left": 4,
+      "bottom": 650,
+      "right": 140,
+      "top": 300,
+      "offsetX": 79,
+      "offsetY": 338,
+      "direction": 0
+    },
+    {
+      "name": "asul-leg-right",
+      "texture": "asul",
+      "left": 295,
+      "bottom": 648,
+      "right": 414,
+      "top": 312,
+      "offsetX": 76,
+      "offsetY": 320,
+      "direction": 0
     }
   ],
   "sounds": [
@@ -2413,6 +2494,74 @@
             {
               "name": "defaultScale",
               "value": "0.3333"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "asul",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "asul-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "asul-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "asul-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "asul-abdomen"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "asul-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "asul-arm-right"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "asul-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "asul-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.3"
             },
             {
               "name": "rewardForScene",
@@ -11009,6 +11158,544 @@
                     {
                       "x": 11,
                       "y": -40
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "showInSceneEditor": true
+    },
+    {
+      "name": "asul",
+      "costumes": [
+        {
+          "name": "asul-torso",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "asul-torso"
+              ]
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -71,
+                      "y": 13
+                    },
+                    {
+                      "x": -69,
+                      "y": -151
+                    },
+                    {
+                      "x": 51,
+                      "y": -150
+                    },
+                    {
+                      "x": 66,
+                      "y": 7
+                    },
+                    {
+                      "x": 1,
+                      "y": 34
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "asul-leg-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "asul-leg-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-29.999999999999996"
+            },
+            {
+              "name": "offset",
+              "value": "40.0x-30.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "50.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -37,
+                      "y": -83
+                    },
+                    {
+                      "x": -10,
+                      "y": -262
+                    },
+                    {
+                      "x": 23,
+                      "y": -262
+                    },
+                    {
+                      "x": 17,
+                      "y": -1
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 13,
+                      "y": -311
+                    },
+                    {
+                      "x": 38,
+                      "y": -312
+                    },
+                    {
+                      "x": 23,
+                      "y": -262
+                    },
+                    {
+                      "x": -10,
+                      "y": -263
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "asul-leg-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "asul-leg-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-50.0"
+            },
+            {
+              "name": "offset",
+              "value": "-40.0x-30.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "29.999999999999996"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -31,
+                      "y": -25
+                    },
+                    {
+                      "x": -50,
+                      "y": -269
+                    },
+                    {
+                      "x": -24,
+                      "y": -281
+                    },
+                    {
+                      "x": 25,
+                      "y": -99
+                    }
+                  ]
+                }
+              },
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -79,
+                      "y": -329
+                    },
+                    {
+                      "x": -52,
+                      "y": -330
+                    },
+                    {
+                      "x": -21,
+                      "y": -282
+                    },
+                    {
+                      "x": -53,
+                      "y": -273
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "asul-head",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "asul-head"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-35.0"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x55.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "35.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": 2,
+                      "y": 81
+                    },
+                    {
+                      "x": -34,
+                      "y": 63
+                    },
+                    {
+                      "x": -24,
+                      "y": -20
+                    },
+                    {
+                      "x": 20,
+                      "y": -20
+                    },
+                    {
+                      "x": 40,
+                      "y": 65
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "asul-arm-right",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "asul-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "5.0"
+            },
+            {
+              "name": "offset",
+              "value": "60.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "140.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -31,
+                      "y": -50
+                    },
+                    {
+                      "x": -4,
+                      "y": -235
+                    },
+                    {
+                      "x": 23,
+                      "y": -233
+                    },
+                    {
+                      "x": 15,
+                      "y": -1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "asul-arm-left",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "asul-arm-left"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-140.0"
+            },
+            {
+              "name": "offset",
+              "value": "-60.0x0.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "5.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 2,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -13,
+                      "y": 11
+                    },
+                    {
+                      "x": -71,
+                      "y": -236
+                    },
+                    {
+                      "x": -42,
+                      "y": -234
+                    },
+                    {
+                      "x": 20,
+                      "y": -47
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "asul-abdomen",
+          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "asul-abdomen"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fromAngle",
+              "value": "-10.0"
+            },
+            {
+              "name": "offset",
+              "value": "0.0x-140.0"
+            },
+            {
+              "name": "toAngle",
+              "value": "10.0"
+            }
+          ],
+          "body": {
+            "bodyType": "DYNAMIC",
+            "linearDamping": 0.2,
+            "angularDamping": 0.2,
+            "bullet": false,
+            "fixedRotation": false,
+            "fixtures": [
+              {
+                "friction": 0.5,
+                "density": 1,
+                "restitution": 0.5,
+                "isSensor": false,
+                "group": 0,
+                "category": 1,
+                "mask": 15,
+                "polygon": {
+                  "points": [
+                    {
+                      "x": -60,
+                      "y": 2
+                    },
+                    {
+                      "x": -61,
+                      "y": -42
+                    },
+                    {
+                      "x": -2,
+                      "y": -92
+                    },
+                    {
+                      "x": 58,
+                      "y": -43
+                    },
+                    {
+                      "x": 58,
+                      "y": 2
                     }
                   ]
                 }
