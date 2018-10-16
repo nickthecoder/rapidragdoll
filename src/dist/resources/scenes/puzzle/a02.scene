@@ -1,0 +1,250 @@
+{
+  "director": "uk.co.nickthecoder.rapidragdoll.Play",
+  "directorAttributes": [
+    {
+      "name": "maxDolls",
+      "value": "3"
+    },
+    {
+      "name": "nextScene",
+      "value": "puzzle/a03"
+    },
+    {
+      "name": "bottomLeft",
+      "value": "0.0x0.0"
+    },
+    {
+      "name": "menuName",
+      "value": "menu"
+    },
+    {
+      "name": "topRight",
+      "value": "1280.0x1200.0"
+    },
+    {
+      "name": "gravity",
+      "value": "0.0x-100.0"
+    }
+  ],
+  "background": "#000000",
+  "showMouse": false,
+  "layout": "default",
+  "snapToGrid": {
+    "enabled": false,
+    "xSpacing": 50,
+    "ySpacing": 50,
+    "xOffset": 0,
+    "yOffset": 0,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapToGuides": {
+    "enabled": true,
+    "closeness": 5,
+    "x": [
+      1280,
+      0
+    ],
+    "y": [
+      0,
+      800
+    ]
+  },
+  "snapToOthers": {
+    "enabled": true,
+    "xCloseness": 10,
+    "yCloseness": 10
+  },
+  "snapRotation": {
+    "enabled": true,
+    "step": 15,
+    "closeness": 15
+  },
+  "include": [
+    "glass",
+    "aim"
+  ],
+  "stages": [
+    {
+      "name": "main",
+      "actors": [
+        {
+          "costume": "launcher",
+          "x": 321,
+          "y": 451,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "878.0x313.0"
+            },
+            {
+              "name": "dollName",
+              "value": "jishna"
+            },
+            {
+              "name": "speed",
+              "value": "300"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "costume": "wall",
+          "x": -3,
+          "y": -6.0800000000000125,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 45,
+          "sizeY": 1198.08,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "pin",
+          "x": 278,
+          "y": 74,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wall",
+          "x": 1280,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 45,
+          "sizeY": 1197,
+          "alignmentX": 1,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 0,
+          "y": -6.0800000000000125,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1283,
+          "sizeY": 67.08000000000001,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "pin",
+          "x": 1045,
+          "y": 71,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "launcher",
+          "x": 169,
+          "y": 700,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "panTo",
+              "value": "249.0x871.0"
+            },
+            {
+              "name": "dollName",
+              "value": "eesha"
+            },
+            {
+              "name": "randomSeed",
+              "value": "0"
+            },
+            {
+              "name": "scale",
+              "value": "1"
+            },
+            {
+              "name": "speed",
+              "value": "400"
+            }
+          ]
+        },
+        {
+          "costume": "wood",
+          "x": 41,
+          "y": 1146,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1195,
+          "sizeY": 50,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "asul",
+          "x": 733,
+          "y": 1037,
+          "direction": 0,
+          "scaleX": 0.7,
+          "scaleY": 0.7,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "wood",
+          "x": 496,
+          "y": 542,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 741,
+          "sizeY": 59,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "pin",
+          "x": 952,
+          "y": 611,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "wall",
+          "x": 495,
+          "y": 600,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 49,
+          "sizeY": 47,
+          "alignmentX": 0,
+          "alignmentY": 0
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "actors": [
+        
+      ]
+    }
+  ]
+}

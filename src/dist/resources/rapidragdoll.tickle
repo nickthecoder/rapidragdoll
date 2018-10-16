@@ -4,7 +4,7 @@
     "id": "rapidragdoll",
     "width": 1280,
     "height": 800,
-    "resizable": true,
+    "resizable": false,
     "fullScreen": true,
     "initialScene": "menu",
     "testScene": "dollTester",
@@ -9695,7 +9695,7 @@
             },
             {
               "name": "toAngle",
-              "value": "90.0"
+              "value": "-45.0"
             }
           ],
           "body": {
@@ -9784,7 +9784,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-90.0"
+              "value": "40.0"
             },
             {
               "name": "offset",
@@ -10781,7 +10781,7 @@
           "attributes": [
             {
               "name": "fromAngle",
-              "value": "-10.0"
+              "value": "10.0"
             },
             {
               "name": "offset",
@@ -10857,7 +10857,7 @@
             },
             {
               "name": "toAngle",
-              "value": "10.0"
+              "value": "-10.0"
             }
           ],
           "body": {

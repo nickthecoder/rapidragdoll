@@ -286,7 +286,7 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
         }
     }
 
-    fun constrainView() {
+    private fun constrainView() {
 
         var x = mainView.centerX - mainView.rect.width / 2
         var y = mainView.centerY - mainView.rect.height / 2
