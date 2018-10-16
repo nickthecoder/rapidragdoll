@@ -161,12 +161,12 @@
       "file": "images/paper3.png"
     },
     {
-      "name": "jishna",
-      "file": "images/jishna.png"
-    },
-    {
       "name": "eesha",
       "file": "images/eesha.png"
+    },
+    {
+      "name": "jishna",
+      "file": "images/jishna.png"
     },
     {
       "name": "asul",
@@ -1576,8 +1576,8 @@
       "direction": 0
     },
     {
-      "name": "jishna-head",
-      "texture": "jishna",
+      "name": "eesha-head",
+      "texture": "eesha",
       "left": 53,
       "bottom": 87,
       "right": 126,
@@ -1587,8 +1587,8 @@
       "direction": 0
     },
     {
-      "name": "jishna-torso",
-      "texture": "jishna",
+      "name": "eesha-torso",
+      "texture": "eesha",
       "left": 47,
       "bottom": 199,
       "right": 147,
@@ -1598,8 +1598,8 @@
       "direction": 0
     },
     {
-      "name": "jishna-arm-left",
-      "texture": "jishna",
+      "name": "eesha-arm-left",
+      "texture": "eesha",
       "left": 4,
       "bottom": 144,
       "right": 35,
@@ -1609,8 +1609,8 @@
       "direction": 0
     },
     {
-      "name": "jishna-arm-right",
-      "texture": "jishna",
+      "name": "eesha-arm-right",
+      "texture": "eesha",
       "left": 145,
       "bottom": 165,
       "right": 180,
@@ -1620,8 +1620,8 @@
       "direction": 0
     },
     {
-      "name": "jishna-abdomen",
-      "texture": "jishna",
+      "name": "eesha-abdomen",
+      "texture": "eesha",
       "left": 45,
       "bottom": 335,
       "right": 150,
@@ -1631,8 +1631,8 @@
       "direction": 0
     },
     {
-      "name": "jishna-leg-left",
-      "texture": "jishna",
+      "name": "eesha-leg-left",
+      "texture": "eesha",
       "left": 0,
       "bottom": 329,
       "right": 47,
@@ -1642,8 +1642,8 @@
       "direction": 0
     },
     {
-      "name": "jishna-leg-right",
-      "texture": "jishna",
+      "name": "eesha-leg-right",
+      "texture": "eesha",
       "left": 154,
       "bottom": 333,
       "right": 190,
@@ -1653,8 +1653,8 @@
       "direction": 0
     },
     {
-      "name": "eesha-head",
-      "texture": "eesha",
+      "name": "jishna-head",
+      "texture": "jishna",
       "left": 109,
       "bottom": 104,
       "right": 186,
@@ -1664,8 +1664,8 @@
       "direction": 0
     },
     {
-      "name": "eesha-arm-right",
-      "texture": "eesha",
+      "name": "jishna-arm-right",
+      "texture": "jishna",
       "left": 202,
       "bottom": 237,
       "right": 268,
@@ -1675,8 +1675,8 @@
       "direction": 0
     },
     {
-      "name": "eesha-arm-left",
-      "texture": "eesha",
+      "name": "jishna-arm-left",
+      "texture": "jishna",
       "left": 7,
       "bottom": 206,
       "right": 54,
@@ -1686,8 +1686,8 @@
       "direction": 0
     },
     {
-      "name": "eesha-torso",
-      "texture": "eesha",
+      "name": "jishna-torso",
+      "texture": "jishna",
       "left": 72,
       "bottom": 262,
       "right": 197,
@@ -1697,8 +1697,8 @@
       "direction": 0
     },
     {
-      "name": "eesha-abdomen",
-      "texture": "eesha",
+      "name": "jishna-abdomen",
+      "texture": "jishna",
       "left": 87,
       "bottom": 435,
       "right": 207,
@@ -1708,8 +1708,8 @@
       "direction": 0
     },
     {
-      "name": "eesha-leg-left",
-      "texture": "eesha",
+      "name": "jishna-leg-left",
+      "texture": "jishna",
       "left": 14,
       "bottom": 428,
       "right": 50,
@@ -1719,8 +1719,8 @@
       "direction": 0
     },
     {
-      "name": "eesha-leg-right",
-      "texture": "eesha",
+      "name": "jishna-leg-right",
+      "texture": "jishna",
       "left": 226,
       "bottom": 431,
       "right": 259,
@@ -2366,74 +2366,6 @@
           ]
         },
         {
-          "name": "jishna",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
-          "canRotate": false,
-          "zOrder": 0,
-          "initialEvent": "default",
-          "showInSceneEditor": true,
-          "events": [
-            {
-              "name": "editor",
-              "poses": [
-                "jishna-head"
-              ]
-            },
-            {
-              "name": "head",
-              "costumes": [
-                "jishna-head"
-              ]
-            },
-            {
-              "name": "torso",
-              "costumes": [
-                "jishna-torso"
-              ]
-            },
-            {
-              "name": "abdomen",
-              "costumes": [
-                "jishna-abdomen"
-              ]
-            },
-            {
-              "name": "arm-left",
-              "costumes": [
-                "jishna-arm-left"
-              ]
-            },
-            {
-              "name": "arm-right",
-              "costumes": [
-                "jishna-arm-right"
-              ]
-            },
-            {
-              "name": "leg-left",
-              "costumes": [
-                "jishna-leg-left"
-              ]
-            },
-            {
-              "name": "leg-right",
-              "costumes": [
-                "jishna-leg-right"
-              ]
-            }
-          ],
-          "attributes": [
-            {
-              "name": "defaultScale",
-              "value": "0.5"
-            },
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
           "name": "eesha",
           "role": "uk.co.nickthecoder.rapidragdoll.Doll",
           "canRotate": false,
@@ -2466,18 +2398,6 @@
               ]
             },
             {
-              "name": "leg-left",
-              "costumes": [
-                "eesha-leg-left"
-              ]
-            },
-            {
-              "name": "leg-right",
-              "costumes": [
-                "eesha-leg-right"
-              ]
-            },
-            {
               "name": "arm-left",
               "costumes": [
                 "eesha-arm-left"
@@ -2488,12 +2408,92 @@
               "costumes": [
                 "eesha-arm-right"
               ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "eesha-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "eesha-leg-right"
+              ]
             }
           ],
           "attributes": [
             {
               "name": "defaultScale",
-              "value": "0.3333"
+              "value": "0.4"
+            },
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "jishna",
+          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "canRotate": false,
+          "zOrder": 0,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "editor",
+              "poses": [
+                "jishna-head"
+              ]
+            },
+            {
+              "name": "head",
+              "costumes": [
+                "jishna-head"
+              ]
+            },
+            {
+              "name": "torso",
+              "costumes": [
+                "jishna-torso"
+              ]
+            },
+            {
+              "name": "abdomen",
+              "costumes": [
+                "jishna-abdomen"
+              ]
+            },
+            {
+              "name": "leg-left",
+              "costumes": [
+                "jishna-leg-left"
+              ]
+            },
+            {
+              "name": "leg-right",
+              "costumes": [
+                "jishna-leg-right"
+              ]
+            },
+            {
+              "name": "arm-left",
+              "costumes": [
+                "jishna-arm-left"
+              ]
+            },
+            {
+              "name": "arm-right",
+              "costumes": [
+                "jishna-arm-right"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "defaultScale",
+              "value": "0.333333"
             },
             {
               "name": "rewardForScene",
@@ -10205,10 +10205,10 @@
       "showInSceneEditor": false
     },
     {
-      "name": "jishna",
+      "name": "eesha",
       "costumes": [
         {
-          "name": "jishna-head",
+          "name": "eesha-head",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10218,7 +10218,7 @@
             {
               "name": "default",
               "poses": [
-                "jishna-head"
+                "eesha-head"
               ]
             }
           ],
@@ -10284,7 +10284,7 @@
           }
         },
         {
-          "name": "jishna-torso",
+          "name": "eesha-torso",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10294,7 +10294,7 @@
             {
               "name": "default",
               "poses": [
-                "jishna-torso"
+                "eesha-torso"
               ]
             }
           ],
@@ -10342,7 +10342,7 @@
           }
         },
         {
-          "name": "jishna-arm-left",
+          "name": "eesha-arm-left",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10352,7 +10352,7 @@
             {
               "name": "default",
               "poses": [
-                "jishna-arm-left"
+                "eesha-arm-left"
               ]
             }
           ],
@@ -10410,7 +10410,7 @@
           }
         },
         {
-          "name": "jishna-arm-right",
+          "name": "eesha-arm-right",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10420,7 +10420,7 @@
             {
               "name": "default",
               "poses": [
-                "jishna-arm-right"
+                "eesha-arm-right"
               ]
             }
           ],
@@ -10478,7 +10478,7 @@
           }
         },
         {
-          "name": "jishna-abdomen",
+          "name": "eesha-abdomen",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10488,7 +10488,7 @@
             {
               "name": "default",
               "poses": [
-                "jishna-abdomen"
+                "eesha-abdomen"
               ]
             }
           ],
@@ -10546,7 +10546,7 @@
           }
         },
         {
-          "name": "jishna-leg-left",
+          "name": "eesha-leg-left",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10556,7 +10556,7 @@
             {
               "name": "default",
               "poses": [
-                "jishna-leg-left"
+                "eesha-leg-left"
               ]
             }
           ],
@@ -10614,7 +10614,7 @@
           }
         },
         {
-          "name": "jishna-leg-right",
+          "name": "eesha-leg-right",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10624,7 +10624,7 @@
             {
               "name": "default",
               "poses": [
-                "jishna-leg-right"
+                "eesha-leg-right"
               ]
             }
           ],
@@ -10685,10 +10685,10 @@
       "showInSceneEditor": false
     },
     {
-      "name": "eesha",
+      "name": "jishna",
       "costumes": [
         {
-          "name": "eesha-head",
+          "name": "jishna-head",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10698,7 +10698,7 @@
             {
               "name": "default",
               "poses": [
-                "eesha-head"
+                "jishna-head"
               ]
             }
           ],
@@ -10764,7 +10764,7 @@
           }
         },
         {
-          "name": "eesha-arm-right",
+          "name": "jishna-arm-right",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10774,7 +10774,7 @@
             {
               "name": "default",
               "poses": [
-                "eesha-arm-right"
+                "jishna-arm-right"
               ]
             }
           ],
@@ -10832,7 +10832,7 @@
           }
         },
         {
-          "name": "eesha-arm-left",
+          "name": "jishna-arm-left",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10842,7 +10842,7 @@
             {
               "name": "default",
               "poses": [
-                "eesha-arm-left"
+                "jishna-arm-left"
               ]
             }
           ],
@@ -10900,7 +10900,7 @@
           }
         },
         {
-          "name": "eesha-torso",
+          "name": "jishna-torso",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10910,7 +10910,7 @@
             {
               "name": "default",
               "poses": [
-                "eesha-torso"
+                "jishna-torso"
               ]
             }
           ],
@@ -10958,7 +10958,7 @@
           }
         },
         {
-          "name": "eesha-abdomen",
+          "name": "jishna-abdomen",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -10968,7 +10968,7 @@
             {
               "name": "default",
               "poses": [
-                "eesha-abdomen"
+                "jishna-abdomen"
               ]
             }
           ],
@@ -11030,7 +11030,7 @@
           }
         },
         {
-          "name": "eesha-leg-left",
+          "name": "jishna-leg-left",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -11040,7 +11040,7 @@
             {
               "name": "default",
               "poses": [
-                "eesha-leg-left"
+                "jishna-leg-left"
               ]
             }
           ],
@@ -11098,7 +11098,7 @@
           }
         },
         {
-          "name": "eesha-leg-right",
+          "name": "jishna-leg-right",
           "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
           "canRotate": false,
           "zOrder": 0,
@@ -11108,7 +11108,7 @@
             {
               "name": "default",
               "poses": [
-                "eesha-leg-right"
+                "jishna-leg-right"
               ]
             }
           ],

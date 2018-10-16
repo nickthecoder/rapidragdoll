@@ -214,8 +214,8 @@
           "x": 592,
           "y": 438,
           "direction": 0,
-          "scaleX": 0.4,
-          "scaleY": 0.4,
+          "scaleX": 0.33333,
+          "scaleY": 0.33333,
           "attributes": [
             {
               "name": "rewardForScene",
@@ -228,8 +228,8 @@
           "x": 672,
           "y": 436,
           "direction": 0,
-          "scaleX": 0.3333,
-          "scaleY": 0.3333,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
           "attributes": [
             {
               "name": "rewardForScene",
