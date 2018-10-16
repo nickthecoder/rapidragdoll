@@ -237,6 +237,18 @@
           "sizeY": 47,
           "alignmentX": 0,
           "alignmentY": 0
+        },
+        {
+          "costume": "paper2",
+          "x": 42,
+          "y": 60,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1194,
+          "sizeY": 1085,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

@@ -263,6 +263,18 @@
               "value": "-2.0x61.0"
             }
           ]
+        },
+        {
+          "costume": "paper1",
+          "x": 41,
+          "y": 60,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1197,
+          "sizeY": 1088,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

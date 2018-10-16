@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "menu"
+      "value": "puzzle/07"
     },
     {
       "name": "bottomLeft",

@@ -140,7 +140,7 @@
           "costume": "information",
           "x": 279,
           "y": 449,
-          "text": "Hold down the right mouse button,",
+          "text": "Move the mouse to the right edge ->",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -148,25 +148,6 @@
             {
               "name": "moveBy",
               "value": "167.0x490.0"
-            },
-            {
-              "name": "seconds",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "costume": "information",
-          "x": 361,
-          "y": 389,
-          "text": "and drag to scroll to the right ->",
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "moveBy",
-              "value": "596.0x538.0"
             },
             {
               "name": "seconds",
@@ -231,8 +212,8 @@
         },
         {
           "costume": "information",
-          "x": 273,
-          "y": 327,
+          "x": 338,
+          "y": 388,
           "text": "Or use the arrow keys to scroll ->",
           "direction": 0,
           "scaleX": 1,

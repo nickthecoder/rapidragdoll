@@ -25,6 +25,7 @@ import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.animation.Eases
 import uk.co.nickthecoder.tickle.action.movement.PanTo
 import uk.co.nickthecoder.tickle.events.*
+import uk.co.nickthecoder.tickle.graphics.Window
 import uk.co.nickthecoder.tickle.physics.RoleContactManager
 import uk.co.nickthecoder.tickle.physics.TickleWorld
 import uk.co.nickthecoder.tickle.resources.Resources
@@ -160,6 +161,10 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
      */
     var started = false
 
+    private var mousePosition = Vector2d()
+
+    private val scrollSpeed = 10
+
     init {
         instance = this
     }
@@ -210,21 +215,37 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
         panAction?.act()
 
         if (inputUp?.isPressed() == true) {
-            mainView.centerY += 5
+            mainView.centerY += scrollSpeed
             constrainView()
         }
         if (inputDown?.isPressed() == true) {
-            mainView.centerY -= 5
+            mainView.centerY -= scrollSpeed
             constrainView()
         }
         if (inputLeft?.isPressed() == true) {
-            mainView.centerX -= 5
+            mainView.centerX -= scrollSpeed
             constrainView()
         }
         if (inputRight?.isPressed() == true) {
-            mainView.centerX += 5
+            mainView.centerX += scrollSpeed
             constrainView()
         }
+
+        Window.instance?.mousePosition(mousePosition)
+        val x = mousePosition.x
+        val y = mousePosition.y
+        if (x < 10) {
+            mainView.centerX -= scrollSpeed
+        } else if (x > mainView.rect.width - 10) {
+            mainView.centerX += scrollSpeed
+        }
+        if (y < 10) {
+            mainView.centerY += scrollSpeed
+        } else if (y > mainView.rect.height - 10) {
+            mainView.centerY -= scrollSpeed
+        }
+        constrainView()
+
     }
 
     override fun postTick() {
@@ -317,7 +338,7 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
         }
     }
 
-    fun objectivesComplete() {
+    private fun objectivesComplete() {
         sceneComplete = true
         glassView.stage.findRoles<SceneComplete>().forEach { it.go() }
         glassView.stage.findRoles<Countdown>().forEach { it.stop() }
@@ -351,7 +372,7 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
         }
     }
 
-    fun nextScene() {
+    private fun nextScene() {
         Game.instance.startScene(nextScene)
     }
 
