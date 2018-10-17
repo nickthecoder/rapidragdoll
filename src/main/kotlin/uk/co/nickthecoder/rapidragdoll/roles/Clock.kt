@@ -16,32 +16,43 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
-import org.jbox2d.dynamics.contacts.Contact
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Delay
-import uk.co.nickthecoder.tickle.action.Do
-import uk.co.nickthecoder.tickle.physics.ContactListenerRole
+import uk.co.nickthecoder.tickle.util.Attribute
+import java.util.*
 
-class Plasma : ActionRole(), ContactListenerRole {
+class Clock : ActionRole(), Reward {
+
+    lateinit var minuteHand: Actor
+    lateinit var hourHand: Actor
+
+    @Attribute
+    override var rewardForScene: String = ""
+
+    override fun activated() {
+        super.activated()
+
+        minuteHand = actor.createChild("minute-hand")
+        hourHand = actor.createChild("hour-hand")
+        updateHands()
+    }
 
     override fun createAction(): Action {
-        return Do {
-            actor.event("default")
-        }
-                .then(Delay(0.05))
-                .forever()
+        return Delay(30.0).then { updateHands() }.forever()
+
     }
 
-    override fun beginContact(contact: Contact, otherActor: Actor) {
-        val otherRole = otherActor.role
-        if (otherRole is DollPart) {
-            otherRole.doll.zapped()
-        }
+    private fun updateHands() {
+        val cal = Calendar.getInstance()
+        val minutes = cal.get(Calendar.MINUTE)
+        val hours = cal.get(Calendar.HOUR)
+
+        minuteHand.direction.degrees = 90.0 - minutes * 6.0
+        hourHand.direction.degrees = 90.0 - (hours + minutes / 60.0) * 30.0
     }
 
-    override fun endContact(contact: Contact, otherActor: Actor) {}
 }

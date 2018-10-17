@@ -16,25 +16,37 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.ui
 
-import uk.co.nickthecoder.tickle.AbstractRole
-import uk.co.nickthecoder.tickle.stage.StageView
+import uk.co.nickthecoder.rapidragdoll.AbstractPlay
+import uk.co.nickthecoder.rapidragdoll.timeString
+import uk.co.nickthecoder.tickle.ActionRole
+import uk.co.nickthecoder.tickle.action.Delay
+import uk.co.nickthecoder.tickle.util.Attribute
 
-/**
- * Used in the victory scene as the mouse pointer.
- */
-class Hand : AbstractRole() {
+class Countdown : ActionRole() {
 
-    var view: StageView? = null
+    @Attribute
+    var seconds = 30
 
     override fun activated() {
-        super.activated()
-        view = actor.stage?.firstView()
+        updateText()
     }
 
-    override fun tick() {
-        view?.mousePosition(actor.position)
+    fun go() {
+        replaceAction(Delay(1.0).then { countdown() }.repeat(seconds).then { AbstractPlay.instance.timeIsUp() })
     }
 
+    fun stop() {
+        replaceAction(null)
+    }
+
+    fun countdown() {
+        seconds--
+        updateText()
+    }
+
+    fun updateText() {
+        actor.textAppearance?.text = timeString(seconds)
+    }
 }

@@ -1823,7 +1823,7 @@
       "costumes": [
         {
           "name": "annie",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -1899,7 +1899,7 @@
         },
         {
           "name": "foxie",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -1963,7 +1963,7 @@
         },
         {
           "name": "bony",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2027,7 +2027,7 @@
         },
         {
           "name": "fiona",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2095,7 +2095,7 @@
         },
         {
           "name": "mike",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2163,7 +2163,7 @@
         },
         {
           "name": "emma",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2231,7 +2231,7 @@
         },
         {
           "name": "santa",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2299,7 +2299,7 @@
         },
         {
           "name": "lilian",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2367,7 +2367,7 @@
         },
         {
           "name": "eesha",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2435,7 +2435,7 @@
         },
         {
           "name": "jishna",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2503,7 +2503,7 @@
         },
         {
           "name": "asul",
-          "role": "uk.co.nickthecoder.rapidragdoll.Doll",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Doll",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2577,7 +2577,7 @@
       "costumes": [
         {
           "name": "annie-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.MajorDollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.MajorDollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2630,7 +2630,7 @@
         },
         {
           "name": "annie-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2685,7 +2685,7 @@
         },
         {
           "name": "annie-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2740,7 +2740,7 @@
         },
         {
           "name": "annie-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.MajorDollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.MajorDollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2794,7 +2794,7 @@
         },
         {
           "name": "annie-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2866,7 +2866,7 @@
         },
         {
           "name": "annie-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2921,7 +2921,7 @@
         },
         {
           "name": "annie-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -2982,7 +2982,7 @@
       "costumes": [
         {
           "name": "foxie-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3031,7 +3031,7 @@
         },
         {
           "name": "foxie-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3102,7 +3102,7 @@
         },
         {
           "name": "foxie-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3157,7 +3157,7 @@
         },
         {
           "name": "foxie-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3198,7 +3198,7 @@
         },
         {
           "name": "foxie-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3253,7 +3253,7 @@
         },
         {
           "name": "foxie-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3308,7 +3308,7 @@
         },
         {
           "name": "foxie-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3369,7 +3369,7 @@
       "costumes": [
         {
           "name": "bony-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3424,7 +3424,7 @@
         },
         {
           "name": "bony-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3482,7 +3482,7 @@
         },
         {
           "name": "bony-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3531,7 +3531,7 @@
         },
         {
           "name": "bony-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3586,7 +3586,7 @@
         },
         {
           "name": "bony-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3641,7 +3641,7 @@
         },
         {
           "name": "bony-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3696,7 +3696,7 @@
         },
         {
           "name": "bony-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -3800,7 +3800,7 @@
         },
         {
           "name": "sceneComplete",
-          "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.SceneComplete",
           "canRotate": false,
           "zOrder": 100,
           "initialEvent": "default",
@@ -3945,7 +3945,7 @@
         },
         {
           "name": "clickToContinue",
-          "role": "uk.co.nickthecoder.rapidragdoll.SceneComplete",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.SceneComplete",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -3967,7 +3967,7 @@
         },
         {
           "name": "countdown",
-          "role": "uk.co.nickthecoder.rapidragdoll.Countdown",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Countdown",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -4012,7 +4012,7 @@
         },
         {
           "name": "levelStatus",
-          "role": "uk.co.nickthecoder.rapidragdoll.LevelStatus",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.LevelStatus",
           "canRotate": false,
           "zOrder": 50,
           "initialEvent": "default",
@@ -4070,7 +4070,7 @@
         },
         {
           "name": "levelName",
-          "role": "uk.co.nickthecoder.rapidragdoll.LevelButton",
+          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
           "canRotate": false,
           "zOrder": 60,
           "initialEvent": "default",
@@ -4100,6 +4100,12 @@
                 }
               ]
             }
+          ],
+          "attributes": [
+            {
+              "name": "scene",
+              "value": ""
+            }
           ]
         },
         {
@@ -4125,7 +4131,7 @@
         },
         {
           "name": "join1",
-          "role": "uk.co.nickthecoder.rapidragdoll.LevelRoute",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.LevelRoute",
           "canRotate": true,
           "zOrder": 40,
           "initialEvent": "default",
@@ -4169,7 +4175,7 @@
         },
         {
           "name": "information",
-          "role": "uk.co.nickthecoder.rapidragdoll.Information",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Information",
           "canRotate": true,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -4191,7 +4197,7 @@
         },
         {
           "name": "timeIsUp",
-          "role": "uk.co.nickthecoder.rapidragdoll.TimeIsUp",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.TimeIsUp",
           "canRotate": false,
           "zOrder": 100,
           "initialEvent": "default",
@@ -4213,7 +4219,7 @@
         },
         {
           "name": "hand",
-          "role": "uk.co.nickthecoder.rapidragdoll.Hand",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Hand",
           "canRotate": false,
           "zOrder": 1100,
           "initialEvent": "default",
@@ -4254,7 +4260,7 @@
         },
         {
           "name": "youLose",
-          "role": "uk.co.nickthecoder.rapidragdoll.YouLose",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.YouLose",
           "canRotate": false,
           "zOrder": 100,
           "initialEvent": "default",
@@ -4276,7 +4282,7 @@
         },
         {
           "name": "pointer",
-          "role": "uk.co.nickthecoder.rapidragdoll.Hand",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Hand",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -4292,7 +4298,7 @@
         },
         {
           "name": "elastic",
-          "role": "uk.co.nickthecoder.rapidragdoll.Elastic",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Elastic",
           "canRotate": true,
           "zOrder": 1050,
           "initialEvent": "default",
@@ -4320,7 +4326,7 @@
         },
         {
           "name": "paused",
-          "role": "uk.co.nickthecoder.rapidragdoll.Pause",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Pause",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -4342,7 +4348,7 @@
         },
         {
           "name": "levelButton",
-          "role": "uk.co.nickthecoder.rapidragdoll.LevelButton",
+          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
           "canRotate": false,
           "zOrder": 60,
           "initialEvent": "default",
@@ -4359,6 +4365,12 @@
                   "outlineColor": "#ffffffff"
                 }
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "scene",
+              "value": ""
             }
           ]
         },
@@ -4380,7 +4392,7 @@
         },
         {
           "name": "exit",
-          "role": "uk.co.nickthecoder.tickle.util.SceneButton",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Exit",
           "canRotate": false,
           "zOrder": 100,
           "initialEvent": "default",
@@ -4392,12 +4404,6 @@
                 "exit"
               ]
             }
-          ],
-          "attributes": [
-            {
-              "name": "scene",
-              "value": ""
-            }
           ]
         }
       ],
@@ -4408,7 +4414,7 @@
       "costumes": [
         {
           "name": "chair2",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": true,
           "zOrder": -100,
           "initialEvent": "default",
@@ -4503,7 +4509,7 @@
         },
         {
           "name": "chair1",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": true,
           "zOrder": -100,
           "initialEvent": "default",
@@ -4668,7 +4674,7 @@
         },
         {
           "name": "pin",
-          "role": "uk.co.nickthecoder.rapidragdoll.Pin",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Pin",
           "canRotate": false,
           "zOrder": 300,
           "initialEvent": "default",
@@ -4767,7 +4773,7 @@
         },
         {
           "name": "rock",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": false,
           "zOrder": 350,
           "initialEvent": "default",
@@ -4812,7 +4818,7 @@
         },
         {
           "name": "umbrella",
-          "role": "uk.co.nickthecoder.rapidragdoll.Umbrella",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Umbrella",
           "canRotate": false,
           "zOrder": 320,
           "initialEvent": "default",
@@ -4875,7 +4881,7 @@
         },
         {
           "name": "umbrella-top",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": false,
           "zOrder": 321,
           "initialEvent": "default",
@@ -5076,7 +5082,7 @@
         },
         {
           "name": "bed",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -5198,7 +5204,7 @@
         },
         {
           "name": "cooker",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -5245,7 +5251,7 @@
         },
         {
           "name": "table",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": false,
           "zOrder": -50,
           "initialEvent": "default",
@@ -5321,7 +5327,7 @@
         },
         {
           "name": "teapot",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -5463,7 +5469,7 @@
         },
         {
           "name": "teacup",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 200,
           "initialEvent": "default",
@@ -5610,7 +5616,7 @@
         },
         {
           "name": "clock",
-          "role": "uk.co.nickthecoder.rapidragdoll.Clock",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Clock",
           "canRotate": false,
           "zOrder": -910,
           "initialEvent": "default",
@@ -5633,6 +5639,12 @@
               "costumes": [
                 "hour-hand"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         },
@@ -5757,7 +5769,7 @@
         },
         {
           "name": "bell",
-          "role": "uk.co.nickthecoder.rapidragdoll.Bell",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Bell",
           "canRotate": false,
           "zOrder": -202,
           "initialEvent": "default",
@@ -5926,7 +5938,7 @@
         },
         {
           "name": "bell-front",
-          "role": "uk.co.nickthecoder.rapidragdoll.Follower",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Follower",
           "canRotate": false,
           "zOrder": 200,
           "initialEvent": "default",
@@ -5942,7 +5954,7 @@
         },
         {
           "name": "plasma",
-          "role": "uk.co.nickthecoder.rapidragdoll.Plasma",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Plasma",
           "canRotate": true,
           "zOrder": -500,
           "initialEvent": "default",
@@ -6006,7 +6018,7 @@
         },
         {
           "name": "lamp1",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6103,7 +6115,7 @@
         },
         {
           "name": "lamp2",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6221,7 +6233,7 @@
         },
         {
           "name": "lamp3",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6334,7 +6346,7 @@
         },
         {
           "name": "vase2",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6402,7 +6414,7 @@
         },
         {
           "name": "vase1",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6542,7 +6554,7 @@
       "costumes": [
         {
           "name": "autoLauncher",
-          "role": "uk.co.nickthecoder.rapidragdoll.AutoLauncher",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.AutoLauncher",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6584,7 +6596,7 @@
         },
         {
           "name": "aim",
-          "role": "uk.co.nickthecoder.rapidragdoll.Aim",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Aim",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -6600,7 +6612,7 @@
         },
         {
           "name": "launcher",
-          "role": "uk.co.nickthecoder.rapidragdoll.Launcher",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Launcher",
           "canRotate": false,
           "zOrder": 910,
           "initialEvent": "default",
@@ -6686,7 +6698,7 @@
         },
         {
           "name": "arrow",
-          "role": "uk.co.nickthecoder.rapidragdoll.Arrow",
+          "role": "uk.co.nickthecoder.rapidragdoll.ui.Arrow",
           "canRotate": false,
           "zOrder": 900,
           "initialEvent": "default",
@@ -6714,7 +6726,7 @@
       "costumes": [
         {
           "name": "fiona-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6767,7 +6779,7 @@
         },
         {
           "name": "fiona-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6864,7 +6876,7 @@
         },
         {
           "name": "fiona-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -6961,7 +6973,7 @@
         },
         {
           "name": "fiona-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7019,7 +7031,7 @@
         },
         {
           "name": "fiona-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7095,7 +7107,7 @@
         },
         {
           "name": "fiona-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7192,7 +7204,7 @@
         },
         {
           "name": "fiona-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7295,7 +7307,7 @@
       "costumes": [
         {
           "name": "mike-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7392,7 +7404,7 @@
         },
         {
           "name": "mike-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7445,7 +7457,7 @@
         },
         {
           "name": "mike-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7542,7 +7554,7 @@
         },
         {
           "name": "mike-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7600,7 +7612,7 @@
         },
         {
           "name": "mike-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7697,7 +7709,7 @@
         },
         {
           "name": "mike-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7794,7 +7806,7 @@
         },
         {
           "name": "mike-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -7868,7 +7880,7 @@
       "costumes": [
         {
           "name": "xmas-pin",
-          "role": "uk.co.nickthecoder.rapidragdoll.Pin",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Pin",
           "canRotate": false,
           "zOrder": 300,
           "initialEvent": "default",
@@ -7967,7 +7979,7 @@
         },
         {
           "name": "xmas-tree",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8064,7 +8076,7 @@
         },
         {
           "name": "xmas-wine",
-          "role": "uk.co.nickthecoder.rapidragdoll.Fragile",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Fragile",
           "canRotate": false,
           "zOrder": -40,
           "initialEvent": "default",
@@ -8148,7 +8160,7 @@
         },
         {
           "name": "snowMachine",
-          "role": "uk.co.nickthecoder.rapidragdoll.SnowMachine",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.SnowMachine",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8184,7 +8196,7 @@
         },
         {
           "name": "snow",
-          "role": "uk.co.nickthecoder.rapidragdoll.Scenery",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Scenery",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8235,7 +8247,7 @@
       "costumes": [
         {
           "name": "emma-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8324,7 +8336,7 @@
         },
         {
           "name": "emma-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8392,7 +8404,7 @@
         },
         {
           "name": "emma-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8468,7 +8480,7 @@
         },
         {
           "name": "emma-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8530,7 +8542,7 @@
         },
         {
           "name": "emma-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8606,7 +8618,7 @@
         },
         {
           "name": "emma-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8699,7 +8711,7 @@
         },
         {
           "name": "emma-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8806,7 +8818,7 @@
       "costumes": [
         {
           "name": "santa-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8882,7 +8894,7 @@
         },
         {
           "name": "santa-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -8979,7 +8991,7 @@
         },
         {
           "name": "santa-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9076,7 +9088,7 @@
         },
         {
           "name": "santa-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9148,7 +9160,7 @@
         },
         {
           "name": "santa-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9249,7 +9261,7 @@
         },
         {
           "name": "santa-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9317,7 +9329,7 @@
         },
         {
           "name": "santa-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9461,7 +9473,7 @@
       "costumes": [
         {
           "name": "collectable-shrink",
-          "role": "uk.co.nickthecoder.rapidragdoll.CollectableShrink",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.CollectableShrink",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -9512,7 +9524,7 @@
         },
         {
           "name": "collectable-grow",
-          "role": "uk.co.nickthecoder.rapidragdoll.CollectableGrow",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.CollectableGrow",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -9563,7 +9575,7 @@
         },
         {
           "name": "collectable-speedUp",
-          "role": "uk.co.nickthecoder.rapidragdoll.CollectableSpeedUp",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.CollectableSpeedUp",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -9614,7 +9626,7 @@
         },
         {
           "name": "collectable-slowDown",
-          "role": "uk.co.nickthecoder.rapidragdoll.CollectableSlowDown",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.CollectableSlowDown",
           "canRotate": false,
           "zOrder": 1000,
           "initialEvent": "default",
@@ -9671,7 +9683,7 @@
       "costumes": [
         {
           "name": "lilian-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9768,7 +9780,7 @@
         },
         {
           "name": "lilian-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9865,7 +9877,7 @@
         },
         {
           "name": "lilian-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9941,7 +9953,7 @@
         },
         {
           "name": "lilian-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -9999,7 +10011,7 @@
         },
         {
           "name": "lilian-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10067,7 +10079,7 @@
         },
         {
           "name": "lilian-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10135,7 +10147,7 @@
         },
         {
           "name": "lilian-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10209,7 +10221,7 @@
       "costumes": [
         {
           "name": "eesha-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10285,7 +10297,7 @@
         },
         {
           "name": "eesha-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10343,7 +10355,7 @@
         },
         {
           "name": "eesha-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10411,7 +10423,7 @@
         },
         {
           "name": "eesha-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10479,7 +10491,7 @@
         },
         {
           "name": "eesha-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10547,7 +10559,7 @@
         },
         {
           "name": "eesha-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10615,7 +10627,7 @@
         },
         {
           "name": "eesha-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10689,7 +10701,7 @@
       "costumes": [
         {
           "name": "jishna-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10765,7 +10777,7 @@
         },
         {
           "name": "jishna-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10833,7 +10845,7 @@
         },
         {
           "name": "jishna-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10901,7 +10913,7 @@
         },
         {
           "name": "jishna-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -10959,7 +10971,7 @@
         },
         {
           "name": "jishna-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11031,7 +11043,7 @@
         },
         {
           "name": "jishna-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11099,7 +11111,7 @@
         },
         {
           "name": "jishna-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11173,7 +11185,7 @@
       "costumes": [
         {
           "name": "asul-torso",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11231,7 +11243,7 @@
         },
         {
           "name": "asul-leg-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11328,7 +11340,7 @@
         },
         {
           "name": "asul-leg-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11425,7 +11437,7 @@
         },
         {
           "name": "asul-head",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11497,7 +11509,7 @@
         },
         {
           "name": "asul-arm-right",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11565,7 +11577,7 @@
         },
         {
           "name": "asul-arm-left",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11633,7 +11645,7 @@
         },
         {
           "name": "asul-abdomen",
-          "role": "uk.co.nickthecoder.rapidragdoll.DollPart",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.DollPart",
           "canRotate": false,
           "zOrder": 0,
           "initialEvent": "default",
@@ -11855,11 +11867,20 @@
           "state": "PRESSED"
         }
       ]
+    },
+    {
+      "name": "cheat",
+      "keys": [
+        {
+          "key": "F9",
+          "state": "PRESSED"
+        }
+      ]
     }
   ],
   "tabs": [
     {
-      "name": "06",
+      "name": "menu",
       "type": "SCENE"
     }
   ]

@@ -16,17 +16,32 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
-import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.ActionRole
+import uk.co.nickthecoder.tickle.action.Action
+import uk.co.nickthecoder.tickle.action.Delay
 import uk.co.nickthecoder.tickle.util.Attribute
+import uk.co.nickthecoder.tickle.util.Rand
 
-class Scenery : AbstractRole(), Draggable, Reward {
+class SnowMachine : ActionRole() {
 
     @Attribute
-    override var rewardForScene = ""
+    var toX = 1280.0
 
-    override fun tick() {
+    @Attribute
+    var period = 1.0
+
+    @Attribute
+    var count = 1000
+
+    override fun createAction(): Action {
+        return Delay(period)
+                .then {
+                    val snowA = actor.createChild("snow")
+                    snowA.x = Rand.between(actor.x, toX)
+                    snowA.y = actor.y
+                }.repeat(count)
     }
 
 }

@@ -16,8 +16,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
+import uk.co.nickthecoder.rapidragdoll.AbstractPlay
+import uk.co.nickthecoder.rapidragdoll.Victory
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Kill

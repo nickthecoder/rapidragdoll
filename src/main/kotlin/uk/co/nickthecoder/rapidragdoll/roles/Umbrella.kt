@@ -16,22 +16,36 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
-import uk.co.nickthecoder.tickle.AbstractRole
-import uk.co.nickthecoder.tickle.Game
+import org.joml.Vector2d
+import uk.co.nickthecoder.tickle.Actor
+import uk.co.nickthecoder.tickle.physics.TicklePinJoint
+import uk.co.nickthecoder.tickle.util.Angle
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class LevelRoute : AbstractRole() {
+class Umbrella : Fragile(), Draggable {
 
     @Attribute
-    var requiredScene = ""
+    val angle = Angle()
+
+    lateinit var topHalf: Actor
 
     override fun activated() {
-        if (requiredScene.isNotBlank() && !Game.instance.preferences.node("scenes").node(requiredScene).getBoolean("completed", false)) {
-            actor.hide()
+
+        val joinPoint = Vector2d(0.0, 141.0 * actor.scaleXY)
+
+        topHalf = actor.createChild("topHalf").apply {
+            scaleXY = actor.scaleXY
+            position.y += joinPoint.y
+            direction.radians += angle.radians
         }
+
+        TicklePinJoint(actor, topHalf, joinPoint).limitRotation(Angle.degrees(-60.0), Angle.degrees(60.0))
     }
 
-    override fun tick() {}
+    override fun mass(): Double {
+        return (actor.body?.mass ?: 0.0) + (topHalf.body?.mass ?: 0.0)
+    }
+
 }

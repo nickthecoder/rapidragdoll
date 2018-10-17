@@ -86,7 +86,7 @@
             },
             {
               "name": "speed",
-              "value": "300"
+              "value": "400"
             },
             {
               "name": "randomSeed",
@@ -99,30 +99,6 @@
           ]
         },
         {
-          "costume": "wall",
-          "x": 0,
-          "y": -6.0800000000000125,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 43.840000000000146,
-          "sizeY": 775.8719999999998,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": 639.2939999999999,
-          "y": 784.29,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1283.5879999999997,
-          "sizeY": 43.58000000000004,
-          "alignmentX": 0.5,
-          "alignmentY": 0.5
-        },
-        {
           "costume": "pin",
           "x": 851,
           "y": 70,
@@ -132,37 +108,13 @@
         },
         {
           "costume": "wall",
-          "x": 1280,
-          "y": 0,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 47.29600000000028,
-          "sizeY": 768.0639999999999,
-          "alignmentX": 1,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wood",
-          "x": 0,
-          "y": -6.0800000000000125,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "sizeX": 1283,
-          "sizeY": 67.08000000000001,
-          "alignmentX": 0,
-          "alignmentY": 0
-        },
-        {
-          "costume": "wall",
           "x": 616,
-          "y": 61,
+          "y": 36,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 51,
-          "sizeY": 285,
+          "sizeX": 50,
+          "sizeY": 311,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -173,8 +125,8 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 51,
-          "sizeY": 306,
+          "sizeX": 49,
+          "sizeY": 372,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -231,26 +183,16 @@
           ]
         },
         {
-          "costume": "collectable-shrink",
-          "x": 1103,
-          "y": 576,
+          "costume": "grass",
+          "x": -118,
+          "y": 0,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "attributes": [
-            {
-              "name": "factor",
-              "value": "1.4"
-            },
-            {
-              "name": "period",
-              "value": "2"
-            },
-            {
-              "name": "radius",
-              "value": "30"
-            }
-          ]
+          "sizeX": 1399,
+          "sizeY": 88,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

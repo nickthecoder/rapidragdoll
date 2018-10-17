@@ -16,21 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
-import uk.co.nickthecoder.tickle.ActionRole
-import uk.co.nickthecoder.tickle.action.Action
-import uk.co.nickthecoder.tickle.action.movement.FollowMouse
+import uk.co.nickthecoder.tickle.Role
 
-class Aim : ActionRole() {
+interface Draggable : Role {
 
-    override fun tick() {
-        super.tick()
-        actor.direction.degrees += 1.0
+    fun mass() = actor.body?.mass ?: 0.0
+
+    fun scale(scale: Double) {
+        scale(scale, scale)
     }
 
-    override fun createAction(): Action {
-        return FollowMouse(actor.position, actor.stage?.firstView()!!)
+    fun scale(scaleX: Double, scaleY: Double) {
+        actor.scale.mul(scaleX, scaleY)
     }
-
 }

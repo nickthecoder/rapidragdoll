@@ -19,6 +19,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package uk.co.nickthecoder.rapidragdoll
 
 import org.joml.Vector2d
+import uk.co.nickthecoder.rapidragdoll.roles.Doll
+import uk.co.nickthecoder.rapidragdoll.roles.Draggable
+import uk.co.nickthecoder.rapidragdoll.ui.Elastic
+import uk.co.nickthecoder.rapidragdoll.roles.Reward
+import uk.co.nickthecoder.rapidragdoll.ui.Hand
 import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.events.ButtonState
 import uk.co.nickthecoder.tickle.events.KeyEvent

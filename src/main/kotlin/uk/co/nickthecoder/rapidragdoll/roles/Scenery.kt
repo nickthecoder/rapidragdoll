@@ -16,18 +16,17 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
-import uk.co.nickthecoder.tickle.Game
-import uk.co.nickthecoder.tickle.events.MouseEvent
-import uk.co.nickthecoder.tickle.util.Button
+import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.util.Attribute
 
-class LevelButton : Button() {
+class Scenery : AbstractRole(), Draggable, Reward {
 
-    var sceneName = ""
+    @Attribute
+    override var rewardForScene = ""
 
-    override fun onClicked(event: MouseEvent) {
-        Game.instance.startScene(sceneName)
+    override fun tick() {
     }
 
 }

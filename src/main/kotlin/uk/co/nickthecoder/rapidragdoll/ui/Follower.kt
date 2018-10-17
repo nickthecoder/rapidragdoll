@@ -16,35 +16,20 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.ui
 
-import uk.co.nickthecoder.tickle.ActionRole
-import uk.co.nickthecoder.tickle.action.Delay
-import uk.co.nickthecoder.tickle.util.Attribute
+import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.Actor
 
-class Countdown : ActionRole() {
+class Follower : AbstractRole() {
 
-    @Attribute
-    var seconds = 30
+    var following: Actor? = null
 
-    override fun activated() {
-        updateText()
+    override fun tick() {
+        following?.let {
+            actor.position.set(it.position)
+            actor.direction.radians = it.direction.radians
+        }
     }
 
-    fun go() {
-        replaceAction(Delay(1.0).then { countdown() }.repeat(seconds).then { AbstractPlay.instance.timeIsUp() })
-    }
-
-    fun stop() {
-        replaceAction(null)
-    }
-
-    fun countdown() {
-        seconds--
-        updateText()
-    }
-
-    fun updateText() {
-        actor.textAppearance?.text = timeString(seconds)
-    }
 }

@@ -16,32 +16,33 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.ui
 
-import uk.co.nickthecoder.tickle.ActionRole
-import uk.co.nickthecoder.tickle.action.Action
-import uk.co.nickthecoder.tickle.action.Delay
+import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.Game
+import uk.co.nickthecoder.tickle.events.Input
+import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.util.Attribute
-import uk.co.nickthecoder.tickle.util.Rand
 
-class SnowMachine : ActionRole() {
-
-    @Attribute
-    var toX = 1280.0
+class LevelRoute : AbstractRole() {
 
     @Attribute
-    var period = 1.0
+    var requiredScene = ""
 
-    @Attribute
-    var count = 1000
+    var cheat: Input? = null
 
-    override fun createAction(): Action {
-        return Delay(period)
-                .then {
-                    val snowA = actor.createChild("snow")
-                    snowA.x = Rand.between(actor.x, toX)
-                    snowA.y = actor.y
-                }.repeat(count)
+    override fun activated() {
+
+        cheat = Resources.instance.inputs.find("cheat")
+
+        if (requiredScene.isNotBlank() && !Game.instance.preferences.node("scenes").node(requiredScene).getBoolean("completed", false)) {
+            actor.hide()
+        }
     }
 
+    override fun tick() {
+        if (cheat?.isPressed() == true) {
+            actor.event("default") // Unhide
+        }
+    }
 }

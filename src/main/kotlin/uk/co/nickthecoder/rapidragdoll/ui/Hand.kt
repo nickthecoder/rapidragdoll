@@ -16,19 +16,25 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.ui
 
-import uk.co.nickthecoder.tickle.Role
+import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.stage.StageView
 
-interface Draggable : Role {
+/**
+ * Used in the victory scene as the mouse pointer.
+ */
+class Hand : AbstractRole() {
 
-    fun mass() = actor.body?.mass ?: 0.0
+    var view: StageView? = null
 
-    fun scale(scale: Double) {
-        scale(scale, scale)
+    override fun activated() {
+        super.activated()
+        view = actor.stage?.firstView()
     }
 
-    fun scale(scaleX: Double, scaleY: Double) {
-        actor.scale.mul(scaleX, scaleY)
+    override fun tick() {
+        view?.mousePosition(actor.position)
     }
+
 }

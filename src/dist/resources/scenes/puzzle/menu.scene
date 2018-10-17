@@ -95,7 +95,7 @@
             },
             {
               "name": "textPosition",
-              "value": "1.0x16.0"
+              "value": "2.0x-61.0"
             },
             {
               "name": "timePosition",
@@ -127,7 +127,7 @@
             },
             {
               "name": "text",
-              "value": "Carry On"
+              "value": "Sun Shade"
             },
             {
               "name": "unlocked",
@@ -135,7 +135,7 @@
             },
             {
               "name": "textPosition",
-              "value": "1.0x15.0"
+              "value": "-48.0x23.0"
             },
             {
               "name": "timePosition",
@@ -210,7 +210,7 @@
             },
             {
               "name": "text",
-              "value": "Next!"
+              "value": "Cup of Tea"
             },
             {
               "name": "unlocked",
@@ -344,7 +344,7 @@
             },
             {
               "name": "textPosition",
-              "value": "58.0x16.0"
+              "value": "98.0x-18.0"
             },
             {
               "name": "timePosition",
@@ -392,7 +392,7 @@
             },
             {
               "name": "text",
-              "value": "Fork"
+              "value": "Gap in the Wall"
             },
             {
               "name": "unlocked",
@@ -400,7 +400,7 @@
             },
             {
               "name": "textPosition",
-              "value": "-1.0x16.0"
+              "value": "-43.0x-59.0"
             },
             {
               "name": "timePosition",
@@ -448,7 +448,7 @@
             },
             {
               "name": "text",
-              "value": "Main Line"
+              "value": "Inside"
             },
             {
               "name": "unlocked",
@@ -456,7 +456,7 @@
             },
             {
               "name": "textPosition",
-              "value": "1.0x11.0"
+              "value": "0.0x-52.0"
             },
             {
               "name": "timePosition",

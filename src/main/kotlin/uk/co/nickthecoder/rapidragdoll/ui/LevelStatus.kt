@@ -16,11 +16,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.ui
 
 import org.joml.Vector2d
 import uk.co.nickthecoder.tickle.AttributeType
 import uk.co.nickthecoder.tickle.Game
+import uk.co.nickthecoder.tickle.events.Input
+import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.util.Attribute
 import uk.co.nickthecoder.tickle.util.AutoFlushPreferences
 import uk.co.nickthecoder.tickle.util.SceneButton
@@ -47,14 +49,21 @@ class LevelStatus : SceneButton() {
 
     var preferences: AutoFlushPreferences? = null
 
+    var cheat: Input? = null
+
     override fun activated() {
         super.activated()
+
+        cheat = Resources.instance.inputs.find("cheat")
 
         if (!unlocked && requiredScene.isNotBlank() && !Game.instance.preferences.node("scenes").node(requiredScene).getBoolean("completed", false)) {
             actor.hide()
             return
         }
+        createChildren()
+    }
 
+    private fun createChildren() {
         val buttonA = actor.createChild("text")
         buttonA.textAppearance?.text = text
         buttonA.position.add(textPosition)
@@ -66,8 +75,8 @@ class LevelStatus : SceneButton() {
         unlocked = unlocked || preferences?.getBoolean("unlocked", false) ?: false
 
         val role = buttonA.role
-        if (role is LevelButton) {
-            role.sceneName = scene
+        if (role is SceneButton) {
+            role.scene = scene
         }
 
         if (showTime) {
@@ -80,6 +89,14 @@ class LevelStatus : SceneButton() {
             }
         }
 
+    }
+
+    override fun tick() {
+        super.tick()
+        if (actor.poseAppearance == null && cheat?.isPressed() == true) {
+            actor.event("default") // Unhide
+            createChildren()
+        }
     }
 
 }

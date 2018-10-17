@@ -16,34 +16,32 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
-import org.joml.Vector2d
+import org.jbox2d.dynamics.contacts.Contact
 import uk.co.nickthecoder.tickle.ActionRole
-import uk.co.nickthecoder.tickle.AttributeType
+import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.action.Action
-import uk.co.nickthecoder.tickle.action.Until
-import uk.co.nickthecoder.tickle.action.animation.Eases
-import uk.co.nickthecoder.tickle.action.movement.MoveBy
-import uk.co.nickthecoder.tickle.util.Attribute
+import uk.co.nickthecoder.tickle.action.Delay
+import uk.co.nickthecoder.tickle.action.Do
+import uk.co.nickthecoder.tickle.physics.ContactListenerRole
 
-class Pause : ActionRole() {
-
-    @Attribute(AttributeType.RELATIVE_POSITION)
-    val moveBy = Vector2d(0.0, -300.0)
-
-    @Attribute
-    var seconds = 2.0
+class Plasma : ActionRole(), ContactListenerRole {
 
     override fun createAction(): Action {
-
-        val backAgain = Vector2d(moveBy).mul(-1.0)
-
-        return Until { AbstractPlay.instance.paused }
-                .then(MoveBy(actor.position, moveBy, seconds, Eases.easeOut))
-                .then(Until { !AbstractPlay.instance.paused })
-                .then(MoveBy(actor.position, backAgain, seconds, Eases.easeIn))
+        return Do {
+            actor.event("default")
+        }
+                .then(Delay(0.05))
                 .forever()
     }
 
+    override fun beginContact(contact: Contact, otherActor: Actor) {
+        val otherRole = otherActor.role
+        if (otherRole is DollPart) {
+            otherRole.doll.zapped()
+        }
+    }
+
+    override fun endContact(contact: Contact, otherActor: Actor) {}
 }

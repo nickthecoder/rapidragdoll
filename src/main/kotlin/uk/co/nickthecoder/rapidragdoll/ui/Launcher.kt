@@ -16,9 +16,12 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.ui
 
 import org.joml.Vector2d
+import uk.co.nickthecoder.rapidragdoll.AbstractPlay
+import uk.co.nickthecoder.rapidragdoll.roles.Doll
+import uk.co.nickthecoder.rapidragdoll.roles.DollPart
 import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.AttributeType
 import uk.co.nickthecoder.tickle.Costume
@@ -166,23 +169,23 @@ class Launcher : AbstractLauncher() {
 
     override fun activated() {
         super.activated()
-        select = Resources.instance.inputs.find("select${number}")
+        select = Resources.instance.inputs.find("select$number")
         if (AbstractPlay.instance.launcher === this) {
-            actor.event("select${number}")
+            actor.event("select$number")
         } else {
-            actor.event("deselect${number}")
+            actor.event("deselect$number")
         }
     }
 
     override fun tick() {
         if (select?.isPressed() == true) {
             AbstractPlay.instance.launcher = this
-            actor.event("select${number}")
+            actor.event("select$number")
         }
     }
 
     fun deselect() {
-        actor.event("deselect${number}")
+        actor.event("deselect$number")
     }
 
 }

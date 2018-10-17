@@ -16,40 +16,32 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-package uk.co.nickthecoder.rapidragdoll
+package uk.co.nickthecoder.rapidragdoll.roles
 
+import uk.co.nickthecoder.rapidragdoll.AbstractPlay
 import uk.co.nickthecoder.tickle.ActionRole
-import uk.co.nickthecoder.tickle.Actor
 import uk.co.nickthecoder.tickle.action.Action
-import uk.co.nickthecoder.tickle.action.Delay
-import java.util.*
+import uk.co.nickthecoder.tickle.action.Kill
+import uk.co.nickthecoder.tickle.action.Until
+import uk.co.nickthecoder.tickle.action.animation.Eases
+import uk.co.nickthecoder.tickle.action.animation.Fade
 
-class Clock : ActionRole() {
-
-    lateinit var minuteHand: Actor
-    lateinit var hourHand: Actor
-
-
-    override fun activated() {
-        super.activated()
-
-        minuteHand = actor.createChild("minute-hand")
-        hourHand = actor.createChild("hour-hand")
-        updateHands()
-    }
+/**
+ * When the pin is knocked over, then one of the scene's objectives have been met.
+ */
+class Pin : ActionRole() {
 
     override fun createAction(): Action {
-        return Delay(30.0).then { updateHands() }.forever()
 
-    }
+        AbstractPlay.instance.objectives++
 
-    fun updateHands() {
-        val cal = Calendar.getInstance()
-        val minutes = cal.get(Calendar.MINUTE)
-        val hours = cal.get(Calendar.HOUR)
-
-        minuteHand.direction.degrees = 90.0 - minutes * 6.0
-        hourHand.direction.degrees = 90.0 - (hours + minutes / 60.0) * 30.0
+        return Until { (actor.direction.degrees < -70 || actor.direction.degrees > 70) }
+                .then {
+                    actor.event("score")
+                    AbstractPlay.instance.objectives--
+                }
+                .then(Fade(actor.color, 1.0, 0f, Eases.easeIn))
+                .then(Kill(actor))
     }
 
 }
