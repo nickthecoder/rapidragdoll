@@ -6715,6 +6715,18 @@
                   "top": 0
                 }
               ]
+            },
+            {
+              "name": "pointer",
+              "costumes": [
+                "pointer"
+              ]
+            },
+            {
+              "name": "aim",
+              "costumes": [
+                "aim"
+              ]
             }
           ]
         }
@@ -11879,6 +11891,22 @@
     }
   ],
   "tabs": [
+    {
+      "name": "pointer",
+      "type": "COSTUME"
+    },
+    {
+      "name": "exit",
+      "type": "COSTUME"
+    },
+    {
+      "name": "aim",
+      "type": "COSTUME"
+    },
+    {
+      "name": "arrow",
+      "type": "COSTUME"
+    },
     {
       "name": "menu",
       "type": "SCENE"

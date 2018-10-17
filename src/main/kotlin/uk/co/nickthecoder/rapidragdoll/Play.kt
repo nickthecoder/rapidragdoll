@@ -124,10 +124,10 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
     val launchers = mutableListOf<Launcher>()
 
     /**
-     * The Aim role, which follow the mouse. This is use to aim the Dolls.
+     * The Arrow role, which has the aimActor, which follow the mouse. This is use to aim the Dolls.
      * Set when the scene begins.
      */
-    var aim: Aim? = null
+    var arrow: Arrow? = null
 
     /**
      * A list of all Dolls in the scene. When the maximum number of dolls is exceeded, the earliest doll is killed
@@ -195,8 +195,8 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
                 if (launcher == null) {
                     launcher = role
                 }
-            } else if (role is Aim) {
-                aim = role
+            } else if (role is Arrow) {
+                arrow = role
             }
         }
         startTime = Game.instance.seconds
@@ -280,13 +280,15 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
     override fun onMouseButton(event: MouseEvent) {
         if (event.state == ButtonState.PRESSED) {
             if (event.button == 0) {
-                aim?.let {
-                    if (!started) {
-                        glassView.stage.findRole<Countdown>()?.go()
-                        mainView.stage.findRoles<Information>().forEach { it.go() }
-                        started = true
+                arrow?.let { arrow ->
+                    if (!arrow.hidden) {
+                        if (!started) {
+                            glassView.stage.findRole<Countdown>()?.go()
+                            mainView.stage.findRoles<Information>().forEach { it.go() }
+                            started = true
+                        }
+                        launcher?.launch(arrow.aimActor.position)
                     }
-                    launcher?.launch(it.actor.position)
                 }
             } else {
                 panStart.set(mainView.screenToView(event.screenPosition))

@@ -155,13 +155,7 @@
           "y": 40,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "scene",
-              "value": "menu"
-            }
-          ]
+          "scaleY": 1
         }
       ]
     }

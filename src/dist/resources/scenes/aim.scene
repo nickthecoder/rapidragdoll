@@ -40,14 +40,6 @@
       "name": "main",
       "actors": [
         {
-          "costume": "aim",
-          "x": 251,
-          "y": 436,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
-        },
-        {
           "costume": "arrow",
           "x": 228,
           "y": 532,

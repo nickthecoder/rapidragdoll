@@ -21,29 +21,71 @@ package uk.co.nickthecoder.rapidragdoll.ui
 import org.joml.Vector2d
 import uk.co.nickthecoder.rapidragdoll.AbstractPlay
 import uk.co.nickthecoder.tickle.AbstractRole
+import uk.co.nickthecoder.tickle.Actor
+import uk.co.nickthecoder.tickle.Game
+import uk.co.nickthecoder.tickle.stage.findRolesAt
+import uk.co.nickthecoder.tickle.util.Button
 
 class Arrow : AbstractRole() {
 
     private val mouse = Vector2d()
     private val tempVector = Vector2d()
 
-    override fun tick() {
-        actor.stage?.firstView()?.mousePosition(mouse)
-        AbstractPlay.instance.launcher?.let {
-            actor.position.set(it.actor.position)
-            mouse.sub(actor.position, tempVector)
-            val magnitude = tempVector.length()
+    lateinit var pointerActor: Actor
 
-            if (magnitude > it.speed) {
-                // Show the Aim actor, and draw the arrow from the launcher towards the mouse position
-                // With magnitude of the maximum speed of the launcher.
-                AbstractPlay.instance.aim?.actor?.event("default")
-                tempVector.normalize(it.speed).add(actor.position)
-                actor.ninePatchAppearance?.lineTo(tempVector)
-            } else {
-                // Hide the Aim actor, and draw the arrow from the launcher to the mouse position
-                AbstractPlay.instance.aim?.actor?.hide()
-                actor.ninePatchAppearance?.lineTo(mouse)
+    lateinit var aimActor: Actor
+
+    var hidden = false
+
+    override fun activated() {
+        super.activated()
+        pointerActor = actor.createChild("pointer")
+        pointerActor.zOrder = 998.0
+        pointerActor.stage = Game.instance.scene.findStage("glass")
+        pointerActor.zOrder = 999.0
+        pointerActor.hide()
+
+        aimActor = actor.createChild("aim")
+        aimActor.hide()
+    }
+
+    override fun tick() {
+
+        // If the Hand is over a Button, then hide this Actor, and show the Hand.
+        if (pointerActor.stage?.findRolesAt<Button>(pointerActor.position)?.isEmpty() == true) {
+            if (hidden) {
+                pointerActor.hide()
+                actor.event("default")
+                hidden = false
+            }
+        } else {
+            // Revert to normal when not over a Button.
+            if (!hidden) {
+                actor.hide()
+                aimActor.hide()
+                pointerActor.event("default")
+                hidden = true
+            }
+        }
+
+        if (!hidden) {
+            actor.stage?.firstView()?.mousePosition(mouse)
+            AbstractPlay.instance.launcher?.let {
+                actor.position.set(it.actor.position)
+                mouse.sub(actor.position, tempVector)
+                val magnitude = tempVector.length()
+
+                if (magnitude > it.speed) {
+                    // Show the Aim actor, and draw the arrow from the launcher towards the mouse position
+                    // With magnitude of the maximum speed of the launcher.
+                    aimActor.event("default")
+                    tempVector.normalize(it.speed).add(actor.position)
+                    actor.ninePatchAppearance?.lineTo(tempVector)
+                } else {
+                    // Hide the Aim actor, and draw the arrow from the launcher to the mouse position
+                    aimActor.hide()
+                    actor.ninePatchAppearance?.lineTo(mouse)
+                }
             }
         }
     }
