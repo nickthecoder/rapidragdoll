@@ -91,7 +91,7 @@ class Doll : ActionRole(), Reward {
         super.activated()
     }
 
-    fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
+    private fun createPart(part: String, zOrder: Double, joinTo: Actor? = null): Actor {
 
         val newActor = actor.createChild(part)
         val newRole = newActor.role

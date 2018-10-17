@@ -19,7 +19,7 @@
     },
     {
       "name": "topRight",
-      "value": "3280.0x1500.0"
+      "value": "6280.0x1500.0"
     },
     {
       "name": "showAll",
@@ -250,8 +250,8 @@
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 1378,
-          "sizeY": 83,
+          "sizeX": 1695,
+          "sizeY": 79,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -800,6 +800,156 @@
               "value": ""
             }
           ]
+        },
+        {
+          "costume": "wall",
+          "x": 3765,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 51,
+          "sizeY": 58,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 3773,
+          "y": 639,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 289,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 3814,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1070,
+          "sizeY": 55,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wall",
+          "x": 4884,
+          "y": 0,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 50,
+          "sizeY": 930,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "table",
+          "x": 4270,
+          "y": 61,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "clock",
+          "x": 4706,
+          "y": 699,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "jishna",
+          "x": 3896,
+          "y": 335,
+          "direction": 0,
+          "scaleX": 0.8,
+          "scaleY": 0.8,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "puzzle/a01"
+            }
+          ]
+        },
+        {
+          "costume": "eesha",
+          "x": 4064,
+          "y": 337,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "puzzle/a01"
+            }
+          ]
+        },
+        {
+          "costume": "asul",
+          "x": 4529,
+          "y": 347,
+          "direction": 0,
+          "scaleX": 0.7,
+          "scaleY": 0.7,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "puzzle/a02"
+            }
+          ]
+        },
+        {
+          "costume": "lamp1",
+          "x": 4269,
+          "y": 209,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": "puzzle/a03"
+            }
+          ]
+        },
+        {
+          "costume": "paper1",
+          "x": 3795,
+          "y": 54,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1091,
+          "sizeY": 832,
+          "alignmentX": 0,
+          "alignmentY": 0
+        },
+        {
+          "costume": "wood",
+          "x": 3823,
+          "y": 886,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizeX": 1065,
+          "sizeY": 43,
+          "alignmentX": 0,
+          "alignmentY": 0
         }
       ]
     },

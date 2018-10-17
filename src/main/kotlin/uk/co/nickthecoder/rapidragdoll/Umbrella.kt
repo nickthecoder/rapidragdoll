@@ -29,17 +29,19 @@ class Umbrella : Fragile(), Draggable {
     @Attribute
     val angle = Angle()
 
-    val joinPoint = Vector2d(0.0, 141.0)
-
     lateinit var topHalf: Actor
 
     override fun activated() {
-        topHalf = actor.createChild("topHalf")
-        topHalf.position.y += joinPoint.y
+
+        val joinPoint = Vector2d(0.0, 141.0 * actor.scaleXY)
+
+        topHalf = actor.createChild("topHalf").apply {
+            scaleXY = actor.scaleXY
+            position.y += joinPoint.y
+            direction.radians += angle.radians
+        }
 
         TicklePinJoint(actor, topHalf, joinPoint).limitRotation(Angle.degrees(-60.0), Angle.degrees(60.0))
-
-        topHalf.direction.radians += angle.radians
     }
 
     override fun mass(): Double {

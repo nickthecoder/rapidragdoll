@@ -11,7 +11,7 @@
     },
     {
       "name": "nextScene",
-      "value": "puzzle/menu"
+      "value": "puzzle/04"
     },
     {
       "name": "bottomLeft",
