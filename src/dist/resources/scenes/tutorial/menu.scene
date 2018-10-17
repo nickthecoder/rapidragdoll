@@ -121,7 +121,7 @@
             },
             {
               "name": "text",
-              "value": "Part 2"
+              "value": "Two Rooms"
             },
             {
               "name": "unlocked",
@@ -177,7 +177,7 @@
             },
             {
               "name": "text",
-              "value": "Part 3"
+              "value": "Bounce"
             },
             {
               "name": "unlocked",
@@ -233,7 +233,7 @@
             },
             {
               "name": "text",
-              "value": "Part 4"
+              "value": "Scroll"
             },
             {
               "name": "unlocked",
@@ -241,7 +241,7 @@
             },
             {
               "name": "textPosition",
-              "value": "-1.0x16.0"
+              "value": "4.0x-60.0"
             },
             {
               "name": "timePosition",
@@ -289,7 +289,7 @@
             },
             {
               "name": "text",
-              "value": "Part 5"
+              "value": "Right to Left"
             },
             {
               "name": "unlocked",
@@ -331,8 +331,8 @@
         },
         {
           "costume": "levelStatus",
-          "x": 863,
-          "y": 187,
+          "x": 870,
+          "y": 186,
           "viewAlignmentX": "CENTER",
           "viewAlignmentY": "CENTER",
           "direction": 0,
@@ -345,7 +345,7 @@
             },
             {
               "name": "text",
-              "value": "Part 6"
+              "value": "Fragile"
             },
             {
               "name": "unlocked",
@@ -353,7 +353,7 @@
             },
             {
               "name": "textPosition",
-              "value": "-1.0x14.0"
+              "value": "2.0x-54.0"
             },
             {
               "name": "timePosition",
@@ -401,7 +401,7 @@
             },
             {
               "name": "text",
-              "value": "Part 7"
+              "value": "Boulder"
             },
             {
               "name": "unlocked",
@@ -457,7 +457,7 @@
             },
             {
               "name": "text",
-              "value": "Part 8"
+              "value": "Power Ups"
             },
             {
               "name": "unlocked",
@@ -517,7 +517,7 @@
             },
             {
               "name": "text",
-              "value": "End"
+              "value": "The Bells"
             },
             {
               "name": "textPosition",
@@ -590,6 +590,52 @@
             {
               "name": "requiredScene",
               "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "join90",
+          "x": 772,
+          "y": 534,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "levelStatus",
+          "x": 701,
+          "y": 526,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "requiredScene",
+              "value": "tutorial/09"
+            },
+            {
+              "name": "showTime",
+              "value": "true"
+            },
+            {
+              "name": "text",
+              "value": "The End"
+            },
+            {
+              "name": "textPosition",
+              "value": "-20.0x-63.0"
+            },
+            {
+              "name": "timePosition",
+              "value": "0.0x0.0"
+            },
+            {
+              "name": "unlocked",
+              "value": "false"
+            },
+            {
+              "name": "scene",
+              "value": "tutorial/10"
             }
           ]
         }

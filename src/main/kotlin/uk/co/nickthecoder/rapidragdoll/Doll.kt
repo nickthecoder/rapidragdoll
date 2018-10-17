@@ -80,11 +80,12 @@ class Doll : ActionRole(), Reward {
         ignoreHitTick = Game.instance.gameLoop.tickCount
 
         val torso = createPart("torso", 0.0)
-        val abdomen = createPart("abdomen", 0.1, torso)
 
         createPart("head", 0.2, torso)
         createPart("arm-left", -0.1, torso)
         createPart("arm-right", -0.2, torso)
+
+        val abdomen = createPart("abdomen", 0.1, torso)
         createPart("leg-left", -0.3, abdomen)
         createPart("leg-right", -0.4, abdomen)
 

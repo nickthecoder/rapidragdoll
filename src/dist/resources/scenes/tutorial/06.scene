@@ -205,7 +205,7 @@
         {
           "costume": "shelf",
           "x": 868,
-          "y": 530,
+          "y": 506,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1
@@ -213,7 +213,7 @@
         {
           "costume": "vase2",
           "x": 776,
-          "y": 539,
+          "y": 523,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -226,8 +226,8 @@
         },
         {
           "costume": "pin",
-          "x": 912,
-          "y": 547,
+          "x": 913,
+          "y": 531,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1

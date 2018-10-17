@@ -101,16 +101,34 @@ abstract class AbstractLauncher : AbstractRole() {
             }
             actor.stage?.add(dollA)
 
-            // Throw the doll by giving ONE body part an initial velocity.
-            // This causes it to spin differently depending on which body part is thrown.
-            // Don't throw using the legs, because that can cause them to overlap and STICK.
-            val partNumber = random.randomInt(doll.parts.size - 2)
-            val throwBy = doll.parts[partNumber].body!!
             val direction = Vector2d(point).sub(actor.position)
-            val magnitude = Math.min(direction.length(), speed)
+            val magnitude = Math.min(direction.length(), speed) / 1.0
+            // Used below to create a rotation of the doll.
+            val shear = random.between(-magnitude * 1.0, magnitude * 1.0)
 
             val initialVelocity = direction.normalize(magnitude)
-            throwBy.setLinearVelocity(initialVelocity.mul(doll.totalMass / throwBy.mass))
+            val shearedVelocity = Vector2d()
+            val headMass = doll.parts[1].body!!.mass
+
+            // Give each doll part an initial velocity, but also cause a rotation (by adding a
+            // shear to the head and subtracting it from the abdomen and legs.
+
+            doll.parts.forEachIndexed { index, part ->
+                val tickleBody = part.body!!
+                if (index == 1) { // The head
+                    // Move the head in one direction
+                    initialVelocity.add(shear, 0.0, shearedVelocity)
+                } else if (index > 3) { // Abdomen and legs
+                    // Move the abdomen and legs in the opposite direction,
+                    // Causing an overall rotation of the Doll.
+                    initialVelocity.sub(shear * headMass / tickleBody.mass / 3, 0.0, shearedVelocity)
+                    // If I've got the maths correct, this shouldn't change the direction of the doll, as the
+                    // change in momentum is balanced between the head and these 3 parts (abdomen and legs)
+                } else {
+                    shearedVelocity.set(initialVelocity)
+                }
+                tickleBody.setLinearVelocity(shearedVelocity)
+            }
 
             AbstractPlay.instance.launched(doll)
         }
