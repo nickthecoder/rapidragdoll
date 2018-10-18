@@ -19,9 +19,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package uk.co.nickthecoder.rapidragdoll.ui
 
 import org.joml.Vector2d
-import uk.co.nickthecoder.rapidragdoll.AbstractPlay
 import uk.co.nickthecoder.tickle.ActionRole
 import uk.co.nickthecoder.tickle.AttributeType
+import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.action.Action
 import uk.co.nickthecoder.tickle.action.Until
 import uk.co.nickthecoder.tickle.action.animation.Eases
@@ -40,9 +40,9 @@ class Pause : ActionRole() {
 
         val backAgain = Vector2d(moveBy).mul(-1.0)
 
-        return Until { AbstractPlay.instance.paused }
+        return Until { Game.instance.paused }
                 .then(MoveBy(actor.position, moveBy, seconds, Eases.easeOut))
-                .then(Until { !AbstractPlay.instance.paused })
+                .then(Until { !Game.instance.paused })
                 .then(MoveBy(actor.position, backAgain, seconds, Eases.easeIn))
                 .forever()
     }

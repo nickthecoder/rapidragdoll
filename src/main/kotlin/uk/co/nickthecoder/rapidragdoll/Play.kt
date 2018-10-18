@@ -29,7 +29,6 @@ import uk.co.nickthecoder.tickle.action.movement.PanTo
 import uk.co.nickthecoder.tickle.events.*
 import uk.co.nickthecoder.tickle.graphics.Window
 import uk.co.nickthecoder.tickle.physics.RoleContactManager
-import uk.co.nickthecoder.tickle.physics.TickleWorld
 import uk.co.nickthecoder.tickle.resources.Resources
 import uk.co.nickthecoder.tickle.stage.StageView
 import uk.co.nickthecoder.tickle.stage.findRole
@@ -171,11 +170,13 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
         instance = this
     }
 
+    /*
     override fun createWorlds() {
         val pi = Resources.instance.gameInfo.physicsInfo
         val world: TickleWorld = TickleWorld(gravity, pi.scale.toFloat(), velocityIterations = pi.velocityIterations, positionIterations = pi.positionIterations)
         Game.instance.scene.findStage("main")?.world = world
     }
+    */
 
     override fun begin() {
         super.begin()
@@ -210,7 +211,7 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
     override fun tick() {
         super.tick()
         // When paused, the Pause Role won't animate without this.
-        if (paused) {
+        if (Game.instance.paused) {
             glassView.stage.findRole<Pause>()?.tick()
         }
 
@@ -257,7 +258,7 @@ abstract class AbstractPlay : AbstractDirector(), MouseListener {
 
     override fun onKey(event: KeyEvent) {
         if (inputPause?.matches(event) == true) {
-            paused = !paused
+            Game.instance.paused = !Game.instance.paused
         }
         if (escape?.matches(event) == true) {
             Game.instance.startScene(menuName)

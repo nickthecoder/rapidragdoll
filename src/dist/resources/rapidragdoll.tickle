@@ -12,6 +12,7 @@
     "physics": {
       "gravity_x": 0,
       "gravity_y": -100,
+      "framesPerSecond": 60,
       "velocityIterations": 8,
       "positionIterations": 3,
       "scale": 100,
