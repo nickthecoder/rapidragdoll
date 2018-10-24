@@ -83,7 +83,7 @@ abstract class AbstractLauncher : AbstractRole() {
         }
     }
 
-    fun launch(point: Vector2d) {
+    open fun launch(point: Vector2d) {
 
         if (!clearToLaunch()) {
             return
@@ -132,10 +132,13 @@ abstract class AbstractLauncher : AbstractRole() {
                 }
                 tickleBody.setLinearVelocity(shearedVelocity)
             }
+            launched(doll)
 
             AbstractPlay.instance.launched(doll)
         }
     }
+
+    open fun launched(doll: Doll) {}
 
     /**
      * Cannot launch if there is a doll close to the launcher
@@ -181,11 +184,16 @@ class Launcher : AbstractLauncher() {
         if (select?.isPressed() == true) {
             AbstractPlay.instance.launcher = this
             actor.event("select$number")
+            dollCostumes[0].chooseSound("ready")?.play()
         }
     }
 
     fun deselect() {
         actor.event("deselect$number")
+    }
+
+    override fun launched(doll: Doll) {
+        doll.actor.event("launched")
     }
 
 }

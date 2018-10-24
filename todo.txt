@@ -1,6 +1,8 @@
 Current Work
 ------------
 
+Sounds : Ready, NAME, Ow, Ouch,
+
 Bugs
 ----
 
@@ -8,7 +10,6 @@ Open lots of scenes in the editor pegs CPU at 100%
 
 Next
 ---
-
 
 Sounds
     When a doll is launched - Call out their name (maybe not every time!)

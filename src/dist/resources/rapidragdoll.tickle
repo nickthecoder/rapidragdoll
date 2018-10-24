@@ -3779,6 +3779,12 @@
           "inheritsEventsFrom": "button",
           "events": [
             
+          ],
+          "attributes": [
+            {
+              "name": "effects",
+              "value": "uk.co.nickthecoder.rapidragdoll.ui.MenuButtonEffects"
+            }
           ]
         },
         {
@@ -3796,6 +3802,10 @@
             {
               "name": "scene",
               "value": ""
+            },
+            {
+              "name": "effects",
+              "value": "uk.co.nickthecoder.rapidragdoll.ui.MenuButtonEffects"
             }
           ]
         },
@@ -3901,6 +3911,10 @@
             {
               "name": "url",
               "value": ""
+            },
+            {
+              "name": "effects",
+              "value": ""
             }
           ]
         },
@@ -3941,6 +3955,10 @@
             {
               "name": "scene",
               "value": ""
+            },
+            {
+              "name": "effects",
+              "value": "uk.co.nickthecoder.rapidragdoll.ui.MenuButtonEffects"
             }
           ]
         },
@@ -4372,6 +4390,10 @@
             {
               "name": "scene",
               "value": ""
+            },
+            {
+              "name": "effects",
+              "value": "uk.co.nickthecoder.rapidragdoll.ui.MenuButtonEffects"
             }
           ]
         },
@@ -4389,6 +4411,12 @@
                 "restart"
               ]
             }
+          ],
+          "attributes": [
+            {
+              "name": "effects",
+              "value": "uk.co.nickthecoder.rapidragdoll.ui.GameButtonEffects"
+            }
           ]
         },
         {
@@ -4404,6 +4432,12 @@
               "poses": [
                 "exit"
               ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "effects",
+              "value": "uk.co.nickthecoder.rapidragdoll.ui.GameButtonEffects"
             }
           ]
         }
@@ -11894,10 +11928,6 @@
   "tabs": [
     {
       "name": "menu",
-      "type": "SCENE"
-    },
-    {
-      "name": "dollHouse",
       "type": "SCENE"
     }
   ]

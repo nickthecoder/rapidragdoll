@@ -610,7 +610,13 @@
           "y": 661,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "tiles1",
@@ -869,15 +875,21 @@
           "y": 699,
           "direction": 0,
           "scaleX": 1,
-          "scaleY": 1
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
         },
         {
           "costume": "jishna",
           "x": 3896,
           "y": 335,
           "direction": 0,
-          "scaleX": 0.8,
-          "scaleY": 0.8,
+          "scaleX": 0.83,
+          "scaleY": 0.83,
           "attributes": [
             {
               "name": "rewardForScene",
