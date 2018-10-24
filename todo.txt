@@ -9,10 +9,9 @@ Open lots of scenes in the editor pegs CPU at 100%
 Next
 ---
 
-If view size > scene's bounds, then CENTER it.
 
 Sounds
-    When a doll is launched
+    When a doll is launched - Call out their name (maybe not every time!)
     When a doll is picked up on the Victory scene.
 
     When a doll bounces.
@@ -33,6 +32,24 @@ Collectables
     Add "ammo" to the current/all Launchers
     Increase/Decrease max dolls
 
+New game types :
+    Launch dolls as usual, but the aim is to get them into a basketball net/goal/touch a special object
+    Goal, with/without a goal keeper.
+
+New Marionette scenes
+    Large dolls
+    Strings attached to the head and arms (option to hide the strings)
+    No mouse pressed :
+        left/right movement to tip the bar attached to the arms
+        up/down to raise/lower the bar attached to the head.
+    Left button :
+        move the Marionette
+
+    Advanced Puppet Show :
+        More than one doll
+        Record movements of the marionettes
+        "Flag" to reset the scene, and play back the recordings for all but the currently held doll
+        Also allow "Scenery" to be moved and recorded
 
 Later
 -----

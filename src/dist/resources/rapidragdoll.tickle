@@ -11893,23 +11893,11 @@
   ],
   "tabs": [
     {
-      "name": "pointer",
-      "type": "COSTUME"
-    },
-    {
-      "name": "exit",
-      "type": "COSTUME"
-    },
-    {
-      "name": "aim",
-      "type": "COSTUME"
-    },
-    {
-      "name": "arrow",
-      "type": "COSTUME"
-    },
-    {
       "name": "menu",
+      "type": "SCENE"
+    },
+    {
+      "name": "dollHouse",
       "type": "SCENE"
     }
   ]

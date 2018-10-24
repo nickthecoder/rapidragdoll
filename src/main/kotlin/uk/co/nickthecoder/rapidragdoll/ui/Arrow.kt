@@ -26,6 +26,18 @@ import uk.co.nickthecoder.tickle.Game
 import uk.co.nickthecoder.tickle.stage.findRolesAt
 import uk.co.nickthecoder.tickle.util.Button
 
+/**
+ * Used when playing a "regular" scene, i.e. throwing dolls to know over pins.
+ * The arrow starts at the current [Launcher], and extends towards the mouse position.
+ *
+ * If the mouse is further away than the launcher's maximum speed, then the length of
+ * the arrow is constrained, and the [Aim] role follows the mouse position.
+ * Otherwise, [Aim] is hidden.
+ *
+ * If the mouse is hovering over a Button, when both this and [Aim] are hidden, and
+ * [Hand] follows the mouse. We cannot re-use [Aim], because we need the pointer
+ * on the *glass* layer. ([Aim] and this are on the "main" layer).
+ */
 class Arrow : AbstractRole() {
 
     private val mouse = Vector2d()
@@ -40,9 +52,8 @@ class Arrow : AbstractRole() {
     override fun activated() {
         super.activated()
         pointerActor = actor.createChild("pointer")
-        pointerActor.zOrder = 998.0
         pointerActor.stage = Game.instance.scene.findStage("glass")
-        pointerActor.zOrder = 999.0
+        // pointerActor.zOrder = 1000.0
         pointerActor.hide()
 
         aimActor = actor.createChild("aim")
