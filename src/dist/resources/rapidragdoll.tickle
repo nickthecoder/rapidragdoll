@@ -1806,6 +1806,50 @@
       "offsetX": 76,
       "offsetY": 320,
       "direction": 0
+    },
+    {
+      "name": "target",
+      "texture": "ui",
+      "left": 9,
+      "bottom": 442,
+      "right": 102,
+      "top": 350,
+      "offsetX": 47,
+      "offsetY": 46,
+      "direction": 0
+    },
+    {
+      "name": "switch-on",
+      "texture": "scenery",
+      "left": 461,
+      "bottom": 889,
+      "right": 483,
+      "top": 796,
+      "offsetX": 0,
+      "offsetY": 46,
+      "direction": 0
+    },
+    {
+      "name": "switch-off",
+      "texture": "scenery",
+      "left": 487,
+      "bottom": 889,
+      "right": 509,
+      "top": 796,
+      "offsetX": 0,
+      "offsetY": 46,
+      "direction": 0
+    },
+    {
+      "name": "plasmaOff",
+      "texture": "plasma",
+      "left": 0,
+      "bottom": 1,
+      "right": 1,
+      "top": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "direction": 0
     }
   ],
   "sounds": [
@@ -5997,36 +6041,24 @@
           "events": [
             {
               "name": "default",
-              "ninePatches": [
-                {
-                  "pose": "plasma1",
-                  "left": 0,
-                  "bottom": 0,
-                  "right": 0,
-                  "top": 0
-                },
-                {
-                  "pose": "plasma2",
-                  "left": 0,
-                  "bottom": 0,
-                  "right": 0,
-                  "top": 0
-                },
-                {
-                  "pose": "plasma3",
-                  "left": 0,
-                  "bottom": 0,
-                  "right": 0,
-                  "top": 0
-                },
-                {
-                  "pose": "plasma4",
-                  "left": 0,
-                  "bottom": 0,
-                  "right": 0,
-                  "top": 0
-                }
+              "poses": [
+                "plasma4",
+                "plasma1",
+                "plasma2",
+                "plasma3"
               ]
+            },
+            {
+              "name": "off",
+              "poses": [
+                "plasmaOff"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "name",
+              "value": ""
             }
           ],
           "body": {
@@ -6575,6 +6607,65 @@
                   "y": 2.5,
                   "width": 273,
                   "height": 10,
+                  "angle": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "switch",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Switch",
+          "canRotate": true,
+          "zOrder": 10,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "switch-off"
+              ]
+            },
+            {
+              "name": "on",
+              "poses": [
+                "switch-on"
+              ]
+            },
+            {
+              "name": "off",
+              "poses": [
+                "switch-off"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "controls",
+              "value": ""
+            },
+            {
+              "name": "on",
+              "value": "true"
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": false,
+                "group": 0,
+                "category": 4,
+                "mask": 3,
+                "box": {
+                  "x": 6.5,
+                  "y": 2.5,
+                  "width": 10,
+                  "height": 38,
                   "angle": 0
                 }
               }
@@ -9721,6 +9812,51 @@
               }
             ]
           }
+        },
+        {
+          "name": "target",
+          "role": "uk.co.nickthecoder.rapidragdoll.roles.Target",
+          "canRotate": false,
+          "zOrder": -10,
+          "initialEvent": "default",
+          "showInSceneEditor": true,
+          "events": [
+            {
+              "name": "default",
+              "poses": [
+                "target"
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "period",
+              "value": "2"
+            },
+            {
+              "name": "radius",
+              "value": "30"
+            }
+          ],
+          "body": {
+            "bodyType": "STATIC",
+            "fixtures": [
+              {
+                "friction": 0,
+                "density": 1,
+                "restitution": 1,
+                "isSensor": true,
+                "group": 0,
+                "category": 4,
+                "mask": 3,
+                "circle": {
+                  "x": 0,
+                  "y": 0,
+                  "radius": 15
+                }
+              }
+            ]
+          }
         }
       ],
       "showInSceneEditor": true
@@ -11927,7 +12063,23 @@
   ],
   "tabs": [
     {
-      "name": "menu",
+      "name": "switch",
+      "type": "COSTUME"
+    },
+    {
+      "name": "plasma",
+      "type": "TEXTURE"
+    },
+    {
+      "name": "plasmaOff",
+      "type": "POSE"
+    },
+    {
+      "name": "plasma",
+      "type": "COSTUME"
+    },
+    {
+      "name": "10",
       "type": "SCENE"
     }
   ]

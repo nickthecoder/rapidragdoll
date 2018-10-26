@@ -89,7 +89,6 @@ class CollectableShrink : Collectable() {
 
 class CollectableSpeedUp : Collectable() {
 
-
     @Attribute
     var factor = 1.2
 
@@ -102,7 +101,6 @@ class CollectableSpeedUp : Collectable() {
 
 class CollectableSlowDown : Collectable() {
 
-
     @Attribute
     var factor = 1.2
 
@@ -110,5 +108,17 @@ class CollectableSlowDown : Collectable() {
         AbstractPlay.instance.launcher?.let {
             it.speed /= factor
         }
+    }
+}
+
+class Target : Collectable() {
+
+    override fun activated() {
+        super.activated()
+        AbstractPlay.instance.objectives++
+    }
+
+    override fun collected() {
+        AbstractPlay.instance.objectives--
     }
 }

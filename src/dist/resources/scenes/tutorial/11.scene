@@ -7,7 +7,7 @@
     },
     {
       "name": "nextScene",
-      "value": "tutorial/11"
+      "value": "tutorial/congratulations"
     },
     {
       "name": "menuName",
@@ -69,8 +69,8 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": 623,
-          "y": 327,
+          "x": 592,
+          "y": 352,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -122,10 +122,18 @@
           "alignmentY": 0
         },
         {
+          "costume": "pin",
+          "x": 275,
+          "y": 70,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
           "costume": "information",
           "x": 302,
           "y": 447,
-          "text": "Hit the switches to turn off the deadly plasma",
+          "text": "You only have 20 seconds to finish the level !",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -153,10 +161,34 @@
           "alignmentY": 0
         },
         {
+          "costume": "pin",
+          "x": 931,
+          "y": 381,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "pin",
+          "x": 224,
+          "y": 393,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "pin",
+          "x": 1015,
+          "y": 72,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
           "costume": "information",
           "x": 419,
           "y": 507,
-          "text": "Hit the middle of the targets",
+          "text": "This is the last tutorial !",
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -174,12 +206,12 @@
         {
           "costume": "wood",
           "x": 50,
-          "y": 341,
+          "y": 340,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 409,
-          "sizeY": 39,
+          "sizeX": 210,
+          "sizeY": 40,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -197,13 +229,13 @@
         },
         {
           "costume": "wall",
-          "x": 409,
-          "y": 38,
+          "x": 593,
+          "y": -3,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
-          "sizeX": 45,
-          "sizeY": 155,
+          "sizeX": 46,
+          "sizeY": 209,
           "alignmentX": 0,
           "alignmentY": 0
         },
@@ -218,149 +250,27 @@
           "sizeY": 45,
           "alignmentX": 0,
           "alignmentY": 0
-        },
-        {
-          "costume": "switch",
-          "x": 49,
-          "y": 596,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "controls",
-              "value": "plasma1"
-            },
-            {
-              "name": "on",
-              "value": "true"
-            }
-          ]
-        },
-        {
-          "costume": "plasma",
-          "x": 433,
-          "y": 344.01586913678284,
-          "direction": 270,
-          "scaleX": 0.5,
-          "scaleY": 0.5,
-          "attributes": [
-            {
-              "name": "name",
-              "value": "plasma1"
-            }
-          ]
-        },
-        {
-          "costume": "target",
-          "x": 589,
-          "y": 600,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "period",
-              "value": "2"
-            },
-            {
-              "name": "radius",
-              "value": "30"
-            }
-          ]
-        },
-        {
-          "costume": "target",
-          "x": 893,
-          "y": 567,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "period",
-              "value": "4"
-            },
-            {
-              "name": "radius",
-              "value": "30"
-            }
-          ]
-        },
-        {
-          "costume": "switch",
-          "x": 1240,
-          "y": 595,
-          "direction": 180,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "controls",
-              "value": "plasma2"
-            },
-            {
-              "name": "on",
-              "value": "true"
-            }
-          ]
-        },
-        {
-          "costume": "plasma",
-          "x": 869,
-          "y": 324.99999998509884,
-          "direction": 270,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "name",
-              "value": "plasma2"
-            }
-          ]
-        },
-        {
-          "costume": "target",
-          "x": 1050,
-          "y": 181,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "period",
-              "value": "2"
-            },
-            {
-              "name": "radius",
-              "value": "10"
-            }
-          ]
-        },
-        {
-          "costume": "target",
-          "x": 188,
-          "y": 222,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "period",
-              "value": "2"
-            },
-            {
-              "name": "radius",
-              "value": "10"
-            }
-          ]
         }
       ]
     },
     {
       "name": "glass",
       "actors": [
-        
+        {
+          "costume": "countdown",
+          "x": 1157,
+          "y": 803,
+          "text": "0:00",
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "seconds",
+              "value": "20"
+            }
+          ]
+        }
       ]
     }
   ]

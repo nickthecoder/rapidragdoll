@@ -153,6 +153,10 @@ class Doll : ActionRole(), Reward {
 
     fun zapped() {
         AbstractPlay.instance.dolls.remove(this)
+        actor.event("zapped")
+        parts[0].body?.linearVelocity?.mul(0.75)
+        joints.forEach { it.destroy() }
+        joints.clear()
         ending = true
     }
 }

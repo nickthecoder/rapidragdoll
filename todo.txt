@@ -6,20 +6,8 @@ Sounds : Ready, NAME, Ow, Ouch,
 Bugs
 ----
 
-Open lots of scenes in the editor pegs CPU at 100%
-
 Next
 ---
-
-Sounds
-    When a doll is launched - Call out their name (maybe not every time!)
-    When a doll is picked up on the Victory scene.
-
-    When a doll bounces.
-        Save the velocity from the previous tick, and check if the magnitude of the difference > limit
-        Only one sound - not for every DollPart.
-        Maybe more than one sound each with different limits.
-        Head has different sounds?
 
 Limit the Launcher to a fixed number of dolls
     When ammo is low, change the color of Aim from green to yellow/orange, then red for no ammo.

@@ -19,44 +19,41 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package uk.co.nickthecoder.rapidragdoll.roles
 
 import org.jbox2d.dynamics.contacts.Contact
-import uk.co.nickthecoder.tickle.ActionRole
+import uk.co.nickthecoder.tickle.AbstractRole
 import uk.co.nickthecoder.tickle.Actor
-import uk.co.nickthecoder.tickle.action.Action
-import uk.co.nickthecoder.tickle.action.Delay
-import uk.co.nickthecoder.tickle.action.EventAction
+import uk.co.nickthecoder.tickle.Role
 import uk.co.nickthecoder.tickle.physics.ContactListenerRole
+import uk.co.nickthecoder.tickle.stage.findRoles
 import uk.co.nickthecoder.tickle.util.Attribute
 
-class Plasma : ActionRole(), ContactListenerRole, Switchable {
+interface Switchable : Role {
+    var name: String
+    fun switch(value: Boolean)
+}
+
+class Switch : AbstractRole(), ContactListenerRole {
 
     @Attribute
-    override var name: String = ""
+    var on: Boolean = true
 
-    private var on = true
+    @Attribute
+    var controls: String = ""
 
-    override fun switch(value: Boolean) {
-        on = value
-        if (on) {
-            actor.event("on")
-            replaceAction(createAction())
-        } else {
-            actor.event("off")
-            replaceAction(null)
-        }
+    override fun activated() {
+        super.activated()
+        actor.event(if (on) "on" else "off")
+        actor.stage?.findRoles<Switchable>()?.firstOrNull { it.name == controls }?.switch(on)
     }
 
-    override fun createAction(): Action {
-        return EventAction(actor, "default")
-                .then(Delay(0.05))
-                .forever()
+    override fun tick() {
     }
 
     override fun beginContact(contact: Contact, otherActor: Actor) {
-        if (on) {
-            val otherRole = otherActor.role
-            if (otherRole is DollPart) {
-                otherRole.doll.zapped()
-            }
+        val otherRole = otherActor.role
+        if (otherRole is DollPart) {
+            on = !on
+            actor.event(if (on) "on" else "off")
+            actor.stage?.findRoles<Switchable>()?.firstOrNull { it.name == controls }?.switch(on)
         }
     }
 
