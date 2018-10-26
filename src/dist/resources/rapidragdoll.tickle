@@ -11361,7 +11361,7 @@
           }
         }
       ],
-      "showInSceneEditor": true
+      "showInSceneEditor": false
     },
     {
       "name": "asul",
@@ -11899,7 +11899,7 @@
           }
         }
       ],
-      "showInSceneEditor": true
+      "showInSceneEditor": false
     }
   ],
   "inputs": [
@@ -12062,22 +12062,6 @@
     }
   ],
   "tabs": [
-    {
-      "name": "switch",
-      "type": "COSTUME"
-    },
-    {
-      "name": "plasma",
-      "type": "TEXTURE"
-    },
-    {
-      "name": "plasmaOff",
-      "type": "POSE"
-    },
-    {
-      "name": "plasma",
-      "type": "COSTUME"
-    },
     {
       "name": "10",
       "type": "SCENE"

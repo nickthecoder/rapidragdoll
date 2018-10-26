@@ -11,7 +11,7 @@
     },
     {
       "name": "nextScene",
-      "value": "puzzle/09"
+      "value": "puzzle/11"
     },
     {
       "name": "bottomLeft",
@@ -68,15 +68,15 @@
       "actors": [
         {
           "costume": "launcher",
-          "x": -63,
-          "y": 652,
+          "x": 331,
+          "y": 773,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
               "name": "panTo",
-              "value": "83.0x391.0"
+              "value": "494.0x410.0"
             },
             {
               "name": "dollName",
@@ -95,14 +95,6 @@
               "value": "1"
             }
           ]
-        },
-        {
-          "costume": "fencePost",
-          "x": -404,
-          "y": 51,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1
         },
         {
           "costume": "fencePost",
@@ -125,111 +117,9 @@
           "alignmentY": 0
         },
         {
-          "costume": "table",
-          "x": 165,
-          "y": 65,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "teacup",
-          "x": 256,
-          "y": 210,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "teapot",
-          "x": 101,
-          "y": 209,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "table",
-          "x": 1035,
-          "y": 72,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "umbrella",
-          "x": 772,
-          "y": 69,
-          "direction": 0,
-          "scaleX": 2,
-          "scaleY": 2,
-          "attributes": [
-            {
-              "name": "angle",
-              "value": "0.0"
-            },
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "chair1",
-          "x": -89,
-          "y": 144,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "costume": "chair2",
-          "x": 493,
-          "y": 137,
-          "direction": 0,
-          "scaleX": 1,
-          "scaleY": 1,
-          "attributes": [
-            {
-              "name": "rewardForScene",
-              "value": ""
-            }
-          ]
-        },
-        {
           "costume": "target",
-          "x": 171,
-          "y": 121,
+          "x": -18,
+          "y": 200,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -246,8 +136,8 @@
         },
         {
           "costume": "target",
-          "x": 697,
-          "y": 279,
+          "x": 722,
+          "y": 188,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -264,8 +154,8 @@
         },
         {
           "costume": "target",
-          "x": 840,
-          "y": 279,
+          "x": -312,
+          "y": 217,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
@@ -299,20 +189,126 @@
           ]
         },
         {
-          "costume": "target",
-          "x": 1284,
-          "y": 496,
+          "costume": "fencePost",
+          "x": -172,
+          "y": 45,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "fencePost",
+          "x": 151,
+          "y": 42,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "fencePost",
+          "x": 556,
+          "y": 45,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "fencePost",
+          "x": 878,
+          "y": 48,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1
+        },
+        {
+          "costume": "plasma",
+          "x": -161,
+          "y": 301,
           "direction": 0,
           "scaleX": 1,
           "scaleY": 1,
           "attributes": [
             {
-              "name": "period",
-              "value": "2"
+              "name": "name",
+              "value": "plasma1"
+            }
+          ]
+        },
+        {
+          "costume": "plasma",
+          "x": 567,
+          "y": 288,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "name",
+              "value": "plasma2"
+            }
+          ]
+        },
+        {
+          "costume": "switch",
+          "x": 163,
+          "y": 256,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "controls",
+              "value": "plasma1"
             },
             {
-              "name": "radius",
-              "value": "130"
+              "name": "on",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "costume": "switch",
+          "x": 545,
+          "y": 257,
+          "direction": 180,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "controls",
+              "value": "plasma2"
+            },
+            {
+              "name": "on",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "costume": "chair1",
+          "x": 357,
+          "y": 139,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "costume": "teapot",
+          "x": 381,
+          "y": 166,
+          "direction": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "attributes": [
+            {
+              "name": "rewardForScene",
+              "value": ""
             }
           ]
         }

@@ -48,7 +48,7 @@ abstract class Collectable : ActionRole(), ContactListenerRole {
 
     override fun beginContact(contact: Contact, otherActor: Actor) {
         val otherRole = otherActor.role
-        if (!collected && otherRole is DollPart) {
+        if (!collected && otherRole is DollPart && !otherRole.doll.ending) {
             collected = true
             collected()
             replaceAction(MoveBy(actor.position, Vector2d(0.0, 200.0), 1.0)
