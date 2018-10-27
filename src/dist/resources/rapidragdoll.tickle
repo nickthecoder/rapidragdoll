@@ -1219,11 +1219,11 @@
       "name": "bell",
       "texture": "scenery",
       "left": 184,
-      "bottom": 135,
+      "bottom": 136,
       "right": 311,
       "top": 1,
-      "offsetX": 64,
-      "offsetY": 127,
+      "offsetX": 62,
+      "offsetY": 128,
       "direction": 0
     },
     {
@@ -1241,10 +1241,10 @@
       "name": "rope",
       "texture": "scenery",
       "left": 165,
-      "bottom": 103,
+      "bottom": 96,
       "right": 176,
-      "top": 4,
-      "offsetX": 6,
+      "top": 9,
+      "offsetX": 4,
       "offsetY": 0,
       "direction": 0,
       "tiled": true
@@ -1253,11 +1253,11 @@
       "name": "bell-front",
       "texture": "scenery",
       "left": 309,
-      "bottom": 135,
+      "bottom": 136,
       "right": 436,
       "top": 1,
-      "offsetX": 64,
-      "offsetY": 127,
+      "offsetX": 62,
+      "offsetY": 128,
       "direction": 0
     },
     {
@@ -12063,8 +12063,12 @@
   ],
   "tabs": [
     {
-      "name": "10",
-      "type": "SCENE"
+      "name": "scenery",
+      "type": "TEXTURE"
+    },
+    {
+      "name": "rope",
+      "type": "POSE"
     }
   ]
 }

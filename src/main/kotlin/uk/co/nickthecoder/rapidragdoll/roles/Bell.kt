@@ -93,15 +93,12 @@ class Bell : ActionRole(), Draggable {
                 }
     }
 
-    fun createRope() {
+    private fun createRope() {
         rope = actor.createChild("rope")
         rope.scaleXY = actor.scaleXY
 
         TicklePinJoint(actor, rope)
-
-        rope.tiledAppearance?.let { appearance ->
-            appearance.size.y = ceiling.y / actor.scaleXY
-        }
+        rope.tiledAppearance?.size?.y = ceiling.y / actor.scaleXY
     }
 
     /**
